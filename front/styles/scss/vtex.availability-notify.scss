@@ -1,0 +1,83 @@
+@import "./variables";
+
+.notiferContainer {
+    .title {
+        font-size: 0;
+
+        &::after{
+            content: "avise-me";
+            width: 100%;
+            display: inline-block;
+            color: #707070;
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-align: center;
+            font-family: $fontPrimary;
+        }
+    }
+
+    .notifyLabel {
+        font-size: 0;
+
+        &::after{
+            content: "Para ser avisado da disponibilidade deste Produto, basta preencher os campos abaixo";
+            width: 100%;
+            display: inline-block;
+            color: #707070;
+            font-size: 0.875rem;
+            font-weight: 400;
+            font-family: $fontPrimary;
+        }
+    }
+    .form {
+        .content{
+            display: flex;
+            flex-direction: column;
+
+            .input{
+                margin: 0;
+                
+                :global(.vtex-input){
+                    display: block;
+                    
+                    :global(.vtex-input-prefix__group){
+                        border: 1px solid #d0d0d0;
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+
+            :global(.vtex-button) {
+                height: 40px;
+                width: 100%;
+                font-size: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-transform: uppercase;
+                background-color: #ffcb05;
+                border: 0;
+                cursor: pointer;
+                transition: all .3s ease;
+
+                &:hover{
+                    filter: brightness(95%);
+                }
+
+                &::after{
+                    content: "Ok";
+                    display: block;
+                    font-size: 16px;
+                    font-weight: $heavy;
+                    color: #9c6b0e;
+                }
+            }
+
+            :global(.vtex-button__label){
+                padding: 0 !important;
+            }
+        }
+
+    }
+}

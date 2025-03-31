@@ -1,0 +1,12 @@
+.container-cart {
+    width: 95% !important;
+    #cart-title {
+        font-size: 0;
+        &::after {
+            content: "Meu carrinho";
+            color: #000000;
+        }
+     
+    }
+
+}

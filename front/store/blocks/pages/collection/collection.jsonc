@@ -1,0 +1,22 @@
+{
+    "store.custom#collection": {
+        "blocks": [
+            "search-result-layout.customQuery#collection"
+        ]
+    },
+    "search-result-layout.customQuery#collection": {
+        "props": {
+            "querySchema": {
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 12,
+                "queryField": "153",
+                "mapField": "productClusterIds"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+}

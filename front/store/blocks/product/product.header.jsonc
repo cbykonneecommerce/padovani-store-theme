@@ -1,0 +1,81 @@
+{
+    //DECA: 2000001
+  //DOCOL: 2000019
+  // DECLARA O NOVO header COMO VAZIO
+  "header#product": {
+    "blocks": ["header-layout.desktop#header-empty", "header-layout.mobile#header-empty"]
+  },
+  "header-layout.desktop#header-empty": {
+    "children": []
+  },
+
+  "header-layout.mobile#header-empty": {
+    "children": []
+  },
+  // DECLARA A CONDIÇÃO DO header NORMAL (SE DIFERENTE DESTAS MARCAS, RENDERIZAR TOPO NORMAL)
+
+  "condition-layout.product#headercommon": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "brandId",
+          "arguments": {
+            "id": ["2000001"]
+          }
+        },
+        {
+          "subject": "brandId",
+          "arguments": {
+            "id": ["2000019"]
+          }
+        }
+      ],
+      "matchType": "none",
+      "Then": "header"
+    }
+  },
+  // DECLARA A CONDIÇÃO DO header DECA
+
+  "condition-layout.product#header-deca": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "brandId",
+          "arguments": {
+            "id": "2000001"
+          }
+        }
+      ],
+      "Then": "header#deca"
+    }
+  },
+  // header DECA
+  "header#deca": {
+    "blocks": [
+      "header-layout.desktop#deca",
+      "header-layout.mobile#deca"
+    ]
+  },
+  // DECLARA A CONDIÇÃO DO header Docol
+
+  "condition-layout.product#header-docol": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "brandId",
+          "arguments": {
+            "id": "2000019"
+          }
+        }
+      ],
+      "Then": "header#docol"
+    }
+  },
+  // header docol
+  "header#docol": {
+    "blocks": [
+      "header-layout.desktop#docol",
+      "header-layout.mobile#docol"
+    ]
+  }
+}

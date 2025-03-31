@@ -1,0 +1,182 @@
+@import "./variables";
+
+.loginLink {
+    background-color: transparent;
+    color: $dark;
+    width: max-content;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: $textDefault;
+    padding: 10px 0;
+    margin: auto;
+    font-weight: $bold;
+}
+
+.reviewsHeading {
+    border-bottom: 0;
+}
+
+.reviewsOrderBy {
+    :global(.vtex-styleguide-9-x-dropdown) {
+        margin-right: 15px;
+    }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.reviewsRating{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summaryContainer {
+  display: flex;
+  align-items: center;
+
+  .summaryTotalReviews {
+    font-size: $textSmall;
+    font-weight: $normal;
+    margin-left: 5px;
+  }
+}
+
+.reviewsRatingAverage {
+  margin: 10px 0;
+}
+
+.reviewsOrderBy {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.graphContent {
+  width: 100%;
+  background-color: $gray-1;
+  padding: 0 15px;
+  border-radius: $radius;
+  max-width: 500px;
+
+  .graphContainer {
+    justify-content: space-between;
+    
+    .graphText {
+      display: flex;
+      min-width: 100px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: $bold;
+    }
+
+    .graphBarContainer {
+      font-size: 10px;
+      height: 15px;
+      border-radius: 30px;
+
+      .graphBar {
+        border-radius: 30px;;
+      }
+
+    }
+  }
+
+}
+
+.writeReviewContainer {
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+  padding: 15px;
+  border-radius: $radius;
+  
+  .formContainer {
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 15px;
+
+    :global(.vtex-button) {
+      background-color: $primary;
+      padding: 5px;
+
+      :global(.vtex-button__label) {
+        color: $primary-i;
+      }
+    }
+  }
+}
+
+.reviewCommentsContainer {
+  .reviewCommentUser {
+    font-size: $heading1 !important;
+    font-weight: $bold;
+  }
+  .reviewCommentMessage {
+    margin: 25px 0;
+  }
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  .star {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-size: fit;
+    font-size: 0;
+    
+    &.star--empty {
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.1811 14.0922L10.0004 13.9829L9.81939 14.0919L6.36106 16.1752L6.36044 16.1756C5.99337 16.3978 5.54403 16.0708 5.6409 15.6543L6.55753 11.7211L6.60546 11.5155L6.44586 11.3772L3.38753 8.72718L3.38741 8.72707C3.06236 8.44569 3.23931 7.91581 3.66109 7.88226L3.66109 7.88226L3.66294 7.88211L7.68794 7.54044L7.89805 7.52261L7.98048 7.32852L9.55548 3.62019L9.55605 3.61883C9.71932 3.22987 10.2807 3.22987 10.4439 3.61883L10.4444 3.61992L12.0194 7.33659L12.1018 7.53092L12.3121 7.54877L16.3371 7.89045L16.3389 7.89059C16.7607 7.92414 16.9376 8.45402 16.6126 8.73541L16.6125 8.73551L13.5541 11.3855L13.3945 11.5238L13.4425 11.7295L14.3591 15.6626C14.456 16.0792 14.0066 16.4061 13.6396 16.1839L13.6395 16.1839L10.1811 14.0922Z' stroke='black' stroke-width='0.7'/%3E%3C/svg%3E%0A");
+    }
+
+    &.star--filled {
+      background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 14.3917L13.4583 16.4834C14.0917 16.8667 14.8667 16.3 14.7 15.5834L13.7833 11.65L16.8417 9.00003C17.4 8.5167 17.1 7.60003 16.3667 7.5417L12.3417 7.20003L10.7667 3.48336C10.4833 2.80836 9.51667 2.80836 9.23333 3.48336L7.65833 7.1917L3.63333 7.53336C2.9 7.5917 2.6 8.50836 3.15833 8.9917L6.21667 11.6417L5.3 15.575C5.13333 16.2917 5.90833 16.8584 6.54167 16.475L10 14.3917Z' fill='black'/%3E%3C/svg%3E%0A");
+      
+    }
+  }
+
+}
+
+.reviewsPaging {
+  :global(.vtex-button) {
+    background-color: $primary;
+    color: $primary-i;
+  }
+}
+
+.reviewInfo {
+  display: flex;
+  align-items: center;
+
+  @media(max-width: $tablet) {
+    display: block;
+  }
+
+  .reviewVerifiedPurchase {
+    display: flex;
+    align-items: center;
+    @media(max-width: $tablet) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.reviewCommentRating {
+  .stars {
+    justify-content: flex-start;
+  }
+}
+
+.reviewCommentsContainer {
+  width: 100%;
+}

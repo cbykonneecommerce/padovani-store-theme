@@ -1,0 +1,169 @@
+{
+    "product-installments#pdp-2": {
+        "props": {
+            "blockClass": "pdp",
+            "message": "ou em até {installmentsNumber} de {installmentValue} no cartão"
+        }
+    },
+    "product-list-price#pdp": {
+        "props": {
+            "blockClass": "pdp",
+            "message": "De: {listPriceValue}"
+        }
+    },
+    "product-price-savings#pdp-percentage": {
+        "props": {
+            "blockClass": "pdp",
+            "minimumPercentage": "3",
+            "message": "{savingsPercentage} OFF"
+        }
+    },
+    "condition-layout.product#pdp-price": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "id": "1000637"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "name": "1000662"
+                    }
+                },
+                {
+                    "subject": "categoryId",
+                    "arguments": {
+                        "name": "1000664"
+                    }
+                }
+            ],
+            "matchType": "any",
+            "Then": "flex-layout.row#condition-selling-price-then",
+            "Else": "flex-layout.row#condition-selling-price-else"
+        }
+    },
+    "flex-layout.row#condition-selling-price-then": {
+        "props": {
+            "blockClass": "selling-price-measurement-container",
+            "horizontalAlign": "left",
+            "verticalAlign": "middle",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "product-selling-price#metro-quadrado",
+            "add-unit-measurement"
+        ]
+    },
+    "flex-layout.row#condition-selling-price-else": {
+        "props": {
+            "blockClass": "selling-price-measurement-container",
+            "horizontalAlign": "left",
+            "verticalAlign": "middle",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.row#condition-selling-price-else-price",
+            "add-unit-measurement"
+        ]
+    },
+    "flex-layout.row#condition-selling-price-else-price": {
+        "props": {
+            "blockClass": "selling-price-measurement-container--price",
+            "horizontalAlign": "left",
+            "verticalAlign": "middle",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "condition-layout.product#preco-jacuzzi"
+        ]
+    },
+    "condition-layout.product#avista": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productClusters",
+                    "arguments": {
+                        "id": "486"
+                    }
+                }
+            ],
+            "Then": "rich-text#a-vista",
+            "Else": "flex-layout.col#tags-pix"
+        }
+    },
+    "condition-layout.product#preco-jacuzzi": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productClusters",
+                    "arguments": {
+                        "id": "486"
+                    }
+                }
+            ],
+            "Then": "product-spot-price#pdp",
+            "Else": "product-selling-price#default"
+        }
+    },
+    "rich-text#a-vista": {
+        "props": {
+            "text": "à vista **(2,5% de desconto)**",
+            "blockClass": [
+                "a-vista"
+            ]
+        }
+    },
+    "flex-layout.col#tags-pix": {
+        "props": {
+            "blockClass": "tags-pix"
+        },
+        "children": [
+            "rich-text#a-vista-todos-produtos",
+            "rich-text#pix-24x-vezes"
+        ]
+    },
+    "rich-text#a-vista-todos-produtos": {
+        "props": {
+            "text": "**(5% de desconto em 1x no PIX)**",
+            "blockClass": [
+                "a-vista",
+                "todos-productos"
+            ]
+        }
+    },
+    "rich-text#pix-24x-vezes": {
+        "props": {
+            "text": "Parcele em até **24x** no Pix",
+            "blockClass": [
+                "tag-pix-twenty-four-times"
+            ]
+        }
+    },
+    "product-selling-price#metro-quadrado": {
+        "props": {
+            "blockClass": [
+                "pdp",
+                "preco-metroquadrado"
+            ]
+        }
+    },
+    "product-selling-price#default": {
+        "props": {
+            "blockClass": [
+                "pdp"
+            ]
+        }
+    },
+    "product-spot-price#pdp": {
+        "props": {
+            "message": "{spotPriceValue}",
+            "blockClass": "pdp"
+        }
+    }
+}

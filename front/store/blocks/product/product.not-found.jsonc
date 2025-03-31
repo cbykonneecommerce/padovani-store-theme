@@ -1,0 +1,7 @@
+{
+    "store.not-found#product": {
+        "blocks": [
+            "flex-layout.row#not-found"
+        ]
+    }
+}

@@ -1,0 +1,70 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.paginationDotsContainer {
+  bottom: -30px;
+}
+.paginationDotsContainer .paginationDot {
+  transition: all linear 0.25s;
+  background: #bfbfbf;
+  border: 0;
+  width: 5px;
+  height: 5px;
+}
+.paginationDotsContainer .paginationDot.paginationDot--isActive {
+  background: #012169;
+  margin-top: 0;
+  width: 30px !important;
+  border-radius: 5px;
+}
+
+:global(.vtex-iframe-0-x-container--institucional) iframe {
+  min-height: 400px;
+}
+
+:global(.vtex-my-orders-app-3-x-reorderBtn) svg {
+  fill: #fff !important;
+}
+
+:global(.vtex-account) :global(.vtex-store-components-3-x-container) {
+  width: 100% !important;
+}
+
+:global(.vtex-store-components-3-x-carouselGaleryCursor) :global(.swiper-container) {
+  overflow: initial;
+}
+:global(.vtex-store-components-3-x-carouselGaleryCursor) :global(.swiper-container) :global(.swiper-pagination-bullets) {
+  bottom: -23%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #F2F2F2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF5A21;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5A21;
+  opacity: 0.8;
+}
+
+:global(.vtex-checkout-summary-0-x-summaryItemContainer):nth-child(2) {
+  display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--body-content) {
+  background-color: red !important;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--body-content) .items-stretch:not(:last-child) {
+  flex: 1;
+}

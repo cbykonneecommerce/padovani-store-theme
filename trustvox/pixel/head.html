@@ -1,0 +1,38 @@
+<script>
+  window.appsetting_trustvox_storeId = "{{settings.storeId}}";
+  window.appsetting_trustvox_staging = "{{settings.staging}}";
+  window.appsetting_trustvox_colt = "{{settings.colt}}";
+  window.appsetting_trustvox_enableProductGroup = "{{settings.enableProductGroup}}";
+</script>
+
+<style type="text/css">
+  .ts-shelf-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -2rem;
+    margin-bottom: 5px;
+    z-index: 99999;
+  }
+
+  .trustvox-widget-rating .ts-shelf-container,
+  .trustvox-widget-rating .trustvox-shelf-container {
+    display: inline-block;
+  }
+
+  .trustvox-widget-rating span.rating-click-here {
+    top: -3px;
+    display: inline-block;
+    position: relative;
+    color: #DAA81D;
+    font-size: 12px;
+  }
+
+  .trustvox-widget-rating:hover span.rating-click-here {
+    text-decoration: underline;
+  }
+
+  .trustvox-container {
+    width: 100%;
+  }
+</style>

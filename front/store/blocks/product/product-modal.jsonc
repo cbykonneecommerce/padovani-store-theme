@@ -1,0 +1,48 @@
+{
+    "modal-trigger#metro-quadrado": {
+        "props": {
+            "blockClass": "metro-quadrado-trigger-modal"
+        },
+        "children": [
+            "rich-text#metro-quadrado",
+            "modal-layout#metro-quadrado"
+        ]
+    },
+    "rich-text#metro-quadrado": {
+        "props": {
+            "text": "Comprar"
+        }
+    },
+    "modal-layout#metro-quadrado": {
+        "props": {
+            "blockClass": "metro-quadrado-modal"
+        },
+        "children": [
+            "modal-header#metro-quadrado",
+            "modal-content#metro-quadrado"
+        ]
+    },
+    "modal-header#metro-quadrado":{
+        "props": {
+            "blockClass": "metro-quadrado-header-modal"
+        },
+        "children": [
+            "rich-text#title-metro-quadrado"
+        ]
+    },
+    "rich-text#title-metro-quadrado": {
+        "props": {
+            "blockClass": "metro-quadrado-title",
+            "text": "Calcule a metragem"
+        }
+    },
+
+    "modal-content#metro-quadrado": {
+        "props": {
+            "blockClass": "metro-quadrado-content-modal"
+        },
+        "children": [
+            "content-buy-modal"
+        ]
+    }
+}

@@ -1,0 +1,428 @@
+@import "../../../styles/scss/variables";
+
+.BuyTogetherContainer{
+    display: flex;
+    max-width: $desktop;
+    margin: 0 auto;
+    position: inherit;
+    width: 100%;
+
+    .sliderLayoutContainer{
+        max-width: 100%;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        width: 100%;
+        max-width: 100%;
+
+        .slideChildrenContainer{
+            //display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .BuyAreaContainer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0263b4;
+        max-width: $desktop;
+        margin: 35px auto;
+        padding: 10px 15px;
+    
+        @media (max-width: $tablet) {
+            flex-direction: column;
+        }
+    
+        .BuyAreaText, .BuyAreaTextInfo{
+            font-family: $fontPrimary;
+            font-size: 16px;
+            color: $white;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0 20px; 
+            text-align: left;
+
+            @media (max-width: $tablet) {
+                text-align: center;
+            }
+        }
+
+        .BuyAreaTextInfo{
+            font-weight: 400;
+            text-transform: none;
+        }
+    
+        .BuyAreaActionsContainer{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 50%;
+    
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                width: 100%;
+            }
+    
+            .BuyAreaPriceContainer{
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+    
+                @media (max-width: $tablet) {
+                    margin: 10px 0;
+                }
+
+                .productPriceCode{
+                    .price{
+                        font-size: 13px;
+                        text-decoration: line-through;
+                        text-align: right;
+
+                        @media (max-width: $tablet) {
+                            text-align: center;
+                        }
+                    }
+                }
+    
+                .price{
+                    font-family: $fontPrimary;
+                    color: $white;
+                    font-size: 21px;
+                    font-weight: 700;
+
+                    @media (max-width: $tablet) {
+                        text-align: center;
+                    }
+                }
+            }
+    
+            .BuyAreaAddToCart{
+                background-color: $secondary;
+                font-family: $fontSecondary;
+                font-weight: 700;
+                color: $white;
+                font-size: 17px;
+                text-transform: uppercase;
+                width: 100%;
+                max-width: 270px;
+                margin-left: 15px;
+                padding: 10px 0;
+                border: none;
+                outline: none;
+                transition: all .3s ease;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                @media (max-width: $tablet) {
+                    max-width: none;
+                    margin-left: 0;                
+                }
+
+                :hover{
+                    filter: brightness(95%);
+                }
+    
+                &.BuyAreaAddToCartDisabled{
+                    filter: brightness(50%);
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+
+    .sliderTrackContainer{
+        width: 80%;
+        margin: 0 auto;
+
+        @media (max-width: $tablet) {
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        .ImageAmbienceWrapper{
+            max-width: 100%;
+
+            .ImageAmbienceContainer{
+                position: relative;
+    
+                .BuyTogetherModalWrapper{
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+            
+                    &.BuyTogetherModalOpen{
+                        display: flex;
+                        .BuyTogetherModalShelf{
+                            opacity: 1 !important;
+                            pointer-events: all !important;
+                        }
+                    }
+    
+                    .BuyTogetherModalContainer{
+                        position: relative;
+    
+                        .BuyTogetherModalAction{
+                            width: 20px;
+                            height: 20px;
+                            background-color: #4fb8d3;
+                            color: $white;
+                            font-size: 21px;
+                            font-weight: bold;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                
+                        .BuyTogetherModalShelf{
+                            opacity: 0;
+                            pointer-events: none;
+                            transition: all .3s ease-in-out;
+                            width: 150px;
+                            background-color: $white;
+                            padding: 10px;
+                            position: absolute;
+                            z-index: 1;
+                            
+                            .BuyTogetherModalImage{
+                                @media (max-width: $tablet) {
+                                    display: none;
+                                }
+            
+                                .slide {
+                                    padding: 0 2px;
+                                    img{
+                                        border: 1px solid #d5d5d5;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+                
+                            .BuyTogetherModalInfos{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                gap: 4px;
+                
+                                h2{
+                                    font-family: $fontPrimary;
+                                    font-size: 10px;
+                                    text-align: center;
+                                    margin: 0 0 4px;
+                                    color: #3c3c3c;
+                                    text-transform: uppercase;
+                                }
+                
+                                .BuyTogetherModalInfoText{
+                                    font-size: 9px;
+                                    text-transform: uppercase;
+                                    color: #3c3c3c;
+                                    font-family: $fontPrimary;
+                                }
+                
+                                .BuyTogetherModalPrice{
+                                    .price{
+                                        color: #4fb8d3;
+                                        font-size: 18px;
+                                        font-weight: 700;
+                                        font-family: $fontPrimary;
+                                    }
+                                }
+                            }
+                
+                            .BuyTogetherModalButton{
+                                display: block;
+                                width: 100%;
+                                background: red;
+                                border: none;
+                                padding: 5px;
+                                color: #fff;
+                                font-family: $fontPrimary;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                font-size: 10px;
+                                border-radius: 20px;
+                                text-align: center;
+                                transition: all .3s ease;
+                                margin-top: 4px;
+                                cursor: pointer;
+                
+                                :hover{
+                                    filter: brightness(90%);
+                                }
+                            }
+                
+                            .sliderLeftArrow, .sliderRightArrow{
+                                width: 22px;
+                                height: 22px;
+                                background-color: rgba(255, 90, 33, 0.6) !important;
+                                top: initial;
+                            }
+                
+                            .sliderLeftArrow{
+                                left: 0;
+                            }
+                
+                            .sliderRightArrow{
+                                right: 0;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+    
+            .ShelfList{
+                margin-top: 30px;
+                width: 100%;
+                max-width: 100%;
+    
+                .sliderTrack{
+                    gap: 5px;
+                }
+    
+                .sliderTrackContainer {
+                    width: 100%;
+                    max-width: 100%;
+                }
+    
+                .BuyTogetherShelfContainer{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    max-width: 210px;
+                    min-height: 320px;
+                    position: relative;
+                    margin-bottom: 1px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                    border: 1px solid #f3f3f3;
+                    
+                    .BuyTogetherShelfTop{
+                        .paginationDotsContainer{
+                            bottom: 5px;
+                        }
+    
+                    }
+        
+                    .BuyTogetherShelfBottom{
+                        background-color: #f3f3f3;
+                        padding: 5px;
+                        min-height: 81px;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+        
+                        h2{
+                            font-size: 13px;
+                            font-family: $fontPrimary;
+                            font-weight: 700;
+                            color: #5d5d5d;
+                            text-align: center;
+                            margin: 0 0 5px;
+                        }
+        
+                        .BuyTogetherShelfListPrice{
+                            .price{
+                                color: #acacac;
+                                font-size: 14px;
+                                font-weight: 600;
+                                font-family: $fontSecondary;
+                                text-decoration: line-through;
+                                margin-bottom: 10px;
+                                text-align: center;
+                            }
+                        }
+        
+                        .BuyTogetherShelfPrice{
+                            .price{
+                                color: #1faf38;
+                                font-size: 20px;
+                                font-family: $fontPrimary;
+                                font-weight: 700;
+                                text-align: center;
+                            }
+                        }
+                    }
+        
+                    .BuyTogetherShelfButton{
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                    }
+    
+                    .sliderLeftArrow, .sliderRightArrow{
+                        top: initial;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .sliderArrows{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .caretIcon{
+            display: none;
+        }
+    }
+
+    .sliderLeftArrow, .sliderRightArrow{
+        top: 30%;
+
+        // @media (max-width: 768px) {
+        //     top: -5%;
+        // }
+    }
+
+    .sliderLeftArrow {
+        background-color: $orange-arrows !important;
+        border-radius: 30px;
+        height: 30px;
+        width: 30px;
+        left: 15px;
+        transform: rotate(-180deg);
+
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            background-image: $icon-arrow-right-white2;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .sliderRightArrow {
+        background-color: $orange-arrows !important;
+        border-radius: 30px;
+        height: 30px;
+        width: 30px;
+        right: 15px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            display: block;
+            background-image: $icon-arrow-right-white2;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+}

@@ -1,0 +1,35 @@
+.container{
+    width: 100%;
+}
+
+.exclusiveStores{
+    width: 90%;
+    margin: auto;
+}
+
+.exclusiveStores__title{
+    text-align: center;
+    color: #163f6d;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    padding: 10px 0px;
+    margin: 0;
+}
+
+.exclusiveStores__links-container{
+    grid-gap: 7px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.exclusiveStores__link{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 7px;
+}

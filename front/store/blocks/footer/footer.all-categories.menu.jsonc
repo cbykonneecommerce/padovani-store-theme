@@ -1,0 +1,1063 @@
+{
+    "flex-layout.row#all-categories": {
+        "props": {
+            "blockClass": "all-categories"
+        },
+        "children": ["rich-text#title-toda-loja", "custom-menu#all-categories-new"]
+    },
+    "custom-menu#all-categories-new": {
+        "props": {
+            "blockClass":["all-categories"],
+            "isAccordion":true,
+            "breakpoint": 1024,
+            "menu":[
+                {
+                    "__editorItemTitle":"Banheiro",
+                    "type":"Link Padrão",
+                    "url":"#1",
+                    "hasChildren":false,
+                    "column": [
+                        {
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/banheiro/torneiras-e-misturadores",
+                                    "__editorItemTitle": "Torneiras e Misturadores"
+                                },
+                                {
+                                    "url": "/banheiro/acessorios-para-banheiro",
+                                    "__editorItemTitle": "Acessórios para Banheiro"
+                                },
+                                {
+                                    "url": "/banheiro/acabamentos-e-registros",
+                                    "__editorItemTitle": "Acabamentos e Registros"
+                                },
+                                {
+                                    "url": "/banheiro/chuveiros-e-duchas",
+                                    "__editorItemTitle": "Chuveiros e Duchas"
+                                },
+                                {
+                                    "url": "/banheiro/cubas-e-lavatorios",
+                                    "__editorItemTitle": "Cubas e Lavatórios"
+                                },
+                                {
+                                    "url": "/banheiro/instalacao-e-acessorios",
+                                    "__editorItemTitle": "Instalação e Acessórios"
+                                },
+                                {
+                                    "url": "/banheiro/moveis-para-banheiro",
+                                    "__editorItemTitle": "Móveis para Banheiro"
+                                },
+                                {
+                                    "url": "/banheiro/valvulas-de-descarga",
+                                    "__editorItemTitle": "Válvulas de Descarga"
+                                },
+                                {
+                                    "url": "/banheiro/vasos-sanitarios-e-bides",
+                                    "__editorItemTitle": "Vasos Sanitários e Bidês"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#2",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Climatização e Ventilação",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/climatizacao-e-ventilacao/climatizadores",
+                                    "__editorItemTitle": "Climatizadores"
+                                },
+                                {
+                                    "url": "/climatizacao-e-ventilacao/renovadores-de-ar",
+                                    "__editorItemTitle": "Renovadores de Ar"
+                                },
+                                {
+                                    "url": "/climatizacao-e-ventilacao/ventiladores",
+                                    "__editorItemTitle": "Ventiladores"
+                                },
+                                {
+                                    "url": "/climatizacao-e-ventilacao/ar-condicionado",
+                                    "__editorItemTitle": "Ar Condicionado"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#3",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Cozinha e Lavanderia",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores",
+                                    "__editorItemTitle": "Torneiras e Misturadores"
+                                },
+                                {
+                                    "url": "/cozinha-e-lavanderia/acessorios-para-cozinha",
+                                    "__editorItemTitle": "Acessórios para Cozinha"
+                                },
+                                {
+                                    "url": "/cozinha-e-lavanderia/acessorios-para-lavanderia",
+                                    "__editorItemTitle": "Acessórios para Lavanderia"
+                                },
+                                {
+                                    "url": "/cozinha-e-lavanderia/coifas-e-cooktops",
+                                    "__editorItemTitle": "Coifas e Cooktops"
+                                },
+                                {
+                                    "url": "/cozinha-e-lavanderia/pias-e-cubas-para-cozinha",
+                                    "__editorItemTitle": "Pias e Cubas para Cozinha"
+                                },
+                                {
+                                    "url": "/cozinha-e-lavanderia/tanques-para-lavanderia",
+                                    "__editorItemTitle": "Tanques para Lavanderia"
+                                },
+                                {
+                                    "url": "/cozinha-e-lavanderia/bebedouros-e-purificadores",
+                                    "__editorItemTitle": "Bebedouros e Purificadores"
+                                },
+                                {
+                                    "url": "/cozinha-e-lavanderia/gabinetes-para-cozinha",
+                                    "__editorItemTitle": "Gabinetes para Cozinha"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#4",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Decoração",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/decoracao/acessorios-para-decoracao",
+                                    "__editorItemTitle": "Acessórios para Decoração"
+                                },
+                                {
+                                    "url": "/decoracao/adesivo",
+                                    "__editorItemTitle": "Adesivo"
+                                },
+                                {
+                                    "url": "/decoracao/vasos",
+                                    "__editorItemTitle": "Vasos"
+                                },
+                                {
+                                    "url": "/decoracao/forros",
+                                    "__editorItemTitle": "Forros"
+                                }
+                            
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#5",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Elétrica",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/eletrica/acessorios-para-eletrica",
+                                    "__editorItemTitle": "Acessórios para Elétrica"
+                                },
+                                {
+                                    "url": "/eletrica/extensoes-e-filtros-de-linha",
+                                    "__editorItemTitle": "Extensões e Filtros de Linha"
+                                },
+                                {
+                                    "url": "/eletrica/fios-e-cabos",
+                                    "__editorItemTitle": "Fios e Cabos"
+                                },
+                                {
+                                    "url": "/eletrica/plugues-e-adaptadores",
+                                    "__editorItemTitle": "Plugues e Adaptadores"
+                                },
+                                {
+                                    "url": "/eletrica/tomadas-e-interruptores",
+                                    "__editorItemTitle": "Tomadas e Interruptores"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#6",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Ferramentas",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/ferramentas/acessorios-para-ferramentas",
+                                    "__editorItemTitle": "Acessórios para Ferramentas"
+                                },
+                                {
+                                    "url": "/ferramentas/ferramentas-para-jardim",
+                                    "__editorItemTitle": "Ferramentas para Jardim"
+                                },
+                                {
+                                    "url": "/ferramentas/ferramentas-para-construcao",
+                                    "__editorItemTitle": "Ferramentas para Construção"
+                                },
+                                {
+                                    "url": "/ferramentas/ferramentas-eletricas",
+                                    "__editorItemTitle": "Ferramentas Elétricas"
+                                },
+                                {
+                                    "url": "/ferramentas/ferramentas-manuais",
+                                    "__editorItemTitle": "Ferramentas Manuais"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#7",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Ferramentas",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/ferramentas/acessorios-para-ferramentas",
+                                    "__editorItemTitle": "Acessórios para Ferramentas"
+                                },
+                                {
+                                    "url": "/ferramentas/ferramentas-para-jardim",
+                                    "__editorItemTitle": "Ferramentas para Jardim"
+                                },
+                                {
+                                    "url": "/ferramentas/ferramentas-para-construcao",
+                                    "__editorItemTitle": "Ferramentas para Construção"
+                                },
+                                {
+                                    "url": "/ferramentas/ferramentas-eletricas",
+                                    "__editorItemTitle": "Ferramentas Elétricas"
+                                },
+                                {
+                                    "url": "/ferramentas/ferramentas-manuais",
+                                    "__editorItemTitle": "Ferramentas Manuais"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#8",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Hidráulica",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/hidraulica/bomba-hidraulica",
+                                    "__editorItemTitle": "Bomba Hidráulica"
+                                },
+                                {
+                                    "url": "/hidraulica/caixas-d-agua",
+                                    "__editorItemTitle": "Caixas D'Água"
+                                },
+                                {
+                                    "url": "/hidraulica/fossa",
+                                    "__editorItemTitle": "Fossa"
+                                }                            
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#9",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Iluminação",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/iluminacao/externa",
+                                    "__editorItemTitle": "Externa"
+                                },
+                                {
+                                    "url": "/iluminacao/lampadas",
+                                    "__editorItemTitle": "Lâmpadas"
+                                }                           
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#10",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Jardim e Praia",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/jardim-e-praia/acessorios-para-jardim",
+                                    "__editorItemTitle": "Acessórios para Jardim"
+                                },
+                                {
+                                    "url": "/jardim-e-praia/churrasco",
+                                    "__editorItemTitle": "Churrasco"
+                                },
+                                {
+                                    "url": "/jardim-e-praia/ferramentas-para-jardim",
+                                    "__editorItemTitle": "Ferramentas para Jardim"
+                                },
+                                {
+                                    "url": "/jardim-e-praia/moveis",
+                                    "__editorItemTitle": "Móveis"
+                                }                          
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#11",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Porcelanatos e Revestimentos",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/pisos-e-revestimentos/pecas-decorativas",
+                                    "__editorItemTitle": "Peças Decorativas"
+                                },
+                                {
+                                    "url": "/pisos-e-revestimentos/revestimentos",
+                                    "__editorItemTitle": "Revestimentos"
+                                },
+                                {
+                                    "url": "/pisos-e-revestimentos/acessorios-para-revestimentos",
+                                    "__editorItemTitle": "Acessórios para Revestimentos"
+                                },
+                                {
+                                    "url": "/pisos-e-revestimentos/argamassas-e-rejuntes",
+                                    "__editorItemTitle": "Argamassas e Rejuntes"
+                                },
+                                {
+                                    "url": "/pisos-e-revestimentos/pisos",
+                                    "__editorItemTitle": "Pisos"
+                                }                          
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#12",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Portas e Janelas",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/portas-e-janelas/externas-e-abrigo",
+                                    "__editorItemTitle": "Externas e Abrigo"
+                                },
+                                {
+                                    "url": "/portas-e-janelas/acessorios-de-portas-e-janelas",
+                                    "__editorItemTitle": "Acessórios de Portas e Janelas"
+                                },
+                                {
+                                    "url": "/portas-e-janelas/janelas",
+                                    "__editorItemTitle": "Janelas"
+                                },
+                                {
+                                    "url": "/portas-e-janelas/portas",
+                                    "__editorItemTitle": "Portas"
+                                },
+                                {
+                                    "url": "/portas-e-janelas/dobradicas",
+                                    "__editorItemTitle": "Dobradiças"
+                                },
+                                {
+                                    "url": "/portas-e-janelas/fechaduras-travas-e-trincos",
+                                    "__editorItemTitle": "Fechaduras, Travas e Trincos"
+                                }                       
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#13",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Segurança",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/seguranca/acessorios-para-seguranca",
+                                    "__editorItemTitle": "Acessórios para Segurança"
+                                },
+                                {
+                                    "url": "/seguranca/cameras",
+                                    "__editorItemTitle": "Câmeras"
+                                },
+                                {
+                                    "url": "/seguranca/fechadura-eletrica",
+                                    "__editorItemTitle": "Fechadura Elétrica"
+                                },
+                                {
+                                    "url": "/seguranca/interfones",
+                                    "__editorItemTitle": "Interfones"
+                                },
+                                {
+                                    "url": "/seguranca/video-porteiros",
+                                    "__editorItemTitle": "Vídeo Porteiros"
+                                },
+                                {
+                                    "url": "/seguranca/campainhas",
+                                    "__editorItemTitle": "Campainhas"
+                                },
+                                {
+                                    "url": "/seguranca/central-de-seguranca",
+                                    "__editorItemTitle": "Central de Segurança"
+                                }                     
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#14",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Tintas",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/tintas/impermeabilizantes",
+                                    "__editorItemTitle": "Impermeabilizantes"
+                                },
+                                {
+                                    "url": "/tintas/massas",
+                                    "__editorItemTitle": "Massas"
+                                },
+                                {
+                                    "url": "/tintas/solventes-e-removedores",
+                                    "__editorItemTitle": "Solventes e Removedores"
+                                },
+                                {
+                                    "url": "/tintas/tintas",
+                                    "__editorItemTitle": "Tintas"
+                                },
+                                {
+                                    "url": "/tintas/vernizes",
+                                    "__editorItemTitle": "Vernizes"
+                                }                     
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#15",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Utilidades Domésticas",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/utilidades-domesticas/automotivo",
+                                    "__editorItemTitle": "Automotivo"
+                                },
+                                {
+                                    "url": "/utilidades-domesticas/eletrodomesticos",
+                                    "__editorItemTitle": "Eletrodomésticos"
+                                },
+                                {
+                                    "url": "/utilidades-domesticas/fixacao",
+                                    "__editorItemTitle": "Fixação"
+                                },
+                                {
+                                    "url": "/utilidades-domesticas/limpeza",
+                                    "__editorItemTitle": "Limpeza"
+                                },
+                                {
+                                    "url": "/utilidades-domesticas/acessorios-para-cozinha",
+                                    "__editorItemTitle": "Acessórios para Cozinha"
+                                },
+                                {
+                                    "url": "/utilidades-domesticas/utilidades-gerais",
+                                    "__editorItemTitle": "Utilidades Gerais"
+                                },
+                                {
+                                    "url": "/utilidades-domesticas/caixas-e-cestos-organizadores",
+                                    "__editorItemTitle": "Caixas e Cestos Organizadores"
+                                }                  
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#16",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Banheiras e SPAS",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/banheiro/banheiras-e-spas/banheira-de-hidromassagem",
+                                    "__editorItemTitle": "Banheira de Hidromassagem"
+                                },
+                                {
+                                    "url": "/banheiro/banheiras-e-spas/banheira-de-spa",
+                                    "__editorItemTitle": "Banheira de SPA"
+                                },
+                                {
+                                    "url": "/banheiro/banheiras-e-spas/banheira-de-imersao",
+                                    "__editorItemTitle": "Banheira de Imersão"
+                                }                
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "template":"cortina",
+            "full":false,
+            "iconPlus":"assets/icons/iconPlus.svg",
+            "iconMinus":"assets/icons/iconMinus.svg",
+            "iconBack":"assets/icons/iconBack.svg"
+        }
+    },
+    "rich-text#title-toda-loja": {
+        "props": {
+            "text": "Toda Loja",
+            "blockClass": "title-toda-loja"
+        }
+    },
+    //DECA
+    "flex-layout.row#all-categories--deca": {
+        "props": {
+            "blockClass": ["all-categories", "deca"]
+        },
+        "children": ["rich-text#title-toda-loja--deca", "custom-menu#all-categories-new--deca"]
+    },
+    "custom-menu#all-categories-new--deca": {
+        "props": {
+            "blockClass":["all-categories", "deca"],
+            "isAccordion":true,
+            "breakpoint": 1024,
+            "menu":[
+                {
+                    "__editorItemTitle": "Banheiro",
+                    "type": "Link Padrão",
+                    "url": "#1",
+                    "hasChildren": false,
+                    "column": [
+                        {
+                            "__editorItemTitle": "column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/banheiro/torneiras-e-misturadores/deca",
+                                    "__editorItemTitle": "Torneiras e Misturadores"
+                                },
+                                {
+                                    "url": "/banheiro/acessorios-para-banheiro/deca",
+                                    "__editorItemTitle": "Acessórios para Banheiro"
+                                },
+                                {
+                                    "url": "/banheiro/chuveiros-e-duchas/deca",
+                                    "__editorItemTitle": "Chuveiros e Duchas"
+                                },
+                                {
+                                    "url": "/banheiro/cubas-e-lavatorios/deca",
+                                    "__editorItemTitle": "Cubas e lavatórios"
+                                },
+                                {
+                                    "url": "/banheiro/acabamentos-e-registros/deca",
+                                    "__editorItemTitle": "Acabamentos e registros"
+                                },
+                                {
+                                    "url": "/banheiro/valvulas-de-descarga/deca",
+                                    "__editorItemTitle": "Válvulas"
+                                },
+                                {
+                                    "url": "/banheiro/instalacao-e-acessorios/deca",
+                                    "__editorItemTitle": "Instalação e Acessórios"
+                                },
+                                {
+                                    "url": "/banheiro/vasos-sanitarios-e-bides/deca",
+                                    "__editorItemTitle": "Vasos Sanitários e Bidês"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__editorItemTitle": "Cozinha e Lavanderia",
+                    "type": "Link Padrão",
+                    "url": "#2",
+                    "hasChildren": false,
+                    "column": [
+                        {
+                            "__editorItemTitle": "column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/deca",
+                                    "__editorItemTitle": "Torneiras e Misturadores"
+                                },
+                                {
+                                    "url": "/cozinha-e-lavanderia/pias-e-cubas-para-cozinha/deca",
+                                    "__editorItemTitle": "Pias e Cubas para Cozinha"
+                                },
+                                {
+                                    "url": "/cozinha-e-lavanderia/tanques-para-lavanderia/deca",
+                                    "__editorItemTitle": "Tanques para Lavanderia"
+                                },
+                                {
+                                    "url": "/cozinha-e-lavanderia/acessorios-para-lavanderia/deca",
+                                    "__editorItemTitle": "Acessórios para Lavanderia"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__editorItemTitle": "Linhas",
+                    "type": "Link Padrão",
+                    "url": "#3",
+                    "hasChildren": false,
+                    "column": [
+                        {
+                            "__editorItemTitle": "column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/Deca/Anna?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Anna"
+                                },
+                                {
+                                    "url": "/Deca/Aspen?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Aspen"
+                                },
+                                {
+                                    "url": "/Deca/Axis?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Axis"
+                                },
+                                {
+                                    "url": "/Deca/Belle Époque Tradicional?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Belle Époque Tradicional"
+                                },
+                                {
+                                    "url": "/Deca/Clean?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Clean"
+                                },
+                                {
+                                    "url": "/Deca/Coppa?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Coppa"
+                                },
+                                {
+                                    "url": "/Deca/Couple?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Couple"
+                                },
+                                {
+                                    "url": "/Deca/Cubo?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Cubo"
+                                },
+                                {
+                                    "url": "/Deca/Deca Acqua?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Deca Acqua"
+                                },
+                                {
+                                    "url": "/Deca/Deca Hotel?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Deca Hotel"
+                                },
+                                {
+                                    "url": "/Deca/Deca Liv?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Deca Liv"
+                                },
+                                {
+                                    "url": "/Deca/Deca Sense?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Deca Sense"
+                                },
+                                {
+                                    "url": "/Deca/Deca Touch?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Deca Touch"
+                                },
+                                {
+                                    "url": "/Deca/Deca Wish?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Deca Wish"
+                                },
+                                {
+                                    "url": "/Deca/Disco?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Disco"
+                                },
+                                {
+                                    "url": "/Deca/DOT?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "DOT"
+                                },
+                                {
+                                    "url": "/Deca/Dream?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Dream"
+                                },
+                                {
+                                    "url": "/Deca/Dream Clássica?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Dream Clássica"
+                                },
+                                {
+                                    "url": "/Deca/Drop?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Drop"
+                                },
+                                {
+                                    "url": "/Deca/Duna?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Duna"
+                                },
+                                {
+                                    "url": "/Deca/Duna Clássica?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Duna Clássica"
+                                },
+                                {
+                                    "url": "/Deca/Duna Quadratta?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Duna Quadratta"
+                                },
+                                {
+                                    "url": "/Deca/Evidence?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Evidence"
+                                },
+                                {
+                                    "url": "/Deca/Fast?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Fast"
+                                },
+                                {
+                                    "url": "/Deca/Flex?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Flex"
+                                },
+                                {
+                                    "url": "/Deca/Flex Plus?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Flex Plus"
+                                },
+                                {
+                                    "url": "/Deca/Gourmet?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Gourmet"
+                                },
+                                {
+                                    "url": "/Deca/Izy?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Izy"
+                                },
+                                {
+                                    "url": "/Deca/Izy Plus?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Izy Plus"
+                                },
+                                {
+                                    "url": "/Deca/Just?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Just"
+                                },
+                                {
+                                    "url": "/Deca/Kids?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Kids"
+                                },
+                                {
+                                    "url": "/Deca/Level?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Level"
+                                },
+                                {
+                                    "url": "/Deca/Level Mix?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Level Mix"
+                                },
+                                {
+                                    "url": "/Deca/Link?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Link"
+                                },
+                                {
+                                    "url": "/Deca/Link Quadratta?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Link Quadratta"
+                                },
+                                {
+                                    "url": "/Deca/Max?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Max"
+                                },
+                                {
+                                    "url": "/Deca/Net?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Net"
+                                },
+                                {
+                                    "url": "/Deca/Oxford?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Oxford"
+                                },
+                                {
+                                    "url": "/Deca/Pix?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Pix"
+                                },
+                                {
+                                    "url": "/Deca/Polo?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Polo"
+                                },
+                                {
+                                    "url": "/Deca/Polo Clássica?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Polo Clássica"
+                                },
+                                {
+                                    "url": "/Deca/Premium?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Premium"
+                                },
+                                {
+                                    "url": "/Deca/Quadratta?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Quadratta"
+                                },
+                                {
+                                    "url": "/Deca/Quadratta Clássica?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Quadratta Clássica"
+                                },
+                                {
+                                    "url": "/Deca/Single?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Single"
+                                },
+                                {
+                                    "url": "/Deca/Sky?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Sky"
+                                },
+                                {
+                                    "url": "/Deca/Slim?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Slim"
+                                },
+                                {
+                                    "url": "/Deca/Smart?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Smart"
+                                },
+                                {
+                                    "url": "/Deca/Soul?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Soul"
+                                },
+                                {
+                                    "url": "/Deca/Spin?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Spin"
+                                },
+                                {
+                                    "url": "/Deca/Spot?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Spot"
+                                },
+                                {
+                                    "url": "/Deca/Standard?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Standard"
+                                },
+                                {
+                                    "url": "/Deca/Star?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Star"
+                                },
+                                {
+                                    "url": "/Deca/Stick?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Stick"
+                                },
+                                {
+                                    "url": "/Deca/Targa?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Targa"
+                                },
+                                {
+                                    "url": "/Deca/Tube?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Tube"
+                                },
+                                {
+                                    "url": "/Deca/Tre?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Tre"
+                                },
+                                {
+                                    "url": "/Deca/Twin?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Twin"
+                                },
+                                {
+                                    "url": "/Deca/Twist?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Twist"
+                                },
+                                {
+                                    "url": "/Deca/Unic?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Unic"
+                                },
+                                {
+                                    "url": "/Deca/Vogue Plus?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Vogue Plus"
+                                },
+                                {
+                                    "url": "/Deca/Windsor?map=b,specificationFilter_1433",
+                                    "__editorItemTitle": "Windsor"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__editorItemTitle": "Cores Bacias",
+                    "type": "Link Padrão",
+                    "url": "#6",
+                    "hasChildren": false,
+                    "column": [
+                        {
+                            "__editorItemTitle": "column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Branco?PS=16&amp;map=c,c,c,b,specificationFilter_1434",
+                                    "__editorItemTitle": "Branco"
+                                },
+                                {
+                                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Cinza?PS=16&amp;map=c,c,c,b,specificationFilter_1434",
+                                    "__editorItemTitle": "Cinza"
+                                },
+                                {
+                                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Creme?PS=16&amp;map=c,c,c,b,specificationFilter_1434",
+                                    "__editorItemTitle": "Creme"
+                                },
+                                {
+                                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Ébano?PS=16&amp;map=c,c,c,b,specificationFilter_1434",
+                                    "__editorItemTitle": "Ébano"
+                                },
+                                {
+                                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Marrom%20Fosco?PS=16&amp;map=c,c,c,b,specificationFilter_1434",
+                                    "__editorItemTitle": "Marrom Fosco"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "__editorItemTitle": "Cores Metais",
+                    "type": "Link Padrão",
+                    "url": "#7",
+                    "hasChildren": false,
+                    "column": [
+                        {
+                            "__editorItemTitle": "column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url": "/Deca/Black Matte?map=b,specificationFilter_1434",
+                                    "__editorItemTitle": "Black Matte"
+                                },
+                                {
+                                    "url": "/Deca/Black Noir?map=b,specificationFilter_1434",
+                                    "__editorItemTitle": "Black Noir"
+                                },
+                                {
+                                    "url": "/Deca/Cromado?map=b,specificationFilter_1434",
+                                    "__editorItemTitle": "Cromado"
+                                },
+                                {
+                                    "url": "/Deca/Gold?map=b,specificationFilter_1434",
+                                    "__editorItemTitle": "Gold"
+                                },
+                                {
+                                    "url": "/Deca/Gold Matte?map=b,specificationFilter_1434",
+                                    "__editorItemTitle": "Gold Matte"
+                                },
+                                {
+                                    "url": "/Deca/Red Gold?map=b,specificationFilter_1434",
+                                    "__editorItemTitle": "Red Gold"
+                                }
+                            ]
+                        }
+                    ]
+                }          
+            ],
+            "template":"cortina",
+            "full":false,
+            "iconPlus":"assets/icons/iconPlus.svg",
+            "iconMinus":"assets/icons/iconMinus.svg",
+            "iconBack":"assets/icons/iconBack.svg"
+        }
+    },
+    "rich-text#title-toda-loja--deca": {
+        "props": {
+            "text": "Toda loja Deca",
+            "blockClass": ["title-toda-loja", "deca"]
+        }
+    }
+}

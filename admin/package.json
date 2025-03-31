@@ -1,0 +1,19 @@
+{
+  "name": "theme",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "v-run": "vtex unlink --all && vtex link --clean",
+    "v-gulp": "gulp mount && gulp watch",
+    "v-publish": "vtex use prod --production -y && vtex publish -y",
+    "v-deploy": "vtex deploy -y && vtex promote -y"
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "^0.3.6"
+  },
+  "dependencies": {
+    "global": "^4.4.0",
+    "vtex": "^3.0.0"
+  },
+  "version": "0.0.0"
+}

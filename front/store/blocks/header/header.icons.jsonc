@@ -1,0 +1,56 @@
+{
+    "flex-layout.row#header.icons": {
+        "props": {
+            "blockClass": "header-icons",
+            "preserveLayoutOnMobile": true,
+            "verticalAlign": "middle",
+            "colSizing": "auto",
+            "horizontalAlign": "right",
+            "colGap": 3
+        },
+        "children": [
+            // "link#atendimento",
+            "login",
+            "minicart.v2"
+        ]
+    },
+    "link#atendimento": {
+        "props": {
+            "blockClass": "service-channels",
+            "label": "Canais de Atendimento",
+            "href": "/institucional/canais-de-atendimento"
+        }
+    },
+    "login": {
+        "props": {
+            "hideIconLabel": true,
+            "showIconProfile": true
+        }
+    },
+    "image#wishlist": {
+        "props": {
+            "blockClass": "wishlist",
+            "link": {
+                "url": "/account#/wishlist"
+            },
+            "src": "assets/icons/wishlist.svg",
+            "maxHeight": 24
+        }
+    },
+    // MOBILE
+    "flex-layout.row#header.icons.mobile": {
+        "props": {
+            "blockClass": "header-icons-mobile",
+            "preserveLayoutOnMobile": true,
+            "verticalAlign": "middle",
+            "horizontalAlign": "right",
+            "colGap": 4,
+            "colSizing": "auto"
+        },
+        "children": [
+            // "image#wishlist",
+            // "login",
+            "minicart.v2"
+        ]
+    }
+}

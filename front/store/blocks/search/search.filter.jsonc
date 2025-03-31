@@ -1,0 +1,48 @@
+{
+    "flex-layout.col#search.filter": {
+        "props": {
+            "width": "20%"
+        },
+        "children": [
+            "filter-navigator.v3#new"
+        ]
+    },
+    "drawer#filter": {
+        "children": [
+            "filter-navigator.v3#new"
+        ],
+        "blocks": [
+            "drawer-trigger#filter"
+        ],
+        "props": {
+            "blockClass": "filter"
+        }
+    },
+    "drawer-trigger#filter": {
+        "children": [
+            "rich-text#filter-trigger"
+        ]
+    },
+    "rich-text#filter-trigger": {
+        "props": {
+            "blockClass": "filter-trigger",
+            "text": "Filtrar"
+        }
+    },
+    "filter-navigator.v3#new": {
+        "props": {
+            "layout": "desktop",
+            "initiallyCollapsed": true,
+            "showFacetQuantity": true,
+            "truncateFilters": true,
+            "showClearByFilter": true,
+            "fullWidthOnMobile": true,
+            "navigationTypeOnMobile": "collapsible",
+            "appliedFiltersOverview": "show",
+            "totalProductsOnMobile": "show",
+            "updateOnFilterSelectionOnMobile": true,
+            "showQuantityBadgeOnMobile": true,
+            "filtersTitleHtmlTag": "span"
+        }
+    }
+}

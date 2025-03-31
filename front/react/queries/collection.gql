@@ -1,0 +1,10 @@
+query GetCollection($id: ID!) {
+  collection(id: $id) @context(provider: "vtex.catalog-graphql") {
+    name
+    highlight
+    hasExpirationDate
+    status
+    description
+    dateTo
+  }
+}

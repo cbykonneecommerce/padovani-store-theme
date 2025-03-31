@@ -1,0 +1,224 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.orderByButton {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+  background-color: #d3d3d3;
+  padding-right: 0;
+  border-radius: 5px;
+}
+.orderByButton .filterPopupTitle {
+  text-align: left;
+  color: #000;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.orderByButton .orderByText {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  padding-right: 1rem;
+  font-family: "Open Sans";
+  color: #000;
+}
+.orderByButton .caretIcon {
+  color: #7f7f7f;
+}
+
+.searchResultContainer {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0;
+  margin: 0;
+}
+
+.filtersWrapper .filter__container {
+  padding: 1rem;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.filtersWrapper .filter__container .filter {
+  text-transform: uppercase;
+  background-color: #7e8288;
+  border-radius: 5px;
+  font-family: "Open Sans";
+  padding: 10px;
+  color: #fff;
+  font-weight: 900;
+}
+.filtersWrapper .filter__container .filter .filterTitleSpan {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.filtersWrapper .filter__container .filter .filterTitleSpan :first-child {
+  margin: 0;
+}
+.filtersWrapper .filter__container .filter .filterTitleSpan :global(.vtex-tag) {
+  background: #ffffff;
+  color: #000000;
+}
+.filtersWrapper .filter__container .filter .filterIcon {
+  padding: 0 0.3rem;
+}
+.filtersWrapper .filter__container .filter .filterIcon .caretIcon {
+  color: #ffffff;
+}
+.filtersWrapper .filter__container .filter .filterSelectedFilters {
+  display: none;
+}
+.filtersWrapper .filter__container .filterTemplateOverflow {
+  border: none;
+  padding-bottom: 0;
+}
+.filtersWrapper .filter__container .filterTemplateOverflow .filterContent {
+  padding-top: 10px;
+}
+.filtersWrapper .filter__container .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__line-container) {
+  display: flex;
+  align-items: center;
+}
+.filtersWrapper .filter__container .filterTemplateOverflow .filterContent .filterItem :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container) {
+  border-color: #000;
+  border-width: 1px;
+}
+.filtersWrapper .filter__container .filterTemplateOverflow .filterContent .filterItem--selected :global(.vtex-checkbox__label) {
+  color: #012169;
+}
+
+.gallery {
+  margin-bottom: 32px;
+  padding-left: 2rem;
+}
+@media (max-width: 1024px) {
+  .gallery {
+    padding: 0 2px;
+  }
+}
+
+.gallery--grid {
+  align-items: flex-start;
+  max-width: 1440px;
+  margin: auto;
+}
+@media (max-width: 1365px) {
+  .gallery--grid {
+    max-width: 98vw;
+  }
+}
+
+.galleryTitle--layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3c3c3c;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .galleryTitle--layout {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .galleryItem {
+    padding: 3px;
+  }
+}
+.galleryItem :global(.vtex-flex-layout-0-x-flexRowContent--row-add-to-cart) :global(.vtex-button) {
+  max-height: 36px;
+}
+
+.galleryLayoutSwitcher .galleryLayoutOptionButton--three {
+  filter: grayscale(1);
+}
+.galleryLayoutSwitcher .galleryLayoutOptionButton--three.galleryLayoutOptionButton--selected {
+  filter: unset;
+}
+.galleryLayoutSwitcher .galleryLayoutOptionButton--three::after {
+  width: 40px;
+  height: 40px;
+  display: block;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='4' height='20' rx='2' fill='%23EB665B'/%3E%3Crect x='8' width='4' height='20' rx='2' fill='%23EB665B'/%3E%3Crect x='16' width='4' height='20' rx='2' fill='%23EB665B'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galleryLayoutSwitcher .galleryLayoutOptionButton--four {
+  filter: grayscale(1);
+}
+.galleryLayoutSwitcher .galleryLayoutOptionButton--four.galleryLayoutOptionButton--selected {
+  filter: unset;
+}
+.galleryLayoutSwitcher .galleryLayoutOptionButton--four::after {
+  width: 40px;
+  height: 40px;
+  display: block;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='10' viewBox='0 0 28 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='4' height='10' rx='2' fill='%23EB665B'/%3E%3Crect x='8' width='4' height='10' rx='2' fill='%23EB665B'/%3E%3Crect x='16' width='4' height='10' rx='2' fill='%23EB665B'/%3E%3Crect x='24' width='4' height='10' rx='2' fill='%23EB665B'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.buttonShowMore--layout .buttonShowMore :global(.vtex-button) {
+  width: max-content;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #012169;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  margin-bottom: 15px;
+}
+.buttonShowMore--layout .buttonShowMore :global(.vtex-button) :global(.vtex-button__label) {
+  text-align: center;
+  margin: auto;
+}
+
+.filterTemplateOverflow {
+  overflow: hidden;
+  max-height: unset !important;
+}
+.filterTemplateOverflow .seeMoreButton {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: 1px solid #7e8288;
+  margin-top: 12px;
+}
+
+.filter__container--priceRange :global(.vtex-slider-container) {
+  padding: 0 10px;
+}
+
+.searchNotFound {
+  padding: 30px;
+}
+.searchNotFound .searchNotFoundInfo {
+  padding: 0 !important;
+}
+
+.filter__container--base {
+  display: none;
+}
+
+.filter__container--category-1 .filterAvailable .filterTitleSpan {
+  font-size: 0px !important;
+}
+.filter__container--category-1 .filterAvailable .filterTitleSpan::before {
+  content: "Departamento";
+  font-size: 14px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

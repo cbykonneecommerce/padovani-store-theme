@@ -1,0 +1,71 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.closeContainerIcon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 999999999;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+@media (max-width: 1024px) {
+  .closeContainerIcon {
+    right: 5px;
+    top: 5px;
+    transform: none;
+    width: 20px;
+    height: 20px;
+  }
+}
+.closeContainerIcon .leftright {
+  height: 2px;
+  width: 15px;
+  position: absolute;
+  background-color: #000000;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+.closeContainerIcon .rightleft {
+  height: 3px;
+  width: 15px;
+  position: absolute;
+  background-color: #000000;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+.closeContainerIcon label {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  margin: 60px 0 0 5px;
+  position: absolute;
+}
+.closeContainerIcon:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #FF5A21;
+}
+.closeContainerIcon:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #FF5A21;
+}
+.closeContainerIcon:hover label {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .ContainerModalUserMeasurementsOff .closeContainerIcon,
+  .ContainerModalUserMeasurements .closeContainerIcon,
+  .ContainerModalTable .closeContainerIcon,
+  .ContainerModalTableOff .closeContainerIcon {
+    top: 18px;
+  }
+}

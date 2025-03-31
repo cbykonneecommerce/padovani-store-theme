@@ -1,0 +1,135 @@
+@import "./variables";
+
+.container {
+    transition: all .5s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    background: $white;
+    border-radius: 15px;
+    max-width: unset !important;
+    text-align: left;
+    padding: 7px 17px 12px;
+    transform: translateY(15px);
+    margin: 0 5px;
+
+    @media (max-width: $tablet) {
+        padding: 7px 15px 0;
+    }
+
+    :global(.vtex-store-components-3-x-container) {
+        width: 100%;
+    }
+
+    .element {
+        padding: 0;
+        display: flex;
+        justify-content: space-between !important;
+
+        &:hover {
+            :global(.vtex-button) {
+                max-height: 36px;
+            }
+
+            .image {
+                transform: scale(1.05);
+            }
+        }
+
+        .imageContainer {
+            width: 100% !important;
+            max-height: unset !important;
+            text-align: center;
+
+            .image {
+                position: relative !important;
+                height: unset !important;
+                opacity: 1 !important;
+                margin: auto;
+                transition: all .3s ease-in-out;
+            }
+
+            .image--hover {
+                position: absolute !important;
+                opacity: 0 !important;
+                display: block !important;
+                transition: linear .25s all;
+            }
+        }
+
+        .nameContainer {
+            color: $dark;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 0;
+            padding-top: 0 !important;
+            min-height: 75px;
+
+            .productBrand {
+                font-size: $textDefault;
+                font-family: $fontPrimary;
+                // font-weight: $heavy;
+                text-align: left;
+                text-transform: capitalize;
+                color: $gray-6;
+                font-size: $size-2-custom;
+                margin: 0 0 5px;
+                display: block;
+                line-height: 1.2em;
+                max-height: 3.6em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+            }
+
+            @media(max-width: $tablet) {
+                min-height: auto;
+            }
+        }
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRowContent--row-add-to-cart) {
+        :global(.vtex-button) {
+            border: none;
+            background-color: #09CB19;
+            min-height: initial !important;
+            max-height: 0;
+            border-radius: 0;
+            transition: all .5s ease;
+
+            @media (max-width: $tablet) {
+                max-height: 36px;
+            }
+
+            :global(.vtex-button__label) {
+                padding: 8px 0 !important;
+                height: fit-content;
+
+                :global(.vtex-add-to-cart-button-0-x-buttonDataContainer) {
+                    :global(.vtex-add-to-cart-button-0-x-buttonText) {
+                        font-family: $fontPrimary;
+                        color: $white;
+                        font-weight: $heavy;
+                        font-size: $size-custom-3;
+                        text-transform: uppercase;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        &::before {
+                            content: "";
+                            display: block;
+                            background-image: $add-to-cart-icon;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            width: 27px;
+                            height: 20px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

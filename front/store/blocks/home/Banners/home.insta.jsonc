@@ -1,0 +1,320 @@
+{
+    "responsive-layout.mobile#home.instagram": {
+        "children": [
+            "flex-layout.row#home.instagram",
+            "flex-layout.row#home.instagram-2"
+        ]
+    },
+    
+    "flex-layout.row#home.instagram": {
+        "title": "Home - Instagram",
+        "props": {
+            "blockClass": ["home-instagram","home-instagram-box"],
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "flex-layout.row#home.instagram-01",
+            "flex-layout.row#home.instagram-02",
+            "flex-layout.row#home.instagram-03",
+            "flex-layout.row#home.instagram-04"
+        ]
+    },
+    "flex-layout.row#home.instagram-01": {
+        "title": "Home - Instagram 01",
+        "props": {
+            "blockClass": "home-instagram"
+        },
+        "children": [
+            "image#instagram-01",
+            "rich-text#legenda-01"
+        ]
+    },
+    "image#instagram-01": {
+        "title": "Imagem 01 - Insta",
+        "props": {
+            "maxHeight": 50,
+            "src": "assets/images/background.png",
+            "blockClass": "image-instagram"
+        }
+    },
+    "rich-text#legenda-01": {
+        "title": "Legenda 01 - Insta",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Pegue seu cupom",
+            "blockClass": [
+                "home-instagram"
+            ]
+        }
+    },
+    "flex-layout.row#home.instagram-02": {
+        "title": "Home - Instagram 02",
+        "props": {
+            "blockClass": "home-instagram"
+        },
+        "children": [
+            "image#instagram-02",
+            "rich-text#legenda-02"
+        ]
+    },
+    "image#instagram-02": {
+        "title": "Imagem 02 - Insta",
+        "props": {
+            "maxHeight": 50,
+            "src": "assets/images/background.png",
+            "blockClass": "image-instagram"
+        }
+    },
+    "rich-text#legenda-02": {
+        "title": "Legenda 02 - Insta",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Ofertas Exclusivas",
+            "blockClass": [
+                "home-instagram"
+            ]
+        }
+    },
+    "flex-layout.row#home.instagram-03": {
+        "title": "Home - Instagram 03",
+        "props": {
+            "blockClass": "home-instagram"
+        },
+        "children": [
+            "image#instagram-03",
+            "rich-text#legenda-03"
+        ]
+    },
+    "image#instagram-03": {
+        "title": "Imagem 03 - Insta",
+        "props": {
+            "maxHeight": 50,
+            "src": "assets/images/background.png",
+            "blockClass": "image-instagram"
+        }
+    },
+    "rich-text#legenda-03": {
+        "title": "Legenda 03 - Insta",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Inspire-se",
+            "blockClass": [
+                "home-instagram"
+            ]
+        }
+    },
+    "flex-layout.row#home.instagram-04": {
+        "title": "Home - Instagram 04",
+        "props": {
+            "blockClass": "home-instagram"
+        },
+        "children": [
+            "image#instagram-04",
+            "rich-text#legenda-04"
+        ]
+    },
+    "image#instagram-04": {
+        "title": "Imagem 04 - Insta",
+        "props": {
+            "maxHeight": 50,
+            "src": "assets/images/background.png",
+            "blockClass": "image-instagram"
+        }
+    },
+    "rich-text#legenda-04": {
+        "title": "Legenda 04 - Insta",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Outlet",
+            "blockClass": [
+                "home-instagram"
+            ]
+        }
+    },
+    // INSTAGRAM BOTTOM
+    "flex-layout.row#home.instagram-2": {
+        "title": "Home - Instagram",
+        "props": {
+            "blockClass": "home-instagram-2",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "image#instagram-05",
+            "rich-text#legenda-05"
+           
+        ]
+    },
+    "flex-layout.row#home.instagram-2-new": {
+        "title": "Home - Instagram",
+        "props": {
+            "blockClass": "home-instagram-2-new-mob",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.row#init-insta-mob",
+            "image#new-banner01"
+        ]
+    },
+    "flex-layout.row#home.instagram-3": {
+        "title": "Home - Instagram",
+        "props": {
+            "blockClass": "home-instagram-2-new-mob",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.row#init-insta-mob",
+            "image#new-banner02"
+        ]
+    },
+    "flex-layout.row#home.instagram-4": {
+        "title": "Home - Instagram",
+        "props": {
+            "blockClass": "home-instagram-2-new-mob",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.row#init-insta-mob",
+            "image#new-banner03"
+        ]
+    },
+    "flex-layout.row#home.instagram-5": {
+        "title": "Home - Instagram",
+        "props": {
+            "blockClass": "home-instagram-2-new-mob",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.row#init-insta-mob",
+            "image#new-banner04"
+        ]
+    },
+    "flex-layout.row#home.instagram-6": {
+        "title": "Home - Instagram",
+        "props": {
+            "blockClass": "home-instagram-2-new-mob",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.row#init-insta-mob",
+            "image#new-banner05"
+        ]
+    },
+    "flex-layout.row#home.instagram-7": {
+        "title": "Home - Instagram",
+        "props": {
+            "blockClass": "home-instagram-2-new-mob",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.row#init-insta-mob",
+            "image#new-banner06"
+        ]
+    },
+
+ "flex-layout.row#init-insta-mob": {
+   "children": [
+    "image#instagram-05",
+    "rich-text#legenda-05"
+   ],
+   "props": {
+     "blockClass": ["init-insta-mob"]
+   }
+ },
+
+    "image#new-banner01": {
+        "title": "Banner mobile",
+        
+        "props": {
+            "src": "/arquivos/banner1.webp",
+            "maxHeight": 370,
+            "link": {
+                "url": "/"
+              }
+        }
+    },
+    "image#new-banner02": {
+        "title": "Banner mobile",
+        
+        "props": {
+            "src": "/arquivos/banner2.webp",
+            "maxHeight": 370,
+            "link": {
+                "url": "/"
+              }
+        }
+    },
+    "image#new-banner03": {
+        "title": "Banner mobile",
+        
+        "props": {
+            "src": "/arquivos/banner3.webp",
+            "maxHeight": 370,
+            "link": {
+                "url": "/"
+              }
+        }
+    },
+    "image#new-banner04": {
+        "title": "Banner mobile",
+        
+        "props": {
+            "src": "/arquivos/banner4.webp",
+            "maxHeight": 370,
+            "link": {
+                "url": "/"
+              }
+        }
+    },
+    "image#new-banner05": {
+        "title": "Banner mobile",
+        
+        "props": {
+            "src": "/arquivos/banner5.webp",
+            "maxHeight": 370,
+            "link": {
+                "url": "/"
+              }
+        }
+    },
+    "image#new-banner06": {
+        "title": "Banner mobile",
+        
+        "props": {
+            "src": "/arquivos/banner6.webp",
+            "maxHeight": 370,
+            "link": {
+                "url": "/"
+              }
+        }
+    },
+    "image#instagram-05": {
+        "title": "Imagem 05 - Insta",
+        "props": {
+            "maxHeight": 50,
+            "src": "assets/images/background.png",
+            "blockClass": "image-instagram"
+        }
+    },
+    "rich-text#legenda-05": {
+        "title": "Legenda 05 - Insta",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Padovani Construção \n Impermeabilizantes",
+            "blockClass": [
+                "home-instagram"
+            ]
+        }
+    }
+}

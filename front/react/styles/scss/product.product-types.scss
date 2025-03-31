@@ -1,0 +1,143 @@
+@import "../../../styles/scss/variables";
+
+.ProductTypesContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    margin: 16px 0;
+    padding: 16px 0;
+
+    .ProductTypesTitle{
+        font-family: $fontPrimary;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+        color: $white;
+        margin: 0 0 18px;
+    }
+
+    .ProductTypesCardContainer{
+        padding: 0;
+        margin: 0 10px;
+        list-style: none;
+        width: 100%;
+        
+        .ProductTypesCardWrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+
+            @media (min-width: $tablet) {
+                margin: 0 20px;
+                max-width: 337px;
+            }
+
+            @media (max-width: $tablet) {
+                max-width: none;
+            }
+            
+            figure{
+                margin: 0;
+                width: 100%;
+                img{
+                    border-radius: 50%;
+                    width: 100%;
+                }
+            }
+
+            figcaption{
+                h3{
+                    font-family: $fontPrimary;
+                    color: $white;
+                    font-weight: 800;
+                    font-size: 16px;
+                    margin: 8px 0;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                p{
+                    font-family: $fontPrimary;
+                    color: $white;
+                    font-weight: 600;
+                    font-size: 12px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+
+            a{  
+                font-family: $fontPrimary;
+                text-transform: uppercase;
+                width: auto;
+                display: inline-block;
+                margin: auto;
+                -webkit-border-radius: 30px;
+                border-radius: 30px;
+                background-color: #7e8288;
+                color: #fff;
+                font-size: 0.875rem;
+                padding: .5rem 1.5rem;
+                transition: background .7s ease;
+                border: 1px solid #fff;
+
+                &:hover{
+                    background-color: #e1b939;
+                }
+            }
+        }
+    }
+
+    .sliderArrows{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .caretIcon{
+            display: none;
+        }
+    }
+
+    .sliderLeftArrow {
+        background-color: $orange-arrows !important;
+        border-radius: 30px;
+        height: 30px;
+        width: 30px;
+        left: 15px;
+        transform: rotate(-180deg);
+
+        &::before {
+            content: "";
+            display: block;
+            background-image: $icon-arrow-right-white2;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .sliderRightArrow {
+        background-color: $orange-arrows !important;
+        border-radius: 30px;
+        height: 30px;
+        width: 30px;
+        right: 15px;
+
+        &::before {
+            content: "";
+            display: block;
+            background-image: $icon-arrow-right-white2;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

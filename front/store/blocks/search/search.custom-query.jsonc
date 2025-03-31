@@ -1,0 +1,70 @@
+{
+    "store.custom#custom-search-1": {
+        "blocks": [
+            "flex-layout.row#customQuery-1"
+        ]
+    },
+    "flex-layout.row#customQuery-1": {
+        "children": [
+            "search-result-layout.customQuery#customSearch-1"
+        ]
+    },
+    "search-result-layout.customQuery#customSearch-1": {
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": false,
+                "maxItemsPerPage": 12,
+                "queryField": "138",
+                "mapField": "productClusterIds"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#title": {
+        "children": [
+            "rich-text#title-layout",
+            "flex-layout.row#result"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "preventRouteChange": false,
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+    "rich-text#title-layout": {
+        "props": {
+            "text": "## Coleção de Natal",
+            "blockClass": ["title-layout"]
+        },
+        "title": "Título da Busca"
+    },
+    "search-result-layout.mobile#title": {
+        "children": [
+            "rich-text#title-layout",
+            "flex-layout.row#result"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            }
+        }
+    },
+    "flex-layout.row#filter-mobile": {
+        "props": {
+            "width": "20%"
+        },
+        "children": [
+            "filter-navigator.v3#new"
+        ]
+    }
+}

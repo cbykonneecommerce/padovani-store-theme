@@ -1,0 +1,53 @@
+{
+    //DECA: 2000001
+  //DOCOL: 2000019
+  // DECLARA O NOVO FOOTER COMO VAZIO
+  "footer#product": {
+    "blocks": ["footer-layout.desktop#empty", "footer-layout.mobile#empty"]
+  },
+  "footer-layout.desktop#empty": {
+    "children": []
+  },
+
+  "footer-layout.mobile#empty": {
+    "children": []
+  },
+  // DECLARA A CONDIÇÃO DO FOOTER NORMAL (SE DIFERENTE DESTAS MARCAS, RENDERIZAR TOPO NORMAL)
+
+  "condition-layout.product#footercommon": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "brandId",
+          "arguments": {
+            "id": ["2000001"]
+          }
+        }
+      ],
+      "matchType": "none",
+      "Then": "footer"
+    }
+  },
+  // DECLARA A CONDIÇÃO DO FOOTER DECA
+
+  "condition-layout.product#footer-deca": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "brandId",
+          "arguments": {
+            "id": "2000001"
+          }
+        }
+      ],
+      "Then": "footer#deca"
+    }
+  },
+  // FOOTER DECA
+  "footer#deca": {
+    "blocks": [
+      "footer-layout.desktop#decaa",
+      "footer-layout.mobile#deca"
+    ]
+  }
+}

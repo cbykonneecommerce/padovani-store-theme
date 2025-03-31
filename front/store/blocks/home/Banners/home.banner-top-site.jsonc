@@ -1,0 +1,40 @@
+{
+  "toggle-layout#banner-topo": {
+    "title": "Mostrar banner Topo?",
+    "props": {
+      "renderChildren": false
+    },
+    "children": [
+      "list-context.image-list#top-banner"
+    ]
+  },
+  "list-context.image-list#top-banner": {
+      "title": "Banner",
+      "children": [
+        "slider-layout#top-banner-site"
+      ],
+      "props": {
+          "preload": true,
+          "images": [
+              {
+                "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/8ea22e74-ef62-454b-afe4-aa7ffba0aec0___08726ff07a84156006178bff38444ba5.jpg",
+                "mobileImage": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/8ea22e74-ef62-454b-afe4-aa7ffba0aec0___08726ff07a84156006178bff38444ba5.jpg"
+              }
+          ]
+      }
+  },
+  "slider-layout#top-banner-site": {
+      "props": {
+          "itemsPerPage": {
+              "desktop": 1,
+              "tablet": 1,
+              "phone": 1
+          },
+          "fullWidth": true,
+          "infinite": false,
+          "showNavigationArrows": "never",
+          "showPaginationDots": "never",
+          "blockClass": "top-banner-site"
+      }
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "rich-text#footer.copyright": {
+        "title": "Copyright",
+        "props": {
+          "text": "Todos os direitos reservados © 2023 | We.Digi Brasil Serviços Digitais LTDA. \n CNPJ: 03.167.121/0001-10",
+          "blockClass": "footer-copyright"
+        }
+    },
+    "rich-text#footer.institucional": {
+        "title": "Institucional",
+        "props": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut dolor laoreet, sodales libero dapibus, condimentum quam. Proin feugiat lorem ex, vel eleifend risus egestas a.",
+          "blockClass": "footer-institucional"
+        }
+    },
+    "rich-text#footer.dados": {
+      "title": "Atendimento",
+      "props": {
+        "blockClass": "footer-infos", 
+        "text": "PADOVANI & PADOVANI LTDA. - INSCRITA NO CNPJ: 50.223.692/0004-58 COM SEDE NA RUA PARQUE DO VARVITO, 100 - BAIRRO NOSSA SENHORA DA CANDELÁRIA - ITU - SÃO PAULO - CEP:13310-161"
+      }
+    },
+    "rich-text#footer.televendas": {
+      "title": "Televendas",
+      "props": {
+        "blockClass": "footer-infos",
+        "text": "**Televendas** Você também pode ligar para: \n *(11) 2090-2660* \n\n Segunda a Sexta, das 9:00h às 18:00h"
+      }
+    },
+    "rich-text#footer.loja-fisica": {
+      "title": "Loja Física",
+      "props": {
+        "blockClass": "footer-infos",
+        "text": "**Loja Física** Praça Silvio Romero, 55 - CJ 35\n Tatuapé, São Paulo/SP \n CEP: 03323-000,"
+      }
+    } 
+}

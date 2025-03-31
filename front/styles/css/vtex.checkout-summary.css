@@ -1,0 +1,42 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.summaryItemLabel {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.6em;
+  letter-spacing: 0.025em;
+  color: #878787;
+}
+
+.price {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.6em;
+  letter-spacing: 0.025em;
+  color: #878787;
+}
+
+.summaryItemContainer:last-child .summaryItemPrice .price {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.6em;
+  text-align: right;
+  letter-spacing: 0.025em;
+  color: #878787;
+}
+.summaryItemContainer:last-child .summaryItemLabel {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.6em;
+  text-align: right;
+  letter-spacing: 0.025em;
+  color: #878787;
+}

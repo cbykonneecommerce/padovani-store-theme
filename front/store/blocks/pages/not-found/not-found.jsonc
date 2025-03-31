@@ -1,0 +1,96 @@
+{
+    "flex-layout.row#not-found": {
+        "props": {
+            "blockClass": "not-found"
+        },
+        "children": [
+            "flex-layout.col#not-found"
+        ]
+    },
+    "flex-layout.col#not-found": {
+        "props": {
+            "blockClass": "not-found",
+            "horizontalAlign": "around",
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "flex-layout.row#not-found-header",
+            "flex-layout.row#not-found-shelf"
+        ]
+    },
+    "flex-layout.col#not-found-image": {
+        "props": {
+            "blockClass": "not-found-image",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "image#404"
+        ]
+    },
+    "flex-layout.col#not-found-search": {
+        "props": {
+            "blockClass": "not-found-search",
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "rich-text#not-found",
+            "linx-autocomplete#default"
+        ]
+    },
+    "flex-layout.row#not-found-header": {
+        "props": {
+            "blockClass": "not-found-header"
+        },
+        "children": [
+            "flex-layout.col#not-found-image",
+            "flex-layout.col#not-found-search"
+        ]
+    },
+    "image#404": {
+        "props": {
+            "blockClass": "not-found",
+            "src": "assets/icons/404.svg",
+            "maxHeight": 350
+        }
+    },
+    "rich-text#not-found": {
+        "props": {
+            "blockClass": "not-found-text",
+            "text": "# Página não encontrada \n Por favor, verifique se digitou corretamente o endereço da página ou utilize a barra de pesquisa para encontrar o conteúdo desejado. "
+        }
+    },
+    "flex-layout.row#not-found-shelf": {
+        "title": "Vitrine",
+        "props": {
+            "blockClass": "shelf"
+        },
+        "children": [
+            "flex-layout.col#not-found-shelf"
+        ]
+    },
+    "rich-text#home.not-found-shelf": {
+        "title": "Título",
+        "props": {
+            "text": "Talvez possa te ajudar",
+            "blockClass": "home-title-shelf"
+        }
+    },
+    "flex-layout.col#not-found-shelf": {
+        "children": [
+            "rich-text#home.not-found-shelf",
+            "list-context.product-list#not-found"
+        ]
+    },
+    "list-context.product-list#not-found": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelfs"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    }
+}

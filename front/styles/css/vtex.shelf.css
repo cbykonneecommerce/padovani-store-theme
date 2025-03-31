@@ -1,0 +1,122 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.relatedProducts {
+  margin: 30px auto;
+}
+.relatedProducts .title {
+  position: relative;
+  margin: 0;
+  background: #012169;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 0 10px 40px;
+  text-transform: uppercase;
+  z-index: 2;
+  color: #ffffff;
+  border-right: 5.3rem solid #3e64ba;
+  border-radius: 0px 45px 45px 0px;
+  display: flex;
+  justify-content: flex-start;
+}
+@media (max-width: 1024px) {
+  .relatedProducts .title {
+    font-size: 16px;
+    line-height: normal;
+    max-width: 300px;
+    margin-left: 16px;
+  }
+}
+@media (max-width: 300px) {
+  .relatedProducts .title {
+    max-width: 280px;
+    margin-left: 0;
+  }
+}
+.relatedProducts .title::after {
+  content: "";
+  display: block;
+  width: 1.7rem;
+  height: 100%;
+  background: #012169;
+  border-radius: 0px 45px 45px 0px;
+  position: absolute;
+  right: -1.375rem;
+  top: 0;
+  z-index: 1;
+}
+.relatedProducts .shelfContentContainer .sliderContainer {
+  max-width: 90.5vw !important;
+}
+@media (max-width: 1024px) {
+  .relatedProducts .shelfContentContainer .slide {
+    padding: 5px 0 20px 0 !important;
+  }
+}
+.relatedProducts .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.relatedProducts .arrow .caretIcon {
+  display: none;
+}
+.relatedProducts .arrowLeft {
+  background-color: rgba(255, 90, 33, 0.8) !important;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  transform: rotate(-180deg) translateY(50%);
+  left: -15px;
+}
+.relatedProducts .arrowLeft::before {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='none'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z' fill='white'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 300px) {
+  .relatedProducts .arrowLeft {
+    left: -9px;
+  }
+}
+.relatedProducts .arrowRight {
+  background-color: rgba(255, 90, 33, 0.8) !important;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  right: -15px;
+}
+.relatedProducts .arrowRight::before {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='none'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z' fill='white'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+@media (max-width: 300px) {
+  .relatedProducts .arrowRight {
+    right: -9px;
+  }
+}
+
+.dot {
+  display: none;
+  transition: all 0.25s linear;
+  background-color: #bfbfbf;
+  border-radius: 5px;
+  height: 5px;
+}
+.dot.dot--isActive {
+  background-color: #012169;
+  width: 30px;
+}

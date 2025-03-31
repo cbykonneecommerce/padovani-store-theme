@@ -1,0 +1,103 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.FilterCustomContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #34343c;
+  border-radius: 16px;
+  padding: 10px;
+  height: fit-content;
+  margin-right: 30px;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .FilterCustomContainer {
+    margin-right: 0;
+  }
+}
+.FilterCustomContainer.FilterClose .FilterCustomWrapper {
+  max-height: 0;
+}
+.FilterCustomContainer.FilterClose button svg {
+  transform: rotate(90deg);
+}
+.FilterCustomContainer.FilterOpen .FilterCustomWrapper {
+  max-height: 100rem;
+}
+.FilterCustomContainer.FilterOpen button svg {
+  transform: rotate(180deg);
+}
+@media (min-width: 1024px) {
+  .FilterCustomContainer.IsAbstolute {
+    position: fixed;
+    top: 10px;
+    width: 230px;
+  }
+  .FilterCustomContainer.NotAbstolute {
+    position: initial;
+  }
+}
+.FilterCustomContainer .FilterCustomImage {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 1024px) {
+  .FilterCustomContainer .FilterCustomImage {
+    display: none;
+  }
+}
+.FilterCustomContainer .FilterCustomImage.ImageOn {
+  height: 200px;
+}
+.FilterCustomContainer .FilterCustomImage.ImageOff {
+  height: 0px;
+}
+.FilterCustomContainer button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FF5A21;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px 0;
+}
+.FilterCustomContainer button svg {
+  color: #FF5A21;
+  transition: all 0.3s ease-in-out;
+}
+.FilterCustomContainer .FilterCustomWrapper {
+  padding: 5px 0 0 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.FilterCustomContainer .FilterCustomWrapper .FilterCustomItem .FilterCustomItemLink {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 5px;
+}
+.FilterCustomContainer .FilterCustomWrapper .FilterCustomItem .FilterCustomItemLink .FilterCustomMarker {
+  height: 7px;
+  width: 7px;
+  border-radius: 30px;
+  display: block;
+  background-color: #FF5A21;
+  margin-right: 5px;
+}

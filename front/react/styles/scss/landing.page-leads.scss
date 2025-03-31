@@ -1,0 +1,223 @@
+@import "../../../styles/scss/variables";
+
+.LeadsContainer{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, #193761 50%, #f2f2f2 50%);
+    height: 100vh;
+    
+    @media (max-width: $tablet) {
+        background: transparent;
+    }
+
+    .LeadsHeader {
+        display: flex;
+
+        @media (max-width: 1160px) {
+            background-color: #193761;
+        }
+
+        @media (max-width: $phone) {
+            flex-direction: column;
+        }
+
+        .LeadsHeaderImage, .LeadsHeaderSocial{
+            width: 50%;
+            display: flex;
+
+            @media (max-width: $phone) {
+               width: 100%;
+            }
+        }
+
+        .LeadsHeaderImage{
+            justify-content: flex-start;
+            padding: 15px;
+
+            @media (max-width: $phone) {
+                justify-content: center;
+            }
+
+            img{
+                width: fit-content;
+                height: fit-content;
+            }
+        }
+
+        .LeadsHeaderSocial{
+            justify-content: flex-end;
+            align-items: center;
+            padding: 15px;
+
+            @media (max-width: $phone) {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h2{
+                margin: 0 8px 0 0;
+                font-family: $fontPrimary;
+                font-size: 16px;
+                font-weight: 400;
+                color: $black;
+                
+                @media (max-width: $tablet) {
+                    color: $white;
+                }
+            }
+
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                @media (max-width: $phone) {
+                    margin-top: 8px;
+                }
+
+                li:not(:last-child) {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+
+    .LeadsMainSectionContainer{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+
+        @media (max-width: 1160px) {
+            flex-direction: column;
+        }
+
+        .LeadsLeftContent, .LeadsRightContent{
+            width: 50%;
+            height: 100%;
+            z-index: 2;
+
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
+
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                z-index: 2;
+
+                @media (min-width: 1160px) {
+                    margin-top: 80px;
+                }
+
+                @media (max-width: $tablet) {
+                    padding: 0 16px;
+                    width: 100%;
+                }
+
+                .wrapper{
+                    width: 40%;
+
+                    @media (max-width: $tablet) {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+
+                .heading{
+                    font-size: 50px;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    display: block;
+                    color: #388bff;
+                    padding-top: 20px;
+                    padding-bottom: 40px;
+                    font-family: $fontPrimary;
+                    line-height: 49px;
+                    margin: 0;
+
+                    @media (max-width: $tablet) {
+                        font-size: 31px;
+                        text-align: left;
+                        line-height: 34px;
+                        padding-bottom: 25px;
+                    }
+                }
+
+                .paragraph{
+                    font-family: $fontPrimary;
+                    font-size: 13px;
+                    width: 265px;
+                    max-width: 100%;
+
+                    @media (max-width: $tablet) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .LeadsRightContent{
+            .container{
+                width: 100%;
+
+                .wrapper{
+                    max-width: 400px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .LeadsLeftContent{
+            position: relative;
+
+            @media (max-width: 1160px) {
+                background-color: #193761;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .paragraph{
+                color: $white;
+            }
+
+            img{
+                position: absolute;
+                bottom: 0;
+                right: -13rem;
+                max-height: 500px;
+                z-index: 1;
+
+                @media (max-width: 1160px) {
+                    position: initial;
+                }
+
+                @media (max-width: $tablet) {
+                    display: none;
+                }
+            }
+        }
+
+        .LeadsRightContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 80%;
+            
+            @media (max-width: 1160px) {
+                background-color: #f2f2f2;
+                height: 100%;
+                padding-bottom: 30px;
+            }
+
+            .paragraph{
+                color: $black;
+            }
+        }
+    }
+}

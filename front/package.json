@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "description": "Basic theme we.digi agenncy",
+  "license": "MIT",
+  "author": "we.digi",
+  "dependencies": {
+    "react-markdown": "^8.0.3",
+    "react-slick": "^0.29.0"
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "^0.3.6",
+    "babel-eslint": "^10.1.0",
+    "commitizen": "^4.2.4",
+    "eslint": "^7.4.0",
+    "eslint-config-vtex": "^12.7.0",
+    "eslint-config-vtex-react": "^6.7.0",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.0.2",
+    "prettier": "^2.0.5",
+    "sass": "^1.53.0",
+    "typescript": "^3.9.6"
+  },
+  "scripts": {
+    "v-run": "vtex unlink --all && vtex link --clean",
+    "v-gulp": "gulp mount && gulp watch",
+    "v-publish": "vtex use prod --production -y && vtex publish -y",
+    "v-deploy": "vtex deploy -y && vtex promote -y"
+  }
+}

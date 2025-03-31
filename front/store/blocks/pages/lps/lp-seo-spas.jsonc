@@ -1,0 +1,701 @@
+{
+    "store.custom#lp-seo-spas":{
+        "title": "Container Gerenciador De Páginas",
+        "children": [
+            "flex-layout.row#main-section-spass"
+        ]
+    },
+    "flex-layout.row#main-section-spass": {
+      "props": {
+          "blockClass": "main-section-spas",
+          "preventVerticalStretch": true
+      },
+      "children": ["page-manager#lp-seo-spas"]
+    },
+    "page-manager#lp-seo-spas":{
+        "props":{
+            "ListContext": "list-context.product-list#home.shelf-page-manager",
+            "SearchCustomQuery": "search-result-layout.customQuery#lp-campaign",
+            "sections": 
+            [
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Banner",
+                "componentType": "banner",
+                "image": {
+                  "imageDesk": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/1b2acf24-dda7-40b4-af6c-d1c90f4bdf14___3df4cb82a0246a927b8535ec9c87061a.png",
+                  "fullWidth": true,
+                  "imageMob": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/1b2acf24-dda7-40b4-af6c-d1c90f4bdf14___3df4cb82a0246a927b8535ec9c87061a.png"
+                },
+                "activeText": true,
+                "richText": "## BANHEIRAS E SPAS\nVai comprar banheira de hidromassagem ou planeja criar um SPA na sua casa",
+                "textAlign": "center",
+                "classe": "banner-spas"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Texto SEO",
+                "componentType": "rich-text",
+                "richText": "Aqui no site Padovani estão reunidas as principais dúvidas de nossos clientes, ao longo dos nossos 50 anos de\nmercado, sobre banheira de hidromassagem, banheira SPA e Banheira de Imersão e também em relação aos\nacessórios para banheira.\n\n\nSe você quer descobrir como escolher o modelo de banheira certo para você e até mesmo evitar dores de cabeça na\nhora da instalação, vale a pena conhecer as informações de quem realmente entende do tema. Confira tudo que você\nvai ficar sabendo:",
+                "textAlign": "center"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "navegação LP",
+                "componentType": "text-image",
+                "items": [
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/8a79c954-255e-430c-a21c-13eda50f6d8e___c35f8d271d85c04b2804645ee232bc59.png",
+                      "imageAlt": "Imagem de uma banheira com um fundo de praia ao fundo"
+                    },
+                    "alignText": "text-center",
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 70,
+                    "text": "## Tudo sobre Banheiras e SPA\n1. [Banheira de Hidromassagem](#banner-hidro)\n2. [Banheiras de hidromassagem: Dúvidas frequentes](#Banheiras-hidromassagem-faq)\n3. [Banheira SPA](#banner-spa)\n4. [Banheiras SPA: Dúvidas frequentes](#banheiras-spa-faq)\n5. [Banheira de Imersão](#banner-imersao)\n6. [Banheiras de imersão: Dúvidas frequentes](#banheiras-imersao-faq)\n7. [Banheiras: Problemas Gerais e Dúvidas Frequentes](#banheiras-duvidas-frequentes)\n8. [Acessórios para Banheiras e SPAs](#acessorios-banheiras)\n9. [Dúvidas Frequentes sobre os Acessórios para Banheiras e SPA](#duvidas-acessorios)",
+                    "alignImage": "left",
+                    "__editorItemTitle": "navegação item"
+                  }
+                ],
+                "classe": "nav-lp"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Shelf de produtos 1",
+                "componentType": "slider",
+                "sliderType": "product",
+                "classe": ""
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": true,
+                "__editorItemTitle": "Banner Hidro",
+                "componentType": "bannerBg",
+                "backgroundColor": "#181849",
+                "image": {
+                  "imageDesk": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/d154c733-8a96-4e03-95ce-25638e5c5c3b___2d146abd67c906356ad6b481120f6633.png",
+                  "imageMob": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/d154c733-8a96-4e03-95ce-25638e5c5c3b___2d146abd67c906356ad6b481120f6633.png"
+                },
+                "activeText": true,
+                "richText": "## Banheira de Hidromassagem\n\nMais do que um design moderno, a [banheira de hidromassagem](banheiro/banheiras-e-spas/banheira-de-hidromassagem) traz outros benefícios para a vida de quem a tem em casa, revolucionando assim a experiência de banho da sua família.",
+                "colorWhite": true,
+                "textAlign": "left",
+                "imageAlign": "left",
+                "textColor": "white",
+                "classe": "banner-full",
+                "idAnchor": "banner-hidro"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": true,
+                "__editorItemTitle": "Titulo FAQ Hidro",
+                "classe": "text-faq-seo",
+                "componentType": "rich-text",
+                "richText": "## **Dúvidas frequentes** sobre Banheiras de hidromassagem",
+                "textAlign": "center",
+                "idAnchor": "Banheiras-hidromassagem-faq"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "componentType": "text-image",
+                "__editorItemTitle": "Hidro FAQ",
+                "items": [
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/b3346c91-a128-4de1-9e1c-cdc5cea58be4___e2ee8fcab938db8363ed7d4679bcb7f6.png",
+                      "imageAlt": "Imagem sorrindo dentro de uma banheira"
+                    },
+                    "__editorItemTitle": "O que é",
+                    "text": "## O que é uma Banheira de Imersão?\n\nA banheira de imersão é um modelo sem jatos de\nhidromassagem e super prático de instalar. Isso porque não é embutida e ainda conta com design moderno Além disso, dispensa o uso de bomba, aquecedores e todos os outros acessórios para banheira.\n\nPorém, precisa de instalação na rede hidráulica e ralo para que a água possa entrar e sair dela. E também de [Misturador para banheiro](https://www.padovani.com.br/banheiro/torneiras-e-misturadores/misturador-para-banheiro?PS=16 \"Navegue até os mistadores para banheiro\") (de parede) para que você possa se deliciar em banho\nmorno.",
+                    "alignImage": "left",
+                    "hasBorder": true,
+                    "minHeight": 367
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/1c567730-f679-4438-a8f0-a8aef4c57c7d___d9ad1ec5005c03ee64820cbfee9004e7.png",
+                      "imageAlt": "Água caindo na banheira com espuma"
+                    },
+                    "__editorItemTitle": "Melhor opção",
+                    "text": "## Qual a melhor opção para aquecimento de banheira de hidromassagem?\n\nPara aquecer a água da banheira de hidromassagem, o ideal é ter um sistema de aquecimento central na casa (solar, gás ou elétrico central). Isso porque o aquecedor não esquenta a água, ele só mantém a água aquecida que o sistema de aquecimento central\nesquenta",
+                    "alignImage": "left",
+                    "hasBorder": true,
+                    "minHeight": 367
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/b61dbf29-82ae-4b75-a2f2-e2964a9c2e59___e5293a0fa3014743e2b296c1c13c054c.png",
+                      "imageAlt": "Água saindo dos pontos de saída da banheira"
+                    },
+                    "__editorItemTitle": "Como manter a água da banheira aquecida?",
+                    "text": "## Como manter a água da banheira aquecida?\n\nUm aquecedor de 3.000 wts de potência acoplado à bomba da sua banheira de hidromassagem, por exemplo, costuma atender bem os modelos [Jacuzzi](https://www.padovani.com.br/banheiro/banheiras-e-spas/jacuzzi%C2%AE).\n\nEle é indispensável para quem gosta de manter o banho quente, mas essa peça é um acessório. Portanto, a dica é adquirir o aquecedor elétrico no momento que estiver realizando a compra da banheira para já vir instalada e testada de fábrica.",
+                    "alignImage": "left",
+                    "hasBorder": true,
+                    "minHeight": 367
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/a1cab834-dfe1-4b8e-9612-65657f145040___a5b0d1e636f31bdcc68b76bb4c034a08.png",
+                      "imageAlt": "Imagem de uma hidro com uma bela paisagem de fundo"
+                    },
+                    "__editorItemTitle": "Porque comprar",
+                    "text": "## Por que comprar uma Banheira de Hidromassagem?\n\nPara quem aprecia banhos relaxantes no banheiro ou suíte de casa, as banheiras de hidromassagem são excelentes opções. Isso porque elas contam com jatos de hidro que promovem relaxamento muscular reduzindo o estresse diário e que até mesmo colaboram com uma boa circulação sanguínea.\n\nAlém disso, para ter noites mais tranquilas de sono, a dica étomar banho quente. E você ainda pode criar todo um clima de spa no seu banheiro com [cromoterapia](https://www.padovani.com.br/cromoterapia---jacuzzi%C2%AE/p), velas, música relax, sais, espuma, essências para potencializar a experiência de banho.",
+                    "hasBorder": true,
+                    "minHeight": 367
+                  }
+                ]
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Titulo shelf de produtos 2",
+                "componentType": "rich-text",
+                "richText": "## Os melhores modelos de hidromassagem estão na Padovani. Confira:",
+                "textAlign": "center",
+                "classe": "text-faq-seo"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Shelf de produtos 2",
+                "componentType": "slider",
+                "sliderType": "product"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Titulo shelf de produtos 3",
+                "componentType": "rich-text",
+                "richText": "## Os melhores modelos de banheira de SPA Jacuzzi estão aqui na Padovani. Confira:",
+                "textAlign": "center",
+                "classe": "text-faq-seo"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Shelf de produtos 3",
+                "componentType": "slider",
+                "sliderType": "product"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": true,
+                "__editorItemTitle": "Banner SPA",
+                "componentType": "bannerBg",
+                "image": {
+                  "imageDesk": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/a688db96-2dd1-4d66-b456-5d4aa440fd81___fadefad830e2264369db4fe159c7a62b.png",
+                  "imageMob": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/29440a1a-f3c9-47bc-b0b9-d830d67e570c___fadefad830e2264369db4fe159c7a62b.png"
+                },
+                "imageAlign": "right",
+                "activeText": true,
+                "classe": "banner-full",
+                "richText": "## Banheiras de SPA\n\nSinônimo de relaxamento em grupo, as [banheiras SPA](/banheiro/banheiras-e-spas/banheira-de-spa) são ótimas opções de lazer e socialização para ambientes externos de casas e condomínios.\n\nCom o investimento mais baixo do que o de uma piscina, elas estão cada vez mais presentes na rotina dos brasileiros proporcionando momentos relax em família e entre amigos, seja em eventos, ou no dia a dia",
+                "textColor": "white",
+                "backgroundColor": "#181849",
+                "idAnchor": "banner-spa"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": true,
+                "__editorItemTitle": "Titulo FAQ SPA",
+                "classe": "text-faq-seo",
+                "componentType": "rich-text",
+                "richText": "## **Dúvidas frequentes** sobre Banheiras de SPA",
+                "textAlign": "center",
+                "idAnchor": "banheiras-spa-faq"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "FAQ Spa",
+                "componentType": "text-image",
+                "items": [
+                  {
+                    "image": {
+                      "imageAlt": "Mulher relaxando em uma banheira SPA",
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/cc2888b1-00d9-481c-a6fa-9751783c664a___ea9bd52235f80e110d03bdb9931940c2.png"
+                    },
+                    "hasBorder": true,
+                    "minHeight": 365,
+                    "__editorItemTitle": "O que é",
+                    "text": "## O que é uma Banheira de SPA?\n\nA banheira de imersão é um modelo sem jatos de\nhidromassagem e super prático de instalar. Isso porque não é embutida e ainda conta com design moderno Além disso, dispensa o uso de bomba, aquecedores e todos os outros acessórios para banheira.\n\nPorém, precisa de instalação na rede hidráulica e ralo para que a água possa entrar e sair dela. E também de Misturador para banheiro (de parede) para que você possa se deliciar em banho\nmorno.",
+                    "alignImage": "left"
+                  },
+                  {
+                    "image": {
+                      "imageAlt": "Mulher relaxando em uma banheira SPA",
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/802e9c7c-078d-4717-836a-c5f3ea6a6ac3___474bf668e59fb6a24228c30b219f06f1.png"
+                    },
+                    "hasBorder": true,
+                    "minHeight": 365,
+                    "__editorItemTitle": "Diferença",
+                    "text": "## Qual a diferença entre ofurô e spa?\n\nO SPA é um modelo para ambientes externos porque comporta um número maior de pessoas (até 9 lugares). Além disso, conta com jatos de hidromassagem e permite que você aprimore ainda mais a experiência de relaxamento colocando opcionais de banheira como  [cascata](https://padovani.com.br/cascata-water-rainbow-cromada---jacuzzi%C2%AE/p), cromoterapia, entre outros.\n\nJá o ofurô, é recomendado para espaços menores e ambientes internos. Cabe 1 ou 2 pessoas sentadas com água até o ombro. Tradicionalmente não conta com jatos de hidromassagem e nem tem como colocar opcionais. O relaxamento costuma ser da água morna parada e do aroma das pétalas de flores.",
+                    "alignImage": "left"
+                  }
+                ],
+                "idAnchor": ""
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": true,
+                "__editorItemTitle": "Titulo como instalar",
+                "classe": "text-faq-seo",
+                "componentType": "rich-text",
+                "richText": "## **Como instalar um SPA**",
+                "textAlign": "center",
+                "idAnchor": "instalacao"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "componentType": "text-image",
+                "classe": "steps-spa",
+                "items": [
+                  {
+                    "image": {},
+                    "alignText": "text-left",
+                    "hasBorder": false,
+                    "minHeight": 0,
+                    "width": 50,
+                    "__editorItemTitle": "item 1",
+                    "text": "### 1\n## Espaço:\nMeça e anote as medidas de largura,\ncomprimento e profundidade do ambiente\ndisponível para a instalação da banheira SPA.\nDessa forma você escolhe o modelo que cabe\nperfeitamente no cômodo."
+                  },
+                  {
+                    "image": {},
+                    "alignText": "text-left",
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 50,
+                    "__editorItemTitle": "Item 2",
+                    "text": "### 2\n## Peso:\nAntes de comprar a banheira SPA, não esqueça\nde verificar se o espaço onde será instalada\ntem condições de aguentar o peso da banheira\ne da quantidade de pessoas que irá relaxar\nnela."
+                  },
+                  {
+                    "image": {},
+                    "alignText": "text-left",
+                    "hasBorder": false,
+                    "minHeight": 0,
+                    "width": 50,
+                    "__editorItemTitle": "Item 3 ",
+                    "text": "### 3\n## Superfície:\nlisa e retilínea (se tiver alguma ondulação,\nantes da instalação é preciso fazer um\ncontrapiso que siga as especificações técnicas\nda Jacuzzi ou de outro fabricante)"
+                  },
+                  {
+                    "image": {
+                      "imageAlt": "### 4\n## "
+                    },
+                    "alignText": "text-left",
+                    "hasBorder": false,
+                    "minHeight": 0,
+                    "width": 50,
+                    "__editorItemTitle": "Item 4",
+                    "text": "### 4\n## Instalações:\n\nInstalações:\nA banheira SPA precisa receber água e escoar\npor ralos. Como funciona por meio de bomba e\nconta com aquecedor (que precisa ser\nadquirido na hora da compra, caso o modelo\nnão tenha de fábrica), também precisa de rede\nelétrica no local em que será instalada, além\nda rede hidráulica. E por ser embutida na\ninstalação precisa de revestimentos como\n[argamassa e rejunte.](https://www.padovani.com.br/pisos-e-revestimentos/argamassas-e-rejuntes)"
+                  },
+                  {
+                    "image": {},
+                    "alignText": "text-left",
+                    "hasBorder": false,
+                    "minHeight": 0,
+                    "width": 50,
+                    "__editorItemTitle": "item 5",
+                    "text": "### 5\n## Manutenção:\nDiferente da banheira, o SPA não necessita da\ntroca de água constante, podendo ser tratada\ncomo se fosse uma piscina. Em algumas com a\nopção do sistema ClearRay®"
+                  }
+                ],
+                "__editorItemTitle": "Como instalar"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "classe": "text-faq-seo",
+                "__editorItemTitle": "Título porque comprar",
+                "componentType": "rich-text",
+                "textAlign": "center",
+                "richText": "## **Por que comprar um SPA?**"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "componentType": "text-image",
+                "__editorItemTitle": "Faq porque comprar SPA",
+                "items": [
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/d40f5379-5961-4923-af6c-dc6451d2c6d9___917f0541c8862331369b544c9296dba9.png",
+                      "imageAlt": "teste"
+                    },
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 25,
+                    "__editorItemTitle": "relaxar",
+                    "text": "Melhora a experiência de relaxamento e socialização\nem família.",
+                    "alignImage": "top",
+                    "alignText": "text-center"
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/b17c24e9-8e38-4bab-a42d-432b332584a9___8e1084a3333314ff7d02522eea0d377b.png",
+                      "imageAlt": "Grupo de pessoas"
+                    },
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 20,
+                    "__editorItemTitle": "familia",
+                    "text": "Melhora a experiência de\nrelaxamento e socialização\nem família.\n",
+                    "alignImage": "top",
+                    "alignText": "text-center"
+                  },
+                  {
+                    "image": {
+                      "imageAlt": "Pessoasqeridas",
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/2734d1fe-56f0-46fe-b79d-35fd523390d4___b4b63fd3233cdec9c77f619c91435a8b.png"
+                    },
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 25,
+                    "text": "Oportunidade de ter mais\nmomentos divertidos com\nquem se gosta.",
+                    "alignImage": "top",
+                    "alignText": "text-center"
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/63b89b70-d464-4275-83d0-f357b99d1096___289cf2a7651d3c64795392ef89770f3b.png",
+                      "imageAlt": "Design moderno"
+                    },
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 25,
+                    "text": "Design moderno",
+                    "__editorItemTitle": "Design moderno",
+                    "alignImage": "top",
+                    "alignText": "text-center"
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e6e6bcba-676a-4a52-ba03-32ab4aac6c1c___dc6b245bc72c32c9d92af3d37c01e8d1.png",
+                      "imageAlt": "banheira"
+                    },
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 25,
+                    "text": "Tendência forte de estilo de\nvida e decoração de\nambientes externos.",
+                    "alignImage": "top",
+                    "alignText": "text-center"
+                  },
+                  {
+                    "image": {
+                      "imageAlt": "Conforto e socialização.",
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/390c3ca7-a343-4625-81eb-89f4bc4422a3___636d5d8bfb5676bd9c30c53b14e1eced.png"
+                    },
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 25,
+                    "alignImage": "top",
+                    "text": "Conforto e socialização.",
+                    "alignText": "text-center"
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/80b6f7a9-3d14-49ce-a02b-ee09e60ee31d___ee86e56fce0d23788be813c04becd3d4.png",
+                      "imageAlt": "capacidade"
+                    },
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 25,
+                    "text": "Capacidade para pequenos\ngrupos de pessoas\n(a partir de 3 lugares).",
+                    "alignImage": "top",
+                    "alignText": "text-center"
+                  },
+                  {
+                    "image": {
+                      "imageAlt": "Jatos",
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/a805ab54-0f92-4c18-abc2-927842fc1646___03585e271ad3bbb9f74e6453e0f19c07.png"
+                    },
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 25,
+                    "text": "Jatos de hidromassagem que\nrelaxam e melhoram a\ncirculação do sangue.",
+                    "alignImage": "top",
+                    "alignText": "text-center"
+                  }
+                ],
+                "classe": "faq-spa"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Shelf de Produtos 4",
+                "componentType": "slider",
+                "sliderType": "product"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": true,
+                "__editorItemTitle": "Banner banheira imersão",
+                "classe": "banner-full",
+                "componentType": "bannerBg",
+                "image": {
+                  "imageDesk": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/a3e8d4ad-70ce-4a2c-af6b-de5b83564042___4fcd6ea9374e217a709fb3f00c8f6af3.png",
+                  "imageMob": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/a3e8d4ad-70ce-4a2c-af6b-de5b83564042___4fcd6ea9374e217a709fb3f00c8f6af3.png"
+                },
+                "imageAlign": "left",
+                "activeText": true,
+                "richText": "## Banheira de Imersão\n\nAs [banheiras de imersão](/banheiras-e-spas/banheira-de-imersao) são modelos atemporais com design moderno que comportam 1 pessoa deitada ou 2 sentadas. Ou\nseja, são para tomar banhos relaxantes individuais no banheiro de casa com sais e espuma se preferir.\n\nElas costumam ser mais baratas na comparação com outros tipos de banheiras. Isso porque não possuem jatos de hidromassagem, nem bomba e aquecedor para funcionar. Então basta apenas comprar a banheira de imersão e colocá-la em cima do piso do seu banheiro próxima ao ralo, chuveiro e [ducha](/banheiro/chuveiros-e-duchas). ",
+                "textColor": "white",
+                "backgroundColor": "#181849",
+                "idAnchor": "banner-imersao"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": true,
+                "__editorItemTitle": "Titulo FAQ Banheiras Imersão",
+                "componentType": "rich-text",
+                "classe": "text-faq-seo",
+                "richText": "## **Dúvidas frequentes** sobre a Banheira de Imersão",
+                "textAlign": "center",
+                "idAnchor": "banheiras-imersao-faq"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "componentType": "text-image",
+                "__editorItemTitle": "FAQ Banheira Imersão",
+                "items": [
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/6e3c91e5-61c3-430f-966b-6f76dae67320___02f57bc3b002ecdc41572c379f1d9851.png",
+                      "imageAlt": "Imagem da espuma da banheira"
+                    },
+                    "hasBorder": true,
+                    "minHeight": 431,
+                    "__editorItemTitle": "O que é",
+                    "text": "## O que é uma Banheira de Imersão?\n\nA banheira de imersão é um **modelo sem jatos de\nhidromassagem** e super prático de instalar. Isso porque não é embutida e ainda conta com design moderno Além disso, dispensa o uso de bomba, aquecedores e todos os outros acessórios para banheira.\n\nPorém, precisa de instalação na rede hidráulica e ralo para que a água possa entrar e sair dela. E também de [misturador para banheiro](https://www.padovani.com.br/banheiro/torneiras-e-misturadores/misturador-para-banheiro?PS=16) (de parede) para que você possa se deliciar em banho\nmorno."
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f5287744-dffe-49f1-a627-4de996df1200___513f8fc17a6b7710a15435199573a926.png",
+                      "imageAlt": "Imagem de uma banheira de imersão"
+                    },
+                    "hasBorder": true,
+                    "minHeight": 431,
+                    "__editorItemTitle": "Melhor Banheira",
+                    "text": "## Qual a melhor banheira de imersão?\n\nOs modelos de **banheira de imersão freestanding em acrílico** são considerados um dos melhore s tipos porque são de fácil [instalação](https://www.padovani.com.br/banheiras-e-spas#instalacao), têm design contemporâneo e ainda são baratos quando comparados aos outros.\n\nAlém disso, não precisam de nenhum tipo de revestimento na instalação por ficarem em cima do piso. E você ainda pode levá-los de um imóvel para o outro na mudança.\n\nEm termos de qualidade, os **modelos de banheira de imersão Jacuzzi** são considerados referência no mercado."
+                  },
+                  {
+                    "image": {
+                      "imageAlt": "Imagem do chuveiro elétrico",
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/176a4b46-9d8f-41a8-882d-a5481f50328b___a5f26bdb8a0493b09e4fb99b14b32f63.png"
+                    },
+                    "hasBorder": true,
+                    "minHeight": 431,
+                    "__editorItemTitle": "Como manter aquecida",
+                    "text": "## Como manter a água da banheira aquecida?\n\nA banheira de imersão freestanding não funciona por meio de aquecedor. Então a dica é instalá-la no banheiro próximo ao [chuveiro elétrico](https://www.padovani.com.br/banheiro/chuveiros-e-duchas) para que você aproveite a água quente dele.\n\nE caso você prefira relaxar com banhos mornos, é importante comprar misturador de banheiro para parede na hora que adquirir a banheira de imersão. Isso porque assim que terminar a instalação, **já será possível mesclar água fria e quente** na medida certa para você desfrutar seu banho relaxante de forma prática.",
+                    "alignImage": "left"
+                  },
+                  {
+                    "image": {
+                      "imageAlt": "Imagem de uma mulher de toalha na banheira",
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e3d550a1-8cd1-4c8a-ab9c-120558e2c238___1a6e735b8fc14ac2d24dae8da1a6df3b.png"
+                    },
+                    "hasBorder": true,
+                    "minHeight": 431,
+                    "__editorItemTitle": "Porque comprar",
+                    "text": "## Por que comprar uma Banheira de Imersão?\n\n- Experiência de banho melhor do que no chuveiro porque você pode relaxar deitado na banheira com sais e espuma\n\n- Banheira de imersão freestanding é um modelo com preço econômico\n\n- Instalação mais barata e prática\n\n- Não é embutida então dispensa revestimentos na hora de insta-\nlar\n\n- Design moderno e com belo acabamento\n\n- Você fica deitado podendo relaxar com água morno ou quente"
+                  }
+                ]
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Shelf de produtos 5",
+                "componentType": "slider",
+                "sliderType": "product"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": true,
+                "__editorItemTitle": "Titulo Banheiras, dúvidas frequentes",
+                "classe": "text-faq-seo",
+                "componentType": "rich-text",
+                "richText": "## **Banheiras**\nProblemas Gerais e Dúvidas Frequentes",
+                "textAlign": "center",
+                "idAnchor": "banheiras-duvidas-frequentes"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Banheiras, dúvidas frequentes",
+                "componentType": "text-image",
+                "items": [
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/25340906-190f-4081-bea9-f6fe8ba0f4ba___06a24dc6029bb575d3dc43af3b1ca4d3.png",
+                      "imageAlt": "homem instalando a banheira"
+                    },
+                    "alignText": "text-left",
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 95,
+                    "__editorItemTitle": "instalação",
+                    "text": "### O que precisa para instalar uma banheira?\n\n- **Conexão com rede hidráulica** para a entrada de água e de ralos para escoamento\n\n- **Conexão com rede elétrica** para que a bomba e o aquecedor dabanheira de hidromassagem e da banheira SPA possam ser ligados, os jatos de hidromassagem funcionarem e a água aquecer. No caso da banheira de imersão, para que a água quente do chuveiro possa ser utilizada nela\n\n- **Suporte de madeira** nas devidas dimensões da banheira escolhida\n\n- **Proteção dos ralos** durante a instalação\n\n- **Argamassa para a base** que vai assentar a banheira no chão e para fazer a instalação hidráulica em cima dela (incluindo escoamento)\n\n- **Alvenaria para fechamento** sem esquecer de deixar um espaço para que se tenha acesso à rede hidráulica embaixo da banheira\n\n- **Silicone para vedação** nas laterais. "
+                  },
+                  {
+                    "image": {
+                      "imageAlt": "Mulher tomando banho em uma banheira",
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/a5d68bca-f117-4146-9ca1-a4a9510d47c4___37b102651231bec2cc70e1748973caa8.png"
+                    },
+                    "alignText": "text-left",
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 95,
+                    "__editorItemTitle": "Como instalar",
+                    "text": "## Como instalar um aquecedor em uma banheira?\n\nPara tomar banho quente de banheira de hidromassagem e do SPA é recomendável a instalação do aquecedor quando a bomba estiver sendo instalada. Inclusive elas precisam estar bem niveladas em um lugar que não caia água e que seja bem ventilado e fácil de acessar.",
+                    "alignImage": "right"
+                  },
+                  {
+                    "image": {
+                      "imageAlt": "Imagem de uma banheira cheia de água com um com um lago ao fundo",
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/5bcf6e56-b430-41dc-8302-3bb4d92d9ad1___fcf9eb22b6d2abd34623b4fa8486076f.png"
+                    },
+                    "alignText": "text-left",
+                    "hasBorder": false,
+                    "minHeight": 320,
+                    "width": 95,
+                    "__editorItemTitle": "Tamanho",
+                    "text": "## **Qual é o tamanho de uma banheira?**\n\nOs modelos de SPA são maiores comportando de 3 pessoas até 9 pessoas. Já as banheiras de hidromassagem costumam ser modelos de tamanhos intermediários porque comportam até 2 pessoas deitadas enquanto as banheiras de imersão tendem a ser as menores já que cabe 1 pessoa deitada ou 2 sentadas.\n\n**Inclusive as dimensões de uma banheira vai depender de vários fatores como:**\n\n - Quantidade de pessoas que a banheira comporta\n\n - Quantidade de jatos (no caso das banheiras SPA e banheira de hidro)\n\n - Design (redondo, quadrado ou retangular)",
+                    "alignImage": "left"
+                  }
+                ],
+                "idAnchor": ""
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": true,
+                "__editorItemTitle": "Texto links",
+                "componentType": "rich-text",
+                "textAlign": "center",
+                "richText": "## **Acessórios** para Banheiras e SPAs\n\nOs acessórios para banheira podem levar a experiência de banho a outro nível, além de facilitar a limpeza e até mesmo tornar a\ninstalação mais prática.\n\n**Confira os opcionais de banheira que você encontra aqui na Padovani:**\n\n### Principais acessórios para banheira para melhorar a experiência de banho:\n\n[Cascata para banheira](/cascata-water-rainbow-cromada---jacuzzi®/p)\n\n[Cromoterapia](/cromoterapia---jacuzzi®/p)\n\n[Coluna de banho](/coluna-de-banho-inox---162x95x55cm---jacuzzi®/p)\n\n[Apoio de cabeça](/apoio-de-cabeca--1-peca----jacuzzi®/p)\n\n[Alça de apoio cromada](https://www.padovani.com.br/alca-de-apoio-cromada--1-peca---jacuzzi%C2%AE/p)\n\n### Principais acessórios para banheira para instalação e manutenção:\n\n[Bomba para banheira](/pressurizador-miniacquahouse-220v---jma13---jacuzzi®/p)\n\n[Aquecedor](/aquecedor-para-banheiras-de-hidromassagem---jacuzzi®/p)\n\n[Tampa de inspeção](/tampa-de-inspecao---jacuzzi®/p)\n\n[Kit Pés](/kit-pes---jacuzzi®/p)\n\n[Misturador de piso](/misturador-de-piso-dharma---df02043-2---jacuzzi®/p)\n\n### Principais acessórios para banheira para limpeza e conservação:\n\n[Ducha para banheira](/ducha-manual-para-banheira---jacuzzi®/p)\n\n[Kit Ultravioleta para limpeza ClearRay®](/kit-ultravioleta-para-limpeza-clearray---jacuzzi®/p)\n\n[Cobertura térmica para banheira](/cobertura-termica-para-banheira-spa-hidromassagem---jacuzzi®/p) ",
+                "classe": "text-links",
+                "idAnchor": "acessorios-banheiras"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "Shelf de Produtos 6 ",
+                "componentType": "slider",
+                "sliderType": "product"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": true,
+                "__editorItemTitle": "Titulo FAQ Acessórios Banheiras",
+                "classe": "text-faq-seo",
+                "componentType": "rich-text",
+                "richText": "## **Dúvidas frequentes** sobre os Acessórios para Banheiras e SPA",
+                "textAlign": "center",
+                "idAnchor": "duvidas-acessorios"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "componentType": "text-image",
+                "__editorItemTitle": "FAQ Acessórios Banheiras",
+                "items": [
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/1749c36c-121b-41e0-8551-3a0143ef99f2___02f57bc3b002ecdc41572c379f1d9851.png",
+                      "imageAlt": "Imagem da espuma da banheira"
+                    },
+                    "hasBorder": true,
+                    "minHeight": 350,
+                    "__editorItemTitle": "Para que serve",
+                    "text": "## Para que serve a tampa de inspeção?\n\nA [tampa de inspeção](https://www.padovani.com.br/tampa-de-inspecao---jacuzzi%C2%AE/p) serve para acessar a bomba da banheira de hidromassagem sem precisar comprometer a alvenaria e nem quebrar a parede do banheiro. Ela também pode ser usada em banheira SPA.",
+                    "alignImage": "left"
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/1749c36c-121b-41e0-8551-3a0143ef99f2___02f57bc3b002ecdc41572c379f1d9851.png",
+                      "imageAlt": "Imagem da banheira da espuma"
+                    },
+                    "hasBorder": true,
+                    "minHeight": 350,
+                    "__editorItemTitle": "Como Limpar",
+                    "text": "## Como limpar a banheira?\n\nPara a limpeza dos jatos de uma banheira é importante contar com um acessório específico como o [kit ultravioleta Clearray.](https://www.padovani.com.br/kit-ultravioleta-para-limpeza-clearray---jacuzzi%C2%AE/p)\n\nJá em relação a higienização do acrílico da banheira, a dica é usar uma esponja de fibra sintética com limpador líquido esfregando delicadamente para não danificar. Depois é só retirar o produto com água morna. Vale lembrar que antes de usar novamente, a banheira precisa estar bem seca."
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/6e3c91e5-61c3-430f-966b-6f76dae67320___02f57bc3b002ecdc41572c379f1d9851.png",
+                      "imageAlt": "Imagem da espuma da banheira"
+                    },
+                    "hasBorder": true,
+                    "minHeight": 350,
+                    "__editorItemTitle": "Para que serve",
+                    "text": "## Para que serve o Kit Pés Jacuzzi?\n\nEsse acessório para banheira de hidromassagem serve para facilitar a instalação dela. O [Kit Pés Jacuzzi](https://www.padovani.com.br/kit-pes---jacuzzi%C2%AE/p) dispensa a massa de cimento e areia (massa farofa) usada na hora de assentar a banheira e ajustar o modelo antes de colocar o revestimento.\n\nO que torna mais prático e, ao mesmo tempo, impede que a banheira vá afundando com o passar do uso.",
+                    "alignImage": "left"
+                  },
+                  {
+                    "image": {
+                      "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/6e3c91e5-61c3-430f-966b-6f76dae67320___02f57bc3b002ecdc41572c379f1d9851.png",
+                      "imageAlt": "Imagem da espuma da banheira "
+                    },
+                    "hasBorder": true,
+                    "minHeight": 350,
+                    "__editorItemTitle": "Porque comprar",
+                    "text": "## Por que comprar um Acessório para Banheira e SPAs?\n- Aprimorar a experiência de banho de banheira\n\n- Facilitar a instalação e manutenção\n\n- Melhorar os detalhes do acabamento\n\n- Tornar a limpeza dos jatos de hidromassagem mais efetiva e simples\n- Proteger a banheira quando ela não estiver em uso\n\n- Permitir que a banheira tenha água morna e quente\n\n- Ter ainda mais conforto no seu banho"
+                  }
+                ]
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "classe": "text-faq-seo",
+                "componentType": "rich-text",
+                "__editorItemTitle": "Titulo shelf de produtos 7",
+                "richText": "## Além dos melhores modelos de banheiras, na Padovani você encontra tudo que precisa para a instalação e manutenção do seu SPA em casa!",
+                "textAlign": "center"
+              },
+              {
+                "disabled": false,
+                "padding": false,
+                "anchorComponent": false,
+                "__editorItemTitle": "shelf de produtos 7",
+                "componentType": "slider",
+                "sliderType": "product"
+              }
+            ]
+        }
+    }
+}

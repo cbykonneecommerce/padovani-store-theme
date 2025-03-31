@@ -1,0 +1,84 @@
+{
+    "header-layout.desktop": {
+        "title": "Header Desktop",
+        "children": [
+            "toggle-layout#banner-topo",
+            "template-popupExit",
+            "flex-layout.row#sticky.desktop",
+            "template-scripts",
+            "template-whatsapp",
+            "back-to-top"
+        ]
+    },
+    "template-whatsapp": {
+        "props": {    
+          "phone": "551140137009",
+          "message": "Olá, estava navegando no site e me interessei por este produto {NomeProduto}! \n {LinkProduto}"
+        }
+    },
+    "flex-layout.row#sticky.desktop": {
+        "props": {
+            "blockClass": "main-header",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": true
+        },
+        "children": [
+            "flex-layout.row#header.row-2.desktop",
+            "header-top-line",
+            "flex-layout.row#header.row-3.desktop"
+        ]
+    },
+    //header deca
+    "header-layout.desktop#deca":{
+        "title": "Header Desktop",
+        "children": [
+            "flex-layout.row#sticky.desktop-deca",
+            "template-scripts",
+            "template-whatsapp",
+            "back-to-top"
+        ]
+    },
+    "flex-layout.row#sticky.desktop-deca": {
+        "props": {
+            "blockClass": "main-header",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": true
+        },
+        "children": [
+            "header-top-line",
+            "flex-layout.row#header.row-2.desktop",
+            "flex-layout.row#header.row-3.desktop-deca"
+        ]
+    },
+    //header docol
+    "header-layout.desktop#docol":{
+        "title": "Header Desktop",
+        "children": [
+            "flex-layout.row#sticky.desktop-docol",
+            "template-scripts",
+            //"template-whatsapp",
+            "back-to-top"
+        ]
+    },
+    "flex-layout.row#sticky.desktop-docol": {
+        "props": {
+            "blockClass": "main-header",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": true
+        },
+        "children": [
+            "header-top-line",
+            "flex-layout.row#header.row-2.desktop",
+            "flex-layout.row#header.row-3.desktop-docol"
+        ]
+    }
+}

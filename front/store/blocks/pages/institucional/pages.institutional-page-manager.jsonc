@@ -1,0 +1,22 @@
+{
+    "store.custom#pages.institucional-page-manager":{
+        "children": [
+            "page-manager"
+        ]
+    },
+    "page-manager":{
+        "props":{
+            "ListContext": "list-context.product-list#home.shelf-page-manager",
+            "SearchCustomQuery": "search-result-layout.customQuery#lp-campaign"
+        }
+    },
+    "list-context.product-list#home.shelf-page-manager": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "responsive-layout.desktop#slider-shelf",
+            "responsive-layout.mobile#slider-shelf"
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "admin/list.navigation.group": "Código de vendedor",
+    "admin/list.navigation.list": "Lista",
+
+    "admin/list.title": "Listado",
+    "admin/list.new.template": "Nueva Lista",
+    "admin/list.table.empty": "Vacía"
+}

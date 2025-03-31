@@ -1,0 +1,95 @@
+@import "../../../styles/scss/variables";
+
+:global(.vtex-flex-layout-0-x-flexRowContent--summary-price-1 div:first-child) {
+  min-height: 34px;
+}
+
+.containerInfoShelf {
+  padding: 10px;
+}
+
+.textFrom {
+  font-size: 13px;
+  margin: 0;
+  position: absolute;
+  margin-top: -15px;
+}
+
+.textPrice {
+  color: $primary;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+
+.textInstallment {
+  font-size: 12px;
+  color: #7f7f7f;
+}
+
+.buttonCustomShelf {
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  background-color: $primary;
+  margin-top: 12px;
+}
+
+@media (max-width: 1024px) {
+  .buttonCustomShelf {
+    display: none;
+  }
+}
+
+.buttonContainer {
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.buttonCustomRemove {
+  background: transparent;
+  border-style: none;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #000;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonContainer span {
+  margin: 0 15px 0 15px;
+}
+
+.buttonCustomAdd {
+  background: transparent;
+  border-style: none;
+  font-weight: 700;
+  color: #000;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttomCustomPurchase {
+  margin-right: 15px;
+}
+
+.buttomCustomPurchase a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+}

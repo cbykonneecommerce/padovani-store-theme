@@ -1,0 +1,12 @@
+{
+    "flex-layout.row#pdp.line-2": {
+        "props": {
+            "fullWidth": true,
+            "blockClass": "pdp-line-2"
+        },
+        "children": [
+            "vtex.store-components:product-name",
+            "add-to-list-btn"
+        ]
+    }
+}

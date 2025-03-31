@@ -1,0 +1,160 @@
+@import "../../../styles/scss/variables";
+
+.CitiesServedContainer{
+    display: flex;
+    border: 1px solid #B4B4B4;
+    margin-top: 8px;
+    padding: 8px;
+
+    p{
+        font-family: $fontPrimary;
+        font-size: $size-1;
+        color: $black;
+        font-weight: $normal;
+        margin: 0;
+
+        a{
+            text-decoration: underline;
+            color: $black;
+            display: inline-block;
+            margin-top: 5px;
+        }
+
+        u{
+            cursor: pointer;
+        }
+    }
+
+    .ModalContainer{
+        background-color: $white;
+        z-index: 10000;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        max-width: 500px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: 0 0 100px rgba(0,0,0,.7);
+        transition: opacity .3s ease;
+
+        @media (max-width: $tablet) {
+            width: 90%;
+        }
+
+        &.ModalContainerHidden{
+            opacity: 0;
+            pointer-events: none;
+        }
+    
+        &.ModalContainerActive{
+            pointer-events: all;
+            opacity: 1;
+        }
+
+        .CloseModal{
+            width: auto;
+            height: 20px;
+            line-height: 20px;
+            text-align: right;
+            font-size: 1.4rem;
+            color: $white;
+            font-weight: 100;
+            text-transform: uppercase;
+            display: block;
+            z-index: 10001;
+            position: absolute;
+            top: -30px;
+            right: 0;
+            cursor: pointer;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        h2{
+            color: #898989;
+            font-family: $fontPrimary;
+            font-size: $size-5;
+            font-weight: bold;
+            margin: 0 0 5px;
+            text-transform: uppercase;
+        }
+
+        .CitiesContainer{
+            display: flex;
+            flex-direction: column;
+
+            h3{
+                font-size: $size-1;
+                font-family: $fontPrimary;
+                font-weight: $heavy;
+                margin: 5px 0;
+                text-transform: uppercase;
+            }
+
+            ul{
+                margin: 10px 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-flow: wrap;
+                text-align: left;
+                max-height: 200px;
+                height: 100%;
+                overflow-y: auto;
+
+                li{
+                    width: 49%;
+                    font-size: $size-3;
+                    font-family: $fontPrimary;
+                    font-weight: $weight-custom-2;
+                    margin: 3px 0;
+                }
+                
+                &:first-child{
+                    margin-top: 0;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+}
+
+.OverlayModalTable{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 9999;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.CheckboxPorcelanatoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 15px;
+
+    label{
+        margin-left: 5px;
+        font-family: $fontSecondary;
+        color: #969696;
+        font-weight: 500;
+
+        b{
+            color: $secondary;
+
+        }
+    }
+}

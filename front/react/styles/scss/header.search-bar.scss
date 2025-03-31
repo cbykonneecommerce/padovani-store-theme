@@ -1,0 +1,145 @@
+@import "../../../styles/scss/variables";
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .iconSearch, .iconSearchClose {
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iconSearchClose {
+        position: fixed;
+        z-index: 100;
+        left: 0;
+        top: 0;
+        background: $secondary;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 125%;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+
+        text-align: left;
+
+        svg {
+            margin-right: 8px;
+        }
+    }
+
+    .containerSearchBar {
+        background: #F0F0F0;
+        opacity: 1;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        padding: 5vw;
+
+        @media(max-width: $tablet) {
+            padding: 60px 20px 20px 20px;
+        }
+
+        .wrapperSearch {
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+            border-bottom: 1px solid $secondary;
+
+            @media(max-width: $tablet) {
+                display: flex;
+                border-bottom: 1px solid $secondary;
+                filter: invert(0);
+            }
+
+            :global(.vtex-store-components-3-x-closeIcon--header-search) {
+                color: $black !important;
+                font-size: 18px;
+            }
+
+            :global(.vtex-input__suffix) {
+                background: transparent !important;
+                padding: 0;
+            }
+
+            :global(.vtex-store-components-3-x-searchIcon--header-search) {
+                display: none;
+            }
+
+            :global(.vtex-input-prefix__group) {
+                border: 0 !important;
+                border-radius: 0;
+                width: calc(100% - 50px);
+
+                @media(max-width: $tablet) {
+                    width: 100%;
+                }
+            }
+
+            :global(.vtex-styleguide-9-x-input) {
+                background: $white !important;
+                border-bottom: 1px solid rgba(57, 59, 61, 0.1);
+                border-radius: 10px;
+                color: $black;
+                font-weight: $normal;
+                font-size: 15px;
+                line-height: 15px;
+                color: #393B3D;
+                opacity: 1;
+                &::placeholder {
+                    opacity: 0.6;
+                    color: #393B3D;
+                }
+
+                @media(max-width: $tablet) {
+                    background: transparent !important;
+                    border-radius: 0;
+                    border-bottom: 0;
+                    color: $dark !important;
+                    text-align: left;
+                    padding: 0;
+
+                    &::placeholder {
+                        opacity: 1;
+                        color: $dark !important;
+                    }
+                }
+            }
+
+            .searchBarIcon {
+                border-bottom: 1px solid $secondary;
+            }
+        }
+    }
+
+    :global(.vtex-store-components-3-x-portalWrapper) {
+        :global(.justify-end) {
+            top: 100px !important;
+        }
+    }
+
+}
+
+.searchActive {
+    :global(.vtex-sticky-layout-0-x-wrapper--sticky-header):hover,
+    :global(.vtex-sticky-layout-0-x-wrapper--sticky-header) {
+        :global(.vtexarg-speech-to-text-1-x-audioSearchContainer),
+        :global(.vtex-store-components-3-x-autoCompleteOuterContainer) {
+            filter: invert(0) !important;
+        }
+    }  
+    
+}

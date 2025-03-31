@@ -1,0 +1,39 @@
+@import "./variables";
+
+.wishlistIconContainer {
+    display: flex;
+    justify-content: flex-end;
+    height: fit-content;
+    
+    :global(.vtex-button) {
+        padding: 0 !important;
+        border: 0;
+        min-height: unset;
+        :global(.vtex-button__label) {
+            padding: 0 !important;
+        }
+    }
+
+    .wishlistIcon {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        text-transform: initial;
+        height: 24px;
+        width: 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &.outline {
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.5431 3.75C13.5 3.75 12 6.75 12 6.75C12 6.75 10.5 3.75 7.45687 3.75C4.98374 3.75 3.0253 5.81906 2.99999 8.28797C2.94843 13.4128 7.06546 17.0573 11.5781 20.1202C11.7025 20.2048 11.8495 20.2501 12 20.2501C12.1505 20.2501 12.2975 20.2048 12.4219 20.1202C16.9341 17.0573 21.0511 13.4128 21 8.28797C20.9747 5.81906 19.0162 3.75 16.5431 3.75Z' stroke='black' stroke-width='0.625' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+        &.fill {
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 21C11.6989 20.9996 11.4049 20.9086 11.1562 20.7389C7.47232 18.2381 5.87716 16.5234 4.99731 15.4514C3.12231 13.1663 2.22466 10.8202 2.24997 8.27953C2.2795 5.36813 4.61528 3 7.45685 3C9.5231 3 10.9542 4.16391 11.7876 5.13328C11.814 5.16368 11.8466 5.18805 11.8833 5.20476C11.9199 5.22146 11.9597 5.23011 12 5.23011C12.0402 5.23011 12.08 5.22146 12.1167 5.20476C12.1533 5.18805 12.1859 5.16368 12.2123 5.13328C13.0458 4.16297 14.4768 3 16.5431 3C19.3847 3 21.7204 5.36813 21.75 8.28C21.7753 10.8211 20.8767 13.1672 19.0026 15.4519C18.1228 16.5239 16.5276 18.2386 12.8437 20.7394C12.595 20.9089 12.301 20.9998 12 21Z' fill='black'/%3E%3C/svg%3E%0A");
+        }
+    }
+
+    @media(max-width: $tablet) {
+        position: absolute;
+        top: 3px;
+        right: -11px;
+    }
+}

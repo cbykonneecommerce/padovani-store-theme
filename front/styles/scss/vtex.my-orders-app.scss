@@ -1,0 +1,26 @@
+@import "./variables";
+
+.reorderBtn {
+    display: flex;
+    border-radius: $radius;
+    background-color: $cta;
+    color: $cta-i;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    fill: $cta-i;
+
+    .font {
+        color: $cta-i;
+    }
+}
+
+.cancelBtn {
+    display: flex;
+    justify-content: center;
+    border-radius: $radius;
+    border: 1px solid #ff4c4c;
+    color: #ff4c4c;
+    padding: 10px;
+    width: 100%;
+}

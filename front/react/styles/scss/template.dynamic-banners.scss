@@ -1,0 +1,159 @@
+@import "../../../styles/scss/variables";
+
+.home-grid {
+    width: 89.5vw;
+    margin: auto;
+    margin-bottom: 75px;
+
+    @media(max-width: 1365px) {
+        max-width: 98vw;
+        margin-bottom: 75px;
+    }
+
+    .items {
+        display: flex;
+        justify-content: space-between;
+
+        .slide {
+            width: 100% !important;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media(max-width: $tablet) {
+                width: 100% !important;
+            }
+
+            .text {
+                position: absolute;
+                transform: translateY(100px);
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+
+                .paragraph, .heading {
+                    margin: 0;
+                }
+
+                .title {
+                    font-size: $size-5;
+
+                    .heading {
+                        font-family: $fontPrimary;
+                        font-style: normal;
+                        font-weight: $weight-4;
+                        font-size: 32px;
+                        line-height: 32px;
+                        text-align: center;
+                        color: $black;
+                    }
+                }
+
+                .subtitle {
+                    font-size: $size-2;
+                    
+                    .paragraph {
+                        font-family: $fontPrimary;
+                        font-style: normal;
+                        font-weight: $weight-4;
+                        font-size: $size-1;
+                        line-height: 12px;
+                        text-align: center;
+                        color: $black;
+                    }
+                }
+            }
+       
+            &.top {
+                .text {
+                    // transform: translateY(-100px);
+                    transform: translateY(-183px);
+                    @media (max-width: $tablet) {
+                        transform: translateY(-137px);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.paginationDotsContainer {
+    bottom: -30px;
+    .paginationDot {
+        transition: all linear .25s;
+        background: $gray-2;
+        border: 0;
+        width: 5px;
+        height: 5px;
+
+        &.paginationDot--isActive {
+            background: $primary;
+            margin-top: 0;
+            width: 30px !important;
+            border-radius: 5px;
+        }
+    }
+}
+
+.home-social {
+    width: 89.5vw;
+    margin: 50px auto;
+
+    @media(max-width: 1365px) {
+        max-width: 98vw;
+    }
+
+    @media(max-width: $tablet) {
+        max-width: 100% !important;
+        padding: 0 0 0 15px;
+        width: 100%;
+    }
+
+    .items {
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media(max-width: $tablet) {
+                width: 100% !important;
+            }
+
+            .text {
+                position: absolute;
+                transform: translateY(100px);
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+
+                .paragraph, .heading {
+                    margin: 0;
+                }
+
+                .title {
+                    font-size: $size-5;
+                }
+
+                .subtitle {
+                    font-size: $size-2;
+                }
+            }
+       
+            &.top {
+                .text {
+                    transform: translateY(-100px);
+                }
+            }
+        }
+
+    }
+}

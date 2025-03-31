@@ -1,0 +1,128 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.forms {
+  margin-left: 35px;
+}
+@media (max-width: 1024px) {
+  .forms {
+    margin-left: 0;
+  }
+}
+.forms form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .forms form {
+    flex-direction: column;
+  }
+  .forms form .formGroup {
+    width: 100% !important;
+  }
+}
+.forms h2 {
+  margin-bottom: 0;
+}
+.forms label {
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.forms :global(.vtex-styleguide-9-x-container),
+.forms :global(.vtex-input-prefix__group),
+.forms :global(.vtex-textarea__input),
+.forms :global(.vtex-checkbox__line-container),
+.forms :global(.vtex-radioGroup) {
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #7f7f7f;
+  font-size: 15px;
+  border-width: 1px;
+}
+.forms :global(.vtex-styleguide-9-x-container) :global(.vtex-radioGroup__fieldset),
+.forms :global(.vtex-input-prefix__group) :global(.vtex-radioGroup__fieldset),
+.forms :global(.vtex-textarea__input) :global(.vtex-radioGroup__fieldset),
+.forms :global(.vtex-checkbox__line-container) :global(.vtex-radioGroup__fieldset),
+.forms :global(.vtex-radioGroup) :global(.vtex-radioGroup__fieldset) {
+  margin: 0;
+}
+.forms :global(.vtex-styleguide-9-x-container) label,
+.forms :global(.vtex-styleguide-9-x-container) input,
+.forms :global(.vtex-styleguide-9-x-container) select,
+.forms :global(.vtex-styleguide-9-x-container) textarea,
+.forms :global(.vtex-input-prefix__group) label,
+.forms :global(.vtex-input-prefix__group) input,
+.forms :global(.vtex-input-prefix__group) select,
+.forms :global(.vtex-input-prefix__group) textarea,
+.forms :global(.vtex-textarea__input) label,
+.forms :global(.vtex-textarea__input) input,
+.forms :global(.vtex-textarea__input) select,
+.forms :global(.vtex-textarea__input) textarea,
+.forms :global(.vtex-checkbox__line-container) label,
+.forms :global(.vtex-checkbox__line-container) input,
+.forms :global(.vtex-checkbox__line-container) select,
+.forms :global(.vtex-checkbox__line-container) textarea,
+.forms :global(.vtex-radioGroup) label,
+.forms :global(.vtex-radioGroup) input,
+.forms :global(.vtex-radioGroup) select,
+.forms :global(.vtex-radioGroup) textarea {
+  padding-bottom: 0;
+  font-weight: 400;
+  color: #7f7f7f;
+  font-size: 15px;
+}
+.forms :global(.vtex-radioGroup) {
+  border-width: 0;
+}
+.forms button {
+  background: #012169;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.forms .checkbox-description {
+  margin-top: 20px;
+}
+.forms .checkbox-description .wrapperDescription {
+  display: flex;
+}
+.forms .checkbox-description .wrapperDescription label {
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: #666;
+  font-size: 14px;
+}
+.forms .checkbox-description :global(.vtex-checkbox__line-container) {
+  padding-right: 8px;
+}
+.forms .checkbox-description a {
+  color: #012169;
+}
+.forms .message,
+.forms .message .success,
+.forms .message .alert {
+  display: flex;
+}
+.forms .messageResult {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f3f3f3;
+  padding: 50px;
+  border-radius: 3px;
+}
+.forms .messageResult img {
+  width: 50px;
+}
+.forms .messageResult .paragraph, .forms .messageResult .heading {
+  text-align: center;
+}
+.forms .content, .forms .form {
+  width: 100%;
+}

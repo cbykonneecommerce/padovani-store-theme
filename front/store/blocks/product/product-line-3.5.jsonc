@@ -1,0 +1,21 @@
+{
+    "flex-layout.row#pdp.line-3.5": {
+        "props": {
+            "fullWidth": true,
+            "preserveLayoutOnMobile": true,
+            "colSizing": "auto",
+            "horizontalAlign": "between",
+            "blockClass": "pdp-line-3-5"
+        },
+        "children": [
+            "flex-layout.col#pdp.line-3.5-col-1"
+        ]
+    },
+    "flex-layout.col#pdp.line-3.5-col-1": {
+        "props": {
+        },
+        "children": [
+            "product-rating-summary.ratrustvox"
+        ]
+    }
+}

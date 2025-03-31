@@ -1,0 +1,72 @@
+{
+  "flex-layout.col#summary-price": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "summary-price"
+    },
+    "children": [
+      "responsive-layout.mobile#descount",
+      "flex-layout.row#summary-price-1",
+      "flex-layout.row#summary-price-2"
+    ]
+  },
+  "responsive-layout.mobile#descount": {
+    "children": [
+      "flex-layout.row#summary-price-descount"
+    ]
+  },
+  "responsive-layout.desktop#list-price": {
+    "children": [
+      "product-list-price"
+    ]
+  },
+  "flex-layout.row#summary-price-descount": {
+    "props": {
+      "blockClass": "summary-price-descount"
+    },
+    "children": [
+      "product-list-price",
+      "product-price-savings#off-mobile"
+    ]
+  },
+  "flex-layout.row#summary-price-1": {
+    "props": {
+      "horizontalAlign": "center",
+      "colGap": 4,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "summary-price-1"
+    },
+    "children": [
+      "responsive-layout.desktop#list-price",
+      "flex-layout.row#product-selling-price-add-m2-to-floor"
+    ]
+  },
+  "flex-layout.row#product-selling-price-add-m2-to-floor": {
+    "props": {
+      "blockClass": "product-selling-price-add-m2-to-floor"
+    },
+    "children": [
+      "product-selling-price",
+      "add-unit-measurement"
+    ]
+  },
+  "flex-layout.row#summary-price-2": {
+    "props": {
+      "horizontalAlign": "center",
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "blockClass": "summary-price-2"
+    },
+    "children": [
+      "custom-product-summary-installments-m2"
+    ]
+  },
+  "product-installments#shelf": {
+    "props": {
+      "blockClass": "shelf",
+      "message": "{hasMoreThanOne, select, true {{installmentsNumber}x de {installmentValue} sem juros} false { }}"
+    }
+  }
+}

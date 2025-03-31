@@ -1,0 +1,92 @@
+{
+    "flex-layout.row#home.brandss": {
+        "title": "Marcas",
+        "props": {
+            "blockClass": "home-brands"
+        },
+        "children": [
+            "template-dynamic-content#home.brands"
+        ]
+    },
+    "template-dynamic-content#home.brands": {
+        "props": {
+            "blockClass": "home-brands",
+            "title": "## Lojas oficiais exclusivas",
+            "gap": 10,
+            "data": [
+                {
+                    "text": "ver produtos",
+                    "url": "/marca-deca",
+                    "svgIcon": "assets/images/brands/deca_thumb.png",
+                    "target": false,
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/brands/deca_main.png",
+                            "imageMobile": "assets/images/brands/deca_main.png"
+                        }
+                    ]
+                },
+                {
+                    "text": "ver produtos",
+                    "url": "/marca-docol",
+                    "svgIcon": "assets/images/brands/docol_thumb.png",
+                    "target": false,
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/brands/docol_main.png",
+                            "imageMobile": "assets/images/brands/docol_main.png"
+                        }
+                    ]
+                },
+                {
+                    "text": "ver produtos",
+                    "url": "/pado",
+                    "svgIcon": "assets/images/brands/pado_thumb.png",
+                    "target": false,
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/brands/pado_main.png",
+                            "imageMobile": "assets/images/brands/pado_main.png"
+                        }
+                    ]
+                },
+                {
+                    "text": "ver produtos",
+                    "url": "/jacuzzi",
+                    "svgIcon": "assets/images/brands/jacuzzi_thumb.png",
+                    "target": false,
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/brands/jacuzzi_main.png",
+                            "imageMobile": "assets/images/brands/jacuzzi_main.png"
+                        }
+                    ]
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 5,
+                    "tablet": 4,
+                    "phone": 1
+                  },
+                  "infinite": true,
+                  "showNavigationArrows": "desktopOnly",
+                  "showPaginationDots": "mobileOnly",
+                  "usePagination": true
+            },
+            "sliderLayoutConfigMobile": {
+                "itemsPerPage": {
+                    "desktop": 7,
+                    "tablet": 4,
+                    "phone": 1
+                  },
+                  "infinite": true,
+                  "showNavigationArrows": "never",
+                  "showPaginationDots": "never",
+                  "usePagination": true,
+                  "centerMode": "to-the-left",
+                  "centerModeSlidesGap": 10
+            }
+        }
+    }
+}

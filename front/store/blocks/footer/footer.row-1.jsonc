@@ -1,0 +1,52 @@
+{
+    "flex-layout.row#footer.row-1": {
+        "children": [
+          "flex-layout.col#footer.row-1.col-1",
+          "flex-layout.col#footer.row-1.col-2",
+          "flex-layout.row#footer.row-2",
+          "flex-layout.col#footer.icons-social"
+        ],
+        "props": {
+          "blockClass": "footer-row-1"
+        }
+    },
+    "flex-layout.col#footer.row-1.col-1": {
+      "title": "Logo e dados",
+      "children": [
+        "logo#footer-logo",
+        "rich-text#footer.dados"
+      ],
+      "props": {
+        "blockClass": "footer-row-1-col-1"
+      }
+  },
+  "flex-layout.col#footer.row-1.col-2": {
+    "children": [
+      "custom-menu#footer"
+    ],
+    "props": {
+      "blockClass": "footer-row-1-col-2",
+      "width": "25%"
+    }
+  },
+  "flex-layout.col#footer.icons-social": {
+    "children": [
+      "template-icons#footer.social",
+      "template-icons#footer.poweredby"
+    ],
+    "props": {
+      "blockClass": [
+        "footer-row-1-col-2",
+        "footer-icons-social-entreprises"
+      ],
+      "width": "15%"
+    }
+  },
+  "logo#footer-logo": {
+    "props": {
+        "title": "Logo Footer",
+        "href": "/",
+        "url": "assets/brand/logo-padovani-footer.png"
+    }
+  }
+}

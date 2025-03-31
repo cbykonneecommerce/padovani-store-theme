@@ -1,0 +1,784 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.BuyTogetherContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 20px auto;
+  background-color: #f3f8fb;
+}
+.BuyTogetherContainer .BuyTogetherInfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 0;
+  max-width: 1090px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .BuyTogetherInfoContainer {
+    flex-direction: column;
+    padding: 48px 16px;
+  }
+}
+.BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoText {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: grey;
+  text-align: left;
+  margin: 0;
+  height: fit-content;
+  max-width: 375px;
+}
+.BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoList {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoList .BuyTogetherInfoItem {
+  background: #fff;
+  height: auto;
+  padding: 1rem;
+  width: 27%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 30px 0 30px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoList .BuyTogetherInfoItem {
+    width: 100%;
+  }
+}
+.BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoList .BuyTogetherInfoItem .BuyTogetherInfoStep {
+  background-color: #4fb8d3;
+  color: #ffffff;
+  position: absolute;
+  left: -5px;
+  top: -11px;
+  font-style: normal;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  vertical-align: middle;
+  padding: 0.1rem 0.55rem;
+  border-radius: 50%;
+}
+.BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoList .BuyTogetherInfoItem .BuyTogetherInfoStep::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  right: -55px;
+  height: 0.5em;
+  border-top: 3px solid #000;
+  z-index: 0;
+  border-color: #4fb8d3;
+}
+.BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoList .BuyTogetherInfoItem .BuyTogetherInfoStepText {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #000000;
+  margin: 12px 0;
+}
+.BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoList .BuyTogetherInfoItem .BuyTogetherInfoImage {
+  max-width: 35px;
+  max-height: 35px;
+  width: 100%;
+  height: 100%;
+}
+.BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoList .BuyTogetherInfoItem:not(:last-child) {
+  margin-right: 15px;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .BuyTogetherInfoContainer .BuyTogetherInfoList .BuyTogetherInfoItem:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+.BuyTogetherContainer .BuyTogetherBanner {
+  max-height: 80px;
+  max-width: 1180px;
+  padding: 0;
+  margin: 0 auto 20px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .BuyTogetherBanner {
+    max-height: none;
+    padding: 0;
+    max-width: 95%;
+  }
+}
+.BuyTogetherContainer .TileListProduct {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #4fb8d3;
+  color: #4fb8d3;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .TileListProduct {
+    width: 95%;
+    text-align: center;
+  }
+}
+.BuyTogetherContainer .ProductListContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
+.BuyTogetherContainer .ProductListContainer h2 {
+  color: red;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListColorTitle {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 18px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #000000;
+  width: 100%;
+  max-width: 1180px;
+  margin: 20px auto;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .ProductListWrapper {
+    gap: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .ProductListWrapper {
+    padding: 0 16px;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem {
+  width: 100%;
+  max-width: 370px;
+  margin: 10px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  padding: 0.7rem 0.9rem;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  transition: all 0.3s ease;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem {
+    margin: 0;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem:hover {
+  box-shadow: 2px 2px 5px 0 grey;
+  transform: scale(1.05);
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem:hover .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__label) {
+  color: #05cc05;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem:hover .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container) {
+  border: 1px solid #05cc05;
+  border-color: #05cc05 !important;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem:hover .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex__icon-check) {
+  background: white;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem:hover .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex__icon-check) path {
+  fill: #05cc05;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem.SelectedProduct {
+  border: 1px solid green;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem.SelectedProduct :global(.vtex-numeric-stepper__minus-button),
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem.SelectedProduct :global(.vtex-numeric-stepper__plus-button) {
+  background-color: #012169 !important;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem.SelectedProduct .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__label) {
+  color: #05cc05;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem.SelectedProduct .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container) {
+  border: 1px solid #05cc05;
+  background-color: #05cc05;
+  border-color: #05cc05 !important;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem.SelectedProduct .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex__icon-check) {
+  background: #05cc05;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem.SelectedProduct .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex__icon-check) path {
+  fill: #ffffff;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemTop {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__label) {
+  color: #000000;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container) {
+  border: 1px solid #000000;
+  border-color: #000000 !important;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex__icon-check) {
+  background: white;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemTop :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex__icon-check) path {
+  fill: #000000;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemTop span {
+  padding: 2px 35px;
+  height: 100%;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  color: #bebebe;
+  border: 1px solid #bebebe;
+  justify-self: flex-end;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  transition: 0.4s ease;
+  user-select: none;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemTop span:hover {
+  background-color: #012169;
+  border-color: #012169;
+  color: #ffffff;
+  font-weight: 700;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom {
+  display: flex;
+  justify-content: space-between;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom img {
+  max-width: 128px;
+  border: 1px solid #d3d3d3;
+  border-radius: 2px;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper p {
+  color: #000000;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction {
+  display: flex;
+  justify-content: space-between;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction .ProductListItemPrices {
+  display: flex;
+  flex-direction: column;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction .ProductListItemPrices .ProductListItemListPrice .price {
+  color: #7e8288;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction .ProductListItemPrices .ProductListItemPrice .price {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction :global(.vtex-numeric-stepper-wrapper) {
+  transition: all 0.3s ease;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper__input) {
+  width: 30px;
+  border: none;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper__plus-button-container), .BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper__minus-button-container) {
+  display: flex;
+  align-items: center;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper__minus-button),
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper__plus-button) {
+  width: 28px !important;
+  height: 28px;
+  border-radius: 30px 30px 30px 30px !important;
+  background-color: gray;
+  color: #ffffff;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction a {
+  color: #4fb8d3;
+  background-color: #ffffff;
+  border: 2px solid #4fb8d3;
+  padding: 6px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+.BuyTogetherContainer .ProductListContainer .ProductListWrapper .ProductListItem .ProductListItemBottom .ProductListItemInfoWrapper .ProductListItemInfoAction a:hover {
+  background-color: #4fb8d3;
+  color: #ffffff;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalOverlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10000;
+  animation: grow 0.3s ease;
+  cursor: pointer;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10001;
+  background-color: #ffffff;
+  transform-origin: center center;
+  animation: grow 0.3s ease;
+  width: 100%;
+  max-width: 950px;
+  max-height: 586px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer {
+    width: 80vw;
+    max-height: 90%;
+    overflow-y: auto;
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 30px 20px 10px;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer.BuyTogetherModalSelected .BuyTogetherModalBottom :global(.vtex-numeric-stepper__minus-button),
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer.BuyTogetherModalSelected .BuyTogetherModalBottom :global(.vtex-numeric-stepper__plus-button) {
+  background-color: #012169 !important;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer.BuyTogetherModalSelected .BuyTogetherModalBottom :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__label) {
+  color: #05cc05;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer.BuyTogetherModalSelected .BuyTogetherModalBottom :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container) {
+  border: 1px solid #05cc05;
+  background-color: #05cc05;
+  border-color: #05cc05 !important;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer.BuyTogetherModalSelected .BuyTogetherModalBottom :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex__icon-check) {
+  background: #05cc05;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer.BuyTogetherModalSelected .BuyTogetherModalBottom :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex__icon-check) path {
+  fill: #ffffff;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalTop h2 {
+  font-size: 21px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: #000000;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalTop h2 {
+    font-size: 14px;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalTop .BuyTogetherModalPrices {
+  margin: 11px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalTop .BuyTogetherModalPrices .BuyTogetherModalListPrice .price {
+  color: #7e8288;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: line-through;
+  margin-bottom: 4px;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalTop .BuyTogetherModalPrices .BuyTogetherModalListPrice .price {
+    font-size: 16px;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalTop .BuyTogetherModalPrices .BuyTogetherModalPrice .price {
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalTop .BuyTogetherModalPrices .BuyTogetherModalPrice .price {
+    font-size: 18px;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid {
+    max-height: 50vh;
+    overflow-y: auto;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid .sliderRightArrow {
+    right: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid .sliderLeftArrow {
+    left: 30px;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid img {
+  max-height: 300px;
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid img {
+    max-height: 250px;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid .BuyTogetherModalInfoContainer {
+  max-height: 300px;
+  overflow-y: scroll;
+  width: 70%;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid .BuyTogetherModalInfoContainer {
+    width: 100%;
+    max-height: none;
+    overflow-y: initial;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid .BuyTogetherModalInfoContainer h3 {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid .BuyTogetherModalInfoContainer p {
+  font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalMid .BuyTogetherModalInfoContainer p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom {
+    padding-top: 5px;
+    justify-content: space-between;
+  }
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__label) {
+  color: #000000;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex-checkbox__inner-container) {
+  border: 1px solid #000000;
+  border-color: #000000 !important;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex__icon-check) {
+  background: white;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom :global(.vtex-checkbox__line-container) :global(.vtex-checkbox__container) :global(.vtex__icon-check) path {
+  fill: #000000;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper__input) {
+  width: 30px;
+  border: none;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper__plus-button-container), .BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper__minus-button-container) {
+  display: flex;
+  align-items: center;
+}
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper__minus-button),
+.BuyTogetherContainer .ProductListContainer .BuyTogetherModalContainer .BuyTogetherModalBottom :global(.vtex-numeric-stepper-wrapper) :global(.vtex-numeric-stepper__plus-button) {
+  width: 28px !important;
+  height: 28px;
+  border-radius: 30px 30px 30px 30px !important;
+  background-color: gray;
+  color: #ffffff;
+}
+.BuyTogetherContainer .BuyAreaContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0263b4;
+  max-width: 1440px;
+  margin: auto;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in;
+}
+.BuyTogetherContainer .BuyAreaContainer.isFixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  max-width: none;
+  width: 100%;
+  justify-content: center;
+}
+.BuyTogetherContainer .BuyAreaContainer.isVisible {
+  z-index: 5;
+  pointer-events: all;
+  opacity: 1;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .BuyAreaContainer {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.BuyTogetherContainer .BuyAreaContainer .BuyAreaText {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 20px;
+}
+.BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer .BuyAreaPriceContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer .BuyAreaPriceContainer {
+    margin: 10px 0;
+  }
+}
+.BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer .BuyAreaPriceContainer .productPriceCode .price {
+  font-size: 13px;
+  text-decoration: line-through;
+  text-align: right;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer .BuyAreaPriceContainer .productPriceCode .price {
+    text-align: center;
+  }
+}
+.BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer .BuyAreaPriceContainer .price {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+}
+.BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer .BuyAreaAddToCart {
+  background-color: #FF5A21;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 17px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 270px;
+  margin-left: 15px;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer .BuyAreaAddToCart {
+    max-width: none;
+    margin-left: 0;
+  }
+}
+.BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer .BuyAreaAddToCart :hover {
+  filter: brightness(95%);
+}
+.BuyTogetherContainer .BuyAreaContainer .BuyAreaActionsContainer .BuyAreaAddToCart.BuyAreaAddToCartDisabled {
+  filter: brightness(50%);
+  cursor: not-allowed;
+}
+.BuyTogetherContainer .bombPositionContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #b7b7b7;
+  padding: 20px 0;
+  max-width: 1440px;
+  margin: 20px auto 0;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .bombPositionContainer {
+    flex-direction: column;
+    padding: 20px 16px;
+  }
+}
+.BuyTogetherContainer .bombPositionContainer .bombPositionAction {
+  display: flex;
+  flex-direction: column;
+}
+.BuyTogetherContainer .bombPositionContainer .bombPositionAction .bombPositionTitle {
+  width: auto;
+  display: inline-block;
+  position: relative;
+  background-color: #181848;
+  color: #fff;
+  font-size: 1.625rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  box-shadow: 5px 5px 5px #b0b0b0;
+  margin-bottom: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .bombPositionContainer .bombPositionAction .bombPositionTitle {
+    font-size: 18px;
+  }
+}
+.BuyTogetherContainer .bombPositionContainer .bombPositionAction .bombPositionTitle::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid rgba(0, 0, 0, 0);
+  border-right: 20px solid rgba(0, 0, 0, 0);
+  border-top: 20px solid #181848;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.BuyTogetherContainer .bombPositionContainer .bombPositionAction .bombPositionSelect {
+  width: 100%;
+  max-width: 235px;
+  display: block;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 2px 10px #000;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  color: #59595b;
+  border: 0;
+  background-color: #eaeaea;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.BuyTogetherContainer .bombPositionContainer .bombPositionAction .bombPositionText {
+  width: 100%;
+  display: block;
+  color: #6c6c6c;
+  font-size: 0.8125rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.BuyTogetherContainer .bombPositionContainer .bombPositionImage {
+  width: 50%;
+  max-width: 700px;
+}
+@media (max-width: 1024px) {
+  .BuyTogetherContainer .bombPositionContainer .bombPositionImage {
+    width: 100%;
+  }
+}
+.BuyTogetherContainer :global(.vtex-checkbox__label) {
+  pointer-events: none;
+}
+
+@keyframes grow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

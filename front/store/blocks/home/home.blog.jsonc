@@ -1,0 +1,20 @@
+{
+    "flex-layout.row#home.blog": {
+        "props": {
+            "blockClass": "home-blog"
+        },
+        "children": [
+            "blog-latest-posts-preview.wordpress-latest-posts-preview"
+        ]
+    },
+
+    "blog-latest-posts-preview.wordpress-latest-posts-preview": {
+        "title": "Blog",
+        "props": {
+            "title": "Se liga nas dicas do nosso blog",
+            "showDates": false,
+            "showCategories": false
+        }
+    }
+    
+}

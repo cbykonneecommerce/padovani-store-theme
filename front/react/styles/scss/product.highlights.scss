@@ -1,0 +1,27 @@
+@import "../../../styles/scss/variables";
+
+.FlagsContainer{
+    display: flex;
+    flex-direction: column;
+
+    img{
+        max-width: 50px;
+    }
+}
+
+.FlagsContainerPDP{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+
+    @media (max-width: $tablet) {
+        top: 30px;
+    }
+    
+    img{
+        max-width: 50px;
+    }
+}

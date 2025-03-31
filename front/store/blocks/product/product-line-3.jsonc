@@ -1,0 +1,59 @@
+{
+    "flex-layout.row#pdp.line-3": {
+        "props": {
+            "blockClass": "pdp-line-3",
+            "fullWidth": true,
+            "colSizing": "auto",
+            "horizontalAlign": "left",
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "product-identifier.product#fabricante",
+            "vtex.store-components:product-brand",
+            "vtex.product-highlights@2.x:product-highlights#mais-vendidos"
+        ]
+    },
+    "product-identifier.product#fabricante": {
+        "props": {
+            "blockClass": [
+                "pdp"
+            ],
+            "label": "custom", //'default' | 'custom' | 'hide'
+            "customLabel": "Código", // text if label is custom
+            "idField": "skuReferenceId" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
+        }
+    },
+    "vtex.store-components:product-brand": {
+        "props": {
+            "displayMode": "text",
+            "withLink": "text"
+        }
+    },
+    "vtex.product-highlights@2.x:product-highlights#mais-vendidos": {
+        "props": {
+            "filter": {
+                "type": "show",
+                "highlightNames": [
+                    "Mais Vendidos - Home Page"
+                ]
+            }
+        },
+        "children": [
+            "product-highlight-wrapper#mais-vendidos"
+        ]
+    },
+    "product-highlight-wrapper#mais-vendidos": {
+        "props": {
+            "blockClass": "wrapper-flag-mais-vendidos"
+        },
+        "children": [
+            "product-highlight-text#mais-vendidos"
+        ]
+    },
+    "product-highlight-text#mais-vendidos": {
+        "props": {
+            "message": "MAIS VENDIDOS",
+            "blockClass": "flag-mais-vendidos"
+        }
+    }
+}

@@ -1,0 +1,129 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.ProductTypesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  margin: 16px 0;
+  padding: 16px 0;
+}
+.ProductTypesContainer .ProductTypesTitle {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0 0 18px;
+}
+.ProductTypesContainer .ProductTypesCardContainer {
+  padding: 0;
+  margin: 0 10px;
+  list-style: none;
+  width: 100%;
+}
+.ProductTypesContainer .ProductTypesCardContainer .ProductTypesCardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (min-width: 1024px) {
+  .ProductTypesContainer .ProductTypesCardContainer .ProductTypesCardWrapper {
+    margin: 0 20px;
+    max-width: 337px;
+  }
+}
+@media (max-width: 1024px) {
+  .ProductTypesContainer .ProductTypesCardContainer .ProductTypesCardWrapper {
+    max-width: none;
+  }
+}
+.ProductTypesContainer .ProductTypesCardContainer .ProductTypesCardWrapper figure {
+  margin: 0;
+  width: 100%;
+}
+.ProductTypesContainer .ProductTypesCardContainer .ProductTypesCardWrapper figure img {
+  border-radius: 50%;
+  width: 100%;
+}
+.ProductTypesContainer .ProductTypesCardContainer .ProductTypesCardWrapper figcaption h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 16px;
+  margin: 8px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.ProductTypesContainer .ProductTypesCardContainer .ProductTypesCardWrapper figcaption p {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.ProductTypesContainer .ProductTypesCardContainer .ProductTypesCardWrapper a {
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  width: auto;
+  display: inline-block;
+  margin: auto;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #7e8288;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.5rem 1.5rem;
+  transition: background 0.7s ease;
+  border: 1px solid #fff;
+}
+.ProductTypesContainer .ProductTypesCardContainer .ProductTypesCardWrapper a:hover {
+  background-color: #e1b939;
+}
+.ProductTypesContainer .sliderArrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ProductTypesContainer .sliderArrows .caretIcon {
+  display: none;
+}
+.ProductTypesContainer .sliderLeftArrow {
+  background-color: rgba(255, 90, 33, 0.8) !important;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  left: 15px;
+  transform: rotate(-180deg);
+}
+.ProductTypesContainer .sliderLeftArrow::before {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='none'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z' fill='white'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.ProductTypesContainer .sliderRightArrow {
+  background-color: rgba(255, 90, 33, 0.8) !important;
+  border-radius: 30px;
+  height: 30px;
+  width: 30px;
+  right: 15px;
+}
+.ProductTypesContainer .sliderRightArrow::before {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='none'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z' fill='white'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}

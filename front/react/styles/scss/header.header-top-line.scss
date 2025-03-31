@@ -1,0 +1,75 @@
+.headerLineTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #012169;
+  // background-color: #2e2927;
+  padding: 5px 0;
+  font-family: 'Roboto';
+  gap: 3%;
+  padding-bottom: 0.5rem;
+
+  @media (max-width: 1024px) {
+    padding: 0;
+  }
+
+  .headerLineTopLinkWrapper {
+    @media (max-width: 1024px) {
+      flex: 1;
+      display: flex;
+      padding: 8px 0;
+
+      &:not(:first-child) {
+        border-left: 1px solid #fff;
+      }
+    }
+    .headerLineTopLink {
+      display: flex;
+      gap: 9px;
+      text-decoration: none;
+      align-items: center;
+      font-style: italic;
+
+      img {
+        max-width: 25px;
+      }
+
+      @media (max-width: 1024px) {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .paragraph {
+        font-family: 'Roboto';
+        color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        margin: 0;
+
+        @media (max-width: 1024px) {
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .headerLineTopMediaContainer {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+
+    .headerLineTopMediaText {
+      font-family: 'Roboto';
+      font-weight: 600;
+      font-size: 15px;
+      color: #fff;
+    }
+
+    .headerLineTopMediaWrapper {
+      display: flex;
+      gap: 7px;
+    }
+  }
+}

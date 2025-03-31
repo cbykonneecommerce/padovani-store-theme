@@ -1,0 +1,74 @@
+{
+    // main-banner
+    "slider-layout#main-banner": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "desktopOnly",
+            "usePagination": true,
+            "blockClass": "home-main-banner",
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            }
+        }
+    },
+    // default shelfs
+    "slider-layout#shelfs": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 2
+            },
+            "infinite": true,
+            "fullWidth": false,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "never",
+            "blockClass": "shelf"
+        }
+    },
+    "slider-layout#shelfs-mobile-1": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": true,
+            "showPaginationDots": "never",
+            "showNavigationArrows": "never",
+            "blockClass": "shelf-mobile",
+            "centerMode": "to-the-left",
+            "centerModeSlidesGap": 15
+        }
+    },
+    "slider-layout#shelfs-mobile": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": true,
+            "showPaginationDots": "mobileOnly",
+            "showNavigationArrows": "never",
+            "blockClass": "shelf-mobile",
+            "centerMode": "to-the-left",
+            "centerModeSlidesGap": 15
+        }
+    },
+    "responsive-layout.desktop#slider-shelf": {
+        "children": ["slider-layout#shelfs"]
+    },
+    "responsive-layout.mobile#slider-shelf": {
+        "children": ["slider-layout#shelfs-mobile-1"]
+    }
+}

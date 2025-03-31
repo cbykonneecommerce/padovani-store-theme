@@ -1,0 +1,35 @@
+{
+  "flex-layout.row#search.banner-main": {
+    "props": {
+      "blockClass": "search-banner"
+    },
+    "children": [
+      "flex-layout.col#search.banner-main"
+    ]
+  },
+  "flex-layout.col#search.banner-main": {
+    "props": {
+      "blockClass": "search-banner"
+    },
+    "children": [
+        "search-title.v2",
+        "template-seo-text#search-top"
+    ]
+  },
+  "template-seo-text#search-top": {
+    "title": "Texto SEO - Superior",
+    "props": {
+        "image": "", 
+        "text": "",
+        "blockClass": "search-top-seo"
+    }
+  },
+  "template-seo-text#search-bottom": {
+    "title": "Texto SEO - Inferior",
+    "props": {
+        "image": "", 
+        "text": "",
+        "blockClass": "search-bottom-seo"
+    }
+  }
+}

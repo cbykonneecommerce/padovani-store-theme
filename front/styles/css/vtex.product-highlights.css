@@ -1,0 +1,44 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.productHighlightWrapper {
+  display: none;
+  gap: 10px;
+  justify-content: center;
+}
+.productHighlightWrapper--wrapper-flags-pdp {
+  justify-content: space-between;
+  gap: 10px;
+}
+.productHighlightWrapper .productHighlightText {
+  background-color: #012169;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100px;
+  overflow: hidden;
+  margin: 5px;
+}
+@media (max-width: 1024px) {
+  .productHighlightWrapper .productHighlightText {
+    max-width: 65px;
+  }
+}
+.productHighlightWrapper .productHighlightText--flags-pdp {
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  max-width: unset;
+  border: 2px solid #4ab807 !important;
+  padding: 4px 8px 4px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #4ab807;
+  margin: 0;
+}

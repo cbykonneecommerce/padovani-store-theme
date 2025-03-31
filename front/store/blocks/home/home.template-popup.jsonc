@@ -1,0 +1,52 @@
+{
+  "template-popup#home-form": {
+    "props": {
+        "popupActive": true,
+        "imagePopup": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/2fe9b0c8-dbfc-41b2-a08e-5355085db103___cd94f146e7a69943f3f2c112a16aee76.png",
+        "imageDescriptionPopup": "Imagem de desconto",
+        "isActive":true,
+        "title":"Cadastre-se e fique por dentro das melhores ofertas",
+        "showLabel": true,
+        "entity":"PF",
+        "fields":[
+            {
+              "__editorItemTitle":"nome",
+              "name":"nome",
+              "placeholder":"Seu Nome",
+              "type":"text",
+              "size":"100%",
+              "required":true,
+              "label": "Nome"
+            },
+            {
+            "__editorItemTitle":"email",
+            "name":"email",
+            "placeholder":"Insira seu email",
+            "type":"email",
+            "size":"100%",
+            "required":true,
+            "label": "Email"
+            },
+            {
+                "__editorItemTitle":"telefone",
+                "name":"telefone",
+                "placeholder":"(22) 99999-9999",
+                "type":"phone",
+                "size":"100%",
+                "required":true,
+                "label": "Telefone"
+            },
+            {
+                "__editorItemTitle":"Enviar",
+                "name":"submit",
+                "type":"submit",
+                "size":"100%"
+            }
+        ],
+        "message":{
+            "success":"Sua mensagem foi enviada com sucesso!  \n\n Retornaremos o mais breve possível.",
+            "error":"Opss! Parece que houve algum erro, pode tentar novamente por favor."
+        }
+      }
+  }
+}

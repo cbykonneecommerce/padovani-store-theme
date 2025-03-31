@@ -1,0 +1,27 @@
+{
+    "flex-layout.row#add-to-cart": {
+        "props": {
+            "blockClass": "row-add-to-cart",
+            "preserveLayoutOnMobile": true,
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "shelf-buy-button"
+        ]
+    },
+    "product-quantity#shelf": {
+        "props": {
+            "blockClass": "shelf",
+            "showLabel": false
+        }
+    },
+    "add-to-cart-button#shelf": {
+        "props": {
+            "text": "Comprar",
+            "blockClass": "shelf",
+            "addToCartFeedback": "customEvent",
+            "customPixelEventId": "addToCart",
+            "customPixelEventName": "addToCart"
+        }
+    }
+}

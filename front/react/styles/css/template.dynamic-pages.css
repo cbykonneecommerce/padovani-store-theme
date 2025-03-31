@@ -1,0 +1,172 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.DynamicPages {
+  margin-left: 35px;
+}
+@media (max-width: 1024px) {
+  .DynamicPages {
+    margin-left: 0;
+  }
+}
+.DynamicPages .image, .DynamicPages .showText, .DynamicPages .icon {
+  display: block;
+}
+.DynamicPages h2 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #000000 !important;
+}
+.DynamicPages h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #012169;
+}
+.DynamicPages .showText {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #7f7f7f;
+}
+.DynamicPages .paragraph {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #7f7f7f;
+}
+.DynamicPages .paragraph .link {
+  color: #000;
+}
+.DynamicPages .image {
+  margin: 20px 0;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+}
+.DynamicPages .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.DynamicPages .list .listItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 25px 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6em;
+  letter-spacing: 0.025em;
+  color: #666666;
+}
+.DynamicPages .list strong {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6em;
+  letter-spacing: 0.025em;
+  color: #666666;
+}
+.DynamicPages .list .icons,
+.DynamicPages .list img {
+  padding-bottom: 10px;
+}
+.DynamicPages .linha {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 30px 0;
+}
+@media (max-width: 1024px) {
+  .DynamicPages .linha {
+    flex-direction: column;
+  }
+}
+.DynamicPages .linha h2 {
+  margin: 0;
+}
+.DynamicPages .linha h3 {
+  color: #FF5A21;
+  margin-top: 0;
+}
+.DynamicPages .linha img {
+  max-width: 100%;
+  display: flex;
+}
+.DynamicPages .linha .showText {
+  padding: 30px;
+}
+@media (max-width: 1024px) {
+  .DynamicPages .linha .showText {
+    padding: 0;
+  }
+}
+.DynamicPages .linha .list {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+.DynamicPages .linha .list li {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+}
+.DynamicPages .linha .list li::before {
+  display: block;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.59375 2.1875L6.40625 5L3.59375 7.8125' stroke='black' stroke-width='0.9375' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+.DynamicPages .linha-invertida {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  border-bottom: 1px solid #F2F2F2;
+  padding: 30px 0;
+}
+@media (max-width: 1024px) {
+  .DynamicPages .linha-invertida {
+    flex-direction: column;
+  }
+}
+.DynamicPages .linha-invertida h2 {
+  margin: 0;
+}
+.DynamicPages .linha-invertida h3 {
+  color: #FF5A21;
+  margin-top: 0;
+}
+.DynamicPages .linha-invertida img {
+  max-width: 100%;
+  display: flex;
+}
+.DynamicPages .linha-invertida .showText {
+  padding: 30px;
+  padding-left: 0;
+}
+@media (max-width: 1024px) {
+  .DynamicPages .linha-invertida .showText {
+    padding: 0;
+  }
+}
+.DynamicPages .linha-invertida .list {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+.DynamicPages .linha-invertida .list li {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+}
+.DynamicPages .linha-invertida .list li::before {
+  display: block;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.59375 2.1875L6.40625 5L3.59375 7.8125' stroke='black' stroke-width='0.9375' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}

@@ -1,0 +1,66 @@
+{
+    "flex-layout.row#product.shelf-2": {
+        "title": "Vitrine 02",
+        "props": {
+            "blockClass": ["shelf","shelf-2-pdp-custom"]
+        },
+        "children": [
+            "flex-layout.col#product.shelf-2"
+        ]
+    },
+    "rich-text#product.shelf-2": {
+        "title": "Título",
+        "props": {
+            "text": "Você vai se interessar",
+            "blockClass": ["product-title-shelf","product-title-shelf-pdp"]
+        }
+    },
+    "flex-layout.col#product.shelf-2": {
+        "children": [
+            "rich-text#product.shelf-2",
+            "list-context.product-list#product.shelf-2"
+        ]
+    },
+    "list-context.product-list#product.shelf-2": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelfs"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    // MOBILE
+    "flex-layout.row#product.shelf-2.mobile": {
+        "title": "Vitrine 02",
+        "props": {
+            "blockClass": [
+                "shelf", 
+                "shelf-mobile"
+            ]
+        },
+        "children": [
+            "flex-layout.col#product.shelf-2.mobile"
+        ]
+    },
+    "flex-layout.col#product.shelf-2.mobile": {
+        "children": [
+            "rich-text#product.shelf-2",
+            "list-context.product-list#product.shelf-2.mobile"
+        ]
+    },
+    "list-context.product-list#product.shelf-2.mobile": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            // "slider-layout#shelfs-mobile"
+            "slider-layout#shelfs-mobile-1"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    }
+}

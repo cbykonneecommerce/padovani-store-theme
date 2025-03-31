@@ -1,0 +1,237 @@
+@import './variables';
+
+.listPriceValue--pdp {
+  font-weight: $bold;
+  font-size: $size-3;
+  line-height: normal;
+  text-decoration-line: line-through;
+  color: #868589;
+  font-family: $fontPrimary;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+.listPrice {
+  font-family: $fontPrimary;
+  text-decoration-line: line-through;
+  color: #868589;
+  font-size: $size-2;
+  font-weight: $bold;
+  display: block;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+
+  &.listPrice--pdp {
+    margin: 0;
+    margin-top: 8px;
+  }
+}
+
+.sellingPrice {
+  &--pdp--hasListPrice {
+    height: max-content;
+  }
+
+  &.sellingPrice--pdp {
+    font-family: $fontSecondary;
+    font-weight: $weight-6;
+    font-size: $size-custom-11;
+    line-height: normal;
+    color: #444242;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    margin: 10px 0 0;
+
+    @media (max-width: $tablet) {
+      margin-top: 0;
+      font-size: 38px;
+      line-height: 58px;
+    }
+  }
+
+  .currencyContainer {
+    font-weight: $weight-5;
+  }
+}
+
+.spotPrice--pdp {
+  font-family: $fontSecondary;
+  font-weight: $weight-6;
+  font-size: $size-custom-11;
+  line-height: normal;
+  color: #444242;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  margin: 10px 0 0;
+
+  @media (max-width: $tablet) {
+    margin-top: 0;
+    font-size: 38px;
+    line-height: 58px;
+  }
+}
+
+.installments {
+  font-family: $fontSecondary;
+  font-size: 13px;
+  line-height: 24px;
+  color: #868689;
+  margin-top: 15px;
+  font-weight: 400;
+
+  @media (max-width: $tablet) {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+    font-size: 11px;
+  }
+
+  &.installments--pdp {
+    margin: 0;
+    font-family: $fontPrimary;
+    font-weight: $normal;
+    font-size: $size-3;
+    line-height: normal;
+    color: #868689;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 5px;
+
+    .installmentsNumber,
+    .installmentValue {
+      color: #868689;
+      font-weight: $weight-custom-3;
+    }
+
+    .installmentsNumber {
+      &::after {
+        content: 'x sem juros';
+        font-family: $fontSecondary;
+        font-weight: $weight-custom-3;
+        font-size: $size-3;
+        line-height: 24px;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      text-align: left;
+    }
+  }
+}
+
+.listPrice--sale-discaunt {
+  height: 18px;
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #878787;
+}
+
+.listPrice--pdp {
+  @media (max-width: $tablet) {
+    text-align: left;
+    width: 100%;
+    display: block;
+  }
+}
+
+.sellingPriceValue--pdp {
+  @media (max-width: $tablet) {
+    text-align: left;
+    width: 100%;
+    display: block;
+  }
+}
+
+// .sellingPriceValue--preco-metroquadrado {
+//   &::after {
+//     content: "/m²";
+//     display: inline-block;
+//     font-family: $fontSecondary;
+//     font-weight: $weight-6;
+//     font-size: 28px;
+//     line-height: normal;
+//     color: #444242;
+//     line-height: 48px;
+//     letter-spacing: 0.02em;
+//   }
+// }
+
+.savings {
+  display: flex;
+  width: max-content;
+  font-size: 14px;
+
+  &.savings--summary-off {
+    background-color: $orange-1;
+    color: $white;
+    font-size: 14px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    padding: 5.5px 0;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    position: relative;
+    z-index: 99;
+
+    @media screen and (max-width: $tablet) {
+      width: 70%;
+      padding: 2px 0;
+
+    }
+  }
+
+  &.savings--pdp {
+    position: absolute;
+    top: 20% !important;
+    left: 32%;
+    transform: translateY(-50%);
+    color: $white;
+    background-color: #f6a924;
+    padding: 4px;
+    width: max-content;
+    font-family: $fontSecondary;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+
+    @media (max-width: $tablet) {
+      margin: auto;
+      left: 40%;
+    }
+
+    .savingsValue--pdp {
+      margin: 0 6px;
+    }
+
+    .savingsPercentage {
+      font-size: 16px;
+      color: $white;
+      font-weight: 900;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 3px;
+
+      &::before {
+        content: '';
+        border-top: 16.5px solid rgba(0, 0, 0, 0);
+        border-bottom: 16.5px solid;
+        border-right: 18px solid #f6a924;
+        position: absolute;
+        bottom: 0;
+        right: 100%;
+      }
+    }
+  }
+}

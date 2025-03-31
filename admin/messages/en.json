@@ -1,0 +1,8 @@
+{
+    "admin/list.navigation.group": "Seller code",
+    "admin/list.navigation.list": "List",
+
+    "admin/list.title": "Listing",
+    "admin/list.new.template": "New List",
+    "admin/list.table.empty": "Empty"
+}

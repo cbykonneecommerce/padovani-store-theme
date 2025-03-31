@@ -1,0 +1,5 @@
+.scroll-listener{
+    position: sticky;
+    transition: top .6s ease;
+    z-index: 999;
+}

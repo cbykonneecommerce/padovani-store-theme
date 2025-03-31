@@ -1,0 +1,348 @@
+@import "../../../styles/scss/variables";
+
+body {
+    font-family: $fontPrimary !important;
+    padding-bottom: 0!important;
+}
+
+.container:nth-child(1) {
+    max-width: unset!important;
+}
+
+#checkoutMainContainer > div:nth-child(9) {
+    display: none;
+}
+
+.container-header {
+    display: none!important;
+}
+
+header {
+    background: #ffffff;
+    padding: 15px;
+    justify-content: center;
+    display: flex;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+}
+
+h1#cart-title {
+    display: unset !important;
+    padding-bottom: 15px;
+    display: block;
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 700!important;
+    font-size: 26px!important;
+    line-height: 32px;
+    color: #000000!important;
+    margin-bottom: 45px;
+}
+
+.container-cart {
+    margin: 25px auto;
+}
+
+.btn-success {
+    text-transform: uppercase;
+    background: linear-gradient(106.29deg,$cta 0%,$cta 100%);
+}
+
+.cart-more-options .srp-container button.shp-open-options, #cart-coupon-add {
+    background: #373435;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
+.container-order-form {
+    margin-top: 80px;
+}
+
+.row-fluid .orderform-template {
+    margin-top: 30px;
+}
+
+#cart-to-orderform {
+    background: $cta;
+    border: solid 1px $cta;
+}
+
+#shipping-calculate-link {
+    background: $cta;
+    border: 1px solid rgba(135, 135, 135, 0.15);
+    border-radius: 5px;
+    color: $cta-i !important;
+    font-weight: 700;
+}
+
+.monetary {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 800!important;
+    font-size: 18px;
+    line-height: 18px;
+    color: $primary !important;
+}
+
+.full-cart {
+    margin-top: 27px;
+}
+
+.product-name a {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.product-name .seller.muted {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 14px;
+    color: #878787;
+}
+
+.best-price .new-product-price {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.cart .product, .cart .quantity, .cart .product-price {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 23px;
+    color: #000000;
+}
+
+#cart-coupon-add {
+    background: $cta!important;
+    border: 1px solid $cta!important;
+    border-radius: 5px;
+    color: $cta-i !important;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+#go-to-shipping {
+    background: $primary ;
+    border: solid 1px $primary ;
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+#btn-go-to-payment {
+    background: $primary !important;
+    border: solid 1px $primary !important;
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+#payment-data-submit {
+    background: $cta!important;
+    border: solid 1px $cta!important;
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: $cta-i;
+    margin-top: 10px;
+}
+
+#show-gift-card-group {
+    background: $cta!important;
+    color: $cta-i !important;
+    border: solid 1px $cta!important;
+}
+
+.link-gift-card:hover {
+    border: solid 1px $cta!important;
+}
+
+body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before, body.js-vcustom-hideEmailStep .shipping-data .accordion-toggle:before, body.js-vcustom-hideEmailStep .payment-data .accordion-toggle>span:not(.payment-edit-link):before {
+    background: $cta!important;
+    border: solid 1px $cta!important;
+    color: $cta-i;
+}
+
+.vtex-omnishipping-1-x-deliveryOptionActive {
+    background-color: $primary !important;
+    border: solid 1px $primary !important;
+}
+
+.vtex-omnishipping-1-x-svg path {
+    fill: $primary !important;
+}
+
+.orderform-template-holder #client-profile-data .step.client-profile-data .accordion-toggle>span, .orderform-template-holder #shipping-data .accordion-toggle, #payments-title > span > span:nth-child(2) {
+    color: #000!important;
+}
+
+.container-footer {
+    background: $primary ;
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.container-footer .content-text {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+header.main-header-custom:empty {
+    display: none !important;
+}
+
+.summary-template-holder > .cart-more-options, .cart-template-holder .cart-more-options {
+    display: none !important;
+}
+
+.summary-template-holder > .cart-more-options.correct {
+    display: block !important;
+}
+
+p.coupon-label {
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    padding-bottom: 10px;
+    color: #323232;
+    border: none;
+}
+
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset p label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #323232;
+}
+
+td.shipping-date {
+    display: block !important;
+    position: absolute;
+    left: 130px;
+    top: 100px;
+}
+
+small.seller.muted {
+    padding-bottom: 40px;
+}
+
+@media(max-width: 991px) {
+td.shipping-date {
+    left: 90px;
+    top: 100px;
+}
+}
+
+.client-profile-data ul { width: 100%; }
+
+.orderform-template-holder .step .form-step #is-corporate-client {
+    color: $cta-i;
+    border: 1px solid $cta;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.cart-more-options #shipping-preview-container {
+    width: 100% !important;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-addressItemOption:hover, .orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-active {
+    background-color: $gray-1;
+}
+
+.orderform-template-holder #payment-data .v-custom-payment-item-wrap .payment-group-item.active {
+    color: $secondary-i;
+}
+
+.orderform-template .cart-template.mini-cart .quantity {
+    line-height: 1em;
+    min-width: 10px;
+    width: auto;
+    height: 10px;
+    display: inline-block;
+    background: $primary;
+    color: $primary-i;
+    font-size: 10px;
+}
+
+.orderform-template-holder .step.shipping-data .vtex-omnishipping-1-x-summaryChange {
+    background: $secondary;
+    border-color: $secondary;
+    color: $secondary-i;
+}
+
+.full-cart .cart table tbody tr td.product-name .seller {
+    padding-bottom: 0 !important;
+}
+
+.cart-items .shipping-date {
+    display: none !important;
+}
+
+.loading.loading-bg {
+    margin-top: 0;
+}
+
+.summary-template-holder .summary-coupon fieldset.coupon-fieldset>div[style*="none"] p.coupon-label {
+    display: block !important;
+}
+
+.summary-template-holder .cart-more-options {
+    display: block !important;
+}
+
+.summary-template-holder .cart-select-gift-placeholder:empty {
+    display: none !important;
+}
+
+@media (max-width: 690px) {
+    .summary-template-holder > .cart-more-options, .cart-template-holder .cart-more-options, .cart-more-options #shipping-preview-container {
+        display: block !important;
+        background: transparent;
+    }
+
+    .cart-more-options .srp-container .srp-toggle__wrapper label.blue {
+        background-color: $primary;
+        color: $primary-i;
+    }
+    
+    .summary-template-holder .cart-links-bottom {
+        position: relative;
+    }
+}

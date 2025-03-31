@@ -1,0 +1,215 @@
+{
+    "store.custom#lp-leads":{
+        "children": [
+            "leads-page#orcamentoo"
+        ],
+        "parent": {
+            "footer": "flex-layout.row#fake-header",
+            "header": "flex-layout.row#footer"
+        }
+    },
+    "flex-layout.row#fake-header":{},
+    "flex-layout.row#footer":{},
+    "leads-page#orcamentoo": {
+        "props": {
+        "imgSrcHeader": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/d848b61e-b24a-43ce-b66a-7c67f9813755___ffa0567545cc9ccab26305cd0f95d657.png",
+        "imgAltHeader": "Logo padovani",
+        "linkImgHeader": "/",
+        "items": [
+            {
+            "imgSrcSocial": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/ce0fdaf6-1ec9-495c-80be-8c2ee71c497d___16c01f675fb689daa9e14092beaafdc5.svg",
+            "imgAltSocial": "Logo do facebook",
+            "linkSocial": "https://www.facebook.com/padovaniconstrucao"
+            }
+        ],
+        "text": "# ORÇAMENTO ESPECIAL!\n\nA Padovani te dá aquela forcinha para você finalizar sua obra com o menor custo possível.\n\nVamos analisar o orçamento que você já tem e com base na fase da obra que você está, iremos te propor um novo orçamento com valores especiais!\n\nCom 48 anos de experiência no mercado, hoje somos um dos maiores distribuidores de Porcelanato, Fechaduras, Esquadrias, Metais e Louças do interior do estado de São Paulo.",
+        "imgSrc": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/c9628b4d-1d6b-4ac2-91f9-ae1e16737126___69c3d88f3a645604a8b4a0c89355fefa.png",
+        "imgAlt": "Homem segurando orçamentos e sorrindo",
+        "textRight": "Para podemos propor o melhor orçamento precisamos de algumas informações básicas sobre você e sua obra.",
+        "form": {
+            "entity": "OE",
+            "steps": [
+            {
+                "title": "Dados Pessoais",
+                "inputs": [
+                {
+                    "inputType": "default",
+                    "name": "nome",
+                    "label": "Nome",
+                    "placeholder": "Nome",
+                    "required": true,
+                    "width": 100
+                },
+                {
+                    "inputType": "phone",
+                    "name": "telefone",
+                    "label": "Telefone",
+                    "placeholder": "(22) 9 9999 9999",
+                    "width": 48,
+                    "required": true
+                },
+                {
+                    "inputType": "cep",
+                    "name": "CEP",
+                    "label": "cep",
+                    "placeholder": "28660-000",
+                    "required": true,
+                    "width": 48
+                },
+                {
+                    "inputType": "email",
+                    "name": "email",
+                    "label": "Email",
+                    "placeholder": "seuemail@email.com",
+                    "required": true,
+                    "width": 100
+                },
+                {
+                    "inputType": "default",
+                    "name": "cidade",
+                    "label": "cidade",
+                    "placeholder": "Sua cidade",
+                    "required": true,
+                    "width": 48
+                },
+                {
+                    "inputType": "select",
+                    "name": "estado",
+                    "label": "Estado",
+                    "placeholder": "estado",
+                    "required": true,
+                    "width": 48,
+                    "options": [
+                    {
+                        "value": "Acre"
+                    },
+                    {
+                        "value": "Alagoas"
+                    },
+                    {
+                        "value": "Amapá"
+                    },
+                    {
+                        "value": "Amazonas"
+                    },
+                    {
+                        "value": "Bahia"
+                    },
+                    {
+                        "value": "Ceará"
+                    },
+                    {
+                        "value": "Distrito Federal"
+                    },
+                    {
+                        "value": "Espirito Santo"
+                    },
+                    {
+                        "value": "Goiás"
+                    },
+                    {
+                        "value": "Maranhão"
+                    },
+                    {
+                        "value": "Mato Grosso"
+                    },
+                    {
+                        "value": "Mato Grosso do Sul"
+                    },
+                    {
+                        "value": "Minas Gerais"
+                    },
+                    {
+                        "value": "Pará"
+                    },
+                    {
+                        "value": "Paraíba"
+                    },
+                    {
+                        "value": "Paraná"
+                    },
+                    {
+                        "value": "Pernambuco"
+                    },
+                    {
+                        "value": "Piauí"
+                    },
+                    {
+                        "value": "Rio de Janeiro"
+                    },
+                    {
+                        "value": "Rio Grande do Norte"
+                    },
+                    {
+                        "value": "Rio Grande do Sul"
+                    }
+                    ]
+                }
+                ]
+            },
+            {
+                "title": "Informações da Obra",
+                "inputs": [
+                {
+                    "inputType": "file",
+                    "name": "orcamento",
+                    "label": "orçamento",
+                    "width": 100
+                },
+                {
+                    "inputType": "checkbox",
+                    "name": "faseObra",
+                    "label": "Em que fase está sua obra?",
+                    "placeholder": "fase da obra",
+                    "required": true,
+                    "width": 100,
+                    "options": [
+                    {
+                        "value": "Alicerce"
+                    },
+                    {
+                        "value": "Laje"
+                    },
+                    {
+                        "value": "Contra Piso"
+                    },
+                    {
+                        "value": "Hidráulica / Elétrica"
+                    },
+                    {
+                        "value": "Acabamento"
+                    },
+                    {
+                        "value": "Pintura"
+                    }
+                    ]
+                },
+                {
+                    "inputType": "text-area",
+                    "name": "message",
+                    "label": "Mensagem",
+                    "placeholder": "Sua mensagem aqui",
+                    "width": 100
+                },
+                {
+                    "inputType": "radio",
+                    "name": "intencao",
+                    "label": "Qual a sua intenção de compra?",
+                    "required": true,
+                    "width": 100,
+                    "options": [
+                    {
+                        "value": "Nenhuma, estou só dando uma olhadinha"
+                    },
+                    {
+                        "value": "Preciso dos materiais para ontem"
+                    }
+                    ]
+                }
+                ]
+            }
+            ]
+        }
+        }
+    }
+}

@@ -1,0 +1,260 @@
+{
+  "store.custom#pages.institucional": {
+    "blocks": [
+      "list-context.image-list#banner-institucional",
+      "flex-layout.row#institucional"
+    ]
+  },
+  "template-dynamic-pages":{
+
+  },
+  "flex-layout.row#institucional": {
+    "title": "Institucional",
+    "props": {
+      "blockClass": "institucional",
+      "horizontalAlign": "around"
+    },
+    "children": [
+      "flex-layout.col#menu-institucional",
+      "flex-layout.col#text-institucional"
+    ]
+  },
+
+  "flex-layout.col#menu-institucional": {
+    "children": [
+      "custom-menu#page-menu-institucional-new"
+    ],
+    "props": {
+      "blockclass": "menuColumn",
+      "preventVerticalStretch": true,
+      "width": "20%"
+    }
+  },
+
+  "flex-layout.col#text-institucional": {
+    "children": [
+      "template-dynamic-pages#content-01",
+      "template-faq#institucional",
+      "toggle-layout#iframe",
+      "template-form#contact-us",
+      "template-dynamic-pages#content-02"
+    ],
+    "props": {
+      "blockclass": "textColumn",
+      "preventVerticalStretch": true,
+      "width": "80%"
+    }
+  },
+
+  "list-context.image-list#banner-institucional": {
+    "title": "Banner Principal",
+    "children": [
+        "slider-layout#main-banner"
+    ],
+    "props": {
+        "preload": true,
+        "images": [
+            {
+              "image": "assets/images/home.main-banner.desktop.jpg",
+              "mobileImage": "assets/images/home.main-banner.mobile.jpg",
+              "maxHeight": "800"
+            }
+        ]
+    }
+  },
+
+  "template-form#contact-us": {
+    "props": {
+        "isActive":true,
+        "title":"Entre em contato",
+        "description":"Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+        "showLabel":false,
+        "entity":"CT",
+        "gap":"10px",
+        "fields":[
+           {
+              "__editorItemTitle":"Nome",
+              "name":"name",
+              "placeholder":"Insira seu nome",
+              "type":"text",
+              "size":"50%",
+              "required":true
+           },
+           {
+              "__editorItemTitle":"E-mail",
+              "name":"email",
+              "placeholder":"Insira seu e-mail",
+              "type":"email",
+              "size":"50%",
+              "required":true
+           },
+           {
+              "__editorItemTitle":"Assunto",
+              "name":"subject",
+              "placeholder":"Insira um assunto",
+              "type":"text",
+              "size":"100%",
+              "required":true
+           },
+           {
+              "__editorItemTitle":"Mensagem",
+              "name":"message",
+              "placeholder":"Insira sua mensagem",
+              "type":"textarea",
+              "size":"100%",
+              "required":true
+           },
+           {
+              "__editorItemTitle":"Enviar",
+              "name":"submit",
+              "type":"submit"
+           }
+        ],
+        "message":{
+           "success":"Sua mensagem foi enviada com sucesso!  \n\n Retornaremos o mais breve possível.",
+           "error":"Opss! Parece que houve algum erro, pode tentar novamente por favor?"
+        }
+     }
+  },
+
+  "template-faq#institucional": {
+    "props": {
+      "title":"Perguntas Frequentes",
+      "questions":[
+         {
+            "__editorItemTitle":"O que é on-going?",
+            "answer":"\"Ongoing\" é uma expressão em inglês que significa \"em andamento\" ou \"em curso\". É comumente usada para descrever algo que está em progresso, sem ter sido concluído ou finalizado. Pode referir-se a projetos, tarefas, atividades, discussões ou qualquer outra coisa que ainda esteja em desenvolvimento ou em andamento.  Por exemplo, um projeto de construção pode ser descrito como \"ongoing\" se ainda estiver em andamento e não tiver sido concluído. Da mesma forma, uma série de TV pode ser considerada \"ongoing\" se ainda estiver sendo produzida e novos episódios estiverem sendo lançados regularmente."
+         },
+         {
+            "__editorItemTitle":"Vocês atuam com gestão de mídia?",
+            "answer":"A gestão de mídia refere-se ao planejamento, execução e controle das estratégias de comunicação e divulgação de uma empresa ou organização por meio de diferentes canais de mídia. Isso inclui a gestão de mídia tradicional, como rádio, televisão e jornais, bem como mídia digital, como redes sociais, websites, blogs e plataformas de streaming.  A gestão de mídia envolve diversas atividades, como pesquisa de mercado, identificação do público-alvo, seleção dos canais de mídia mais adequados, criação de conteúdo, agendamento de publicações, monitoramento de resultados e análise de métricas. O objetivo principal é aumentar a visibilidade da marca, fortalecer a reputação, alcançar o público-alvo e impulsionar o engajamento e as vendas."
+         },
+         {
+            "__editorItemTitle":"Vocês fazem integrações?",
+            "answer":"A integração de sistemas refere-se ao processo de conectar diferentes sistemas de software ou aplicativos para que eles possam trabalhar juntos de forma harmoniosa e trocar informações de maneira eficiente. Essa integração pode ocorrer entre sistemas internos de uma organização ou entre sistemas de diferentes organizações."
+         }
+      ]
+   }
+  },
+
+  "template-dynamic-pages#content-01": {
+    "title": "Conteúdo Dinâmico Superior",
+    "props": {
+      "blockClass":"content-01",
+      "hiddenSection":false,
+      "sections":[
+         {
+            "target":true,
+            "layout":"titulo-e-texto",
+            "__editorItemTitle":"Somos especialistas em implementar e evoluir e-commerces com soluções ágeis e altamente customizadas.",
+            "text":"A we.digi é uma consultoria de tecnologia de e-commerce que nasceu há 23 anos como uma software house. Durante toda nossa história, sempre nos diferenciamos por termos a frente do negócio sócios desenvolvedores, elevando a capacidade técnica de entrega, oferecendo atendimento técnico a nossos clientes em todas as etapas do projeto e trabalhando em projetos complexos com agilidade e customização.",
+            "cta":"agendar uma reunião",
+            "url":"https://wedigi.com.br/contato-2/"
+         },
+         {
+            "target":false,
+            "layout":"imagem",
+            "imageDetail":[
+               {
+                  "width":"100%",
+                  "height":"auto",
+                  "image":"https://wedigi.vtexassets.com/assets/vtex.file-manager-graphql/images/40ce1725-e083-43aa-a352-1212dbb5f925___c833d47f7b7d6c6e956ab537db3692da.jpg"
+               }
+            ],
+            "__editorItemTitle":"we.digi"
+         },
+         {
+            "target":false,
+            "layout":"linha",
+            "__editorItemTitle":"we.digi tech",
+            "text":"Nossa unidade de negócio de tecnologia de e-commerce é responsável por criar soluções de implementação e evolução. Sempre atualizados com as últimas tecnologias disponíveis, ajudamos seu negócio a crescer com:\n\n- Implantação\n- Evolução\n- CRO\n- SEO",
+            "subtitle":"implantação e evolução de e-commerce",
+            "imageDetail":[
+               {
+                  "width":"100%",
+                  "height":"auto",
+                  "image":"https://wedigi.vtexassets.com/assets/vtex.file-manager-graphql/images/03c2aa18-8c20-4784-a95d-244b494b775a___4f80f3dfb28b68499754f9c5c282f5dd.jpg"
+               }
+            ]
+         },
+         {
+            "target":false,
+            "layout":"linha-invertida",
+            "__editorItemTitle":"we.digi growth",
+            "imageDetail":[
+               {
+                  "width":"100%",
+                  "height":"auto",
+                  "image":"https://wedigi.vtexassets.com/assets/vtex.file-manager-graphql/images/a803c757-bb38-46e7-8853-9451e6e15324___76529b1518a96f7fe77039ba234a1c62.jpg"
+               }
+            ],
+            "subtitle":"performance e crescimento do seu negócio",
+            "text":"No we.digi growth executamos ações e campanhas orientadas a dados reais para potencializar e melhorar a performance do seu negócio. Nosso olhar estratégico para o negócio e nossa metodologia exclusiva direnciam nosso trabalho de:\n\n- Performance\n- CRM"
+         },
+         {
+            "target":false,
+            "layout":"linha",
+            "__editorItemTitle":"we.digi house",
+            "imageDetail":[
+               {
+                  "width":"100%",
+                  "height":"auto",
+                  "image":"https://wedigi.vtexassets.com/assets/vtex.file-manager-graphql/images/96ce5c06-de85-4758-856a-197e86990e85___dcca41ad172206c6bbd4f596d5fa9e8e.jpg"
+               }
+            ],
+            "subtitle":"nosso DNA software house",
+            "text":"O we.digi house é nossa unidade de negócio que integra, customiza e cria ferramentas que ajudam o e-commerce e seu negócio a evoluir para o futuro! Alguns dos serviços desta unidade:\n\n- Integrações\n- Sistemas customizados\n- Ferramentas de apoio ao e-commerce\n- recuperação de boletos\n- carrinho abandonado\n- mensageira por SMS e WhatsApp\n- integração com Google Shopping"
+         }
+      ]
+   }
+  },
+  "template-dynamic-pages#content-02": {
+    "title": "Conteúdo Dinâmico Inferior",
+    "props": {
+      "blockClass": "content-02"
+    }
+  },
+
+  "toggle-layout#iframe": {
+    "title": "Mostrar iframe?",
+    "props": {
+      "renderChildren": false
+    },
+    "children": [
+      "iframe#institucional"
+      ]
+  },
+  "iframe#institucional": {
+    "title": "iframe",
+    "props": {
+      "blockClass": "institucional",
+      "src": ""
+    }
+  },
+
+  "custom-menu#page-menu-institucional-new": {
+    "title": "Menu institucional",
+    "props": {
+        "blockClass": "page-menu-institucional",
+        "isAccordion": false,
+        "menu": [
+          {
+              "__editorItemTitle": "Quem Somos",
+              "url": "/quem-somos"
+          },
+          {
+            "__editorItemTitle": "FAQ",
+            "url": "/faq"
+          },
+          {
+              "__editorItemTitle": "404",
+              "url": "/exemplo/p"
+          },
+          {
+              "__editorItemTitle": "Contato",
+              "url": "/contato"
+          }
+      ]
+    }
+}
+}

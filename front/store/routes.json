@@ -1,0 +1,38 @@
+{
+  "store.custom#pages.institucional": {
+    "path": "/quem-somos"
+  },
+  "store.custom#collection": {
+    "path": "/sale"
+  },
+  "store.custom#deca-search-custom": {
+    "path": "/marca-deca"
+  },
+  "store.custom#docol-search-custom": {
+    "path": "/marca-docol"
+  },
+  "store.custom#lp-seo-spas": {
+    "path": "/banheiras-e-spas"
+  },
+  "store.custom#lp-leads": {
+    "path": "/orcamento"
+  },
+  "store.custom#lp-linhas-docol": {
+    "path": "/linhas-docol"
+  },
+  "store.custom#lp-linhas-deca-metais": {
+    "path": "/linhas-deca-metais"
+  },
+  "store.custom#lp-linhas-deca-loucas": {
+    "path": "/linhas-deca-loucas"
+  },
+  "store.custom#lp-cupons": {
+    "path": "/cupons"
+  },
+  "store.custom#nossas-lojas": {
+    "path": "/institucional/nossas-lojas"
+  },
+  "store.custom#impulse-search": {
+    "path": "/busca-personalizada"
+  }
+}

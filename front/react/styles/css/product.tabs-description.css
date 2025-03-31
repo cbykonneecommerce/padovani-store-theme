@@ -1,0 +1,100 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.wrapperDescriptions {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 150%;
+  color: #4C5563;
+}
+.wrapperDescriptions .menuDescriptions {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+@media (max-width: 1024px) {
+  .wrapperDescriptions .menuDescriptions {
+    flex-direction: column;
+  }
+}
+.wrapperDescriptions .menuDescriptions li {
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.5px;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 1px solid rgba(139, 139, 139, 0.1);
+}
+.wrapperDescriptions .menuDescriptions li:last-child {
+  border-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .wrapperDescriptions .menuDescriptions li {
+    width: 100%;
+  }
+}
+.wrapperDescriptions .menuDescriptions li .headerTab {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.wrapperDescriptions .menuDescriptions li .headerTab strong {
+  font-size: 18px;
+}
+.wrapperDescriptions .menuDescriptions li .contentDescriptions {
+  transition: all 0.25s linear;
+  height: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 150%;
+  text-transform: initial;
+  letter-spacing: 0.05em;
+  color: #000000;
+  overflow: hidden;
+}
+.wrapperDescriptions .menuDescriptions li.active .contentDescriptions {
+  height: auto;
+}
+.wrapperDescriptions .content {
+  transition: all 0.5s linear;
+  overflow: hidden;
+  height: 0;
+}
+.wrapperDescriptions .content.active {
+  height: auto;
+}
+.wrapperDescriptions .content.active ul {
+  padding-left: 0;
+  list-style: none;
+}
+.wrapperDescriptions .content.active ul li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.wrapperDescriptions .content.active ul li:nth-child(odd) {
+  padding: 12px 0 12px 12px;
+  background: #F9F9F9;
+}
+.wrapperDescriptions .content.active ul li:nth-child(even) {
+  padding: 12px 0 12px 12px;
+}
+.wrapperDescriptions.modelo-veste .contentText {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.5px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #8B8B8B;
+  margin-bottom: 8px;
+}

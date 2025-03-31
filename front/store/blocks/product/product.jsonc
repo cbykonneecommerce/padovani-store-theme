@@ -1,0 +1,92 @@
+{
+  "store.product": {
+    "title": "Product",
+    "children": [
+      "condition-layout.product#headercommon",
+      "condition-layout.product#header-deca",
+      "condition-layout.product#header-docol",
+      "product-banner#pdp",
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main",
+      "flex-layout.row#description-both",
+      "product-reviews.ratrustvox",
+      "buy-together#1",
+      "flex-layout.row#product.shelf-1",
+      "shelf-linx#3",
+      "product-types#product",
+      "condition-layout.product#footercommon",
+      "condition-layout.product#footer-deca"
+    ],
+    "parent": {
+      "header": "header#product",
+      "footer": "footer#product"
+    }
+  },
+  "buy-together#1": {},
+  "product-banner#pdp": {
+    "props": {
+      "data": [
+        {
+          "description": "Banner de promoção de frete grátis em compras acima de 499 reais para  alinha de metais da marca Docol",
+          "image": "https://padovani.vteximg.com.br/arquivos/padovani-faixa-promocao-frete-gratis-metais-docol.gif",
+          "limitador": "marca",
+          "id": "2000019",
+          "idCluster": "375"
+        },
+        {
+          "description": "Banner de promoção de frete grátis em compras acima de 499 reais para  alinha de metais da marca Deca",
+          "image": "https://padovani.vteximg.com.br/arquivos/padovani-faixa-promocao-frete-gratis-metais-deca.gif",
+          "limitador": "marca",
+          "id": "2000001",
+          "idCluster": "560"
+        }
+      ]
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4,
+      "blockClass": "breadCrumb"
+    },
+    "children": [
+      "breadcrumb"
+    ]
+  },
+  "shelf.relatedProducts#pdp1": {
+    "title": "Prateleira de recomendações",
+    "props": {
+      "recommendation": "buy",
+      "arrows": true,
+      "productList": {
+        "titleText": "Veja também esses produtos",
+        "itemsPerPage": 5,
+        "minItemsPerPage": 2
+      }
+    },
+    "blocks": [
+      "product-summary.shelf"
+    ]
+  },
+  "flex-layout.row#product.shelf-1": {
+    "title": "Vitrine Produtos Relacionados",
+    "props": {
+      "blockClass": [
+        "shelf",
+        "container-gray-light"
+      ]
+    },
+    "children": [
+      "shelf.relatedProducts#pdp1"
+    ]
+  },
+  "flex-layout.row#product-main": {
+    "title": "Area superior da pagina de produto",
+    "props": {
+      "blockClass": "product-main"
+    },
+    "children": [
+      "flex-layout.col#left-col",
+      "flex-layout.col#right-col"
+    ]
+  }
+}

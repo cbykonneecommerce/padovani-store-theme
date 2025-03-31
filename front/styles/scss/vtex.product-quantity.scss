@@ -1,0 +1,115 @@
+@import "./variables";
+
+.quantitySelectorContainer--shelf {
+    margin-bottom: 0;
+
+    :global(.vtex-numeric-stepper__input){
+        font-family: $fontPrimary;
+        font-style: normal;
+        font-weight: $weight-custom-3;
+        font-size: $size-2;
+        line-height: 20px;
+        color: $black;
+    }
+
+    :global(.vtex-numeric-stepper__input),
+    :global(.vtex-numeric-stepper__plus-button),
+    :global(.vtex-numeric-stepper__minus-button) {
+        background-color: transparent;
+        border: 0;
+        :global(.vtex-numeric-stepper__plus-button__text),
+        :global(.vtex-numeric-stepper__minus-button__text) {
+            color: $secondary-i;
+        }
+    }
+}
+
+.quantitySelectorContainer {
+    margin-bottom: 0 !important;
+    position: initial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #DEE7FC;
+
+    @media (min-width: $tablet) {
+        max-width: 107px;
+    }
+
+    .quantitySelectorTitle {
+        display: none;
+    }
+
+    .availableQuantityContainer {
+        font-size: 11px;
+    }
+
+    .quantitySelectorStepper {
+        width: 100%;
+        
+        :global(.vtex-numeric-stepper-container){
+            display: flex;
+            justify-content: space-evenly;
+        }
+        @media (max-width: $tablet) {
+            :global(.vtex-numeric-stepper-container){
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+        :global(.vtex-numeric-stepper__plus-button__text),  :global(.vtex-numeric-minus-button__text){
+            color: #3C5CA7;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    :global(.vtex-numeric-stepper__input),
+    :global(.vtex-numeric-stepper__plus-button),
+    :global(.vtex-numeric-stepper__minus-button) {
+        background-color: transparent;
+        border: 0;
+        width: 32px!important;
+
+        @media(max-width: $tablet) {
+            width: 100% !important;
+        }
+    }
+
+    :global(.vtex-numeric-stepper__input) {
+        width: 40px!important;
+        max-width: unset!important;
+        font-size: 20px;
+        color: #3C5CA7;
+        max-width: 35px;
+        font-weight: 500;
+    }
+
+    .availableQuantityContainer {
+        position: absolute;
+        z-index: 2;
+        top: 60px;
+        right: 0;
+        margin-top: 18px;
+        white-space: nowrap;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: right;
+        color: #878787;
+        display: none !important;
+
+        &::before {
+            content: "Aproveite!";
+            color: $primary;
+            font-weight: 600;
+        }
+
+        @media (max-width: $tablet) {
+            top: 108%;
+            left: 35%;
+            padding: 5px 5px;
+        }
+    }
+}

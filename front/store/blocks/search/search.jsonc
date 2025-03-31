@@ -1,0 +1,348 @@
+{
+    "store.search": {
+        "title": "Search",
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "skusFilter": "ALL",
+                "simulationBehavior": "default",
+                "maxItemsPerPage": 12
+            }
+        }
+    },
+    "search-result-layout": {
+        "props": {},
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    },
+    "store.search#brand": {
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+    "store.search#department": {
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+    "store.search#category": {
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+    "store.search#subcategory": {
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+    "flex-layout.row#searchbread": {
+        "children": [
+            "breadcrumb.search"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "flex-layout.row#searchtitle": {
+        "children": [
+            "search-title.v2"
+        ]
+    },
+    "flex-layout.row#result": {
+        "children": [
+            "flex-layout.col#filter",
+            "flex-layout.col#content"
+        ],
+        "props": {
+            "preventHorizontalStretch": true,
+            "fullWidth": true
+        }
+    },
+    "flex-layout.col#filter": {
+        "children": [
+            "filter-navigator.v3#new"
+        ],
+        "props": {
+            "blockClass": "filterCol"
+        }
+    },
+    "flex-layout.col#content": {
+        "children": [
+            "flex-layout.row#searchinfo",
+            "flex-layout.row#fetchprevious",
+            "flex-layout.row#products",
+            "flex-layout.row#fetchmore"
+        ],
+        "props": {
+            "width": "grow",
+            "preventVerticalStretch": true
+        }
+    },
+    "flex-layout.row#searchinfo": {
+        "children": [
+            "flex-layout.col#productCount",
+            "flex-layout.row#orderByAndSwitcher"
+        ]
+    },
+    "flex-layout.row#orderByAndSwitcher": {
+        "children": [
+            "order-by.v2",
+            "gallery-layout-switcher"
+        ],
+        "props": {
+            "horizontalAlign": "right",
+            "preventHorizontalStretch": true,
+            "blockClass": "orderByAndSwitcher",
+            "colGap": 3
+        }
+    },
+    "flex-layout.col#productCount": {
+        "children": [
+            "total-products.v2"
+        ],
+        "props": {
+            "blockClass": "productCountCol"
+        }
+    },
+    "flex-layout.row#fetchprevious": {
+        "props": {
+            "marginBottom": 3
+        },
+        "children": [
+            "search-fetch-previous"
+        ]
+    },
+    "flex-layout.row#fetchmore": {
+        "props": {
+            "marginTop": 3
+        },
+        "children": [
+            "search-fetch-more"
+        ]
+    },
+    "search-fetch-previous": {
+    },
+    "search-fetch-more": {
+    },
+    "flex-layout.row#products": {
+        "children": [
+            "search-content"
+        ]
+    },
+    "flex-layout.row#contentmobile": {
+        "children": [
+            "search-content"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "flex-layout.row#searchinfomobile": {
+        "children": [
+            "flex-layout.col#orderByMobile",
+            "flex-layout.col#filterMobile",
+            "flex-layout.col#switcherMobile"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "colSizing": "auto",
+            "colJustify": "around"
+        }
+    },
+    "flex-layout.col#orderByMobile": {
+        "children": [
+            "order-by.v2"
+        ],
+        "props": {
+            "blockClass": "orderByMobileCol"
+        }
+    },
+    "flex-layout.row#productCountMobile": {
+        "children": [
+            "total-products.v2"
+        ],
+        "props": {
+            "blockClass": "productCountMobileRow"
+        }
+    },
+    "flex-layout.col#filterMobile": {
+        "children": [
+            "filter-navigator.v3#new"
+        ],
+        "props": {
+            "blockClass": "filterMobileCol"
+        }
+    },
+    "flex-layout.col#switcherMobile": {
+        "children": [
+            "gallery-layout-switcher"
+        ],
+        "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "breadcrumb": {
+        "props": {
+            "showOnMobile": true
+        }
+    },
+    "page-manager#principal-brands-0.1v": {
+        "title": "Principais Marcas",
+        "props": {
+            "sections": 
+            [
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Titulo Marcas",
+                  "classe": "title-marcas",
+                  "backgroundColor": "background-grey",
+                  "componentType": "rich-text",
+                  "richText": "## Principais Marcas",
+                  "textAlign": "center"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Marcas",
+                  "classe": "marcas",
+                  "backgroundColor": "background-grey",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "cards": [
+                    {
+                      "image": {
+                        "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/dd1f8686-ea6f-422b-94bf-62430bad8507___2614a283cb3e896528d95cec870eddb9.png"
+                      },
+                      "target": false,
+                      "backgroundColor": "background-white",
+                      "altImage": "Docol",
+                      "text": "",
+                      "textAlign": "center"
+                    }
+                  ],
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/80ff64b4-5339-4744-abae-ffe009096e36___78a30a9eceed3bb0511f942bfc7fd8c9.png",
+                      "altImage": "Logo Deca",
+                      "label": "",
+                      "url": "/marca-deca",
+                      "hoverEffect": "opacity",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/80ff64b4-5339-4744-abae-ffe009096e36___78a30a9eceed3bb0511f942bfc7fd8c9.png"
+                    },
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/fd999284-944f-4713-bb93-a4a5775b6725___571b0cb8474a3c13b6c5f365679eb218.png",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/fd999284-944f-4713-bb93-a4a5775b6725___571b0cb8474a3c13b6c5f365679eb218.png",
+                      "url": "/tramontina",
+                      "altImage": "Logo tramontina",
+                      "hoverEffect": "opacity"
+                    },
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/dd1f8686-ea6f-422b-94bf-62430bad8507___2614a283cb3e896528d95cec870eddb9.png",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/dd1f8686-ea6f-422b-94bf-62430bad8507___2614a283cb3e896528d95cec870eddb9.png",
+                      "altImage": "marca docol",
+                      "url": "/marca-docol",
+                      "hoverEffect": "opacity"
+                    },
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/82f72f04-cf5a-41fc-b05f-96ead4a9a3ac___166df79bf9ee1842b44fad61b80a70a4.png",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/6bab33d0-73f8-4d7a-897e-6fa5ac47db07___166df79bf9ee1842b44fad61b80a70a4.png",
+                      "altImage": "logo Pado",
+                      "url": "/pado",
+                      "hoverEffect": "opacity"
+                    },
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/90eaf521-3578-453e-8111-ed2d70cdec0b___0c572a91b4483290d99fd0c14561aae4.png",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/90eaf521-3578-453e-8111-ed2d70cdec0b___0c572a91b4483290d99fd0c14561aae4.png",
+                      "altImage": "Logo IBBL",
+                      "url": "/ibbl",
+                      "hoverEffect": "opacity"
+                    },
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/d9c950f9-55d1-4b98-92e7-ce8a5f3f8984___125691850856edf160fb33387f6e61a1.png",
+                      "hoverEffect": "opacity",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/d9c950f9-55d1-4b98-92e7-ce8a5f3f8984___125691850856edf160fb33387f6e61a1.png",
+                      "altImage": "Logo Incepa",
+                      "url": "/incepa"
+                    },
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/01a82cf1-acff-40b7-a6f4-0ff8f5664dc5___daae2716f1a4a1ec51998e4a5acfb88f.png",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/01a82cf1-acff-40b7-a6f4-0ff8f5664dc5___daae2716f1a4a1ec51998e4a5acfb88f.png",
+                      "altImage": "Logo Roca",
+                      "url": "/roca",
+                      "hoverEffect": "opacity"
+                    },
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/52720f94-3aaf-46be-94f3-7739136a4fcc___90aee330cc1570f45d2acb65c6160604.png",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/52720f94-3aaf-46be-94f3-7739136a4fcc___90aee330cc1570f45d2acb65c6160604.png",
+                      "altImage": "Logo Lorenzetti",
+                      "url": "/lorenzetti",
+                      "hoverEffect": "opacity"
+                    },
+                    {
+                      "target": false,
+                      "url": "/portas-e-janelas",
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/ea37868a-961c-4b3a-98fc-548dd2cd611a___d3b181e29f311c6b5229417b1fe22366.png",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/ea37868a-961c-4b3a-98fc-548dd2cd611a___d3b181e29f311c6b5229417b1fe22366.png",
+                      "altImage": "Logo Sasazaki",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "showNavigationArrows": "always",
+                  "showPaginationDots": "never",
+                  "itemsPerPageDesk": 6,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 1
+                }
+            ]
+        }
+    }
+}

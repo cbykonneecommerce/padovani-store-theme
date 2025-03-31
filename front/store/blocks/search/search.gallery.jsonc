@@ -1,0 +1,102 @@
+{
+    "gallery": {
+        "props": {
+            "layouts": [
+                {
+                    "name": "three",
+                    "component": "GridSummary",
+                    "itemsPerRow": {
+                        "(min-width:1701px)": 4,
+                        "(min-width:1024px) and (max-width:1700px)": 4,
+                        "(min-width:623px) and (max-width:1023px)": 2,
+                        "(max-width:622px)": 2
+                    }
+                },
+                {
+                    "name": "four",
+                    "component": "ListSummary",
+                    "itemsPerRow": 4
+                }
+            ],
+            "ListSummary": "product-summary.shelf",
+            "GridSummary": "product-summary.shelf"
+        }
+    },
+
+    "flex-layout.row#search.gallery": {
+        "props": {
+            "blockClass": "gallery"
+        },
+        "children": [
+            "flex-layout.col#search.filter",
+            "flex-layout.col#search.gallery"
+        ]
+    },
+    "flex-layout.col#search.gallery": {
+        "props": {
+            "width": "80%",
+            "blockClass": "gallery"
+        },
+        "children": [
+            "flex-layout.row#search.buttons",
+            "search-fetch-previous",
+            "search-content",
+            "search-fetch-more"
+        ]
+    },
+
+    "search-content": {
+        "blocks": [
+            "gallery",
+            "not-found"
+        ]
+    },
+    "gallery-layout-switcher": {
+        "children": [
+            "gallery-layout-option#grid",
+            "gallery-layout-option#list"
+        ]
+    },
+    "gallery-layout-option#grid": {
+        "props": {
+            "name": "grid"
+        },
+        "children": [
+            "icon-grid",
+            "responsive-layout.desktop#textOptionGrid"
+        ]
+    },
+    "gallery-layout-option#list": {
+        "props": {
+            "name": "list"
+        },
+        "children": [
+            "icon-inline-grid",
+            "responsive-layout.desktop#textOptionList"
+        ]
+    },
+    "responsive-layout.desktop#textOptionGrid": {
+        "children": [
+            "rich-text#option-grid"
+        ]
+    },
+    "responsive-layout.desktop#textOptionList": {
+        "children": [
+            "rich-text#option-list"
+        ]
+    },
+    "rich-text#option-grid": {
+        "props": {
+            "text": "Grid",
+            "textColor": "c-auto",
+            "blockClass": "layout-option"
+        }
+    },
+    "rich-text#option-list": {
+        "props": {
+            "text": "List",
+            "textColor": "c-auto",
+            "blockClass": "layout-option"
+        }
+    }
+}

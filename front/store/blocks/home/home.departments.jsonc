@@ -1,0 +1,72 @@
+{
+    "flex-layout.row#home.departments": {
+        "title": "## Navegue pelos principais departamentos",
+        "props": {
+            "blockClass": "home-departments"
+        },
+        "children": [
+            "template-dynamic-content#home.departments"
+        ]
+    },
+    "template-dynamic-content#home.departments": {
+        "props": {
+            "blockClass": "home-departments",
+            "title": "## Navegue pelos principais departamentos",
+            "gap": 10,
+            "data": [
+                {
+                    "text": "Climatização e Ventilação",
+                    "url": "/climatizacao-e-ventilacao",
+                    "svgIcon": "assets/images/categorias/main-clima.png"
+                },
+                {
+                    "text": "Torneiras e misturadores",
+                    "url": "/banheiro/torneiras-e-misturadores",
+                    "svgIcon": "assets/images/categorias/main-torneiras.png"
+                },
+                {
+                    "text": "Cubas e Lavatórios",
+                    "url": "/banheiro/cubas-e-lavatorios",
+                    "svgIcon": "assets/images/categorias/main-cubas.png"
+                },
+                {
+                    "text": "Tintas",
+                    "url": "/tintas",
+                    "svgIcon": "assets/images/categorias/main-tintas.png"
+                },
+                {
+                    "text": "Coifas e Cooktops",
+                    "url": "/cozinha-e-lavanderia/coifas-e-cooktops",
+                    "svgIcon": "assets/images/categorias/main-coifas.png"
+                },
+                {
+                    "text": "Pias e Cubas para Cozinha",
+                    "url": "/cozinha-e-lavanderia/pias-e-cubas-para-cozinha",
+                    "svgIcon": "assets/images/categorias/main-pias.png"
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 6,
+                    "tablet": 4,
+                    "phone": 1
+                },
+                "infinite": true,
+                "showNavigationArrows": "desktopOnly",
+                "showPaginationDots": "mobileOnly",
+                "usePagination": true
+            },
+            "sliderLayoutConfigMobile": {
+                "itemsPerPage": {
+                    "desktop": 7,
+                    "tablet": 4,
+                    "phone": 2
+                },
+                "infinite": true,
+                "showNavigationArrows": "desktopOnly",
+                "showPaginationDots": "mobileOnly",
+                "usePagination": true
+            }
+        }
+    }
+}

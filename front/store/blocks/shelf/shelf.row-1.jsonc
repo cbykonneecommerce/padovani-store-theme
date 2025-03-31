@@ -1,0 +1,11 @@
+{
+    "flex-layout.row#row-summary-1": {
+        "props": {
+            "blockClass": "row-summary-01",
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "product-rating-inline"
+        ]
+    }
+}

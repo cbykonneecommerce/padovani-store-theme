@@ -1,0 +1,209 @@
+{
+  "template-form": {
+    "component": "Template.Form"
+  },
+  "template-dynamic-content": {
+    "component": "Template.DynamicContent"
+  },
+  "template-icons": {
+    "component": "Template.Icons"
+  },
+  "template-dynamic-banner": {
+    "component": "Template.DynamicBanner"
+  },
+  "template-newsletter": {
+    "component": "Template.Newsletter"
+  },
+  "template-scripts": {
+    "component": "Template.Scripts"
+  },
+  "template-faq": {
+    "component": "Template.Faq"
+  },
+  "template-instagram": {
+    "component": "Template.Instagram"
+  },
+  "template-whatsapp": {
+    "component": "Template.Whatsapp"
+  },
+  "custom-product-installments": {
+    "component": "Product.Installments",
+    "composition": "children"
+  },
+  "product-stock": {
+    "component": "Product.Stock"
+  },
+  "product-descriptions": {
+    "component": "Product.Descriptions"
+  },
+  "price-from": {
+    "component": "Shelf.PriceFrom",
+    "composition": "children"
+  },
+  "template-dynamic-pages": {
+    "component": "Template.DynamicPages"
+  },
+  "product-video": {
+    "component": "Product.Video"
+  },
+  "product-tabs-description": {
+    "component": "Product.TabsDescription"
+  },
+  "template-seo-text": {
+    "component": "Template.SeoText"
+  },
+  "header-search-bar": {
+    "component": "Header.SearchBar",
+    "composition": "children"
+  },
+  "footer-banner-info": {
+    "component": "Footer.BannerInfo"
+  },
+  "custom-menu": {
+    "component": "Header.CustomMenu"
+  },
+  "header-top-line": {
+    "component": "HeaderTopLine"
+  },
+  "most-searched": {
+    "component": "Header.MostSearched"
+  },
+  "exclusive-stores": {
+    "component": "Header.ExclusiveStores"
+  },
+  "scroll-listener": {
+    "component": "Header.ScrollListener",
+    "composition": "children"
+  },
+  "tooltip-minicart": {
+    "component": "Header.TooltipMinicart"
+  },
+  "back-to-top": {
+    "component": "Template.BackToTopButton"
+  },
+  "content-buy-modal": {
+    "component": "Product.ContentBuyModal"
+  },
+  "product-images-custom": {
+    "component": "Product.Images"
+  },
+  "product-color-selector": {
+    "component": "Product.ColorSelector"
+  },
+  "product-specifications": {
+    "component": "Product.Specifications"
+  },
+  "scroll-to-description": {
+    "component": "Product.ScrollToDescription"
+  },
+  "cities-served": {
+    "component": "Product.CitiesServed"
+  },
+  "product-types": {
+    "component": "Product.ProductTypes"
+  },
+  "product-packaging-price": {
+    "component": "Product.PackagingPrice"
+  },
+  "product-banner": {
+    "component": "Product.BannerProduct"
+  },
+  "buy-button-jacuzzi-validator": {
+    "component": "Product.BuyButtonJacuzziValidator",
+    "composition": "children"
+  },
+  "buy-button-whatsapp": {
+    "component": "Product.BuyButtonWhatsApp",
+    "composition": "children"
+  },
+  "price-custom": {
+    "component": "Product.PriceCustom"
+  },
+  "buy-together": {
+    "component": "Product.BuyTogether"
+  },
+  "mini-description": {
+    "component": "Product.MiniDescription"
+  },
+  "shipping-custom": {
+    "component": "Product.CalculateShipping"
+  },
+  "buy-button-custom": {
+    "component": "Product.NewBuyButton"
+  },
+  "flag-lightbox-custom": {
+    "component": "Product.FlagLightBox"
+  },
+  "template-popup": {
+    "component": "Template.Popup"
+  },
+  "template-popupExit": {
+    "component": "Template.PopupExit"
+  },
+  "product-flag": {
+    "component": "Template.ProductFlag"
+  },
+  "page-manager": {
+    "component": "Template.PageManager"
+  },
+  "filter-anchor": {
+    "component": "LandingPage.FilterAnchor"
+  },
+  "css-settings": {
+    "component": "LandingPage.CssSettings"
+  },
+  "shelf-buy-button": {
+    "component": "Shelf.BuyButton"
+  },
+  "leads-page": {
+    "component": "LandingPage.LeadsPage"
+  },
+  "container-stop-propagation": {
+    "component": "Template.ContainerStopPropagation",
+    "composition": "children"
+  },
+  "cupons-page": {
+    "component": "LandingPage.CuponsPage"
+  },
+  "buy-together-ambience": {
+    "component": "LandingPage.BuyTogether"
+  },
+  "add-unit-measurement": {
+    "component": "AddM2ToFloor",
+    "composition": "children"
+  },
+  "textProduct": {
+    "component": "textProduct"
+  },
+  "flag-lancamentos": {
+    "component": "FlagLancamento"
+  },
+  "custom-product-installments-m2": {
+    "component": "ProductInstallments",
+    "composition": "children"
+  },
+  "custom-product-summary-installments-m2": {
+    "composition": "children",
+    "component": "ProductInstallmentsSummary"
+  },
+  "custom-product-identifier": {
+    "component": "CustomProductSummaryIdentifier"
+  },
+  "impulse-search": {
+    "component": "ImpulseSearchPage"
+  },
+  "impulse-search-bar": {
+    "component": "ImpulseSearchBar"
+  },
+  "shelf-linx": {
+    "component": "LinxShelf"
+  },
+  "div": {
+    "component": "Div",
+    "composition": "children"
+  },
+  "linx-autocomplete": {
+    "component": "SearchLinxAutoComplete",
+    "composition": "children"
+  }
+}

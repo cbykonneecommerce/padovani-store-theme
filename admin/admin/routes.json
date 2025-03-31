@@ -1,0 +1,6 @@
+{
+  "admin.codigo-vendedor": {
+    "component": "Admin.CodVendor",
+    "path": "/admin/app/codigo-vendedor"
+  }
+}

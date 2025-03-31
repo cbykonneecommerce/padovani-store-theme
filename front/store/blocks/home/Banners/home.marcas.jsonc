@@ -1,0 +1,117 @@
+{
+    "flex-layout.row#home.marcas": {
+        "props": {
+            "blockClass": "home-marcas"
+        },
+        "children": [
+            "flex-layout.col#home.marcas"
+        ]
+    },
+    "flex-layout.col#home.marcas": {
+        "props": {
+            "blockClass": "home-marcas"
+        },
+        "children": [
+            "rich-text#home.marcas",
+            "template-dynamic-content#home.marcas"
+        ]
+    },
+    "rich-text#home.marcas": {
+        "title": "Principais Marcas",
+        "props": {
+            "text": "Principais Marcas:",
+            "blockClass": [
+                "home-title-shelf"
+            ]
+        }
+    },
+    "template-dynamic-content#home.marcas": {
+        "title": "Principais Marcas",
+        "props": {
+            "blockClass": "home-banners-1",
+            "hiddenTitleItems": false,
+            "data": [
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/marcas/marca-01.jpg",
+                            "imageMobile": "assets/images/home/marcas/marca-01.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/marcas/marca-02.jpg",
+                            "imageMobile": "assets/images/home/marcas/marca-02.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/marcas/marca-03.jpg",
+                            "imageMobile": "assets/images/home/marcas/marca-03.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/marcas/marca-04.jpg",
+                            "imageMobile": "assets/images/home/marcas/marca-04.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/marcas/marca-05.jpg",
+                            "imageMobile": "assets/images/home/marcas/marca-05.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/marcas/marca-06.jpg",
+                            "imageMobile": "assets/images/home/marcas/marca-06.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/marcas/marca-07.jpg",
+                            "imageMobile": "assets/images/home/marcas/marca-07.jpg"
+                        }
+                    ]
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 7,
+                    "tablet": 2,
+                    "phone": 3
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "always",
+                "usePagination": true
+            },
+            "sliderLayoutConfigMobile": {
+                "itemsPerPage": {
+                    "desktop": 4,
+                    "tablet": 2,
+                    "phone": 3
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "mobileOnly",
+                "usePagination": true,
+                "centerMode": "to-the-left",
+                "centerModeSlidesGap": 5
+            }
+        }
+    }
+}

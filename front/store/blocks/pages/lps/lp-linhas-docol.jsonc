@@ -1,0 +1,821 @@
+{
+    "store.custom#lp-linhas-docol":{
+        "children": [
+            "css-settings",
+            "page-manager#banner-lp-campaign-docol",
+            "flex-layout.row#main-section-campaign-docol"
+        ],
+        "parent": {
+            "header": "header#docol"
+          }
+    },
+    "page-manager#banner-lp-campaign-docol":{
+        "title": "Sessão Topo",
+        "props":{
+            "ListContext": "list-context.product-list#home.shelf-page-manager",
+            "SearchCustomQuery": "search-result-layout.customQuery#lp-campaign"            
+        }
+    },
+    "flex-layout.row#main-section-campaign-docol": {
+        "title": "Sessão Principal",
+        "props": {
+            "blockClass": "main-section-campaign",
+            "preventVerticalStretch": true
+        },
+        "children": ["filter-anchor#docol", "page-manager#right-content-docolll"]
+    },
+    "page-manager#right-content-docolll":{
+        "title": "Items",
+        "props":{
+            "ListContext": "list-context.product-list#home.shelf-page-manager",
+            "SearchCustomQuery": "search-result-layout.customQuery#lp-campaign",
+            "sections": [
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Titulo Principal",
+                  "classe": "titulo-linha",
+                  "componentType": "rich-text",
+                  "richText": "## Linhas Docol\nProcure o produto pela linha desejada",
+                  "textAlign": "center"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo A",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## a",
+                  "textAlign": "left",
+                  "idAnchor": "item-a"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container A",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo B",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## b",
+                  "textAlign": "left",
+                  "idAnchor": "item-b"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container B",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    },
+                    {
+                        "target": false,
+                        "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                        "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                        "altImage": "Produto Arabella",
+                        "label": "Arabella",
+                        "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                        "hoverEffect": "opacity"
+                    },
+                    {
+                        "target": false,
+                        "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                        "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                        "altImage": "Produto Arabella",
+                        "label": "Arabella",
+                        "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                        "hoverEffect": "opacity"
+                    },
+                    {
+                        "target": false,
+                        "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                        "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                        "altImage": "Produto Arabella",
+                        "label": "Arabella",
+                        "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                        "hoverEffect": "opacity"
+                    },
+                    {
+                        "target": false,
+                        "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                        "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                        "altImage": "Produto Arabella",
+                        "label": "Arabella",
+                        "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                        "hoverEffect": "opacity"
+                    },
+                    {
+                        "target": false,
+                        "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                        "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                        "altImage": "Produto Arabella",
+                        "label": "Arabella",
+                        "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                        "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo C",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## c",
+                  "textAlign": "left",
+                  "idAnchor": "item-c"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container C",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo D",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## d",
+                  "textAlign": "left",
+                  "idAnchor": "item-d"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container D",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo E",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## e",
+                  "textAlign": "left",
+                  "idAnchor": "item-e"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container E",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo G",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## g",
+                  "textAlign": "left",
+                  "idAnchor": "item-g"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container G",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo H",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## h",
+                  "textAlign": "left",
+                  "idAnchor": "item-h"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container H",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo I",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## i",
+                  "textAlign": "left",
+                  "idAnchor": "item-i"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container I",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo L",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## l",
+                  "textAlign": "left",
+                  "idAnchor": "item-l"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container L",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo M",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## m",
+                  "textAlign": "left",
+                  "idAnchor": "item-m"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container M",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo N",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## n",
+                  "textAlign": "left",
+                  "idAnchor": "item-n"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container N",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo O",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## o",
+                  "textAlign": "left",
+                  "idAnchor": "item-o"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container O",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo P",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## p",
+                  "textAlign": "left",
+                  "idAnchor": "item-p"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container P",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo Q",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## q",
+                  "textAlign": "left",
+                  "idAnchor": "item-q"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container Q",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo R",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## r",
+                  "textAlign": "left",
+                  "idAnchor": "item-r"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container R",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo S",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## s",
+                  "textAlign": "left",
+                  "idAnchor": "item-s"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container S",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo T",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## t",
+                  "textAlign": "left",
+                  "idAnchor": "item-t"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container T",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": true,
+                  "__editorItemTitle": "Titulo V",
+                  "classe": "title-item-linha",
+                  "componentType": "rich-text",
+                  "richText": "## v",
+                  "textAlign": "left",
+                  "idAnchor": "item-v"
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Container V",
+                  "classe": "container-item-linha",
+                  "componentType": "slider",
+                  "sliderType": "image",
+                  "images": [
+                    {
+                      "target": false,
+                      "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e4bbba8c-8a08-4788-943a-c359120fdde3___214fe5999055425ee3de6f85579f5ebc.webp",
+                      "altImage": "Produto Arabella",
+                      "label": "Arabella",
+                      "url": "/docol/arabella?_q=arabella&fuzzy=0&initialMap=ft&initialQuery=arabella&map=brand,ft&operator=and",
+                      "hoverEffect": "opacity"
+                    }
+                  ],
+                  "itemsPerPageDesk": 5,
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 2,
+                  "showNavigationArrows": "always",
+                  "showNavigationDots": "never"
+                }
+            ]  
+        }
+    },
+    "filter-anchor#docol": {
+        "props": {
+            "items": [
+                {
+                    "__editorItemTitle": "A",
+                    "id": "item-a"
+                },
+                {
+                    "__editorItemTitle": "B",
+                    "id": "item-b"
+                },
+                {
+                    "__editorItemTitle": "C",
+                    "id": "item-c"
+                },
+                {
+                    "__editorItemTitle": "D",
+                    "id": "item-d"
+                },
+                {
+                    "__editorItemTitle": "E",
+                    "id": "item-e"
+                },
+                {
+                    "__editorItemTitle": "G",
+                    "id": "item-g"
+                },
+                {
+                    "__editorItemTitle": "H",
+                    "id": "item-h"
+                },
+                {
+                    "__editorItemTitle": "I",
+                    "id": "item-i"
+                },
+                {
+                    "__editorItemTitle": "L",
+                    "id": "item-l"
+                },
+                {
+                    "__editorItemTitle": "M",
+                    "id": "item-m"
+                },
+                {
+                    "__editorItemTitle": "N",
+                    "id": "item-n"
+                },
+                {
+                    "__editorItemTitle": "O",
+                    "id": "item-o"
+                },
+                {
+                    "__editorItemTitle": "P",
+                    "id": "item-p"
+                },
+                {
+                    "__editorItemTitle": "Q",
+                    "id": "item-q"
+                },
+                {
+                    "__editorItemTitle": "R",
+                    "id": "item-r"
+                },
+                {
+                    "__editorItemTitle": "S",
+                    "id": "item-s"
+                },
+                {
+                    "__editorItemTitle": "T",
+                    "id": "item-t"
+                },
+                {
+                    "__editorItemTitle": "V",
+                    "id": "item-v"
+                },
+                {
+                    "__editorItemTitle": "U",
+                    "id": "item-u"
+                }
+            ]            
+        }
+    }
+}

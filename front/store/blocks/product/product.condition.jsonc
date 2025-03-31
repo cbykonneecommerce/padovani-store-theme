@@ -1,0 +1,96 @@
+{
+  "condition-layout.product#pdp": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable",
+          "toBe": false
+        }
+      ],
+      "Then": "flex-layout.col#product.subscriber", 
+      "Else": "flex-layout.row#product-buyarea"
+    }
+  },
+  "flex-layout.col#product.subscriber": {
+    "props": {
+      "blockClass": "buy-area",
+      "vertical-align": "middle"
+    },
+    "children": [
+      // "availability-notify"
+      "buy-button-whatsapp"
+    ]
+  },
+  "flex-layout.row#product-buyarea": {
+    "props": {
+      "blockClass": "wrapper-buy-area"
+    },
+    "children": [
+      "flex-layout.col#product-buyarea"
+    ]
+  },
+  "flex-layout.col#product-buyarea": {
+    "props": {
+      "blockClass": "col-buy-area"
+    },
+    "children": [
+      "condition-layout.product#price-pdp"
+    ]
+  },
+  "product-quantity": {
+    "props": {
+      "showLabel": false,
+      "showUnit": false
+    }
+  },
+  "condition-layout.product#price-pdp": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "specificationProperties",
+          "arguments": {
+            "name": "Peças por Caixa"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#porcelanato",
+      "Else": "buy-button-jacuzzi-validator"
+    }
+  },
+  "buy-button-jacuzzi-validator": {
+    "props": {
+      "colorBg": "#ebc072",
+      "colorkLetter": "#704a00",
+      "titleBtn": "Comprar direto da Fábrica",
+      "textBtn": "fale com nossa equipe de vendas"
+    },
+    "children": [
+      "flex-layout.col#prod-normal"
+    ]
+  },
+  "flex-layout.row#porcelanato": {
+    "props": {
+      "blockClass": "wrapper-buy-porcelanato"
+    },
+    "children": [
+      "modal-trigger#metro-quadrado"
+    ]
+  },
+  "flex-layout.col#prod-normal": {
+    "props": {
+      "blockClass": "col-buy-prod-normal"
+    },
+    "children": [
+      "flex-layout.col#col2-prod-normal"
+    ]
+  },
+  "flex-layout.col#col2-prod-normal": {
+    "props": {
+      "blockClass": "col2-prod-normal"
+    },
+    "children": [
+      "flex-layout.row#product.buy-area"
+    ]
+  }
+}

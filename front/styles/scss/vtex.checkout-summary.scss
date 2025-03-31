@@ -1,0 +1,52 @@
+@import './variables';
+
+
+.summaryItemLabel {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: $weight-custom-2;
+    font-size: $size-2;
+    line-height: 1.6em;
+    letter-spacing: 0.025em;
+    color: $gray-5;
+}
+
+.price {
+    font-family: $fontPrimary;
+    font-style: normal;
+    font-weight: $weight-custom-2;
+    font-size: $size-2;
+    line-height: 1.6em;
+    letter-spacing: 0.025em;
+    color: $gray-5;
+}
+
+
+
+.summaryItemContainer  {
+    &:last-child {
+        .summaryItemPrice  {
+            .price {
+                font-family: $fontPrimary;
+                font-style: normal;
+                font-weight: $weight-4;
+                font-size: $size-custom-3;
+                line-height: 1.6em;
+                text-align: right;
+                letter-spacing: 0.025em;
+                color: $gray-5;
+            }
+        }
+
+        .summaryItemLabel {
+            font-family: $fontPrimary;
+            font-style: normal;
+            font-weight: $weight-4;
+            font-size: $size-custom-3;
+            line-height: 1.6em;
+            text-align: right;
+            letter-spacing: 0.025em;
+            color: $gray-5;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+  "search-result-layout.mobile": {
+    "title": "Busca - Mobile",
+    "children": [
+      "flex-layout.row#search.banner-main",
+      "page-manager#principal-brands-0.1v",
+      "flex-layout.row#search.buttons-mobile",
+      "flex-layout.row#search.gallery-mobile",
+      "template-seo-text#search-bottom",
+      "shelf-linx#3"
+    ],
+    "props": {
+      "pagination": "infiniteScroll",
+      "preventRouteChange": true,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  "flex-layout.row#search.buttons-mobile": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "equal",
+      "horizontalAlign": "between",
+      "fullWidth": true,
+      "blockClass": [
+        "filter-buttons"
+      ]
+    },
+    "children": [
+      "drawer#filter",
+      "order-by.v2"
+    ]
+  },
+  "flex-layout.row#search.gallery-mobile": {
+    "props": {
+      "blockClass": "gallery-mobile"
+    },
+    "children": [
+      "flex-layout.col#search.gallery-mobile"
+    ]
+  },
+  "flex-layout.col#search.gallery-mobile": {
+    "props": {
+      "blockClass": "gallery-mobile"
+    },
+    "children": [
+      "search-fetch-previous",
+      "search-content",
+      "search-fetch-more"
+    ]
+  }
+}

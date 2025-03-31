@@ -1,0 +1,46 @@
+@import "./variables";
+
+.productHighlightWrapper {
+  display: none;
+  gap: 10px;
+  justify-content: center;
+
+  &--wrapper-flags-pdp {
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .productHighlightText {
+    background-color: $primary;
+    color: $primary-i;
+    font-size: 10px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100px;
+    overflow: hidden;
+    margin: 5px;
+
+    @media (max-width: $tablet) {
+      max-width: 65px;
+    }
+
+    &--flags-pdp {
+      font-family: $fontSecondary;
+      background: transparent;
+      max-width: unset;
+      border: 2px solid #4ab807 !important;
+      padding: 4px 8px 4px 8px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 21px;
+      letter-spacing: 0.02em;
+      color: #4ab807;
+      margin: 0;
+    }
+  }
+}

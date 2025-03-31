@@ -1,0 +1,10 @@
+{
+    "flex-layout.row#row-summary-2": {
+        "props": {
+            "blockClass": "row-summary-02"
+        },
+        "children": [
+            "product-summary-name"
+        ]
+    }
+}

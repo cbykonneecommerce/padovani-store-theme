@@ -1,0 +1,55 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.triggerContainer {
+  cursor: pointer;
+}
+
+.paper--metro-quadrado-modal {
+  max-width: 551px;
+  background-color: #f7f7f7;
+}
+@media (max-width: 300px) {
+  .paper--metro-quadrado-modal {
+    width: 90%;
+    margin: 0;
+    max-height: none;
+  }
+}
+
+.headerContainer--metro-quadrado-header-modal {
+  position: relative;
+  border-bottom: 0;
+  padding: 16px 32px 0;
+}
+.headerContainer--metro-quadrado-header-modal .closeButtonContainer--metro-quadrado-header-modal {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.headerContainer--metro-quadrado-header-modal :global(.vtex-rich-text-0-x-paragraph--metro-quadrado-title) {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #3C5CA7;
+  margin: 0;
+}
+@media (max-width: 300px) {
+  .headerContainer--metro-quadrado-header-modal {
+    padding: 24px 16px 6px;
+  }
+}
+
+.closeIcon--metro-quadrado-header-modal {
+  width: 22px;
+  height: 22px;
+}
+
+.contentContainer--metro-quadrado-content-modal {
+  padding: 16px 32px;
+}
+@media (max-width: 300px) {
+  .contentContainer--metro-quadrado-content-modal {
+    padding: 6px 16px 16px;
+  }
+}

@@ -1,0 +1,11 @@
+query {
+  brands @context(provider: "vtex.store-graphql") {
+    id
+    imageUrl
+    slug
+    name
+    titleTag
+    metaTagDescription
+    active
+  }
+}

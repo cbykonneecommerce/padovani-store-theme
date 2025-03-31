@@ -1,0 +1,83 @@
+{
+  "flex-layout.row#description-both": {
+    "props": {
+      "blockClass": "description-both"
+    },
+    "children": [
+      "flex-layout.row#description"
+    ]
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "blockClass": "descriptions"
+    },
+    "children": [
+      "responsive-layout.desktop#description",
+      "responsive-layout.tablet#description",
+      "responsive-layout.phone#description"
+    ]
+  },
+  "responsive-layout.desktop#description": {
+    "children": [
+      "product-descriptions",
+      "product-specifications"
+    ]
+  },
+  "responsive-layout.tablet#description": {
+    "children": [
+      "disclosure-layout#descriptions",
+      "disclosure-layout#specifications"
+    ]
+  },
+  "responsive-layout.phone#description": {
+    "children": [
+      "disclosure-layout#descriptions",
+      "disclosure-layout#specifications"
+    ]
+  },
+  "disclosure-layout#descriptions": {
+    "children": [
+      "disclosure-trigger#descriptions",
+      "disclosure-content#descriptions"
+    ]
+  },
+  "disclosure-trigger#descriptions": {
+    "children": [
+      "rich-text#descriptions"
+    ]
+  },
+  "disclosure-content#descriptions": {
+    "children": [
+      "product-descriptions"
+    ]
+  },
+  "rich-text#descriptions": {
+    "props": {
+      "text": "DESCRIÇÃO"
+    }
+  },
+  "disclosure-layout#specifications": {
+    "children": [
+      "disclosure-trigger#specifications",
+      "disclosure-content#specifications"
+    ]
+  },
+  "disclosure-trigger#specifications": {
+    "children": [
+      "rich-text#specifications"
+    ]
+  },
+  "disclosure-content#specifications": {
+    "props": {
+      "id": "teste"
+    },
+    "children": [
+      "product-specifications"
+    ]
+  },
+  "rich-text#specifications": {
+    "props": {
+      "text": "ESPECIFICAÇÕES"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+    "responsive-layout.desktop#home.fale-conosco": {
+        "title": "Fale Conosco - Desktop",
+        "children": [
+            "flex-layout.row#home.fale-conosco"
+        ]
+    },
+    "responsive-layout.mobile#home.fale-conosco": {
+        "title": "Fale Conosco - Mobile",
+        "children": [
+            "rich-text#fale-conosco-1",
+            "rich-text#fale-conosco-2",
+            "rich-text#fale-conosco-3"
+        ]
+    },
+    "flex-layout.row#home.fale-conosco": {
+        "title": "Home - Fale Conosco",
+        "props": {
+            "blockClass": "home-fale-conosco"
+        },
+        "children": [
+            "flex-layout.col#home.fale-conosco"
+        ]
+    },
+    "flex-layout.col#home.fale-conosco": {
+        "props": {
+            "blockClass": "home-fale-conosco"
+        },
+        "children": [
+            "rich-text#home.fale-conosco",
+            "flex-layout.row#home.fale-conosco-img"
+        ]
+    },
+    "rich-text#home.fale-conosco": {
+        "title": "Fale Conosco",
+        "props": {
+            "text": "Fale Conosco:",
+            "blockClass": [
+                "home-title-shelf"
+            ]
+        }
+    },
+    "flex-layout.row#home.fale-conosco-img": {
+        "props": {
+            "blockClass": "home-fale-conosco"
+        },
+        "children": [
+            "image#image-fale-conosco-1",
+            "image#image-fale-conosco-2",
+            "image#image-fale-conosco-3"
+        ]
+    },
+    "image#image-fale-conosco-1": {
+        "title": "Image 01 - Fale Conosco",
+        "props": {
+            "src": "assets/images/home/fale-conosco/fale-conosco-01.jpg",
+            "blockClass": "image-fale-conosco"
+        }
+    },
+    "image#image-fale-conosco-2": {
+        "title": "Image 02 - Fale Conosco",
+        "props": {
+            "src": "assets/images/home/fale-conosco/fale-conosco-02.jpg",
+            "blockClass": "image-fale-conosco"
+        }
+    },
+    "image#image-fale-conosco-3": {
+        "title": "Image 03 - Fale Conosco",
+        "props": {
+            "src": "assets/images/home/fale-conosco/fale-conosco-03.jpg",
+            "blockClass": "image-fale-conosco"
+        }
+    },
+    "rich-text#fale-conosco-1": {
+        "title": "Texto - Fale Conosco 1",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "[Compre pelo Whatsapp](/)",
+            "blockClass": "fale-conosco"
+        }
+    },
+    "rich-text#fale-conosco-2": {
+        "title": "Texto - Fale Conosco 2",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "[Faça seu orçamento](/)",
+            "blockClass": "fale-conosco"
+        }
+    },
+    "rich-text#fale-conosco-3": {
+        "title": "Texto - Fale Conosco 3",
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",   
+            "text": "[Fale com o SAC](/)",
+            "blockClass": "fale-conosco"
+        }
+    }
+}

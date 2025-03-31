@@ -1,0 +1,51 @@
+@import "./variables";
+
+.newsletterContainerTitle {
+    font-size: $heading3;
+    font-weight: $bold;
+}
+
+:global(.vtex-account__page-body) {
+    padding-left: 35px;
+}
+
+.userInfo {
+    min-width: 250px;
+}
+
+.boxContainerBody {
+
+    :global(.vtex-input__label),
+    :global(.vtex-dropdown__label) {
+        text-transform: uppercase;
+        font-weight: $bold;
+        color: $gray-3;
+        font-family: $fontPrimary;
+    }
+
+    :global(.vtex-profile-form-3-x-toggleBusinessButtonWrapper) {
+        margin-bottom: 10px !important;
+
+        :global(.vtex-button) {
+            font-size: $textSmall;
+            font-weight: $bold;
+            color: $secondary-i;
+            background-color: $secondary;
+            border: 1px solid $secondary;
+            font-family: $fontPrimary;
+        }
+    }
+
+}
+
+:global(.vtex-my-orders-app-3-x-cancelBtn) {
+    display: none !important;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--home-banners-5-01) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    width: 70% !important;
+}
+:global(.vtex-account__page-body )
+:global(.list)
+:global(.no-underline) {
+    display: none;
+}

@@ -1,0 +1,12 @@
+{
+    "flex-layout.row#row-summary-4": {
+        "props": {
+            "blockClass": "row-summary-04",
+            "preserveLayoutOnMobile": true,
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "flex-layout.row#add-to-cart"
+        ]
+    }
+}

@@ -1,0 +1,255 @@
+@import "../../../styles/scss/variables";
+
+.mainNewsLetter {
+  background-color: $primary;
+  padding: 49px 0;
+
+  @media (max-width: $tablet) {
+    padding: 20px 0;
+  }
+
+  .containerNewsLetter {
+    width: 90vw;
+    max-width: 875px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+
+    @media (max-width: $tablet) {
+      margin: auto;
+      width: 100%;
+    }
+  }
+
+  .thanksNewsLetter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: white;
+    height: 80px;
+    padding-top: 14px;
+    border-radius: 30px;
+    margin-top: 19px;
+
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+
+    .NewsLetterSuccess, .NewsLetterError {
+      padding: 10px;
+      font-size: $size-3;
+      font-family: $fontPrimary;
+      font-weight: $weight-custom-2;
+      text-transform: none;
+      margin: 0px;
+      display: flex;
+    }
+
+    .NewsLetterSuccess{
+      color: green;
+    }
+
+    .NewsLetterError{
+      color: red;
+    }
+  }
+
+  .mainTitle {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+    text-align: left;
+    justify-content: center;
+
+    @media (max-width: $tablet) {
+      margin: auto;
+      min-width: 100%;
+      padding: 0 30px;
+    }
+
+    img{
+      max-width: 100px;
+    }
+
+    h2 {
+      color: $white;
+      font-family: $fontPrimary;
+      font-style: normal;
+      font-weight: $weight-4;
+      font-size: $size-custom-8;
+      line-height: normal;
+      text-align: center;
+      margin: 0 0 10px;
+
+      @media (max-width: $tablet) {
+        font-size: $size-custom-10;
+      }
+    }
+
+    .newsletterTitle {
+      font-family: $fontPrimary;
+      white-space: nowrap;
+      margin-top: $margin-3;
+      color: $white;
+      font-style: normal;
+      font-weight: $weight-4;
+      font-size: 26px;
+      line-height: 32px;
+
+      @media (max-width: $tablet) {
+        font-size: 22px;
+      }
+    }
+
+    .smallTitle {
+      font-family: $fontPrimary;
+      font-size: $size-custom-3;
+      color: $white;
+      font-weight: $weight-custom-2;
+      margin: 0 0 20px;
+    }
+  }
+
+
+
+  @media (max-width:$tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h2 {
+    margin: 0;
+    color: $black;
+
+    @media (max-width:$tablet) {
+      text-align: center;
+    }
+  }
+
+  p {
+    @media (max-width: 800px) {
+      font-size: 12px;
+      margin-bottom: 30px;
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+
+    @media(max-width: $tablet) {
+      flex-direction: column;
+      padding: 0 30px;
+    }
+
+    input {
+      font-family: $fontPrimary;
+      padding: 12px 8px 12px 20px;
+      outline: none;
+      font-size: 18px;
+      color: $black;
+      border: none;
+      margin-right: 16px;
+
+      @media(max-width: $tablet) {
+        margin: 10px 0;
+      }
+
+      &:first-child{
+        @media (max-width: $tablet) {
+          margin: 0;
+        }
+      }
+
+      &::placeholder {
+        font-family: $fontPrimary;
+        font-style: normal;
+        line-height: 25px;
+        color: #878787;
+        font-style: italic;
+        text-transform: unset !important;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+    }
+
+    button {
+      font-family: $fontSecondary;
+      font-style: normal;
+      font-weight: $bold;
+      font-size: $heavy;
+      line-height: 20px;
+      color: $white;
+      cursor: pointer;
+      text-transform: uppercase;
+      height: 44px;
+      background: $secondary;
+      border: 0;
+      padding: 0 25px;
+      transition: all ease .3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover{
+        filter: brightness(80%);
+      }
+    }
+
+    input,button{
+      width: 33%;
+
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
+    }
+
+    :global(.vtex-styleguide-9-x-dropdown){
+      width: 33%;
+      margin-right: 15px;
+      height: 44px;
+      display: flex;
+
+      @media (max-width: $tablet) {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      label, :global(.vtex-dropdown__container){
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+      }
+    }
+  }
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRow--home-newsletter) {
+  .mainNewsLetter {
+    margin-top: 0 !important;
+  }
+
+  .containerNewsLetter {
+    width: 100%;
+    max-width: 90vw;
+
+    @media (min-width: 1280px) {
+      max-width: unset;
+    }
+
+  }
+}

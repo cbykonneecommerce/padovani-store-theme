@@ -1,0 +1,13 @@
+{
+    "flex-layout.row#row-summary-3": {
+        "props": {
+            "blockClass": "row-summary-03",
+            "preserveLayoutOnMobile": true,
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "flex-layout.col#summary-price"
+            // "product-quantity#shelf"
+        ]
+    }
+}

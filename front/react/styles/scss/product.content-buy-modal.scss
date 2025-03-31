@@ -1,0 +1,259 @@
+@import '../../../styles/scss/variables';
+
+.ContentWrapModal {
+  display: block;
+}
+
+.ContentModalWarnning {
+  display: flex;
+  column-gap: 16px;
+  padding: 8px 12px 8px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 16px;
+
+  svg {
+    display: block;
+    margin: auto;
+  }
+
+  p {
+    font-family: $fontSecondary;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: black;
+    margin: 0;
+
+    strong {
+      display: inline-block;
+    }
+
+    @media (max-width: 300px) {
+      font-size: 12px;
+      line-height: 19px;
+    }
+  }
+}
+
+.ContentModalQty {
+  display: block;
+  margin-bottom: 16px;
+
+  :global(.vtex-numeric-stepper-wrapper) {
+    position: relative;
+    width: max-content;
+    margin-bottom: 16px;
+  }
+
+  :global(.vtex-numeric-stepper-container) {
+    position: relative;
+
+    &::after {
+      content: 'm²';
+      display: block;
+      color: #000;
+      font-family: $fontSecondary;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      position: absolute;
+      right: 45px;
+      z-index: 2;
+      top: 11px;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  :global(.vtex-numeric-stepper__input) {
+    order: 0 !important;
+    width: 208px;
+    height: 54px;
+    padding: 12px 48px 12px 16px;
+    font-family: $fontSecondary;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    border: 1px solid #d1d1d1;
+    background-color: white;
+    border-radius: 5px;
+
+    &:focus {
+      border: 1px solid #d1d1d1;
+    }
+  }
+
+  :global(.vtex-numeric-stepper__plus-button-container),
+  :global(.vtex-numeric-stepper__minus-button-container) {
+    display: block;
+    order: 1 !important;
+    position: absolute;
+    right: 0;
+
+    :global(.vtex-numeric-stepper__plus-button),
+    :global(.vtex-numeric-stepper__minus-button) {
+      width: 40px !important;
+      height: 27.5px !important;
+      padding: 9px 6px 9px 6px !important;
+      border: 1px solid #ffffff !important;
+      background: #969595;
+
+      &:hover {
+        background: #3c5ca7;
+      }
+    }
+
+    :global(.vtex-numeric-stepper__plus-button__text),
+    :global(.vtex-numeric-stepper__minus-button__text) {
+      display: block !important;
+      font-size: 0;
+      margin: auto !important;
+      width: 12px !important;
+      height: 9px !important;
+    }
+  }
+
+  :global(.vtex-numeric-stepper__plus-button-container) {
+    top: 0;
+
+    :global(.vtex-numeric-stepper__plus-button) {
+      border-top-right-radius: 5px !important;
+      border-bottom-right-radius: 0px !important;
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+
+      :global(.vtex-numeric-stepper__plus-button__text) {
+        background: url('/arquivos/qty-arrw-up.png') no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  :global(.vtex-numeric-stepper__minus-button-container) {
+    bottom: 0;
+
+    :global(.vtex-numeric-stepper__minus-button) {
+      border-top-right-radius: 0px !important;
+      border-bottom-right-radius: 5px !important;
+      border-top-left-radius: 0px !important;
+      border-bottom-left-radius: 0px !important;
+
+      :global(.vtex-numeric-stepper__minus-button__text) {
+        background: url('/arquivos/qty-arrw-down.png') no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .ContentModalWrapCheckBox {
+    display: flex;
+    column-gap: 8px;
+
+    label {
+      font-family: $fontSecondary;
+      font-size: 16px;
+      line-height: 24px;
+
+      b {
+        color: #3c5ca7;
+      }
+
+      @media (max-width: 300px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+
+    :global(.vtex-checkbox__container) {
+      display: block;
+      margin: auto 0;
+
+      :global(.vtex-checkbox__inner-container) {
+        border-radius: 50%;
+        border: 1px solid black !important;
+        background: #fff !important;
+
+        &:global(.bg-action-primary) {
+          &::after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin: auto;
+            margin-top: 2px;
+            border-radius: 50%;
+            background: #3c5ca7;
+          }
+        }
+      }
+
+      :global(.vtex-checkbox__box) {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.ContentModalTotal {
+  display: block;
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+
+  > strong {
+    display: block;
+    font-family: $fontSecondary;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #3c5ca7;
+  }
+
+  .sale_price-wrapper {
+    display: block;
+    margin-bottom: 10px;
+    font-family: $fontSecondary;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    color: black;
+
+    .price {
+      font-family: $fontSecondary;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 48px;
+      color: black;
+    }
+  }
+
+  .ContentModalInfoQty {
+    font-family: $fontSecondary;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: black;
+  }
+}
+
+.ContentModalBuyButton {
+  display: flex;
+  justify-content: center;
+  column-gap: 16px;
+  padding: 12px 32px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background: #4ab807;
+  color: white;
+  font-family: $fontSecondary;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 30px;
+  text-align: center;
+}

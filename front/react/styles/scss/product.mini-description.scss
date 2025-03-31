@@ -1,0 +1,21 @@
+@import "../../../styles/scss/variables";
+
+.MiniDescriptionsList {
+    padding-left: 22px;
+    margin-bottom: 0;
+    color: #868689;
+
+    @media(max-width: $tablet) {
+        margin-top: 7px;
+    }
+}
+
+.MiniDescriptionsListItem {
+    font-family: $fontSecondary;
+    color: #868689;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}

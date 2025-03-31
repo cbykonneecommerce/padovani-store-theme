@@ -1,0 +1,66 @@
+{
+    "flex-layout.row#home.shelf-3": {
+        "title": "Vitrine 03",
+        "props": {
+            "blockClass": ["shelf", "container-gray-light"]
+        },
+        "children": [
+            "flex-layout.col#home.shelf-3"
+        ]
+    },
+    "rich-text#home.shelf-3": {
+        "title": "Título",
+        "props": {
+            "text": "Lançamentos",
+            "blockClass": ["home-title-shelf", "left-title"]
+        }
+    },
+    "flex-layout.col#home.shelf-3": {
+        "children": [
+            "rich-text#home.shelf-3",
+            "list-context.product-list#home.shelf-3"
+        ]
+    },
+    "list-context.product-list#home.shelf-3": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "responsive-layout.desktop#slider-shelf",
+            "responsive-layout.mobile#slider-shelf"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    },
+    // MOBILE
+    "flex-layout.row#home.shelf-3.mobile": {
+        "title": "Vitrine 03",
+        "props": {
+            "blockClass": [
+                "shelf", 
+                "shelf-mobile"
+            ]
+        },
+        "children": [
+            "flex-layout.col#home.shelf-3.mobile"
+        ]
+    },
+    "flex-layout.col#home.shelf-3.mobile": {
+        "children": [
+            "rich-text#home.shelf-3",
+            "list-context.product-list#home.shelf-3.mobile"
+        ]
+    },
+    "list-context.product-list#home.shelf-3.mobile": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#shelfs-mobile"
+        ],
+        "props": {
+            "orderBy": "OrderByTopSaleDESC"
+        }
+    }
+}

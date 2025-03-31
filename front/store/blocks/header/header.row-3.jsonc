@@ -1,0 +1,75 @@
+{
+    "flex-layout.row#header.row-3.desktop": {
+        "props": {
+            "blockClass": "header-row-3"
+        },
+        "children": [
+            "flex-layout.col#header.row-3.col-1"
+        ]
+    },
+    "flex-layout.col#header.row-3.col-1": {
+        "props": {
+            "blockClass": "header-row-3-col-1"
+        },
+        "children": [
+            "custom-menu#header-desktop2"
+        ]
+    },
+    //deca
+    "flex-layout.row#header.row-3.desktop-deca": {
+        "props": {
+            "blockClass": [
+                "header-row-3",
+                "product"
+            ]
+        },
+        "children": [
+            "flex-layout.col#header.row-3.col-1-deca"
+        ]
+    },
+    "flex-layout.col#header.row-3.col-1-deca": {
+        "props": {
+            "blockClass": [
+                "header-row-3-col-1"
+            ]
+        },
+        "children": [
+            "custom-menu#header-desktop-deca-0.1v"
+        ]
+    },
+    //docol
+    "flex-layout.row#header.row-3.desktop-docol": {
+        "props": {
+            "blockClass": [
+                "header-row-3",
+                "product"
+            ]
+        },
+        "children": [
+            "flex-layout.col#header.row-3.col-1-docol"
+        ]
+    },
+    "flex-layout.col#header.row-3.col-1-docol": {
+        "props": {
+            "blockClass": [
+                "header-row-3-col-1"
+            ]
+        },
+        "children": [
+            "custom-menu#header-desktop-decol-0.1v"
+        ]
+    },
+    // MOBILE
+    "flex-layout.row#header.row-3.mobile": {
+        "children": [
+            "linx-autocomplete#default"
+        ],
+        "props": {
+            "blockClass": "header-row-3-mobile",
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true,
+            "verticalAlign": "middle",
+            "colSizing": "auto"
+        }
+    }
+}

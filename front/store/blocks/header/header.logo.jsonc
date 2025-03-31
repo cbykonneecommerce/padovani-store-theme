@@ -1,0 +1,30 @@
+{
+    // DESKTOP
+    "flex-layout.col#header.logo.desktop": {
+        "props": {
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "logo#desktop"
+        ]
+    },
+    "logo#desktop": {
+        "props": {
+            "title": "Logo",
+            "href": "/",
+            "url": "assets/icons/logo2.png",
+            "width": "220",
+            "height": "53"
+        }
+    },
+    // MOBILE
+    "logo#mobile": {
+        "props": {
+            "title": "Logo",
+            "href": "/",
+            "url": "assets/icons/logo2.png",
+            "width": "180",
+            "height": "43"
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.badge-lancamentos--2024 {
+    position: relative;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    background: transparent;
+    max-width: unset;
+    padding: 2px 8px 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    background-color: #3d9879;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.badge-outlet {
+    position: relative;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    background: transparent;
+    max-width: unset;
+    padding: 2px 8px 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    background-color: #ab443f;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.badge-frete {
+    position: relative;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    background: transparent;
+    max-width: unset;
+    padding: 2px 8px 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #000;
+    background-color: #efbf2e;
+    margin: 0;
+    text-transform: uppercase;
+}

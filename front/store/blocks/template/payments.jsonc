@@ -1,0 +1,7 @@
+{
+    "accepted-payment-methods": {
+        "props": {
+          "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+        }
+    }
+}

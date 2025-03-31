@@ -1,0 +1,48 @@
+{
+    "flex-layout.row#pdp.line-5": {
+        "props": {
+            "fullWidth": true,
+            "horizontalAlign": "left",
+            "colSizing": "auto",
+            "verticalAlign": "middle",
+            "blockClass": "pdp-line-5"
+        },
+        "children": [
+            "flex-layout.col#pdp.line-5-col-1"
+        ]
+    },
+    "flex-layout.col#pdp.line-5-col-1": {
+        "props": {
+            "verticalAlign": "middle",
+            "blockClass": "pdp-prices-container"
+        },
+        "children": [
+            "flex-layout.row#pdp.line-5-row-1",
+            "custom-product-installments-m2",
+            "condition-layout.product#avista"
+        ]
+    },
+    "custom-product-installments-m2": {
+        "children": [
+            "product-installments#pdp-2"
+        ]
+    },
+    "rich-text#prod-aviso": {
+        "props": {
+            "blockClass": "aviso-prod",
+            "text": "![alt img-warnning](/arquivos/img-warnning.png) Preço exclusivo para o site."
+        }
+    },
+    "flex-layout.row#pdp.line-5-row-1": {
+        "props": {
+            "horizontalAlign": "left",
+            "colSizing": "auto",
+            "blockClass": "pdp-prices-wrapper"
+        },
+        "children": [
+            "product-list-price#pdp",
+            "condition-layout.product#pdp-price",
+            "product-price-savings#pdp-percentage"
+        ]
+    }
+}

@@ -1,0 +1,50 @@
+{
+  "search-result-layout.desktop": {
+    "title": "Busca - Desktop",
+    "children": [
+      "flex-layout.row#search.banner-main",
+      "flex-layout.row#breadcrumb-container",
+      "flex-layout.row#search.gallery",
+      "template-seo-text#search-bottom",
+      "page-manager#principal-brands-0.1v",
+      "shelf-linx#3"
+    ],
+    "props": {
+      "preventRouteChange": false,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  "flex-layout.row#title-container": {
+    "props": {
+      "blockClass": "title-container"
+    },
+    "children": [
+      "search-title.v2"
+    ]
+  },
+  "breadcrumb.search#bread-plp": {
+    "props": {
+      "blockClass": "bread-plp"
+    }
+  },
+  "flex-layout.row#breadcrumb-container": {
+    "children": [
+      "breadcrumb.search#bread-plp"
+    ]
+  },
+  "flex-layout.row#search.buttons": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "fullWidth": true,
+      "blockClass": "filter-navigation"
+    },
+    "children": [
+      // "total-products.v2",
+      "order-by.v2"
+    ]
+  }
+}

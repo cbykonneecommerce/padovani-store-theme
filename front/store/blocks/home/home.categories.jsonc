@@ -1,0 +1,75 @@
+{   
+    "flex-layout.row#home.categories": {
+        "title": "Categorias",
+        "props": {
+            "blockClass": ["home-departments", "container-gray"]
+        },
+        "children": [
+            "template-dynamic-content#home.categories"
+        ]
+    },
+    "template-dynamic-content#home.categories": {
+        "props": {
+            "blockClass": "home-categories",
+            "title": "## O que nossos clientes sempre compram",
+            "gap": 0,
+            "data": [
+                {
+                    "__editorItemTitle": "### Metais",
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/loucas.png"
+                        }
+                    ],
+                    "url": "/metais",
+                    "subtitle": "Ver produtos"
+                },
+                {
+                    "__editorItemTitle": "### Louças",
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/metais.png"
+                        }
+                    ],
+                    "url": "/loucas",
+                    "subtitle": "Ver produtos"
+                },
+                {
+                    "__editorItemTitle": "### Porcelanatos",
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/porcelanatos.png"
+                        }
+                    ],
+                    "url": "/pisos-e-revestimentos/pisos-e-porcelanatos",
+                    "subtitle": "Ver produtos"
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 3,
+                    "tablet": 3,
+                    "phone": 1
+                  },
+                  "infinite": true,
+                  "showNavigationArrows": "always",
+                  "showPaginationDots": "never",
+                  "usePagination": true
+                
+            },
+            "sliderLayoutConfigMobile": {
+                "itemsPerPage": {
+                    "desktop": 4,
+                    "tablet": 1,
+                    "phone": 1
+                  },
+                  "infinite": true,
+                  "showNavigationArrows": "never",
+                  "showPaginationDots": "never",
+                  "usePagination": true,
+                  "centerMode": "to-the-left",
+                  "centerModeSlidesGap": 5
+            }
+        }
+    }
+}

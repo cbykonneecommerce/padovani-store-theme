@@ -1,0 +1,109 @@
+{
+    "flex-layout.row#header.row-1.desktop": {
+        "children": [
+            "flex-layout.col#row-1.col-1",
+            "flex-layout.col#row-1.col-2",
+            "flex-layout.col#row-1.col-3"
+        ],
+        "props": {
+            "blockClass": "header-row-1",
+            "verticalAlign": "middle"
+        }
+    },
+    "template-dynamic-content#header.slider": {
+        "title": "Slider Header",
+        "props": {
+            "blockClass": "header-slider",
+            "hiddenTitleItems": false,
+            "data": [
+                {
+                    "__editorItemTitle": "**APROVEITE:** FRETE GRÁTIS NA PRIMEIRA COMPRA"
+                },
+                {
+                  "__editorItemTitle": "Frete grátis para todo o Brasil"
+                },
+                {
+                    "__editorItemTitle": "15% de desconto em pagamentos via Pix"
+                },
+                {
+                    "__editorItemTitle": "10% de desconto em pagamentos por boleto"
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 1,
+                    "tablet": 1,
+                    "phone": 1
+                  },
+                  "infinite": true,
+                  "showNavigationArrows": "always",
+                  "showPaginationDots": "never",
+                  "usePagination": true
+                
+            }
+        }
+    },
+    "flex-layout.col#row-1.col-1": {
+        "children": [
+            "rich-text#header.contato"
+        ],
+        "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "flex-layout.col#row-1.col-2": {
+        "title": "Entre em contato",
+        "children": [
+            "template-dynamic-content#header.slider"
+        ],
+        "props": {
+            "verticalAlign": "middle"
+        }
+    },
+    "flex-layout.col#row-1.col-3": {
+        "children": [
+            "rich-text#header.loja"
+        ],
+        "props": {
+            "verticalAlign": "middle",
+            "horizontalAlign": "right",
+            "blockClass": "header-row-3-col-3"
+        }
+    },
+    "rich-text#header.contato": {
+        "title": "Entre em contato",
+        "props": {
+            "text": "Entre em contato",
+            "blockClass": "header-top-text"
+        }
+    },
+    "rich-text#header.loja": {
+        "title": "Conheça nossa loja",
+        "props": {
+            "text": "Conheça nossa loja",
+            "blockClass": "header-top-text"
+        }
+    },
+    // MOBILE
+    "flex-layout.row#header.row-1.mobile": {
+        "children": [
+            "flex-layout.col#row-1.col-1.mobile"
+        ],
+        "props": {
+            "blockClass": "header-row-1",
+            "verticalAlign": "middle",
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "flex-layout.col#row-1.col-1.mobile": {
+        "props": {
+
+        },
+        "children": [
+            "template-dynamic-content#header.slider"
+        ]
+    }
+
+
+}

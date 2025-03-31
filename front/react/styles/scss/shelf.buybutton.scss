@@ -1,0 +1,37 @@
+@import "../../../styles/scss/variables";
+
+.customAddToCart {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: #514b4b;
+  font-family: effra, sans-serif;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 420px) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $tablet) {
+    height: 36px;
+  }
+
+  // &::before {
+  //     content: "";
+  //     display: block;
+  //     background-image: $add-to-cart-icon;
+  //     background-position: center;
+  //     background-repeat: no-repeat;
+  //     width: 27px;
+  //     height: 20px;
+  //     margin-right: 5px;
+  // }
+}
+
+:global(.vtex-product-summary-2-x-element) {
+  &:hover {
+    .customAddToCart {
+      height: 36px;
+    }
+  }
+}

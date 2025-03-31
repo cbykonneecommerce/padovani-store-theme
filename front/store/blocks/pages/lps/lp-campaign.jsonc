@@ -1,0 +1,72 @@
+{
+    "store.custom#lp-campaign":{
+        "children": [
+            "css-settings",
+            "page-manager#banner-lp-campaign",
+            "flex-layout.row#main-section-campaignn"
+        ]
+    },
+    "page-manager#banner-lp-campaign":{
+        "title": "Sessão Topo",
+        "props":{
+            "ListContext": "list-context.product-list#home.shelf-page-manager",
+            "SearchCustomQuery": "search-result-layout.customQuery#lp-campaign"
+        }
+    },
+    "flex-layout.row#main-section-campaignn": {
+        "title": "Sessão Principal",
+        "props": {
+            "blockClass": "main-section-campaign",
+            "preventVerticalStretch": true
+        },
+        "children": ["filter-anchor", "page-manager#right-content"]
+    },
+    "page-manager#right-content":{
+        "title": "Listagem de produtos",
+        "props":{
+            "ListContext": "list-context.product-list#home.shelf-page-manager",
+            "SearchCustomQuery": "search-result-layout.customQuery#lp-campaign"
+        }
+    },
+    "search-result-layout.customQuery#lp-campaign": {
+        "blocks": [
+            "search-result-layout.desktop#lp-campaign",
+            "search-result-layout.mobile#lp-campaign",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#lp-campaign": {
+        "title": "Busca - Desktop",
+        "children": [
+            "flex-layout.row#search.gallery.lp"
+        ],
+        "props": {
+          "preventRouteChange": false,
+          "mobileLayout": {
+            "mode1": "small",
+            "mode2": "normal"
+          }
+        }
+    },
+    "search-result-layout.mobile#lp-campaign": {
+        "title": "Busca - Mobile",
+        "children": [
+          "flex-layout.row#search.gallery-mobile"
+        ],
+        "props": {
+            "preventRouteChange": false,
+            "mobileLayout": {
+              "mode1": "small",
+              "mode2": "normal"
+            }
+        }
+    },
+    "flex-layout.row#search.gallery.lp": {
+        "props": {
+            "blockClass": ["gallery", "lp-campaign"]
+        },
+        "children": [
+            "flex-layout.col#search.gallery"
+        ]
+    }
+}

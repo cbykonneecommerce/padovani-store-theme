@@ -1,0 +1,899 @@
+@import "../../../styles/scss/variables";
+
+
+.BuyTogetherContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: $desktop;
+    margin: 20px auto;
+    background-color: #f3f8fb;
+    
+    .BuyTogetherInfoContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 48px 0;
+        max-width: 1090px;
+        margin: 0 auto;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            padding: 48px 16px;
+        }
+
+        .BuyTogetherInfoText{
+            font-size: 16px;
+            font-family: $fontPrimary;
+            color: grey;
+            text-align: left;
+            margin: 0;
+            height: fit-content;
+            max-width: 375px;
+        }
+
+        .BuyTogetherInfoList{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            width: 60%;
+            
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .BuyTogetherInfoItem{
+                background: #fff;
+                height: auto;
+                padding: 1rem;
+                width: 27%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                border-radius: 0 30px 0 30px;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                @media (max-width: $tablet) {
+                    width: 100%;
+                }
+
+                .BuyTogetherInfoStep{
+                    background-color: #4fb8d3;
+                    color: $white;
+                    position: absolute;
+                    left: -5px;
+                    top: -11px;
+                    font-style: normal;
+                    font-family: $fontPrimary;
+                    font-weight: 700;
+                    font-size: 20px;
+                    vertical-align: middle;
+                    padding: .1rem .55rem;
+                    border-radius: 50%;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        bottom: 5px;
+                        left: 20px;
+                        right: -55px;
+                        height: .5em;
+                        border-top: 3px solid #000;
+                        z-index: 0;
+                        border-color: #4fb8d3;
+                    }
+                }
+
+                .BuyTogetherInfoStepText{
+                    font-family: $fontPrimary;
+                    font-size: 13px;
+                    color: $black;
+                    margin: 12px 0;
+                }
+
+                .BuyTogetherInfoImage{
+                    max-width: 35px;
+                    max-height: 35px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .BuyTogetherInfoItem:not(:last-child){
+                margin-right: 15px;
+
+                @media (max-width: $tablet) {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+
+    .BuyTogetherBanner{
+        max-height: 80px;
+        max-width: 1180px;
+        padding: 0;
+        margin: 0 auto 20px;
+        width: 100%;
+        
+        @media (max-width: $tablet) {
+            max-height: none;
+            padding: 0;
+            max-width: 95%;
+        }
+    }
+
+    .TileListProduct{
+        width: 100%;
+        max-width: 1150px;
+        margin: 0 auto 20px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #4fb8d3;
+        color: #4fb8d3;
+        font-family: $fontPrimary;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: left;
+
+        @media (max-width: $tablet) {
+            width: 95%;
+            text-align: center;
+        }
+    }
+
+    .ProductListContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: $desktop;
+        width: 100%;
+        margin: auto;
+    
+        h2{
+            color: red;
+        }
+
+        .ProductListColorTitle{
+            color: $white;
+            text-align: center;
+            font-family: $fontPrimary;
+            font-size: 16px;
+            padding: 18px 0;
+            font-weight: 600;
+            text-transform: uppercase;
+            background-color: $black;
+            width: 100%;
+            max-width: 1180px;
+            margin: 20px auto;
+        }
+    
+        .ProductListWrapper{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 100%;
+            width: 100%;
+
+            @media (min-width: $tablet) {
+                gap: 15px;
+            }
+            @media (max-width: $tablet) {
+                padding: 0 16px;
+            }
+            
+            .ProductListItem{
+                width: 100%;
+                max-width: 370px;
+                margin: 10px;
+                cursor: pointer;
+                background: #fff;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                -webkit-transition: -webkit-transform .2s;
+                transition: -webkit-transform .2s;
+                transition: transform .2s;
+                transition: transform .2s,-webkit-transform .2s;
+                padding: .7rem .9rem;
+                text-decoration: none;
+                border: 1px solid $white;
+                transition: all .3s ease;
+
+                @media (max-width: $tablet) {
+                    margin: 0;
+                }
+    
+                &:hover{
+                    box-shadow: 2px 2px 5px 0 grey;
+                    transform: scale(1.05);
+    
+                    .ProductListItemTop{
+                        :global(.vtex-checkbox__line-container){
+                            :global(.vtex-checkbox__label){
+                                color: #05cc05;
+                            }
+        
+                            :global(.vtex-checkbox__container){
+                                :global(.vtex-checkbox__inner-container){
+                                    border: 1px solid #05cc05;
+                                    border-color: #05cc05 !important;
+                                }
+        
+                                :global(.vtex__icon-check){
+                                    background: white;
+                                    
+                                    path{
+                                        fill: #05cc05;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                }
+    
+                &.SelectedProduct{
+                    border: 1px solid green;
+    
+                    :global(.vtex-numeric-stepper__minus-button),
+                    :global(.vtex-numeric-stepper__plus-button){
+                        background-color: #012169 !important;
+                    }
+    
+                    .ProductListItemTop{
+                        :global(.vtex-checkbox__line-container){
+                            :global(.vtex-checkbox__label){
+                                color: $green-1;
+                            }
+        
+                            :global(.vtex-checkbox__container){
+                                :global(.vtex-checkbox__inner-container){
+                                    border: 1px solid #05cc05;
+                                    background-color: #05cc05;
+                                    border-color: #05cc05 !important;
+                                }
+        
+                                :global(.vtex__icon-check){
+                                    background: #05cc05;
+                                    
+                                    path{
+                                        fill: $white;
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                }
+    
+                .ProductListItemTop{
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    margin-bottom: 15px;
+                    
+                    :global(.vtex-checkbox__line-container){
+                        :global(.vtex-checkbox__label){
+                            color: $black;
+                        }
+    
+                        :global(.vtex-checkbox__container){
+                            :global(.vtex-checkbox__inner-container){
+                                border: 1px solid $black;
+                                border-color: $black !important;
+                            }
+    
+                            :global(.vtex__icon-check){
+                                background: white;
+                                
+                                path{
+                                    fill: $black;
+                                }
+                            }
+                        }
+                    }
+    
+                    span{
+                        padding: 2px 35px;
+                        height: 100%;
+                        font-size: 11px;
+                        font-family: $fontPrimary;
+                        color: #bebebe;
+                        border: 1px solid #bebebe;
+                        justify-self: flex-end;
+                        box-sizing: border-box;
+                        text-transform: uppercase;
+                        transition: .4s ease;
+                        user-select: none;
+    
+                        &:hover{
+                            background-color: #012169;
+                            border-color: #012169;
+                            color: $white;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                
+                .ProductListItemBottom{
+                    display: flex;
+                    justify-content: space-between;
+    
+                    img{
+                        max-width: 128px;
+                        border: 1px solid #d3d3d3;
+                        border-radius: 2px;
+                    }
+    
+                    .ProductListItemInfoWrapper{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding-left: 5px;
+    
+                        p{
+                            color: $black;
+                            font-weight: $weight-4;
+                            font-family: $fontPrimary;
+                            font-size: $size-1;
+                            margin: 0;
+                        }
+    
+                        .ProductListItemInfoAction{
+                            display: flex;
+                            justify-content: space-between;
+    
+                            .ProductListItemPrices{
+                                display: flex;
+                                flex-direction: column;
+    
+                                .ProductListItemListPrice{
+                                    .price{
+                                        color: #7e8288;
+                                        font-size:  $size-1;
+                                        font-family: $fontPrimary;
+                                        text-decoration: line-through;
+                                        margin-bottom: 4px;
+                                    }
+                                }
+    
+                                .ProductListItemPrice{
+                                    .price{
+                                        font-size: $size-2-custom;
+                                        font-family: $fontPrimary;
+                                        font-weight: $weight-5;
+                                    }
+                                }
+                            }
+                            
+                            :global(.vtex-numeric-stepper-wrapper){
+                                transition: all .3s ease;
+                                :global(.vtex-numeric-stepper__input){
+                                    width: 30px;
+                                    border: none;
+                                }
+    
+                                :global(.vtex-numeric-stepper__plus-button-container), :global(.vtex-numeric-stepper__minus-button-container){
+                                    display: flex;
+                                    align-items: center;
+                                }
+    
+                                :global(.vtex-numeric-stepper__minus-button),
+                                :global(.vtex-numeric-stepper__plus-button) {
+                                    width: 28px !important;
+                                    height: 28px;
+                                    border-radius: 30px 30px 30px 30px !important;
+                                    background-color: gray;
+                                    color: $white;
+                                }
+    
+                            }
+
+                            a{
+                                color: #4fb8d3;
+                                background-color: $white;
+                                border: 2px solid #4fb8d3;
+                                padding: 6px 8px;
+                                border-radius: 6px;
+                                text-decoration: none;
+                                display: inline-block;
+                                font-family: $fontPrimary;
+                                font-size: 11px;
+                                display: flex;
+                                align-items: center;
+
+                                &:hover{
+                                    background-color: #4fb8d3;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .BuyTogetherModalOverlay{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color:rgba(0,0,0,.7);
+            z-index: 10000;
+            animation: grow .3s ease;
+            cursor: pointer;
+        }
+    
+        .BuyTogetherModalContainer{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10001;
+            background-color: $white;
+            transform-origin: center center;
+            animation: grow .3s ease;
+            width: 100%;
+            max-width: 950px;
+            max-height: 586px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.33);
+    
+            @media (max-width: $tablet) {
+                width: 80vw;
+                max-height: 90%;
+                overflow-y: auto;
+                max-width: 400px;
+                box-sizing: border-box;
+                padding: 30px 20px 10px;
+            }
+    
+            &.BuyTogetherModalSelected{
+                .BuyTogetherModalBottom{
+                    :global(.vtex-numeric-stepper__minus-button),
+                    :global(.vtex-numeric-stepper__plus-button){
+                        background-color: #012169 !important;
+                    }
+    
+                    :global(.vtex-checkbox__line-container){
+                        :global(.vtex-checkbox__label){
+                            color: $green-1;
+                        }
+    
+                        :global(.vtex-checkbox__container){
+                            :global(.vtex-checkbox__inner-container){
+                                border: 1px solid #05cc05;
+                                background-color: #05cc05;
+                                border-color: #05cc05 !important;
+                            }
+    
+                            :global(.vtex__icon-check){
+                                background: #05cc05;
+                                
+                                path{
+                                    fill: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .BuyTogetherModalTop{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+    
+                h2{
+                    font-size: 21px;
+                    font-weight: 700;
+                    font-family: $fontPrimary;
+                    margin: 0;
+                    color: $black;
+                    text-align: center;
+    
+                    @media (max-width: $tablet) {
+                        font-size: $size-2-custom;
+                    }
+                }
+    
+                .BuyTogetherModalPrices{
+                    margin: 11px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+    
+                    .BuyTogetherModalListPrice{
+                        .price{
+                            color: #7e8288;
+                            font-size:  $size-3;
+                            font-family: $fontPrimary;
+                            text-decoration: line-through;
+                            margin-bottom: 4px;
+    
+                            @media (max-width: $tablet) {
+                                font-size: $size-3;
+                            }
+                        }
+                    }
+    
+                    .BuyTogetherModalPrice{
+                        .price{
+                            font-size: $size-5;
+                            font-family: $fontPrimary;
+                            font-weight: $weight-5;
+    
+    
+                            @media (max-width: $tablet) {
+                                font-size: $size-4;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .BuyTogetherModalMid{
+                display: flex;
+                width: 100%;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin: 10px 0;
+    
+                @media (max-width: $tablet) {
+                    max-height: 50vh;
+                    overflow-y: auto;
+                    margin: auto;
+                    flex-wrap: wrap;
+                }
+                .sliderRightArrow{
+                    @media (min-width: $tablet) {
+                        right: 30px;
+                    }
+                }
+    
+                .sliderLeftArrow{
+                    @media (min-width: $tablet) {
+                        left: 30px;
+                    }
+                }
+    
+                img{
+                    max-height: 300px;
+                    margin: 0 auto;
+    
+                    @media (max-width: $tablet) {
+                        max-height: 250px;
+                    }
+                }
+    
+                .BuyTogetherModalInfoContainer{
+                    max-height: 300px;
+                    overflow-y: scroll;
+                    width: 70%;
+    
+                    @media (max-width: $tablet) {
+                        width: 100%;
+                        max-height: none;
+                        overflow-y: initial;
+                    }
+    
+                    h3{
+                        font-family: $fontPrimary;
+                        text-transform: uppercase;
+                    }
+    
+                    p{
+                        font-family: $fontPrimary;
+                        color: $black;
+                        font-weight: 500;
+                        line-height: 1.5em;
+                        margin: 0;
+    
+                        @media (max-width: $tablet) {
+                            font-size: $size-3;
+                            font-weight: $normal;
+                        }
+                    }
+    
+                }
+            }
+    
+            .BuyTogetherModalBottom{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 8px;
+                width: 100%;
+    
+                @media (max-width: $tablet) {
+                    padding-top: 5px;
+                    justify-content: space-between;
+                }
+    
+                :global(.vtex-checkbox__line-container){
+                    :global(.vtex-checkbox__label){
+                        color: $black;
+                    }
+    
+                    :global(.vtex-checkbox__container){
+                        :global(.vtex-checkbox__inner-container){
+                            border: 1px solid $black;
+                            border-color: $black !important;
+                        }
+    
+                        :global(.vtex__icon-check){
+                            background: white;
+                            
+                            path{
+                                fill: $black;
+                            }
+                        }
+                    }
+                }
+    
+                :global(.vtex-numeric-stepper-wrapper){
+                    :global(.vtex-numeric-stepper__input){
+                        width: 30px;
+                        border: none;
+                    }
+    
+                    :global(.vtex-numeric-stepper__plus-button-container), :global(.vtex-numeric-stepper__minus-button-container){
+                        display: flex;
+                        align-items: center;
+                    }
+    
+                    :global(.vtex-numeric-stepper__minus-button),
+                    :global(.vtex-numeric-stepper__plus-button) {
+                        width: 28px !important;
+                        height: 28px;
+                        border-radius: 30px 30px 30px 30px !important;
+                        background-color: gray;
+                        color: $white;
+                    }
+    
+                }
+            }
+    
+        }
+    }
+    
+    .BuyAreaContainer{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0263b4;
+        max-width: $desktop;
+        margin: auto;
+        padding: 10px 15px;
+        transition: all .3s ease-in;
+
+        &.isFixed{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0;
+            max-width: none;
+            width: 100%;
+            justify-content: center;
+        }
+
+        &.isVisible{
+            z-index: 5;
+            pointer-events: all;
+            opacity: 1;
+        }
+    
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            gap: 5px;
+        }
+    
+        .BuyAreaText{
+            font-size: 16px;
+            color: $white;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0;
+            padding: 0 20px;
+            
+        }
+    
+        .BuyAreaActionsContainer{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 50%;
+    
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                width: 100%;
+            }
+    
+            .BuyAreaPriceContainer{
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+    
+                @media (max-width: $tablet) {
+                    margin: 10px 0;
+                }
+
+                .productPriceCode{
+                    .price{
+                        font-size: 13px;
+                        text-decoration: line-through;
+                        text-align: right;
+
+                        @media (max-width: $tablet) {
+                            text-align: center;
+                        }
+                    }
+                }
+    
+                .price{
+                    font-family: $fontPrimary;
+                    color: $white;
+                    font-size: 21px;
+                    font-weight: 700;
+                }
+            }
+    
+            .BuyAreaAddToCart{
+                background-color: $secondary;
+                font-family: $fontSecondary;
+                font-weight: 700;
+                color: $white;
+                font-size: 17px;
+                text-transform: uppercase;
+                width: 100%;
+                max-width: 270px;
+                margin-left: 15px;
+                padding: 10px 0;
+                border: none;
+                outline: none;
+                transition: all .3s ease;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media (max-width: $tablet) {
+                    max-width: none;
+                    margin-left: 0;                
+                }
+    
+                :hover{
+                    filter: brightness(95%);
+                }
+    
+                &.BuyAreaAddToCartDisabled{
+                    filter: brightness(50%);
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+
+    .bombPositionContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #b7b7b7;
+        padding: 20px 0;
+        max-width: $desktop;
+        margin: 20px auto 0;
+
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            padding: 20px 16px;
+        }
+
+        .bombPositionAction{
+            display: flex;
+            flex-direction: column;
+
+            .bombPositionTitle{
+                width: auto;
+                display: inline-block;
+                position: relative;
+                background-color: #181848;
+                color: #fff;
+                font-size: 1.625rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: .5rem 2rem;
+                box-shadow: 5px 5px 5px #b0b0b0;
+                margin-bottom: 2rem;
+                font-family: $fontPrimary;
+
+                @media (max-width: $tablet) {
+                    font-size: 18px;
+                }
+
+                &::after{
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-left: 20px solid rgba(0,0,0,0);
+                    border-right: 20px solid rgba(0,0,0,0);
+                    border-top: 20px solid #181848;
+                    position: absolute;
+                    bottom: -1rem;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+
+            .bombPositionSelect{
+                width: 100%;
+                max-width: 235px;
+                display: block;
+                margin: 1rem auto;
+                padding: .5rem 1rem;
+                box-shadow: 2px 2px 10px #000;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                color: #59595b;
+                border: 0;
+                background-color: #eaeaea;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 1rem;
+            }
+            
+            .bombPositionText{
+                width: 100%;
+                display: block;
+                color: #6c6c6c;
+                font-size: 0.8125rem;
+                text-align: center;
+                font-family: $fontPrimary;
+            }
+        }
+
+        .bombPositionImage{
+            width: 50%;
+            max-width: 700px;
+
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
+        }
+    }
+
+    :global(.vtex-checkbox__label){
+        pointer-events: none;
+    }
+}
+
+
+@keyframes grow {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

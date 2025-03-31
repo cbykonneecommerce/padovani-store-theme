@@ -1,0 +1,20 @@
+@import "./variables";
+
+.list--wishlist {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    @media(max-width: $tablet) {
+        padding: 0 15px;
+    }
+
+    .item--wishlist {
+        width: calc(25% - 15px);
+        margin: 10px 15px 10px 0;
+
+        @media(max-width: $tablet) {
+            width: calc(50% - 15px);
+        }
+    }
+}

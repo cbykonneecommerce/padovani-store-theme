@@ -1,0 +1,73 @@
+{
+    "stack-layout#prodsum": {
+        "children": [
+            "product-summary-image#shelf",
+            "flex-layout.row#flags",
+            "flag-lancamentos"
+        ]
+    },
+    "container-stop-propagation#add-to-list-btn": {
+        "children": [
+            "add-to-list-btn"
+        ]
+    },
+    "product-highlight-wrapper": {
+        "props": {
+          "blockClass": "collection"
+        },
+        "children": [
+          "product-highlight-text"
+        ]
+      },
+      "product-highlight-text": {
+        "props": {
+          "message": "{highlightName}"
+        }
+      },
+    "flex-layout.row#flags": {
+        "props": {
+            "colSizing": "auto",
+            "horizontalAlign": "between",
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "condition-layout.product#badge-lancamentos",
+            "container-stop-propagation#add-to-list-btn"
+        ]
+    },
+    "condition-layout.product#badge-lancamentos": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "productClusters",
+                    "arguments": {
+                        "id": "695"
+                    }
+                },
+                {
+                    "subject": "productClusters",
+                    "arguments": {
+                        "id": "611"
+                    }
+                },
+                {
+                    "subject": "productClusters",
+                    "arguments": {
+                        "id": "347"
+                    }
+                }
+            ],
+            "Then": "flag-lancamentos#shelf",
+            "Else": "product-flag"
+        }
+    },
+    "flag-lancamentos#shelf": {
+        "props": {
+            "blockClass": [
+                "lancamentos--2024",
+                "outlet",
+                "frete"
+            ]
+        }
+    }
+}

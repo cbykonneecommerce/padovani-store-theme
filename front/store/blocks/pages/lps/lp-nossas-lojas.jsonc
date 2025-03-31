@@ -1,0 +1,170 @@
+{
+  "store.custom#nossas-lojas":{
+        "children": [
+            "page-manager#nossas-lojas"
+        ]
+    },
+
+    "page-manager#nossas-lojas":{
+        "title": "Items",
+        "props":{
+            "ListContext": "list-context.product-list#home.shelf-page-manager",
+            "SearchCustomQuery": "search-result-layout.customQuery#lp-campaign",
+            "sections": 
+            [
+                {
+                  "disabled": false,
+                  "componentType": "banner",
+                  "__editorItemTitle": "Banner",
+                  "image": {
+                    "imageDesk": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/12e1b5d7-8571-4a2d-bf55-aa5a91bd0325___11797ba4dd9fd1b00f3a9042810f9186.png",
+                    "fullWidth": true
+                  },
+                  "activeText": true,
+                  "richText": "## NOSSAS LOJAS\nCom mais de 50 anos de história, hoje a Padovani disponibiliza duas lojas na cidade de Itu/SP, além da\nloja Conceito localizada também em Itu/SP e uma loja na cidade de Indaiatuba/SP e em Sorocaba/SP.",
+                  "textAlign": "center",
+                  "colorWhite": true,
+                  "horizontalAlignBlock": "center",
+                  "verticalAlignBlock": "center",
+                  "padding": false,
+                  "anchorComponent": false
+                },
+                {
+                  "disabled": false,
+                  "padding": false,
+                  "anchorComponent": false,
+                  "__editorItemTitle": "Slider",
+                  "componentType": "slider",
+                  "sliderType": "card",
+                  "cards": [
+                    {
+                      "image": {
+                        "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/9e606b89-2d71-4231-8034-8a821ef9a1d3___97561d588c4d30320bfd1a49699b07db.png"
+                      },
+                      "target": false,
+                      "backgroundColor": "background-grey",
+                      "__editorItemTitle": "Variedade de Produtos",
+                      "altImage": "variação de produtos",
+                      "text": "###### **VARIEDADE DE PRODUTOS**"
+                    },
+                    {
+                      "image": {
+                        "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/ebe1efdd-1931-495f-8cca-36242446ea2b___f19e079df698483a64656900177f206f.png"
+                      },
+                      "target": false,
+                      "__editorItemTitle": "Experiência de Mercado",
+                      "altImage": "experiencia de mercado",
+                      "text": "###### **EXPERIÊNCIA DE MERCADO**"
+                    },
+                    {
+                      "image": {
+                        "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/daeb0420-d4ba-4e0a-a696-1ba762bbca80___11f920dbd56c9b0658cf33d921623f62.png"
+                      },
+                      "target": false,
+                      "__editorItemTitle": "Estrutura de Ponta",
+                      "altImage": "Estrutur de ponta",
+                      "text": "###### **ESTRUTURA DE PONTA**"
+                    },
+                    {
+                      "image": {
+                        "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/9b47e093-20d3-441f-adbc-625addfa44a5___a59bbea202e85f57988b544e8e0aea2c.png"
+                      },
+                      "target": false,
+                      "__editorItemTitle": "Equipe Competente",
+                      "altImage": "Equipe Competente",
+                      "text": "###### **EQUIPE COMPETENTE**"
+                    }
+                  ],
+                  "itemsPerPageDesk": 4,
+                  "showPaginationDots": "never",
+                  "showNavigationArrows": "always",
+                  "itemsPerPageTablet": 3,
+                  "itemsPerPagePhone": 1,
+                  "infinite": false,
+                  "classe": "slide-nossas-lojas"
+                },
+                {
+                  "disabled": false,
+                  "componentType": "faq",
+                  "faqType": "model-white",
+                  "__editorItemTitle": "FAQ",
+                  "faq": [
+                    {
+                      "image": [
+                        {
+                          "image": {
+                            "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/40f198d1-0642-461a-b56b-f62dd1a8bbaf___982367d4e096516e7a6ed32db7c19ea7.webp"
+                          }
+                        },
+                        {
+                          "image": {
+                            "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/40f198d1-0642-461a-b56b-f62dd1a8bbaf___982367d4e096516e7a6ed32db7c19ea7.webp"
+                          }
+                        }
+                      ],
+                      "__editorItemTitle": "Loja Itu - Varvito",
+                      "text": "ENDEREÇO:\n\nRua Parque do Varvito, 100\nGleba A - Alto, Itu - SP\n\n\nATENDIMENTO:\n\nSegunda a sexta: 7h30 às 19h\nSábado: 7h30 às 17h\n\n\nCONTATO:\n\n(11) 4013-7009\n\n(11) 4013-7000"
+                    },
+                    {
+                      "image": [
+                        {
+                          "image": {
+                            "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/12da2126-3848-444e-9f0d-7e6e408e4637___9dde520a512b49af39e7e116c7a5c36d.webp"
+                          }
+                        }
+                      ],
+                      "__editorItemTitle": "Loja Itu - Tirandentes",
+                      "text": "\nENDEREÇO:\n\nAv. Tiradentes, 271\nVila Nova, Itu - SP\n\n\nATENDIMENTO:\n\nSegunda a sexta: 7h30 às 18h\nSábado: 7h30 às 12h30\n\n\nCONTATO:\n\n(11) 4013-7009\n\n(11) 4013-9500"
+                    },
+                    {
+                      "image": [
+                        {
+                          "image": {
+                            "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/bfe8d227-8e9e-49c7-9c74-a29a44e6ff8b___2340a55dd97395aeffbc4de628c20dab.jpeg"
+                          }
+                        }
+                      ],
+                      "__editorItemTitle": "Loja Sorocaba - Armando Pannunzio",
+                      "text": "\nENDEREÇO:\n\nAv. Dr. Armando Pannunzio, 882\nJardim Vera Cruz - Sorocaba - SP\n\n\nATENDIMENTO:\n\nSegunda a sexta: 8h às 19h\nSábado: 8h às 17h\n\n\nCONTATO:\n\n(15) 3229-0555"
+                    },
+                    {
+                      "image": [
+                        {
+                          "image": {
+                            "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/76d283b9-608d-46b0-bb4d-09248c92452a___c2e2c5c4253504314a7ba8c8b736734a.webp"
+                          }
+                        }
+                      ],
+                      "__editorItemTitle": "Loja Sorocaba - Itavuvu",
+                      "text": "ENDEREÇO:\n\nAv. Itavuvu, 3140\nJardim Santa Cecilia, Sorocaba - SP\n\n\nATENDIMENTO:\n\nSegunda a sexta: 9h às 18h\nSábado: 8h às 17h\n\n\nCONTATO:\n\n(15) 3229-0555\n\n(15) 3226-9250"
+                    },
+                    {
+                      "image": [
+                        {
+                          "image": {
+                            "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/83b1d269-8417-4796-aad8-c09c7bc4c921___a207b4578b0bc7e1d99d1c26ae999aad.jpeg"
+                          }
+                        }
+                      ],
+                      "__editorItemTitle": "Loja Indaiatuba",
+                      "text": "ENDEREÇO:\n\nAv. Francisco de Paula Leite, 3057\nRecreio Campestre Jóia, Indaiatuba - SP\n\n\nATENDIMENTO:\n\nSegunda a sexta: 7h30 às 19h\nSábado: 7h30 às 13h\n\n\nCONTATO:\n\n(19) 3936-8850"
+                    },
+                    {
+                      "image": [
+                        {
+                          "image": {
+                            "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/9dd61fb7-7346-480c-82c3-73c611157d46___92bd91fb058353b33165f02f2eef2d92.jpeg"
+                          }
+                        }
+                      ],
+                      "__editorItemTitle": "Loja Itu - Conceito",
+                      "text": "ENDEREÇO:\n\nAv. Da Saudade,294\nVila Padre Bento - Itu/SP\n\n\nATENDIMENTO:\n\nSegunda a sexta: 9h às 18h\nSábado: 9h às 14h\n\n\nCONTATO:\n\n(11) 4013-7009"
+                    }
+                  ],
+                  "padding": true,
+                  "anchorComponent": false
+                }
+              ]
+        }
+    }
+}

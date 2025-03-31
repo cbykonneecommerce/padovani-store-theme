@@ -1,0 +1,118 @@
+{
+    "header-layout.mobile": {
+        "title": "Header Mobile",
+        "children": [
+            "toggle-layout#banner-topo",
+            "template-scripts",
+            "scroll-listener",
+            "template-whatsapp",
+            "back-to-top"
+        ]
+    },
+    "scroll-listener":{
+        "children":[
+            "flex-layout.row#sticky.mobile"
+        ]
+    },
+    "flex-layout.row#sticky.mobile": {
+        "props": {
+            "blockClass": "main-header",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": true
+        },
+        "children": [
+            "header-top-line#mobile",
+            "flex-layout.row#header.row-2.mobile",
+            "flex-layout.row#header.row-3.mobile"
+        ]
+    },
+    "header-top-line#mobile":{
+        "props":{
+            "linksArray":[
+                {
+                    "__editorItemTitle": "ATENDIMENTO",
+                    "url": "/atendimento",
+                    "target": true
+                    // "iconArea":{
+                    //     "icon":{
+
+                    //     }
+                    // }
+                },
+                {
+                    "__editorItemTitle": "NOSSAS LOJAS",
+                    "url": "/nossas-lojas",
+                    "target": true
+                    // "iconArea":{
+                    //     "icon":{
+                            
+                    //     }
+                    // }
+                }
+            ]
+        }
+    },
+    //deca
+    "header-layout.mobile#deca": {
+        "title": "Header Mobile Deca",
+        "children": [
+            "template-scripts",
+            "scroll-listener#deca",
+            "template-whatsapp",
+            "back-to-top"
+        ]
+    },
+    "scroll-listener#deca":{
+        "children":[
+            "flex-layout.row#sticky.mobile-deca"
+        ]
+    },
+    "flex-layout.row#sticky.mobile-deca": {
+        "props": {
+            "blockClass": "main-header",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": true
+        },
+        "children": [
+            "header-top-line#mobile",
+            "flex-layout.row#header.row-2.mobile-deca",
+            "flex-layout.row#header.row-3.mobile"
+        ]
+    },
+    //docol
+    "header-layout.mobile#docol": {
+        "title": "Header Mobile Docol",
+        "children": [
+            "template-scripts",
+            "scroll-listener#docol",
+            "template-whatsapp",
+            "back-to-top"
+        ]
+    },
+    "scroll-listener#docol":{
+        "children":[
+            "flex-layout.row#sticky.mobile-docol"
+        ]
+    },
+    "flex-layout.row#sticky.mobile-docol": {
+        "props": {
+            "blockClass": "main-header",
+            "horizontalAlign": "center",
+            "verticalAlign": "center",
+            "preventHorizontalStretch": true,
+            "preventVerticalStretch": true,
+            "fullWidth": true
+        },
+        "children": [
+            "header-top-line#mobile",
+            "flex-layout.row#header.row-2.mobile-docol",
+            "flex-layout.row#header.row-3.mobile"
+        ]
+    }
+}

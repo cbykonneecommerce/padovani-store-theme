@@ -1,0 +1,23 @@
+{
+    "flex-layout.row#home.seo-text": {
+        "title": "SEO - Texto",
+        "props": {
+            "blockClass": "home-seo-text"
+        },
+        "children": [
+            "flex-layout.col#home.seo-text"
+        ]
+    },
+    "flex-layout.col#home.seo-text": {
+        "children": [
+            "rich-text#home.seo-text"
+        ]
+    },
+    "rich-text#home.seo-text": {
+        "title": "Texto",
+        "props": {
+            "blockClass": "home-seo",
+            "text": "## Somos especialistas em implementar e evoluir e-commerces com soluções ágeis e altamente customizadas. \n\n A we.digi é uma consultoria de tecnologia de e-commerce que nasceu há 23 anos como uma software house. Durante toda nossa história, sempre nos diferenciamos por termos a frente do negócio sócios desenvolvedores, elevando a capacidade técnica de entrega, oferecendo atendimento técnico a nossos clientes em todas as etapas do projeto e trabalhando em projetos complexos com agilidade e customização."
+        }
+    }
+}

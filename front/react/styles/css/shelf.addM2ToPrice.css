@@ -1,0 +1,18 @@
+.m2 {
+  font-weight: 800;
+  font-family: effra, sans-serif;
+  font-size: 16px;
+  color: #514b4b;
+  padding-left: 4px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--selling-price-measurement-container) .m2 {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  font-size: 24px;
+  color: #444242;
+}

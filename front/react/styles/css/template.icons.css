@@ -1,0 +1,98 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@media (max-width: 1024px) {
+  .footer-payments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+.footer-payments .paragraph {
+  font-size: 15px;
+  color: #a9c0de;
+  font-weight: 400;
+  margin-top: 0;
+  line-height: normal;
+}
+.footer-payments .items {
+  display: flex;
+  align-items: center;
+}
+.footer-payments .items .item {
+  margin-right: 10px;
+}
+
+.footer-seals-poweredby .items .item .icon {
+  width: 80px;
+}
+
+@media (max-width: 1024px) {
+  .footer-seals, .footer-seals-poweredby {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer-seals .container--footer-seals, .footer-seals .container--footer-seals-poweredby, .footer-seals-poweredby .container--footer-seals, .footer-seals-poweredby .container--footer-seals-poweredby {
+    display: flex;
+    justify-content: center;
+  }
+}
+.footer-seals .paragraph, .footer-seals-poweredby .paragraph {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 12px;
+}
+.footer-seals .items, .footer-seals-poweredby .items {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .footer-seals .items, .footer-seals-poweredby .items {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer-seals .items .item, .footer-seals-poweredby .items .item {
+  margin-right: 10px;
+}
+.footer-seals .items .item .icon, .footer-seals-poweredby .items .item .icon {
+  max-height: 89px;
+  max-width: 120px;
+}
+@media (max-width: 1024px) {
+  .footer-seals .paragraph--footer-seals, .footer-seals-poweredby .paragraph--footer-seals {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer-social {
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 13px;
+  }
+}
+.footer-social .paragraph {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 5px;
+  font-weight: 700;
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  .footer-social .paragraph {
+    margin-bottom: 15px;
+  }
+}
+.footer-social .items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}

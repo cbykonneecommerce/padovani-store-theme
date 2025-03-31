@@ -1,0 +1,68 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.notiferContainer .title {
+  font-size: 0;
+}
+.notiferContainer .title::after {
+  content: "avise-me";
+  width: 100%;
+  display: inline-block;
+  color: #707070;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+.notiferContainer .notifyLabel {
+  font-size: 0;
+}
+.notiferContainer .notifyLabel::after {
+  content: "Para ser avisado da disponibilidade deste Produto, basta preencher os campos abaixo";
+  width: 100%;
+  display: inline-block;
+  color: #707070;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+.notiferContainer .form .content {
+  display: flex;
+  flex-direction: column;
+}
+.notiferContainer .form .content .input {
+  margin: 0;
+}
+.notiferContainer .form .content .input :global(.vtex-input) {
+  display: block;
+}
+.notiferContainer .form .content .input :global(.vtex-input) :global(.vtex-input-prefix__group) {
+  border: 1px solid #d0d0d0;
+  margin-bottom: 8px;
+}
+.notiferContainer .form .content :global(.vtex-button) {
+  height: 40px;
+  width: 100%;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: #ffcb05;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.notiferContainer .form .content :global(.vtex-button):hover {
+  filter: brightness(95%);
+}
+.notiferContainer .form .content :global(.vtex-button)::after {
+  content: "Ok";
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #9c6b0e;
+}
+.notiferContainer .form .content :global(.vtex-button__label) {
+  padding: 0 !important;
+}

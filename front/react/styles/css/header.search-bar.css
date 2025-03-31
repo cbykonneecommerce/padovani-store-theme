@@ -1,0 +1,128 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.searchBar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.searchBar .iconSearch, .searchBar .iconSearchClose {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchBar .iconSearchClose {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background: #FF5A21;
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 125%;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-align: left;
+}
+.searchBar .iconSearchClose svg {
+  margin-right: 8px;
+}
+.searchBar .containerSearchBar {
+  background: #F0F0F0;
+  opacity: 1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  padding: 5vw;
+}
+@media (max-width: 1024px) {
+  .searchBar .containerSearchBar {
+    padding: 60px 20px 20px 20px;
+  }
+}
+.searchBar .containerSearchBar .wrapperSearch {
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+  border-bottom: 1px solid #FF5A21;
+}
+@media (max-width: 1024px) {
+  .searchBar .containerSearchBar .wrapperSearch {
+    display: flex;
+    border-bottom: 1px solid #FF5A21;
+    filter: invert(0);
+  }
+}
+.searchBar .containerSearchBar .wrapperSearch :global(.vtex-store-components-3-x-closeIcon--header-search) {
+  color: #000000 !important;
+  font-size: 18px;
+}
+.searchBar .containerSearchBar .wrapperSearch :global(.vtex-input__suffix) {
+  background: transparent !important;
+  padding: 0;
+}
+.searchBar .containerSearchBar .wrapperSearch :global(.vtex-store-components-3-x-searchIcon--header-search) {
+  display: none;
+}
+.searchBar .containerSearchBar .wrapperSearch :global(.vtex-input-prefix__group) {
+  border: 0 !important;
+  border-radius: 0;
+  width: calc(100% - 50px);
+}
+@media (max-width: 1024px) {
+  .searchBar .containerSearchBar .wrapperSearch :global(.vtex-input-prefix__group) {
+    width: 100%;
+  }
+}
+.searchBar .containerSearchBar .wrapperSearch :global(.vtex-styleguide-9-x-input) {
+  background: #ffffff !important;
+  border-bottom: 1px solid rgba(57, 59, 61, 0.1);
+  border-radius: 10px;
+  color: #000000;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #393B3D;
+  opacity: 1;
+}
+.searchBar .containerSearchBar .wrapperSearch :global(.vtex-styleguide-9-x-input)::placeholder {
+  opacity: 0.6;
+  color: #393B3D;
+}
+@media (max-width: 1024px) {
+  .searchBar .containerSearchBar .wrapperSearch :global(.vtex-styleguide-9-x-input) {
+    background: transparent !important;
+    border-radius: 0;
+    border-bottom: 0;
+    color: #1E1E1E !important;
+    text-align: left;
+    padding: 0;
+  }
+  .searchBar .containerSearchBar .wrapperSearch :global(.vtex-styleguide-9-x-input)::placeholder {
+    opacity: 1;
+    color: #1E1E1E !important;
+  }
+}
+.searchBar .containerSearchBar .wrapperSearch .searchBarIcon {
+  border-bottom: 1px solid #FF5A21;
+}
+.searchBar :global(.vtex-store-components-3-x-portalWrapper) :global(.justify-end) {
+  top: 100px !important;
+}
+
+.searchActive :global(.vtex-sticky-layout-0-x-wrapper--sticky-header):hover :global(.vtexarg-speech-to-text-1-x-audioSearchContainer),
+.searchActive :global(.vtex-sticky-layout-0-x-wrapper--sticky-header):hover :global(.vtex-store-components-3-x-autoCompleteOuterContainer),
+.searchActive :global(.vtex-sticky-layout-0-x-wrapper--sticky-header) :global(.vtexarg-speech-to-text-1-x-audioSearchContainer),
+.searchActive :global(.vtex-sticky-layout-0-x-wrapper--sticky-header) :global(.vtex-store-components-3-x-autoCompleteOuterContainer) {
+  filter: invert(0) !important;
+}

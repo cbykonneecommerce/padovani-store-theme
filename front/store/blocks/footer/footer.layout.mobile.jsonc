@@ -1,0 +1,24 @@
+{
+    "footer-layout.mobile": {
+        "title": "Footer Mobile",
+        "children": [
+            // "template-newsletter",
+            // "footer-banner-info",
+            "flex-layout.row#all-categories",
+            "flex-layout.row#footer.row-1"
+            // "flex-layout.row#footer.row-2",
+            // "flex-layout.row#footer.row-3"
+        ]
+    },
+    "footer-layout.mobile#deca": {
+        "title": "Footer Mobile Deca",
+        "children": [
+          "template-newsletter",
+          "footer-banner-info",
+          "flex-layout.row#all-categories--deca",
+          "flex-layout.row#footer.row-1",
+          "flex-layout.row#footer.row-2",
+          "flex-layout.row#footer.row-3"
+        ]
+    }
+}

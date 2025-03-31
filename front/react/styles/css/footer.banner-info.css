@@ -1,0 +1,57 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.mainBannerInfoContainer {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .mainBannerInfoContainer {
+    flex-direction: column;
+  }
+}
+.mainBannerInfoContainer .mainBannerElementContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px 30px;
+  flex: 1;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+@media (max-width: 1024px) {
+  .mainBannerInfoContainer .mainBannerElementContainer {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 0 10px 20px;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .mainBannerInfoContainer .mainBannerElementContainer img {
+    width: 100%;
+    max-width: 35px;
+  }
+}
+.mainBannerInfoContainer .mainBannerElementContainer .mainBannerElementTextWrapper p, .mainBannerInfoContainer .mainBannerElementContainer .mainBannerElementTextWrapper a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0;
+  display: inline;
+}
+@media (max-width: 1024px) {
+  .mainBannerInfoContainer .mainBannerElementContainer .mainBannerElementTextWrapper p, .mainBannerInfoContainer .mainBannerElementContainer .mainBannerElementTextWrapper a {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.mainBannerInfoContainer .mainBannerElementContainer .mainBannerElementTextWrapper p {
+  color: #ffffff;
+}
+.mainBannerInfoContainer .mainBannerElementContainer .mainBannerElementTextWrapper a {
+  color: #FF5A21;
+}

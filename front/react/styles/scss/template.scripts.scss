@@ -1,0 +1,84 @@
+@import '../../../styles/scss/variables';
+
+.paginationDotsContainer {
+    bottom: -30px;
+    .paginationDot {
+        transition: all linear .25s;
+        background: $gray-2;
+        border: 0;
+        width: 5px;
+        height: 5px;
+    
+        &.paginationDot--isActive {
+            background: $primary;
+            margin-top: 0;
+            width: 30px !important;
+            border-radius: 5px;
+        }
+    }
+}
+
+:global(.vtex-iframe-0-x-container--institucional) {
+    iframe {
+        min-height: 400px;
+    }
+}
+
+:global(.vtex-my-orders-app-3-x-reorderBtn) {
+    svg {
+        fill: $cta-i !important;
+    }
+}
+
+:global(.vtex-account) {
+    :global(.vtex-store-components-3-x-container) {
+        width: 100% !important;
+    }
+}
+
+:global(.vtex-store-components-3-x-carouselGaleryCursor){
+    :global(.swiper-container){
+        overflow: initial;
+
+        :global(.swiper-pagination-bullets){
+            bottom: -23%;
+        }
+    }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+    ::-webkit-scrollbar-track {
+    background: $gray-1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $secondary; 
+    border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $secondary;
+    opacity: .8;
+}
+
+:global(.vtex-checkout-summary-0-x-summaryItemContainer):nth-child(2){
+    display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--body-content){
+    background-color: red!important;
+
+    .items-stretch{
+        &:not(:last-child){
+            flex: 1;
+        }
+    }
+}

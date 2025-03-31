@@ -1,0 +1,87 @@
+{
+    "list-context.image-list#main-bannerr": {
+        "title": "Banner Principal",
+        "children": [
+            "slider-layout#main-banner"
+        ],
+        "props": {
+            "height": 570,
+            "preload": true,
+            "images": [
+                {
+                    "image": "assets/images/home.main-banner.desktop.jpg",
+                    "mobileImage": "assets/images/home.main-banner.mobile.jpg"
+                },
+                {
+                    "image": "assets/images/home.main-banner.desktop.jpg",
+                    "mobileImage": "assets/images/home.main-banner.mobile.jpg"
+                }
+            ]
+        }
+    },
+    "flex-layout.row#slider-new-mobile": {
+        "title": "Banner principal mobile",
+        "children": [
+            "list-context.image-list#main-bannerr-moile"
+        ],
+        "props": {
+            "blockClass": [
+                "slider-new-mobile"
+            ]
+        }
+    },
+    "list-context.image-list#main-bannerr-moile": {
+        "title": "Banner Mobile",
+        "children": [
+            "slider-layout#slider-collection-new"
+        ],
+        "props": {
+            "height": 369,
+            "preload": true,
+            "images": [
+                {
+                    "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/8ea22e74-ef62-454b-afe4-aa7ffba0aec0___08726ff07a84156006178bff38444ba5.jpg",
+                    "mobileImage": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/8ea22e74-ef62-454b-afe4-aa7ffba0aec0___08726ff07a84156006178bff38444ba5.jpg"
+                },
+                {
+                    "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/24779f33-736b-40f3-95ba-90a6ff3a656c___cf1165e4aa9a73c08f2d07b8e3825a47.jpg",
+                    "mobileImage": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/24779f33-736b-40f3-95ba-90a6ff3a656c___cf1165e4aa9a73c08f2d07b8e3825a47.jpg"
+                },
+                {
+                    "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/d9cd1edb-d7c7-444a-aaf4-b87af2588fda___7702a5529caf2fa940a5fd314f4c656e.jpg",
+                    "mobileImage": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/d9cd1edb-d7c7-444a-aaf4-b87af2588fda___7702a5529caf2fa940a5fd314f4c656e.jpg"
+                },
+                {
+                    "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/1cef4663-ead9-4288-9ff2-7d34b5a8bbb3___2bb66db8af39cb28add1a27a8dc4ac43.jpg",
+                    "mobileImage": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/1cef4663-ead9-4288-9ff2-7d34b5a8bbb3___2bb66db8af39cb28add1a27a8dc4ac43.jpg"
+                },
+                {
+                    "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/0e7dffab-ae7d-4e70-8811-68338ba8dbf1___0f22478d5040a285a669624a5c910313.jpg",
+                    "mobileImage": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/0e7dffab-ae7d-4e70-8811-68338ba8dbf1___0f22478d5040a285a669624a5c910313.jpg"
+                },
+                {
+                    "image": "https://padovani.vtexassets.com/arquivos/banner6.webp",
+                    "mobileImage": "https://padovani.vtexassets.com/arquivos/banner6.webp"
+                }
+            ]
+        }
+    },
+    "slider-layout#slider-collection-new": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 6,
+                "tablet": 2,
+                "phone": 1
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "desktopOnly",
+            "usePagination": true,
+            "blockClass": "home-main-banner-mobile",
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import "./variables";
+
+.toggleBusinessButtonWrapper {
+    margin-bottom: 10px !important;
+    :global(.vtex-button) {
+        font-size: $textDefault;
+        font-weight: $bold;
+        background-color: red;
+    }
+}

@@ -1,0 +1,80 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.wrapCalculateShipping {
+  display: block;
+}
+.wrapCalculateShipping .calculateForm {
+  display: flex;
+}
+.wrapCalculateShipping .calculateForm .wrapCalculateForm {
+  display: block;
+  position: relative;
+  max-width: 392px;
+}
+.wrapCalculateShipping .calculateForm .wrapCalculateForm > input {
+  border: 1px solid #d8d9dc;
+  border-radius: 10px;
+  height: 40px;
+  outline: 0;
+  background-color: #fff;
+  width: 213px;
+}
+@media screen and (max-width: 768px) {
+  .wrapCalculateShipping .calculateForm .wrapCalculateForm > input {
+    width: unset;
+  }
+}
+.wrapCalculateShipping .calculateForm .wrapCalculateForm > a {
+  display: block;
+  text-align: left !important;
+  color: #000;
+  padding: 10px 0 5px;
+  width: max-content;
+}
+.wrapCalculateShipping .calculateForm .calculateShippingBtn {
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #d8d9dc;
+  border-radius: 10px;
+  height: 40px;
+  width: 135px;
+  margin-left: 10px;
+  padding: 8px 0;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+@media (max-width: 1024px) {
+  .wrapCalculateShipping .calculateForm .calculateShippingBtn {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+.wrapCalculateShipping .wrapResultShipping .wrapInfoResultShipping .infoResultNameShipping {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #434242;
+  margin: 6px 0 3px;
+}
+.wrapCalculateShipping .wrapResultShipping .wrapInfoResultShipping .infoResultShipping {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #434242;
+  margin: 0;
+}
+.wrapCalculateShipping .wrapResultShipping .wrapInfoResultShipping .infoResultShipping > strong {
+  display: inline-block;
+  color: #3c5ca7;
+  margin-left: 2px;
+}

@@ -1,0 +1,68 @@
+{
+  "flex-layout.row#footer.row-3": {
+    "children": [
+      "flex-layout.col#footer.row-3.col-1"
+    ],
+    "props": {
+      "blockClass": "footer-row-3"
+    }
+  },
+  "flex-layout.col#footer.row-3.col-1": {
+    "props": {
+      "blockClass": "footer-row-3-col-1",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.row#footer.poweredby"
+    ]
+  },
+  "template-icons#footer.poweredby": {
+    "title": "Tecnologia",
+    "props": {
+      "title": "Tecnologia",
+      "blockClass": 
+        ["footer-seals-poweredby"],
+      "data": [
+        {
+          "__editorItemTitle": "VTEX",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/3444dc0b-e2a1-4ccb-8fea-9f346a6be0d5___9387e54420989756fc892cda58028331.svg",
+          "url": "https://vtex.com/br-pt/",
+          "target": true
+        },
+        {
+          "__editorItemTitle": "Weonne",
+          "icon": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/1.0.8/icons/weonne2___afc395b100ac1b89e82422381426a743.svg",
+          "url": "https://weonne.com/",
+          "target": true
+        }
+      ]
+    }
+  },
+  "flex-layout.row#footer.poweredby": {
+    "title": "Tecnologia",
+    "children": [
+      "logo#vtex",
+      "logo#wedigi"
+    ],
+    "props": {
+      "title": "Tecnologia",
+      "blockClass": "footer-poweredby",
+      "horizontalAlign": "between",
+      "verticalAlign": "middle"
+    }
+  },
+  "logo#vtex": {
+    "props": {
+      "title": "VTEX",
+      "href": "https://vtex.com/br-pt/",
+      "url": "assets/brand/logo.vtex.svg"
+    }
+  },
+  "logo#wedigi": {
+    "props": {
+      "title": "Weonne",
+      "href": "https://weonne.com/",
+      "url": "assets/icons/weonne2.svg"
+    }
+  }
+}

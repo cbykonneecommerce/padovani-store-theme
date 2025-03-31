@@ -1,0 +1,118 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.container {
+  transition: all 0.5s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 15px;
+  max-width: unset !important;
+  text-align: left;
+  padding: 7px 17px 12px;
+  transform: translateY(15px);
+  margin: 0 5px;
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 7px 15px 0;
+  }
+}
+.container :global(.vtex-store-components-3-x-container) {
+  width: 100%;
+}
+.container .element {
+  padding: 0;
+  display: flex;
+  justify-content: space-between !important;
+}
+.container .element:hover :global(.vtex-button) {
+  max-height: 36px;
+}
+.container .element:hover .image {
+  transform: scale(1.05);
+}
+.container .element .imageContainer {
+  width: 100% !important;
+  max-height: unset !important;
+  text-align: center;
+}
+.container .element .imageContainer .image {
+  position: relative !important;
+  height: unset !important;
+  opacity: 1 !important;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+}
+.container .element .imageContainer .image--hover {
+  position: absolute !important;
+  opacity: 0 !important;
+  display: block !important;
+  transition: linear 0.25s all;
+}
+.container .element .nameContainer {
+  color: #1E1E1E;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
+  padding-top: 0 !important;
+  min-height: 75px;
+}
+.container .element .nameContainer .productBrand {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  text-transform: capitalize;
+  color: #5d5d5d;
+  font-size: 14px;
+  margin: 0 0 5px;
+  display: block;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+@media (max-width: 1024px) {
+  .container .element .nameContainer {
+    min-height: auto;
+  }
+}
+.container :global(.vtex-flex-layout-0-x-flexRowContent--row-add-to-cart) :global(.vtex-button) {
+  border: none;
+  background-color: #09CB19;
+  min-height: initial !important;
+  max-height: 0;
+  border-radius: 0;
+  transition: all 0.5s ease;
+}
+@media (max-width: 1024px) {
+  .container :global(.vtex-flex-layout-0-x-flexRowContent--row-add-to-cart) :global(.vtex-button) {
+    max-height: 36px;
+  }
+}
+.container :global(.vtex-flex-layout-0-x-flexRowContent--row-add-to-cart) :global(.vtex-button) :global(.vtex-button__label) {
+  padding: 8px 0 !important;
+  height: fit-content;
+}
+.container :global(.vtex-flex-layout-0-x-flexRowContent--row-add-to-cart) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer) :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container :global(.vtex-flex-layout-0-x-flexRowContent--row-add-to-cart) :global(.vtex-button) :global(.vtex-button__label) :global(.vtex-add-to-cart-button-0-x-buttonDataContainer) :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg width='33' height='33' viewBox='0 0 33 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.54 28.5406C12.6446 28.5406 13.54 27.6452 13.54 26.5406C13.54 25.4361 12.6446 24.5406 11.54 24.5406C10.4355 24.5406 9.54004 25.4361 9.54004 26.5406C9.54004 27.6452 10.4355 28.5406 11.54 28.5406Z' fill='white'/%3E%3Cpath d='M25.54 28.5406C26.6446 28.5406 27.54 27.6452 27.54 26.5406C27.54 25.4361 26.6446 24.5406 25.54 24.5406C24.4355 24.5406 23.54 25.4361 23.54 26.5406C23.54 27.6452 24.4355 28.5406 25.54 28.5406Z' fill='white'/%3E%3Cpath d='M11.0263 19.5406H27.36L29.76 7.54065H8.90816L8.37879 4.54065H2.54004V6.54065H6.70129L9.70129 23.5406H27.54V21.5406H11.3788L11.0263 19.5406Z' fill='white'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 20px;
+  margin-right: 5px;
+}

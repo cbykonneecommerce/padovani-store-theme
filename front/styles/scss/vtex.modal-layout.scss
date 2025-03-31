@@ -1,0 +1,55 @@
+@import './variables';
+
+.triggerContainer {
+    cursor: pointer;
+}
+
+// modal da pdp
+.paper--metro-quadrado-modal {
+    max-width: 551px;
+    background-color: #f7f7f7;
+
+    @media (max-width: 300px) {
+        width: 90%;
+        margin: 0;
+        max-height: none;
+    }
+}
+
+.headerContainer--metro-quadrado-header-modal {
+    position: relative;
+    border-bottom: 0;
+    padding: 16px 32px 0;
+
+    .closeButtonContainer--metro-quadrado-header-modal{
+        position: absolute;
+        top: 4px;
+        right: 4px;
+    }
+
+    :global(.vtex-rich-text-0-x-paragraph--metro-quadrado-title) {
+        font-family: $fontSecondary;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #3C5CA7;
+        margin: 0;
+    }
+
+    @media (max-width: 300px) {
+        padding: 24px 16px 6px;
+    }
+}
+
+.closeIcon--metro-quadrado-header-modal {
+    width: 22px;
+    height: 22px;
+}
+
+.contentContainer--metro-quadrado-content-modal {
+    padding: 16px 32px;
+
+    @media (max-width: 300px) {
+        padding:  6px 16px 16px;
+    }
+}

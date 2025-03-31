@@ -1,0 +1,109 @@
+@import "../../../styles/scss/variables";
+
+.footer-payments {
+    @media (max-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .paragraph {
+        font-size: $size-custom-3;
+        color: $blue-1;
+        font-weight: $normal;
+        margin-top: 0;
+        line-height: normal;
+    }
+    .items {
+        display: flex;
+        align-items: center;
+        .item {
+            margin-right: 10px;
+        }
+    }
+}
+
+.footer-seals-poweredby {
+    .items {
+        .item {
+            .icon {
+                width: 80px;
+            }
+        }
+    }
+}
+
+
+.footer-seals, .footer-seals-poweredby {
+    @media (max-width: $tablet) {
+        margin-bottom: 30px;
+    }
+
+    .container--footer-seals, .container--footer-seals-poweredby {
+        @media (max-width: $tablet) {
+            display: flex;
+            justify-content: center;
+        }    
+    }
+
+    .paragraph {
+        font-family: $fontPrimary;
+        color: $white;
+        font-weight: $heavy;
+        font-size: $size-3;
+        text-transform: uppercase;
+        margin-top: 1rem;
+        margin-bottom: 12px;
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $tablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            margin-right: 10px;
+            .icon {
+                max-height: 89px;
+                max-width: 120px;
+            }
+        }
+    }
+
+    .paragraph--footer-seals {
+        @media (max-width: $tablet) {
+            font-size: $size-custom-3;
+        }
+    }
+}
+
+.footer-social {
+    @media (max-width: $tablet) {
+        display: flex!important;
+        align-items: center;
+        flex-direction: column; 
+        margin-top: 13px;   
+    }
+
+    .paragraph {
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0 0 5px;
+        font-weight: $heavy;
+        font-size: $size-3;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}

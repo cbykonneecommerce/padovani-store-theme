@@ -1,0 +1,10 @@
+{
+    "template-instagram": {
+        "props": {
+            "title": "@casamimosa",
+            "subtitle": "Nosso Instagram",
+            "maxPosts": 6,
+            "keyToken":"IGQVJXYmJBN2E0VUtCdjZAhXzYwUGhvZAHhWMjhaZA0dwTHZACZAkxlTWtld2NiWm50UzRnUmlfUHk2SkkyaTdpVHVNZA1dTandkbnFXcnNBeXZAEY1FidmstWXJtcFp5a01FOWYyQnFTWXpvQV9mMi1pRUpKZAwZDZD"
+        }
+    }
+}

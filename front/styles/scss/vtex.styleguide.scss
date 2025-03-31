@@ -1,0 +1,16 @@
+@import './variables';
+
+.dropdown {
+    .container {
+        border: 1px solid rgba(135, 135, 135, 0.4);
+        border-radius: 30px;
+    }
+
+    :global(.vtex-dropdown__button){
+        font-family: $fontPrimary;
+        font-style: normal;
+        font-weight: $weight-custom-2;
+        line-height: 25px;
+        color: $gray-5;
+    }
+}

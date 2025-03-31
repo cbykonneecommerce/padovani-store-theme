@@ -1,0 +1,17 @@
+{
+    "flex-layout.row#home.newsletter": {
+        "props": {
+            "blockClass": "home-newsletter"
+        },
+        "children": [
+            "template-newsletter#home"
+        ]
+    },
+    "template-newsletter#home": {
+        "props": {
+            "blockClass": "home-newsletter",
+            "title": "Cadastre-se e receba ofertas e inspirações",
+            "label": "Cadastrar"
+        }
+    }
+}

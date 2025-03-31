@@ -1,0 +1,567 @@
+{
+    // BANNER 01 - HOME
+    "responsive-layout.desktop#home.banners-1": {
+        "children": [
+            "flex-layout.row#home.banners-1"
+        ]
+    },
+    "flex-layout.row#home.banners-1": {
+        "title": "Home - Banners 01",
+        "props": {
+            "blockClass": "home-banners-1"
+        },
+        "children": [
+            "flex-layout.col#home.banners-1"
+        ]
+    },
+    "flex-layout.col#home.banners-1": {
+        "props": {
+            "blockClass": "home-banners-1"
+        },
+        "children": [
+            "rich-text#home.banners-1",
+            "template-dynamic-content#home.banners-1"
+        ]
+    },
+    "rich-text#home.banners-1": {
+        "title": "Especial do Mês",
+        "props": {
+            "text": "Especial do mês:",
+            "blockClass": [
+                "home-title-shelf"
+            ]
+        }
+    },
+    "template-dynamic-content#home.banners-1": {
+        "title": "Especial do mês",
+        "props": {
+            "blockClass": "home-banners-1",
+            "hiddenTitleItems": false,
+            "data": [
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/especial-mes/especial-mes-01.jpg",
+                            "imageMobile": "assets/images/home/especial-mes/especial-mes-01.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/especial-mes/especial-mes-02.jpg",
+                            "imageMobile": "assets/images/home/especial-mes/especial-mes-02.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/especial-mes/especial-mes-03.jpg",
+                            "imageMobile": "assets/images/home/especial-mes/especial-mes-03.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/especial-mes/especial-mes-04.jpg",
+                            "imageMobile": "assets/images/home/especial-mes/especial-mes-04.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/especial-mes/especial-mes-05.jpg",
+                            "imageMobile": "assets/images/home/especial-mes/especial-mes-05.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/especial-mes/especial-mes-06.jpg",
+                            "imageMobile": "assets/images/home/especial-mes/especial-mes-06.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/especial-mes/especial-mes-07.jpg",
+                            "imageMobile": "assets/images/home/especial-mes/especial-mes-07.jpg"
+                        }
+                    ]
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 7,
+                    "tablet": 2,
+                    "phone": 3
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "always",
+                "usePagination": true
+            },
+            "sliderLayoutConfigMobile": {
+                "itemsPerPage": {
+                    "desktop": 4,
+                    "tablet": 2,
+                    "phone": 3
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "mobileOnly",
+                "usePagination": true,
+                "centerMode": "to-the-left",
+                "centerModeSlidesGap": 5
+            }
+        }
+    },
+    // BANNER 02 - HOME
+    "responsive-layout.desktop#home.banners-2-row1": {
+        "title": "Home Banner 02 - Desktop",
+        "children": [
+            "flex-layout.row#home.banners-2"
+        ]
+    },
+    "responsive-layout.mobile#home.banners-2-row1": {
+        "title": "Home Banner 02 - Mobile",
+        "children": [
+            "flex-layout.row#image-01-banner-02",
+            "template-dynamic-content#home.banners-2"
+        ]
+    },
+    "flex-layout.row#home.banners-2": {
+        "title": "Home - Banners 02",
+        "props": {
+            "blockClass": "home-banners-2"
+            // "preventHorizontalStretch": true
+        },
+        "children": [
+            "image#image-01-banner-02",
+            "flex-layout.col#home.banners-2"
+        ]
+    },
+    "flex-layout.row#image-01-banner-02": {
+        "title": "Home - Imagem 01 Banner 02",
+        "props": {
+            "blockClass": "image-01-banner-02"
+        },
+        "children": [
+            "image#image-01-banner-02"
+        ]
+    },
+    "image#image-01-banner-02": {
+        "title": "Imagem 01 - Banner 02",
+        "props": {
+            "src": "assets/images/home/oferta-dia.jpg",
+            // "maxHeight": 430,
+            "blockClass": "image1-banner2"
+        }
+    },
+    "flex-layout.col#home.banners-2": {
+        "props": {
+            "blockClass": "home-banners-2",
+            "width": "65%",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "image#image-02-banner-02",
+            "flex-layout.row#home.banners-2-row1"
+        ]
+    },
+    "template-dynamic-content#home.banners-2": {
+        "title": "Departamentos",
+        "props": {
+            "blockClass": "home-banners-1",
+            "hiddenTitleItems": false,
+            "data": [
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/promo/promo-03.jpg",
+                            "imageMobile": "assets/images/home/promo/promo-03.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/promo/promo-03.jpg",
+                            "imageMobile": "assets/images/home/promo/promo-03.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/promo/promo-03.jpg",
+                            "imageMobile": "assets/images/home/promo/promo-03.jpg"
+                        }
+                    ]
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 7,
+                    "tablet": 1,
+                    "phone": 1
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "always",
+                "usePagination": true
+            },
+            "sliderLayoutConfigMobile": {
+                "itemsPerPage": {
+                    "desktop": 4,
+                    "tablet": 1,
+                    "phone": 1
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "mobileOnly",
+                "usePagination": true,
+                "centerMode": "to-the-left",
+                "centerModeSlidesGap": 5
+            }
+        }
+    },
+    "image#image-02-banner-02": {
+        "title": "Imagem 02 - Banner 02",
+        "props": {
+            // "maxHeight": 210,
+            "src": "assets/images/home/promo/promo-01.jpg",
+            "blockClass": "image2-banner2"
+        }
+    },
+    "flex-layout.row#home.banners-2-row1": {
+        "props": {
+            "blockClass": "home-banners-2"
+        },
+        "children": [
+            "image#image-03-banner-02",
+            "image#image-04-banner-02"
+        ]
+    },
+    "image#image-03-banner-02": {
+        "title": "Imagem 03 - Banner 02",
+        "props": {
+            "src": "assets/images/home/promo/promo-02.jpg",
+            "blockClass": "image3-banner2"
+        }
+    },
+    "image#image-04-banner-02": {
+        "title": "Imagem 04 - Banner 02",
+        "props": {
+            "src": "assets/images/home/promo/promo-03.jpg",
+            "blockClass": "image4-banner2"
+        }
+    },
+    // BANNER 03 - HOME
+    "responsive-layout.desktop#home.banners-3": {
+        "children": [
+            "flex-layout.row#home.banners-3"
+        ]
+    },
+    "flex-layout.row#home.banners-3": {
+        "title": "Home - Banners 03",
+        "props": {
+            "blockClass": "home-banners-3"
+        },
+        "children": [
+            "image#image-01-banner-03"
+        ]
+    },
+    "image#image-01-banner-03": {
+        "title": "Imagem 01 - Banner 03",
+        "props": {
+            "src": "assets/images/home/promo/promo-04.jpg",
+            "blockClass": "image1-banner3"
+        }
+    },
+    // BANNER 04 - HOME
+    "flex-layout.row#home.banners-4": {
+        "title": "Home - Banners 04",
+        "props": {
+            "blockClass": "home-banners-1"
+        },
+        "children": [
+            "flex-layout.col#home.banners-4"
+        ]
+    },
+    "flex-layout.col#home.banners-4": {
+        "props": {
+            "blockClass": "home-banners-1"
+        },
+        "children": [
+            "rich-text#home.banners-4",
+            "template-dynamic-content#home.banners-4"
+        ]
+    },
+    "rich-text#home.banners-4": {
+        "title": "Departamentos",
+        "props": {
+            "text": "Departamentos:",
+            "blockClass": [
+                "home-title-shelf"
+            ]
+        }
+    },
+    "template-dynamic-content#home.banners-4": {
+        "title": "Departamentos",
+        "props": {
+            "blockClass": "home-banners-1",
+            "hiddenTitleItems": false,
+            "data": [
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/departamento/departamento-01.jpg",
+                            "imageMobile": "assets/images/home/departamento/departamento-01.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/departamento/departamento-02.jpg",
+                            "imageMobile": "assets/images/home/departamento/departamento-02.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/departamento/departamento-03.jpg",
+                            "imageMobile": "assets/images/home/departamento/departamento-03.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/departamento/departamento-04.jpg",
+                            "imageMobile": "assets/images/home/departamento/departamento-04.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/departamento/departamento-05.jpg",
+                            "imageMobile": "assets/images/home/departamento/departamento-05.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/departamento/departamento-06.jpg",
+                            "imageMobile": "assets/images/home/departamento/departamento-06.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/departamento/departamento-07.jpg",
+                            "imageMobile": "assets/images/home/departamento/departamento-07.jpg"
+                        }
+                    ]
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 7,
+                    "tablet": 2,
+                    "phone": 3
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "always",
+                "usePagination": true
+            },
+            "sliderLayoutConfigMobile": {
+                "itemsPerPage": {
+                    "desktop": 4,
+                    "tablet": 2,
+                    "phone": 3
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "mobileOnly",
+                "usePagination": true,
+                "centerMode": "to-the-left",
+                "centerModeSlidesGap": 5
+            }
+        }
+    },
+    // BANNER 05 - HOME
+    "responsive-layout.desktop#home.banners-5": {
+        "title": "Home Banner 05 - Desktop",
+        "children": [
+            "flex-layout.row#home.banners-5"
+        ]
+    },
+    "responsive-layout.mobile#home.banners-5": {
+        "title": "Home Banner 05 - Mobile",
+        "children": [
+            "template-dynamic-content#banner-05"
+        ]
+    },
+    "flex-layout.row#home.banners-5": {
+        "title": "Home - Banners 05",
+        "props": {
+            "blockClass": "home-banners-5"
+        },
+        "children": [
+            "flex-layout.col#home.banners-5"
+        ]
+    },
+    "flex-layout.col#home.banners-5": {
+        "props": {
+            "blockClass": "home-banners-5",
+            "preventVerticalStretch": true
+        },
+        "children": [
+            "rich-text#home.banners-5",
+            "flex-layout.row#home.banners-5-01",
+            "flex-layout.row#home.banners-5-02"
+        ]
+    },
+    "rich-text#home.banners-5": {
+        "title": "Destaques",
+        "props": {
+            "text": "Destaques:",
+            "blockClass": [
+                "home-title-shelf"
+            ]
+        }
+    },
+    "flex-layout.row#home.banners-5-01": {
+        "props": {
+            "blockClass": "home-banners-5-01"
+            // "preventHorizontalStretch": true
+        },
+        "children": [
+            "image#image-01-banner-05",
+            "image#image-02-banner-05"
+        ]
+    },
+    "flex-layout.row#home.banners-5-02": {
+        "props": {
+            "blockClass": "home-banners-5-02"
+            // "preventHorizontalStretch": true
+        },
+        "children": [
+            "image#image-03-banner-05",
+            "image#image-04-banner-05",
+            "image#image-05-banner-05"
+        ]
+    },
+    "image#image-01-banner-05": {
+        "title": "Imagem 01 - Banner 05",
+        "props": {
+            "src": "assets/images/home/destaques/destaques-01.jpg",
+            "blockClass": "image1-banner5"
+        }
+    },
+    "image#image-02-banner-05": {
+        "title": "Imagem 02 - Banner 05",
+        "props": {
+            "src": "assets/images/home/destaques/destaques-02.jpg",
+            "blockClass": "image2-banner5"
+        }
+    },
+    "image#image-03-banner-05": {
+        "title": "Imagem 03 - Banner 05",
+        "props": {
+            "src": "assets/images/home/destaques/destaques-03.jpg",
+            "blockClass": "image3-banner5"
+        }
+    },
+    "image#image-04-banner-05": {
+        "title": "Imagem 04 - Banner 05",
+        "props": {
+            "src": "assets/images/home/destaques/destaques-04.jpg",
+            "blockClass": "image4-banner5"
+        }
+    },
+    "image#image-05-banner-05": {
+        "title": "Imagem 05 - Banner 05",
+        "props": {
+            "src": "assets/images/home/destaques/destaques-05.jpg",
+            "blockClass": "image5-banner5"
+        }
+    },
+    "template-dynamic-content#banner-05": {
+        "title": "Departamentos",
+        "props": {
+            "blockClass": "home-banners-1",
+            "hiddenTitleItems": false,
+            "data": [
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/destaques/destaques-05.jpg",
+                            "imageMobile": "assets/images/home/destaques/destaques-05.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/destaques/destaques-05.jpg",
+                            "imageMobile": "assets/images/home/destaques/destaques-05.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/destaques/destaques-05.jpg",
+                            "imageMobile": "assets/images/home/destaques/destaques-05.jpg"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/home/destaques/destaques-05.jpg",
+                            "imageMobile": "assets/images/home/destaques/destaques-05.jpg"
+                        }
+                    ]
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 7,
+                    "tablet": 2,
+                    "phone": 1
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "always",
+                "usePagination": true
+            },
+            "sliderLayoutConfigMobile": {
+                "itemsPerPage": {
+                    "desktop": 4,
+                    "tablet": 2,
+                    "phone": 1
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "mobileOnly",
+                "usePagination": true,
+                "centerMode": "to-the-left",
+                "centerModeSlidesGap": 5
+            }
+        }
+    }
+}

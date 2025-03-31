@@ -1,0 +1,29 @@
+@import "./variables";
+
+.searchBanner {
+    padding-bottom: 24px;
+    padding-left: 4rem;
+    @media(max-width: $tablet) {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+
+.searchBanner--top-banner {
+    padding-left: 0!important;
+}
+
+// :global(.vtex-flex-layout-0-x-flexRow--gallery){
+    .searchBanner--picture {
+        width: 100%!important;
+        display: block;
+        height: auto;
+    }
+    
+    .searchBanner--image {
+        width: 100%!important;
+        display: block;
+        height: auto;
+    }
+// }

@@ -1,0 +1,19 @@
+{
+    "modal-trigger#share": {
+      "children": [
+        "rich-text#share",
+        "modal-layout#share"
+      ]
+    },
+    "rich-text#share": {
+      "props": {
+        "text": "",
+        "blockClass": "share"
+      }
+    },
+    "modal-layout#share": {
+      "children": [
+        "share"
+      ]
+    }
+}

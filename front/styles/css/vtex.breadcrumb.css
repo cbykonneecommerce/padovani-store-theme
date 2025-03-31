@@ -1,0 +1,93 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.container {
+  padding-top: 0;
+  display: flex;
+  align-items: center;
+}
+.container .link,
+.container .term {
+  font-size: 16px;
+  color: #7e8288;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+}
+.container .link:hover,
+.container .term:hover {
+  color: #000000;
+}
+.container .arrow {
+  display: flex;
+  align-items: center;
+}
+.container .term, .container .termArrow {
+  display: none;
+}
+.container .homeIcon {
+  width: 14px;
+  display: none;
+}
+.container .homeLink {
+  margin: 0;
+  padding: 0;
+}
+.container .homeLink::before {
+  margin-right: 5px;
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='18' viewBox='0 0 576 512'%3E%3Cpath fill='%237e8288' d='M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z'/%3E%3C/svg%3E");
+}
+.container .homeLink::after {
+  content: "Home";
+}
+.container .caretIcon {
+  width: 15px;
+  height: 15px;
+}
+.container--bread-plp {
+  display: flex;
+  font-family: "Open Sans";
+  margin-bottom: 1rem;
+}
+.container--bread-plp .homeLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+.container--bread-plp .homeLink::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='18' viewBox='0 0 576 512'%3E%3Cpath fill='%237e8288' d='M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z'/%3E%3C/svg%3E");
+}
+.container--bread-plp .homeLink::after {
+  content: "PADOVANI";
+  display: block;
+  color: #7e8288;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+.container--bread-plp .arrow {
+  display: flex;
+  align-items: center;
+}
+.container--bread-plp .arrow::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='10' viewBox='0 0 320 512'%3E%3Cpath fill='%237f7f7f' d='M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z'/%3E%3C/svg%3E");
+}
+.container--bread-plp .arrow .caretIcon {
+  display: none;
+}
+.container--bread-plp .arrow .link {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #7e8288;
+  font-family: "Open Sans";
+  padding-left: 10px;
+}
+.container--bread-plp .arrow:last-child .link {
+  color: #304878;
+}

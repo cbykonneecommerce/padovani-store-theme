@@ -1,0 +1,78 @@
+{
+    "product-types#product": {
+        "props": {
+            "dataType": [
+                {   
+                    "id": "1000052",
+                    "title": "Acerte a escolha da cuba",
+                    "imageBg": "assets/images/product/bg-washing.webp",
+                    "data": [
+                        {
+                            "image":  "assets/images/product/cuba01.png",
+                            "title": "Cuba de apoio",
+                            "info": "São aquelas que ficam inteira sobre a bancada, dão mais estilo e leveza ao ambiente",
+                            "textButton": "Ver ofertas",
+                            "linkElement": "/banheiro/cubas-e-lavatorios/cubas-de-apoio"
+                        },
+                        {
+                            "image":  "assets/images/product/cuba02.png",
+                            "title": "Cuba de embutir",
+                            "info": "Modelos mais tradicionanis de cuba, são colocadas na parte de baixo da bancada",
+                            "textButton": "Ver ofertas",
+                            "linkElement": "/banheiro/cubas-e-lavatorios/cubas-de-embutir"
+                        },
+                        {
+                            "image":  "assets/images/product/cuba03.png",
+                            "title": "Cuba de sobrepor",
+                            "info": "Ficam embaixo da bancada, porém, com uma borda sobressalente. Ocupam menos espaço no gabinete",
+                            "textButton": "Ver ofertas",
+                            "linkElement": "/banheiro/cubas-e-lavatorios/cubas-de-sobrepor"
+                        },
+                        {
+                            "image":  "assets/images/product/cuba04.png",
+                            "title": "Cuba de semi-encaixe",
+                            "info": "Ficam embaixo e emcima da bancada. São ideias para otimizar o espaço quando a bancada é estreita.",
+                            "textButton": "Ver ofertas",
+                            "linkElement": "/banheiro/cubas-e-lavatorios/cubas-de-semi-encaixe"
+                        },
+                        {
+                            "image":  "assets/images/product/cuba04.png",
+                            "title": "Cuba de semi-encaixe",
+                            "info": "Ficam embaixo e emcima da bancada. São ideias para otimizar o espaço quando a bancada é estreita.",
+                            "textButton": "Ver ofertas",
+                            "linkElement": "/banheiro/cubas-e-lavatorios/cubas-de-semi-encaixe"
+                        }
+                    ]
+                },
+                {   
+                    "id": "1000082",
+                    "title": "Acerte a da torneira do banheiro",
+                    "imageBg": "assets/images/product/bathroomFaucets-bg.webp",
+                    "data": [
+                        {
+                            "image":  "assets/images/product/bathroomFaucets-obj1.png",
+                            "title": "Torneira",
+                            "info": "Torneiras possuem apenas uma entrada de água, normalmente fria.",
+                            "textButton": "Ver ofertas",
+                            "linkElement": "/banheiro/torneiras-e-misturadores/torneira-para-banheiro"
+                        },
+                        {
+                            "image":  "assets/images/product/bathroomFaucets-obj2.png",
+                            "title": "Misturador",
+                            "info": "Misturadores possuem 2 entradas de água, quente e fria, porém não aquecem.",
+                            "textButton": "Ver ofertas",
+                            "linkElement": "/banheiro/torneiras-e-misturadores/misturador-para-banheiro"
+                        },
+                        {
+                            "image":  "assets/images/product/cuba03.png",
+                            "title": "Misturador Monocomando",
+                            "info": "Possuem 2 entradas de água, quente e fria, porém com apenas um acionador, basta virar o acionador para mudar a temperatura.",
+                            "textButton": "Ver ofertas",
+                            "linkElement": "/banheiro/torneiras-e-misturadores/monocomando-para-banheiro"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

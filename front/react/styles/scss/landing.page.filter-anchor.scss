@@ -1,0 +1,126 @@
+@import "../../../styles/scss/variables";
+
+.FilterCustomContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #34343c;
+    border-radius: 16px;
+    padding: 10px;
+    height: fit-content;
+    margin-right: 30px;
+    position: relative;
+
+    @media (max-width: $tablet) {
+        margin-right: 0;
+    }
+
+    &.FilterClose{
+        .FilterCustomWrapper{
+            max-height: 0;
+        }
+        
+        button{
+            svg{
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    &.FilterOpen{
+        .FilterCustomWrapper{
+            max-height: 100rem;
+        }
+
+        button{
+            svg{
+                transform: rotate(180deg);
+            }
+        }
+        
+    }
+
+    @media (min-width: $tablet) {
+        &.IsAbstolute{
+            position: fixed;
+            top: 10px;
+            width: 230px;
+        }
+    
+        &.NotAbstolute{
+            position: initial;
+        }
+    }
+
+    .FilterCustomImage{
+        width: 100%;
+        transition: all .3s ease-in-out;
+        @media (max-width: $tablet) {
+            display: none;
+        }
+
+        &.ImageOn{
+            height: 200px;
+        }
+
+        &.ImageOff{
+            height: 0px;
+           
+        }
+    }
+
+    button{
+        border: none;
+        background-color: transparent;
+        outline: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $secondary;
+        cursor: pointer;
+        font-family: $fontPrimary;
+        font-weight: $weight-6;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 5px 0;
+
+        svg{
+            color: $secondary;
+            transition: all .3s ease-in-out;
+        }
+    }
+
+    .FilterCustomWrapper{
+        padding: 5px 0 0 0;
+        list-style: none;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+
+        .FilterCustomItem{
+            .FilterCustomItemLink{
+                color: $white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: $fontPrimary;
+                font-weight: $weight-4; 
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0;
+                padding: 5px;
+                
+                .FilterCustomMarker{
+                    height: 7px;
+                    width: 7px;
+                    border-radius: 30px;
+                    display: block;
+                    background-color: $secondary;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

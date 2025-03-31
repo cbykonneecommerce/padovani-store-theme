@@ -1,0 +1,115 @@
+@import "../../../styles/scss/variables";
+
+.wrapperDescriptions {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: #4C5563;
+
+    .menuDescriptions {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0;
+
+        @media(max-width: $tablet) {
+            flex-direction: column;
+        }
+
+        li {
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12.5px;
+            line-height: 40px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #000000;
+            border-bottom: 1px solid rgba(139, 139, 139, 0.1);
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            @media(max-width: $tablet) {
+                width: 100%;
+            }
+
+            .headerTab {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                strong {
+                    font-size: $heading4;
+                }
+            }
+
+            .contentDescriptions {
+                transition: all .25s linear;
+                height: 0;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 150%;
+                text-transform: initial;
+                letter-spacing: 0.05em;
+                color: #000000;
+                overflow: hidden;
+            }
+
+            &.active {
+                .contentDescriptions {
+                    height: auto;
+                }
+            }
+
+        }
+    }
+
+    .content {
+        transition: all .5s linear;
+        overflow: hidden;
+        height: 0;
+
+        &.active {
+            height: auto;
+
+            ul {
+                padding-left: 0;
+                list-style: none;
+                li {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    &:nth-child(odd){
+                        padding: 12px 0 12px 12px ;
+                        background: $light-gray;
+                    }
+
+                    &:nth-child(even){
+                        padding: 12px 0 12px 12px ;
+                    }
+                }
+            }
+        }
+    }
+
+    &.modelo-veste {
+        .contentText {
+            display: flex;
+            justify-content: center;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12.5px;
+            line-height: 125%;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #8B8B8B;
+            margin-bottom: 8px;
+        }
+    }
+}

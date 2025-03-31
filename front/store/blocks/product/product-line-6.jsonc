@@ -1,0 +1,27 @@
+{
+    "flex-layout.row#pdp.line-6": {
+        "props": {
+            "fullWidth": true,
+            "blockClass": "pdp-line-6"
+        },
+        "children": [
+            "flex-layout.col#pdp.line-6-col-1"
+        ]
+    },
+    "flex-layout.col#pdp.line-6-col-1": {
+        "props": {
+          "verticalAlign": "top"
+        },
+        "children": [
+            "rich-text#shipping-simulator",
+            "shipping-custom"
+        ]
+    },
+    "rich-text#shipping-simulator": {
+        "title": "Texto do título Simulação de Frete",
+        "props": {
+            "blockClass": "shipping-simulator",
+            "text": "Consultar prazo e frete"
+        }
+    }
+}

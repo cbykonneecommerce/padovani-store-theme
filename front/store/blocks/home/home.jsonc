@@ -1,0 +1,44 @@
+{
+    "store.home": {
+        "title": "Home",
+        "blocks": [
+            "template-popup#home-form",
+            "responsive-layout.mobile#home.instagram",
+            "flex-layout.row#slider-new-mobile",
+            "list-context.image-list#main-bannerr",
+            "responsive-layout.desktop#home.banners-1",
+            "shelf-linx#1",
+            "responsive-layout.desktop#home.banners-2-row1",
+            "responsive-layout.mobile#home.banners-2-row1",
+            "shelf-linx#2",
+            "responsive-layout.desktop#home.banners-3",
+            "flex-layout.row#home.lojas",
+            "flex-layout.row#home.banners-4",
+            "responsive-layout.desktop#home.banners-5",
+            "responsive-layout.mobile#home.banners-5",
+            "shelf-linx#3",
+            "responsive-layout.desktop#home.fale-conosco",
+            "responsive-layout.mobile#home.fale-conosco",
+            "flex-layout.row#home.marcas",
+            "textProduct"
+        ]
+    },
+    "div#home": {
+        "children": []
+    },
+    "shelf-linx#1": {
+        "props": {
+            "id": "top"
+        }
+    },
+    "shelf-linx#2": {
+        "props": {
+            "id": "middle"
+        }
+    },
+    "shelf-linx#3": {
+        "props": {
+            "id": "bottom"
+        }
+    }
+}

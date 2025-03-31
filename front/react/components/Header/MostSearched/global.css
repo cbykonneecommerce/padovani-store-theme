@@ -1,0 +1,33 @@
+.most-searched{
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans';
+    margin-bottom: .8rem;
+}
+
+.most-searched__title{
+    color: #fff;
+    font-weight: bold;
+    font-size: .8rem;
+    margin: 0;
+}
+
+.most-searched__links-container{
+    display: flex;
+}
+
+.most-searched__link{
+    color: #ccc;
+    font-size: .7rem;
+    padding: 0 0.5rem;
+    text-decoration: none;
+}
+
+.most-searched__link:hover{
+    color: #ffcb05;
+    text-decoration: underline;
+}
+
+.most-searched__link:not(:first-child){
+    border-left: 1px solid #CCC;
+}

@@ -1,0 +1,79 @@
+{
+    "template-dynamic-content#home.features": {
+        "title": "Vantagens",
+        "props": {
+            "blockClass": "home-features",
+            "hiddenTitleItems": false,
+            "data": [
+                {
+                    "__editorItemTitle": "**Central de Atendimento** fale com nosso especialista",
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/icons/sacIconBlack.svg"
+                        }
+                    ],
+                    "url": "/institucional/canais-de-atendimento"
+                },
+                {
+                    "__editorItemTitle": "**Compre pelo** Whatsapp",
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/icons/whatsapp.svg"
+                        }
+                    ],
+                    "url": "https://api.whatsapp.com/send?phone=551140137009"
+                },
+                {
+                  "__editorItemTitle": "**Clientes satisfeitos** mais de 3 milhões de entregas feitas",
+                  "listImages": [
+                    {
+                        "imageDesktop": "assets/icons/truckIcon.svg"
+                    }
+                ]
+                },
+                {
+                    "__editorItemTitle": "**Toda loja em até** 10x sem juros no cartão",
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/icons/credit-card.svg"
+                        }
+                    ]
+                },
+                {
+                    "__editorItemTitle": "**Central de Atendimento** fale com nosso especialista",
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/icons/sacIconBlack.svg"
+                        }
+                    ],
+                    "url": "/institucional/canais-de-atendimento"
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 4,
+                    "tablet": 2,
+                    "phone": 1
+                  },
+                  "infinite": true,
+                  "showNavigationArrows": "never",
+                  "showPaginationDots": "always",
+                  "usePagination": true
+                
+            },
+            "sliderLayoutConfigMobile": {
+                "itemsPerPage": {
+                    "desktop": 4,
+                    "tablet": 2,
+                    "phone": 1
+                  },
+                  "infinite": true,
+                  "showNavigationArrows": "never",
+                  "showPaginationDots": "mobileOnly",
+                  "usePagination": true,
+                  "centerMode": "to-the-left",
+                  "centerModeSlidesGap": 5
+            }
+        }
+    }
+}

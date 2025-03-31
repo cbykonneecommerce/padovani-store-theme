@@ -1,0 +1,33 @@
+{
+  "flex-layout.row#product.buy-area": {
+    "props": {
+      "blockClass": "buy-area",
+      "vertical-align": "middle",
+      "horizontalAlign": "left",
+      "preserveLayoutOnMobile": false,
+      "colSizing": "auto",
+      "colGap": 5,
+      "rowGap": 4
+    },
+    "children": [
+      "product-quantity",
+      "flex-layout.row#product.add-to-cart-button"
+    ]
+  },
+  "flex-layout.row#product.add-to-cart-button": {
+    "props": {
+      "blockClass": "add-to-cart-button",
+      "vertical-align": "middle"
+    },
+    "children": [
+      "buy-button-custom"
+    ]
+  },
+  "buy-button-custom": {
+    "props": {
+      "colorBg": "#59c00b",
+      "colorkLetter": "#fff",
+      "textBtn": "Comprar"
+    }
+  }
+}

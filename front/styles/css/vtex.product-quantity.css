@@ -1,0 +1,114 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.quantitySelectorContainer--shelf {
+  margin-bottom: 0;
+}
+.quantitySelectorContainer--shelf :global(.vtex-numeric-stepper__input) {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+}
+.quantitySelectorContainer--shelf :global(.vtex-numeric-stepper__input),
+.quantitySelectorContainer--shelf :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorContainer--shelf :global(.vtex-numeric-stepper__minus-button) {
+  background-color: transparent;
+  border: 0;
+}
+.quantitySelectorContainer--shelf :global(.vtex-numeric-stepper__input) :global(.vtex-numeric-stepper__plus-button__text),
+.quantitySelectorContainer--shelf :global(.vtex-numeric-stepper__input) :global(.vtex-numeric-stepper__minus-button__text),
+.quantitySelectorContainer--shelf :global(.vtex-numeric-stepper__plus-button) :global(.vtex-numeric-stepper__plus-button__text),
+.quantitySelectorContainer--shelf :global(.vtex-numeric-stepper__plus-button) :global(.vtex-numeric-stepper__minus-button__text),
+.quantitySelectorContainer--shelf :global(.vtex-numeric-stepper__minus-button) :global(.vtex-numeric-stepper__plus-button__text),
+.quantitySelectorContainer--shelf :global(.vtex-numeric-stepper__minus-button) :global(.vtex-numeric-stepper__minus-button__text) {
+  color: #000000;
+}
+
+.quantitySelectorContainer {
+  margin-bottom: 0 !important;
+  position: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid #DEE7FC;
+}
+@media (min-width: 1024px) {
+  .quantitySelectorContainer {
+    max-width: 107px;
+  }
+}
+.quantitySelectorContainer .quantitySelectorTitle {
+  display: none;
+}
+.quantitySelectorContainer .availableQuantityContainer {
+  font-size: 11px;
+}
+.quantitySelectorContainer .quantitySelectorStepper {
+  width: 100%;
+}
+.quantitySelectorContainer .quantitySelectorStepper :global(.vtex-numeric-stepper-container) {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 1024px) {
+  .quantitySelectorContainer .quantitySelectorStepper :global(.vtex-numeric-stepper-container) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.quantitySelectorContainer .quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button__text), .quantitySelectorContainer .quantitySelectorStepper :global(.vtex-numeric-minus-button__text) {
+  color: #3C5CA7;
+  font-size: 20px;
+  font-weight: 600;
+}
+.quantitySelectorContainer :global(.vtex-numeric-stepper__input),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button) {
+  background-color: transparent;
+  border: 0;
+  width: 32px !important;
+}
+@media (max-width: 1024px) {
+  .quantitySelectorContainer :global(.vtex-numeric-stepper__input),
+  .quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button),
+  .quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button) {
+    width: 100% !important;
+  }
+}
+.quantitySelectorContainer :global(.vtex-numeric-stepper__input) {
+  width: 40px !important;
+  max-width: unset !important;
+  font-size: 20px;
+  color: #3C5CA7;
+  max-width: 35px;
+  font-weight: 500;
+}
+.quantitySelectorContainer .availableQuantityContainer {
+  position: absolute;
+  z-index: 2;
+  top: 60px;
+  right: 0;
+  margin-top: 18px;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+  color: #878787;
+  display: none !important;
+}
+.quantitySelectorContainer .availableQuantityContainer::before {
+  content: "Aproveite!";
+  color: #012169;
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .quantitySelectorContainer .availableQuantityContainer {
+    top: 108%;
+    left: 35%;
+    padding: 5px 5px;
+  }
+}

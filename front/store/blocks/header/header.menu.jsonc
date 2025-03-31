@@ -1,0 +1,2802 @@
+{
+    "flex-layout.col#header.menu": {
+        "props": {
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "custom-menu#header-desktop2"
+        ]
+    },
+    "custom-menu#header-desktop2": {
+        "title": "Menu Principal",
+        "props": {
+            "blockClass": "main-menu",
+            "template": "cortina",
+            "full": true,
+            "breakpoint": 1024,
+            "isAccordion": false,
+            "iconPlus": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconPlus___ecd000860211c5fa153812287f524177.svg",
+            "iconMinus": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconMinus___6162ee448e0998c7257db5ca2e106c5f.svg",
+            "iconBack": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconBack___dd8d7414710ddd3c6a427be61f533cd0.svg",
+            "menu": [
+                {
+                  "__editorItemTitle": "TODA LOJA",
+                  "url": "/ver-tudo",
+                  "emphasis": false,
+                  "column": [
+                    {
+                      "__editorItemTitle": "Banheiro",
+                      "showTitle": true,
+                      "submenu": [
+                        {
+                          "__editorItemTitle": "Torneiras e Misturadores",
+                          "url": "/torneiras",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "/mistura-banheiro",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Misturadores para Banheiro"
+                            },
+                            {
+                              "url": "/torneira-banheiro",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Torneira para Banheiro"
+                            },
+                            {
+                              "url": "/torneira-automatica",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Torneira automatica"
+                            }
+                          ]
+                        },
+                        {
+                          "__editorItemTitle": "Acessórios para Banheiro",
+                          "url": "/acessorio-banheiro",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "/banheiro/barra-de-apoio",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Barra de Apoio"
+                            },
+                            {
+                              "url": "/banheiro/cabide",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Cabide de Banheiro"
+                            },
+                            {
+                              "url": "/banheiro/cesto-de-lixo",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Cesto de Lixo"
+                            },
+                            {
+                              "url": "/banheiro/cesto-de-roupas",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Cesto de Roupas"
+                            },
+                            {
+                              "url": "/banheiro/kit-de-banheiro",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Kit de Banheiro"
+                            },
+                            {
+                              "url": "/banheiro/papeleiras",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Papeleiras"
+                            }
+                          ]
+                        },
+                        {
+                          "__editorItemTitle": "Acabamento e Registros",
+                          "url": "/banheiro/acabamentos",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "/banheiro/base",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Base de Registro"
+                            },
+                            {
+                              "url": "/banheiro/acabamento-registro",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Acabamento de Registro"
+                            }
+                          ]
+                        },
+                        {
+                          "url": "/chuveiros-e-duchas",
+                          "hasChildren": false,
+                          "__editorItemTitle": "Chuveiros e Duchas",
+                          "submenu": [
+                            {
+                              "url": "/chuveiros/aquecedor",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Aquecedor"
+                            },
+                            {
+                              "url": "/chuveiros/eletricos",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Chuveiro Eletrico"
+                            },
+                            {
+                              "url": "/chuveiros/duchas",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Ducha Higiênica"
+                            }
+                          ]
+                        }
+                      ],
+                      "url": "/banheiro",
+                      "hasChildren": false
+                    },
+                    {
+                      "__editorItemTitle": "Climatização e Ventilação",
+                      "showTitle": true,
+                      "submenu": [
+                        {
+                          "__editorItemTitle": "Renovadores de Ar",
+                          "url": "/moda/calcados/botas",
+                          "emphasis": false,
+                          "hasChildren": false
+                        },
+                        {
+                          "__editorItemTitle": "Ventiladores",
+                          "url": "/moda/calcados/scarpin",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "/parede",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Ventilador de Parede"
+                            },
+                            {
+                              "url": "/teto",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Ventilador de Teto"
+                            },
+                            {
+                              "url": "/mesa",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Ventilador de Mesa"
+                            }
+                          ]
+                        }
+                      ],
+                      "url": "/ventilacao",
+                      "hasChildren": false
+                    },
+                    {
+                      "__editorItemTitle": "Cozinhas e Lavanderias",
+                      "showTitle": true,
+                      "submenu": [
+                        {
+                          "__editorItemTitle": "Torneiras e Misturadores",
+                          "url": "/moda/acessorios/brincos",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "/cozinha",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Misturador para Cozinha"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Torneira para Cozinha"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Torneira para Lavanderia"
+                            }
+                          ]
+                        },
+                        {
+                          "__editorItemTitle": "Acessorios para Cozinha",
+                          "url": "/moda/acessorios/colares",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Escorredor"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Porta Detergente"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Porta Sabão"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Porta Papel toalha"
+                            }
+                          ]
+                        },
+                        {
+                          "__editorItemTitle": "Acessórios para Lavanderia",
+                          "url": "/moda/acessorios/pulseiras",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Varais"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Tábua de Passar"
+                            }
+                          ]
+                        },
+                        {
+                          "url": "#",
+                          "hasChildren": false,
+                          "__editorItemTitle": "Tanques para Lavanderia"
+                        }
+                      ],
+                      "url": "/lavanderias",
+                      "hasChildren": false
+                    },
+                    {
+                      "url": "/decoracao",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Decoração",
+                      "allCategories": false,
+                      "showTitle": true,
+                      "isCategory": false,
+                      "submenu": [
+                        {
+                          "url": "#",
+                          "hasChildren": false,
+                          "__editorItemTitle": "Acessórios para Decoração"
+                        },
+                        {
+                          "url": "#",
+                          "hasChildren": false,
+                          "__editorItemTitle": "Forros"
+                        },
+                        {
+                          "url": "#",
+                          "hasChildren": false,
+                          "__editorItemTitle": "Guarnição"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "1000020",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Elétrica",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000012",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Hidráulica",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000013",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Iluminação",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000014",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Jardim e Praia",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000015",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Porcelanatos e Revestimentos",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000017",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Portas e Janelas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000018",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Segurança",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000019",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Utilidades Domésticas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000011",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Ferramentas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000036",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Banheiras e Spas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "Tintas",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Tintas",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ],
+                  "banners": [],
+                  "isBrands": false,
+                  "icon": {
+                    "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/53b4adfc-89cc-4153-bf50-7fdc00a57741___f573ccb1e9d4eaa4def5271595d92320.svg"
+                  },
+                  "emphasisColor": "#ffffff",
+                  // "emphasisBackground": "#ff5a21"
+                  "emphasisBackground": "#022983"
+                },
+                {
+                  "__editorItemTitle": "Banheiro",
+                  "url": "/banheiro",
+                  "emphasis": false,
+                  "banners": [],
+                  "isBrands": false,
+                  "column": [
+                    {
+                      "url": "1000030",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Acessórios para banheiro",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000039",
+                      "hasChildren": false,
+                      "isCategory": true,
+                      "__editorItemTitle": "Acabamentos e Registros",
+                      "showTitle": true
+                    },
+                    {
+                      "url": "1000021",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Torneiras e Misturadores",
+                      "isCategory": true,
+                      "showTitle": true
+                    },
+                    {
+                      "url": "1000043",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Chuveiros e Duchas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000049",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Cubas e Lavatórios",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000056",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Instalação e Acessórios",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000057",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Móveis para Banheiro",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000062",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Válvulas de Descarga",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000644",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Vasos Sanitários e Bidês",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000192",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Acessórios para Hidráulica",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000686",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Nichos",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ]
+                },
+                {
+                  "url": "/cozinha-e-lavanderia",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Coziha",
+                  "column": [
+                    {
+                      "url": "1000023",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Torneiras e Misturadores",
+                      "submenu": [],
+                      "isCategory": true,
+                      "showTitle": true
+                    },
+                    {
+                      "url": "1000068",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Acessórios para Cozinha",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000070",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Acessórios para Lavanderia",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000071",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Coifas e Cooktops",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000072",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Pias e Cubas para Cozinha",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000073",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Tanques para Lavanderia",
+                      "isCategory": true,
+                      "showTitle": true
+                    },
+                    {
+                      "url": "1000632",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Bebedouros e Purificadores",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000653",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Gabinetes para Cozinha",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ]
+                },
+                {
+                  "url": "/portas-e-janelas/portas",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Portas",
+                  "column": [
+                    {
+                      "url": "1000302",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Acessórios de Portas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000304",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Portas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000307",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Fechaduras",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000306",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Dobradiças",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ]
+                },
+                {
+                  "url": "/portas-e-janelas/janelas",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Janelas",
+                  "column": [
+                    {
+                      "url": "1000302",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Acessórios de Janelas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000303",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Janelas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000301",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Externas e Abrigo",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ]
+                },
+                {
+                  "url": "/banheiras-e-spas",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Banheiras e spas",
+                  "column": [
+                    {
+                      "url": "1000037",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Banheira de Hidromassagem",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000038",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Banheira de SPA",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000655",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Banheira de Imersão",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000656",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Opcionais para Banheiras e Spas",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ]
+                },
+                {
+                  "url": "/pisos-e-revestimentos/pisos-e-porcelanatos",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Porcelanatos"
+                },
+                {
+                  "url": "/portas-e-janelas/fechaduras-travas-e-trincos/fechaduras",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Fechaduras"
+                },
+                {
+                  "url": "/540?PS=16&map=productClusterIds",
+                  "emphasis": true,
+                  "icon": {
+                    "image": null
+                  },
+                  "isBrands": false,
+                  "__editorItemTitle": "Promoções",
+                  "emphasisColor": "#131b81"
+                }
+            ]
+        }
+    },
+    "custom-menu#header-mobile2": {
+        "title": "Menu Principal",
+        "props": {
+            "blockClass": "main-menu",
+            "template": "cortina",
+            "full": true,
+            "breakpoint": 1024,
+            "isAccordion": false,
+            "iconPlus": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/001560f9-3f27-4d77-919b-2544c0a020c4___e3124a7243b956319fec7661a002a6f9.svg",
+            "iconMinus": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/2e672069-2d5d-4703-888c-4457cf34ec58___1197035ac622e87dbedd67f41f037c8d.svg",
+            "iconBack": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconBack___dd8d7414710ddd3c6a427be61f533cd0.svg",
+            "menu": [
+                {
+                  "__editorItemTitle": "TODA LOJA",
+                  "url": "/ver-tudo",
+                  "emphasis": false,
+                  "column": [
+                    {
+                      "__editorItemTitle": "Banheiro",
+                      "showTitle": true,
+                      "submenu": [
+                        {
+                          "__editorItemTitle": "Torneiras e Misturadores",
+                          "url": "/torneiras",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "/mistura-banheiro",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Misturadores para Banheiro"
+                            },
+                            {
+                              "url": "/torneira-banheiro",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Torneira para Banheiro"
+                            },
+                            {
+                              "url": "/torneira-automatica",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Torneira automatica"
+                            }
+                          ]
+                        },
+                        {
+                          "__editorItemTitle": "Acessórios para Banheiro",
+                          "url": "/acessorio-banheiro",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "/banheiro/barra-de-apoio",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Barra de Apoio"
+                            },
+                            {
+                              "url": "/banheiro/cabide",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Cabide de Banheiro"
+                            },
+                            {
+                              "url": "/banheiro/cesto-de-lixo",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Cesto de Lixo"
+                            },
+                            {
+                              "url": "/banheiro/cesto-de-roupas",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Cesto de Roupas"
+                            },
+                            {
+                              "url": "/banheiro/kit-de-banheiro",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Kit de Banheiro"
+                            },
+                            {
+                              "url": "/banheiro/papeleiras",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Papeleiras"
+                            }
+                          ]
+                        },
+                        {
+                          "__editorItemTitle": "Acabamento e Registros",
+                          "url": "/banheiro/acabamentos",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "/banheiro/base",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Base de Registro"
+                            },
+                            {
+                              "url": "/banheiro/acabamento-registro",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Acabamento de Registro"
+                            }
+                          ]
+                        },
+                        {
+                          "url": "/chuveiros-e-duchas",
+                          "hasChildren": false,
+                          "__editorItemTitle": "Chuveiros e Duchas",
+                          "submenu": [
+                            {
+                              "url": "/chuveiros/aquecedor",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Aquecedor"
+                            },
+                            {
+                              "url": "/chuveiros/eletricos",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Chuveiro Eletrico"
+                            },
+                            {
+                              "url": "/chuveiros/duchas",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Ducha Higiênica"
+                            }
+                          ]
+                        }
+                      ],
+                      "url": "/banheiro",
+                      "hasChildren": false
+                    },
+                    {
+                      "__editorItemTitle": "Climatização e Ventilação",
+                      "showTitle": true,
+                      "submenu": [
+                        {
+                          "__editorItemTitle": "Renovadores de Ar",
+                          "url": "/moda/calcados/botas",
+                          "emphasis": false,
+                          "hasChildren": false
+                        },
+                        {
+                          "__editorItemTitle": "Ventiladores",
+                          "url": "/moda/calcados/scarpin",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "/parede",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Ventilador de Parede"
+                            },
+                            {
+                              "url": "/teto",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Ventilador de Teto"
+                            },
+                            {
+                              "url": "/mesa",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Ventilador de Mesa"
+                            }
+                          ]
+                        }
+                      ],
+                      "url": "/ventilacao",
+                      "hasChildren": false
+                    },
+                    {
+                      "__editorItemTitle": "Cozinhas e Lavanderias",
+                      "showTitle": true,
+                      "submenu": [
+                        {
+                          "__editorItemTitle": "Torneiras e Misturadores",
+                          "url": "/moda/acessorios/brincos",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "/cozinha",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Misturador para Cozinha"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Torneira para Cozinha"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Torneira para Lavanderia"
+                            }
+                          ]
+                        },
+                        {
+                          "__editorItemTitle": "Acessorios para Cozinha",
+                          "url": "/moda/acessorios/colares",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Escorredor"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Porta Detergente"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Porta Sabão"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Porta Papel toalha"
+                            }
+                          ]
+                        },
+                        {
+                          "__editorItemTitle": "Acessórios para Lavanderia",
+                          "url": "/moda/acessorios/pulseiras",
+                          "emphasis": false,
+                          "hasChildren": false,
+                          "submenu": [
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Varais"
+                            },
+                            {
+                              "url": "#",
+                              "hasChildren": false,
+                              "__editorItemTitle": "Tábua de Passar"
+                            }
+                          ]
+                        },
+                        {
+                          "url": "#",
+                          "hasChildren": false,
+                          "__editorItemTitle": "Tanques para Lavanderia"
+                        }
+                      ],
+                      "url": "/lavanderias",
+                      "hasChildren": false
+                    },
+                    {
+                      "url": "/decoracao",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Decoração",
+                      "allCategories": false,
+                      "showTitle": true,
+                      "isCategory": false,
+                      "submenu": [
+                        {
+                          "url": "#",
+                          "hasChildren": false,
+                          "__editorItemTitle": "Acessórios para Decoração"
+                        },
+                        {
+                          "url": "#",
+                          "hasChildren": false,
+                          "__editorItemTitle": "Forros"
+                        },
+                        {
+                          "url": "#",
+                          "hasChildren": false,
+                          "__editorItemTitle": "Guarnição"
+                        }
+                      ]
+                    },
+                    {
+                      "url": "1000020",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Elétrica",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000012",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Hidráulica",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000013",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Iluminação",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000014",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Jardim e Praia",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000015",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Porcelanatos e Revestimentos",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000017",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Portas e Janelas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000018",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Segurança",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000019",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Utilidades Domésticas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000011",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Ferramentas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000036",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Banheiras e Spas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "Tintas",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Tintas",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ],
+                  "banners": [],
+                  "isBrands": false,
+                  "icon": {
+                    "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/53b4adfc-89cc-4153-bf50-7fdc00a57741___f573ccb1e9d4eaa4def5271595d92320.svg"
+                  },
+                  "emphasisColor": "#ffffff",
+                  // "emphasisBackground": "#ff5a21"
+                  "emphasisBackground": "#022983"
+                },
+                {
+                  "__editorItemTitle": "Banheiro",
+                  "url": "/banheiro",
+                  "emphasis": false,
+                  "banners": [],
+                  "isBrands": false,
+                  "column": [
+                    {
+                      "url": "1000030",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Acessórios para banheiro",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000039",
+                      "hasChildren": false,
+                      "isCategory": true,
+                      "__editorItemTitle": "Acabamentos e Registros",
+                      "showTitle": true
+                    },
+                    {
+                      "url": "1000021",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Torneiras e Misturadores",
+                      "isCategory": true,
+                      "showTitle": true
+                    },
+                    {
+                      "url": "1000043",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Chuveiros e Duchas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000049",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Cubas e Lavatórios",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000056",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Instalação e Acessórios",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000057",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Móveis para Banheiro",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000062",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Válvulas de Descarga",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000644",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Vasos Sanitários e Bidês",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000192",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Acessórios para Hidráulica",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000686",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Nichos",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ]
+                },
+                {
+                  "url": "/cozinha-e-lavanderia",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Coziha",
+                  "column": [
+                    {
+                      "url": "1000023",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Torneiras e Misturadores",
+                      "submenu": [],
+                      "isCategory": true,
+                      "showTitle": true
+                    },
+                    {
+                      "url": "1000068",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Acessórios para Cozinha",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000070",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Acessórios para Lavanderia",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000071",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Coifas e Cooktops",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000072",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Pias e Cubas para Cozinha",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000073",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Tanques para Lavanderia",
+                      "isCategory": true,
+                      "showTitle": true
+                    },
+                    {
+                      "url": "1000632",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Bebedouros e Purificadores",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000653",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Gabinetes para Cozinha",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ]
+                },
+                {
+                  "url": "/portas-e-janelas/portas",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Portas",
+                  "column": [
+                    {
+                      "url": "1000302",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Acessórios de Portas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000304",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Portas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000307",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Fechaduras",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000306",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Dobradiças",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ]
+                },
+                {
+                  "url": "/portas-e-janelas/janelas",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Janelas",
+                  "column": [
+                    {
+                      "url": "1000302",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Acessórios de Janelas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000303",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Janelas",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000301",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Externas e Abrigo",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ]
+                },
+                {
+                  "url": "/banheiras-e-spas",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Banheiras e spas",
+                  "column": [
+                    {
+                      "url": "1000037",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Banheira de Hidromassagem",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000038",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Banheira de SPA",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000655",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Banheira de Imersão",
+                      "showTitle": true,
+                      "isCategory": true
+                    },
+                    {
+                      "url": "1000656",
+                      "hasChildren": true,
+                      "__editorItemTitle": "Opcionais para Banheiras e Spas",
+                      "showTitle": true,
+                      "isCategory": true
+                    }
+                  ]
+                },
+                {
+                  "url": "/pisos-e-revestimentos/pisos-e-porcelanatos",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Porcelanatos"
+                },
+                {
+                  "url": "/portas-e-janelas/fechaduras-travas-e-trincos/fechaduras",
+                  "emphasis": false,
+                  "icon": {},
+                  "isBrands": false,
+                  "__editorItemTitle": "Fechaduras"
+                },
+                {
+                  "url": "/540?PS=16&map=productClusterIds",
+                  "emphasis": true,
+                  "icon": {
+                    "image": null
+                  },
+                  "isBrands": false,
+                  "__editorItemTitle": "Promoções",
+                  "emphasisColor": "#131b81"
+                }
+            ]
+        }
+    },
+    "drawer#menu": {
+        "props": {
+            "blockClass": "menu"
+        },
+        "blocks": [
+            "drawer-header#drawer-header-menu"
+        ],
+        "children": [
+            "custom-menu#header-mobile2",
+            "exclusive-stores"
+        ]
+    },
+    //deca
+    "custom-menu#header-desktop-deca-0.1v": {
+      "title": "Menu Principal Deca",
+      "props": 
+      {
+        "blockClass": "menu-deca",
+        "template": "cortina",
+        "full": true,
+        "breakpoint": 1024,
+        "isAccordion": false,
+        "iconPlus": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconPlus___ecd000860211c5fa153812287f524177.svg",
+        "iconMinus": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconMinus___6162ee448e0998c7257db5ca2e106c5f.svg",
+        "iconBack": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconBack___dd8d7414710ddd3c6a427be61f533cd0.svg",
+        "menu": 
+        [
+          {
+            "__editorItemTitle": "",
+            "url": "/marca-deca",
+            "emphasis": false,
+            "banners": [],
+            "isBrands": false,
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f6b04749-a57d-4862-add0-2c64d46b5da2___7721fc9586903081a45f29e25a46f58f.png"
+            },
+            "emphasisColor": "#ffffff",
+            "emphasisBackground": "#d4c196"
+          },
+          {
+            "__editorItemTitle": "Banheiro",
+            "url": "/banheiro",
+            "emphasis": false,
+            "banners": [],
+            "isBrands": false,
+            "column": [
+              {
+                "url": "/banheiro/torneiras-e-misturadores/deca?initialMap=c,c&initialQuery=banheiro/torneiras-e-misturadores&map=category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Torneiras e misturadores",
+                "submenu": [
+                  {
+                    "url": "/banheiro/torneiras-e-misturadores/misturador-para-banheiro/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Misturador para banheiro",
+                    "isCategory": false
+                  },
+                  {
+                    "url": "/banheiro/torneiras-e-misturadores/torneira-para-banheiro/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Torneira para banheiro",
+                    "submenu": [],
+                    "isCategory": false
+                  },
+                  {
+                    "url": "/banheiro/torneiras-e-misturadores/torneira-automatica/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Torneira automatica"
+                  },
+                  {
+                    "url": "/banheiro/torneiras-e-misturadores/monocomando-para-banheiro/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Monocomando para banheiro"
+                  }
+                ],
+                "showTitle": true
+              },
+              {
+                "url": "/banheiro/acessorios-para-banheiro/deca?initialMap=c,c&initialQuery=banheiro/acessorios-para-banheiro&map=category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Acessorios para banheiro",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/barra-de-apoio/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Barra de apoio"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/cabide-de-banheiro/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Cabide de Banheiro"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/kits-para-banheiro/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Kits para Baheiro"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/papeleiras/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Papeleiras"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/porta-toalha/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Porta Toalha"
+                  },
+                  {
+                    "url": "/banheiro/deca/prateleiras?_q=prateleiras&fuzzy=0&initialMap=ft&initialQuery=prateleiras&map=category-1,brand,ft&operator=and",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Prateleiras"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/saboneteira-e-porta-sabonetes/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Saboneteira e porta sabonetes"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/bicas/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Bicas"
+                  },
+                  {
+                    "url": "/deca/espelhos?_q=espelhos&fuzzy=0&initialMap=ft&initialQuery=espelhos&map=brand,ft&operator=and",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Espelhos"
+                  }
+                ]
+              },
+              {
+                "url": "/banheiro/chuveiros-e-duchas/deca?initialMap=c,c&initialQuery=banheiro/chuveiros-e-duchas&map=category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Chuveiros e duchas",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/banheiro/chuveiros-e-duchas/ducha-higienica/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Ducha higienica"
+                  },
+                  {
+                    "url": "/banheiro/chuveiros-e-duchas/ducha-e-chuveiro-frio/deca?initialMap=c,c,c&initialQuery=banheiro/chuveiros-e-duchas/ducha-e-chuveiro-frio&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Ducha e chuveiro frio"
+                  }
+                ]
+              },
+              {
+                "url": "/banheiro/cubas-e-lavatorios/deca?initialMap=c,c&initialQuery=banheiro/cubas-e-lavatorios&map=category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Cubas e Lavatórios",
+                "allCategories": false,
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/cubas-de-apoio/deca?initialMap=c,c,c&initialQuery=banheiro/cubas-e-lavatorios/cubas-de-apoio&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Cuba de  apoio"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/cubas-de-embutir",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Cubas Para Embutir"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/cubas-de-semi-encaixe",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Cbas de semi encaixe"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/cubas-de-sobrepor",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Cuba de Sobrepor"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/lavatorios/deca?initialMap=c,c,c&initialQuery=banheiro/cubas-e-lavatorios/lavatorios&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Lavatório"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/coluna-para-lavatorios/deca?initialMap=c,c,c&initialQuery=banheiro/cubas-e-lavatorios/coluna-para-lavatorios&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Coluna para lavatório"
+                  }
+                ]
+              },
+              {
+                "url": "/banheiro/acabamentos-e-registros/deca?map=category-1,category-2,category-3,brand",
+                "hasChildren": false,
+                "showTitle": true,
+                "__editorItemTitle": "Acabamentos e registros",
+                "submenu": [
+                  {
+                    "url": "/banheiro/acabamentos-e-registros/acabamentos-de-registros/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Acabamentos para registros"
+                  },
+                  {
+                    "url": "/banheiro/acabamentos-e-registros/base-de-registro/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Base de registro"
+                  }
+                ]
+              },
+              {
+                "url": "/banheiro/valvulas-de-descarga/deca?initialMap=c,c&initialQuery=banheiro/valvulas-de-descarga&map=category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Válvulas",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/banheiro/valvulas-de-descarga/deca?initialMap=c,c&initialQuery=banheiro/valvulas-de-descarga&map=category-1,category-2,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Valvula de descarga"
+                  },
+                  {
+                    "url": "/banheiro/valvulas-de-descarga/base/deca?initialMap=c,c,c&initialQuery=banheiro/valvulas-de-descarga/base&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Base"
+                  },
+                  {
+                    "url": "/banheiro/valvulas-de-descarga/valvulas-automaticas/deca?initialMap=c,c,c&initialQuery=banheiro/valvulas-de-descarga/valvulas-automaticas&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Válvula automaticas"
+                  },
+                  {
+                    "url": "/banheiro/valvulas-de-descarga/acessorios-e-reparos/deca?initialMap=c,c,c&initialQuery=banheiro/valvulas-de-descarga/acessorios-e-reparos&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Acessórios e reparos"
+                  },
+                  {
+                    "url": "/banheiro/valvulas-de-descarga/acabamento-para-valvulas/deca?initialMap=c,c,c&initialQuery=banheiro/valvulas-de-descarga/acabamento-para-valvulas&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Acabamento para válvulas"
+                  }
+                ]
+              },
+              {
+                "url": "/banheiro/instalacao-e-acessorios/deca?initialMap=c,c&initialQuery=banheiro/instalacao-e-acessorios&map=category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Instalação e acessórios",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/banheiro/instalacao-e-acessorios/anel-de-vedacao/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/anel-de-vedacao&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Anel e vedação"
+                  },
+                  {
+                    "url": "/banheiro/instalacao-e-acessorios/ligacao-flexivel/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/ligacao-flexivel&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Ligação Flexivel"
+                  },
+                  {
+                    "url": "/banheiro/instalacao-e-acessorios/tubo-de-ligacao/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/tubo-de-ligacao&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Tubo de Ligação"
+                  },
+                  {
+                    "url": "/banheiro/deca/parafuso?_q=parafuso&fuzzy=0&initialMap=ft&initialQuery=parafuso&map=category-1,brand,ft&operator=and",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Parafuso"
+                  },
+                  {
+                    "url": "/banheiro/instalacao-e-acessorios/boia/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/boia&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Boia"
+                  },
+                  {
+                    "url": "/banheiro/instalacao-e-acessorios/sifao/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/sifao&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Sifão"
+                  },
+                  {
+                    "url": "/banheiro/instalacao-e-acessorios/kits-para-instalacao/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/kits-para-instalacao&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Kit para instalação"
+                  }
+                ]
+              },
+              {
+                "url": "/banheiro/vasos-sanitarios-e-bides/deca?initialMap=c,c&initialQuery=banheiro/vasos-sanitarios-e-bides&map=category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Vasos sanitarios e bides",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca?initialMap=c,c,c&initialQuery=banheiro/vasos-sanitarios-e-bides/bacias-sanitarias&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Bacia sanitária"
+                  },
+                  {
+                    "url": "/banheiro/vasos-sanitarios-e-bides/bides/deca?initialMap=c,c,c&initialQuery=banheiro/vasos-sanitarios-e-bides/bides&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Bidê"
+                  },
+                  {
+                    "url": "/banheiro/vasos-sanitarios-e-bides/assentos-sanitarios/deca?initialMap=c,c,c&initialQuery=banheiro/vasos-sanitarios-e-bides/assentos-sanitarios&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Assentos Sanitários"
+                  },
+                  {
+                    "url": "/banheiro/vasos-sanitarios-e-bides/kit-bacias-sanitarias-completas/deca?initialMap=c,c,c&initialQuery=banheiro/vasos-sanitarios-e-bides/kit-bacias-sanitarias-completas&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Kit bacia sanitária completa"
+                  }
+                ]
+              }
+            ],
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/82ce35d0-3d4f-479b-a866-fb35840e643d___f89dc363e46d865608f3d32d1bfd3fb4.png"
+            }
+          },
+          {
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/69d9452d-b5a3-4337-bc6c-182264bb55cd___8540d39b465c8472fea79dece8ef2b1e.png"
+            },
+            "url": "/deca/cozinha%20e%20lavanderia?_q=cozinha%20e%20lavanderia&fuzzy=auto&initialMap=ft&initialQuery=cozinha%20e%20lavanderia&map=brand,ft&operator=or",
+            "emphasis": false,
+            "isBrands": false,
+            "__editorItemTitle": "Cozinha e lavanderia",
+            "column": [
+              {
+                "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/deca?initialMap=c,c&initialQuery=cozinha-e-lavanderia/torneiras-e-misturadores&map=category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Torneiras e misturadores",
+                "submenu": [
+                  {
+                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/torneira-para-cozinha/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Torneira para cozinha"
+                  },
+                  {
+                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/misturador-para-cozinha/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Misturador para cozinha"
+                  },
+                  {
+                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/torneira-para-lavanderia/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Torneira para Lavanderia"
+                  },
+                  {
+                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/torneira-eletrica/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Torneira Elétrica"
+                  },
+                  {
+                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/monocomando-para-cozinha/deca?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Monocomando para cozinha"
+                  },
+                  {
+                    "url": "/deca/gourmet?_q=gourmet&fuzzy=0&initialMap=ft&initialQuery=gourmet&map=brand,ft&operator=and",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Gourmet"
+                  }
+                ],
+                "showTitle": true
+              },
+              {
+                "url": "/cozinha-e-lavanderia/pias-e-cubas-para-cozinha/deca?_q=deca&fuzzy=0&initialMap=ft&initialQuery=deca&map=category-1,category-2,ft&operator=and",
+                "hasChildren": false,
+                "showTitle": true,
+                "__editorItemTitle": "Pias e Cubas para Cozinha"
+              },
+              {
+                "url": "/cozinha-e-lavanderia/pias-e-cubas-para-cozinha/cuba/deca?initialMap=c&initialQuery=cozinha-e-lavanderia&map=category-1,category-2,category-3,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Tanques para Lavanderia",
+                "showTitle": true
+              },
+              {
+                "url": "/acessorios-para-cozinha/deca/acessórios%20para%20lavanderia?fuzzy=auto&initialMap=ft&initialQuery=ACESSÓRIOS%20PARA%20LAVANDERIA&map=category-2,brand,ft&operator=or",
+                "hasChildren": false,
+                "__editorItemTitle": "Acessórios  para lavanderias  e Cozinhas",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/deca/varais?_q=varais&fuzzy=0&initialMap=ft&initialQuery=varais&map=brand,ft&operator=and",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Varais"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/cecfa72a-601b-49ad-925e-bdd05fe59d88___1d9f86258008f9159729fa8cf1be065d.png"
+            },
+            "url": "#",
+            "emphasis": false,
+            "isBrands": false,
+            "__editorItemTitle": "Linhas",
+            "column": [
+              {
+                "url": "/linhas-deca-metais",
+                "hasChildren": false,
+                "__editorItemTitle": "Linha Metais",
+                "showTitle": true
+              },
+              {
+                "url": "/linhas-deca-loucas",
+                "hasChildren": false,
+                "__editorItemTitle": "Linha Deca  de Louças",
+                "showTitle": true
+              }
+            ]
+          },
+          {
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/0c1db97b-4f94-4ae2-8765-8b0c61be8b03___1e366dc91acf16bba804211c7086c50c.png"
+            },
+            "url": "/marca-deca",
+            "emphasis": false,
+            "isBrands": false,
+            "__editorItemTitle": "Novidades"
+          },
+          {
+            "url": "#/",
+            "emphasis": false,
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/cd3d900e-950d-4ee4-906e-2768177543a9___c7457b835e2b696c9d1511b98ede28ec.png"
+            },
+            "isBrands": false,
+            "__editorItemTitle": "Cores",
+            "column": [
+              {
+                "url": "/Deca/Black%20Matte?map=b,specificationFilter_1434",
+                "hasChildren": false,
+                "__editorItemTitle": "Cores Metais",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/Deca/Black%20Matte?map=b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Back Matte"
+                  },
+                  {
+                    "url": "/Deca/Black%20Noir?map=b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Black Noir"
+                  },
+                  {
+                    "url": "/Deca/Cromado?map=b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Cromado"
+                  },
+                  {
+                    "url": "/Deca/Gold?map=b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Gold"
+                  },
+                  {
+                    "url": "/Deca/Gold%20Matte?map=b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Gold Matte"
+                  },
+                  {
+                    "url": "/Deca/Red%20Gold?map=b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Red Gold"
+                  }
+                ]
+              },
+              {
+                "url": "##",
+                "hasChildren": false,
+                "__editorItemTitle": "Cores Cubas",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/deca/Branco?PS=12&map=c,c,b,specificationFilter_1289",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Branco"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/deca/Caramelo?PS=12&map=c,c,b,specificationFilter_1289",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Caramelo"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/deca/Cinza?PS=12&map=c,c,b,specificationFilter_1289",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Cinza"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/deca/Creme?PS=12&map=c,c,b,specificationFilter_1289",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Creme"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/deca/%C3%89bano?PS=12&map=c,c,b,specificationFilter_1289",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Ébano"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/deca/%C3%89bano%20Fosco?PS=12&map=c,c,b,specificationFilter_1289",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Ébano fosco"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/deca/Marrom%20Fosco?PS=12&map=c,c,b,specificationFilter_1289",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Marrom fosco"
+                  },
+                  {
+                    "url": "/banheiro/cubas-e-lavatorios/deca/Verde?PS=12&map=c,c,b,specificationFilter_1289",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Verde"
+                  }
+                ]
+              },
+              {
+                "url": "####",
+                "hasChildren": false,
+                "__editorItemTitle": "Cores Bacias",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Branco?PS=16&map=c,c,c,b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Branco"
+                  },
+                  {
+                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Cinza?PS=16&map=c,c,c,b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Cinza"
+                  },
+                  {
+                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Creme?PS=16&map=c,c,c,b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Creme"
+                  },
+                  {
+                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/%C3%89bano?PS=16&map=c,c,c,b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Ébano"
+                  },
+                  {
+                    "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Marrom%20Fosco?PS=16&map=c,c,c,b,specificationFilter_1434",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Marrom fosco"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "custom-menu#header-mobile-deca-0.1v": {
+      "title": "Menu Principal Deca",
+      "props": {
+          "blockClass": "menu-deca",
+          "template": "cortina",
+          "full": true,
+          "breakpoint": 1024,
+          "isAccordion": false,
+          "iconPlus": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/001560f9-3f27-4d77-919b-2544c0a020c4___e3124a7243b956319fec7661a002a6f9.svg",
+          "iconMinus": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/2e672069-2d5d-4703-888c-4457cf34ec58___1197035ac622e87dbedd67f41f037c8d.svg",
+          "iconBack": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconBack___dd8d7414710ddd3c6a427be61f533cd0.svg",
+          "menu": 
+          [
+            {
+              "__editorItemTitle": "",
+              "url": "/marca-deca",
+              "emphasis": false,
+              "banners": [],
+              "isBrands": false,
+              "icon": {
+                "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f6b04749-a57d-4862-add0-2c64d46b5da2___7721fc9586903081a45f29e25a46f58f.png"
+              },
+              "emphasisColor": "#ffffff",
+              "emphasisBackground": "#d4c196"
+            },
+            {
+              "__editorItemTitle": "Banheiro",
+              "url": "/banheiro",
+              "emphasis": false,
+              "banners": [],
+              "isBrands": false,
+              "column": [
+                {
+                  "url": "/banheiro/torneiras-e-misturadores/deca?initialMap=c,c&initialQuery=banheiro/torneiras-e-misturadores&map=category-1,category-2,brand",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Torneiras e misturadores",
+                  "submenu": [
+                    {
+                      "url": "/banheiro/torneiras-e-misturadores/misturador-para-banheiro/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Misturador para banheiro",
+                      "isCategory": false
+                    },
+                    {
+                      "url": "/banheiro/torneiras-e-misturadores/torneira-para-banheiro/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Torneira para banheiro",
+                      "submenu": [],
+                      "isCategory": false
+                    },
+                    {
+                      "url": "/banheiro/torneiras-e-misturadores/torneira-automatica/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Torneira automatica"
+                    },
+                    {
+                      "url": "/banheiro/torneiras-e-misturadores/monocomando-para-banheiro/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Monocomando para banheiro"
+                    }
+                  ],
+                  "showTitle": true
+                },
+                {
+                  "url": "/banheiro/acessorios-para-banheiro/deca?initialMap=c,c&initialQuery=banheiro/acessorios-para-banheiro&map=category-1,category-2,brand",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Acessorios para banheiro",
+                  "showTitle": true,
+                  "submenu": [
+                    {
+                      "url": "/banheiro/acessorios-para-banheiro/barra-de-apoio/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Barra de apoio"
+                    },
+                    {
+                      "url": "/banheiro/acessorios-para-banheiro/cabide-de-banheiro/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Cabide de Banheiro"
+                    },
+                    {
+                      "url": "/banheiro/acessorios-para-banheiro/kits-para-banheiro/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Kits para Baheiro"
+                    },
+                    {
+                      "url": "/banheiro/acessorios-para-banheiro/papeleiras/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Papeleiras"
+                    },
+                    {
+                      "url": "/banheiro/acessorios-para-banheiro/porta-toalha/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Porta Toalha"
+                    },
+                    {
+                      "url": "/banheiro/deca/prateleiras?_q=prateleiras&fuzzy=0&initialMap=ft&initialQuery=prateleiras&map=category-1,brand,ft&operator=and",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Prateleiras"
+                    },
+                    {
+                      "url": "/banheiro/acessorios-para-banheiro/saboneteira-e-porta-sabonetes/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Saboneteira e porta sabonetes"
+                    },
+                    {
+                      "url": "/banheiro/acessorios-para-banheiro/bicas/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Bicas"
+                    },
+                    {
+                      "url": "/deca/espelhos?_q=espelhos&fuzzy=0&initialMap=ft&initialQuery=espelhos&map=brand,ft&operator=and",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Espelhos"
+                    }
+                  ]
+                },
+                {
+                  "url": "/banheiro/chuveiros-e-duchas/deca?initialMap=c,c&initialQuery=banheiro/chuveiros-e-duchas&map=category-1,category-2,brand",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Chuveiros e duchas",
+                  "showTitle": true,
+                  "submenu": [
+                    {
+                      "url": "/banheiro/chuveiros-e-duchas/ducha-higienica/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Ducha higienica"
+                    },
+                    {
+                      "url": "/banheiro/chuveiros-e-duchas/ducha-e-chuveiro-frio/deca?initialMap=c,c,c&initialQuery=banheiro/chuveiros-e-duchas/ducha-e-chuveiro-frio&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Ducha e chuveiro frio"
+                    }
+                  ]
+                },
+                {
+                  "url": "/banheiro/cubas-e-lavatorios/deca?initialMap=c,c&initialQuery=banheiro/cubas-e-lavatorios&map=category-1,category-2,brand",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Cubas e Lavatórios",
+                  "allCategories": false,
+                  "showTitle": true,
+                  "submenu": [
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/cubas-de-apoio/deca?initialMap=c,c,c&initialQuery=banheiro/cubas-e-lavatorios/cubas-de-apoio&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Cuba de  apoio"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/cubas-de-embutir",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Cubas Para Embutir"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/cubas-de-semi-encaixe",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Cbas de semi encaixe"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/cubas-de-sobrepor",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Cuba de Sobrepor"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/lavatorios/deca?initialMap=c,c,c&initialQuery=banheiro/cubas-e-lavatorios/lavatorios&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Lavatório"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/coluna-para-lavatorios/deca?initialMap=c,c,c&initialQuery=banheiro/cubas-e-lavatorios/coluna-para-lavatorios&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Coluna para lavatório"
+                    }
+                  ]
+                },
+                {
+                  "url": "/banheiro/acabamentos-e-registros/deca?map=category-1,category-2,category-3,brand",
+                  "hasChildren": false,
+                  "showTitle": true,
+                  "__editorItemTitle": "Acabamentos e registros",
+                  "submenu": [
+                    {
+                      "url": "/banheiro/acabamentos-e-registros/acabamentos-de-registros/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Acabamentos para registros"
+                    },
+                    {
+                      "url": "/banheiro/acabamentos-e-registros/base-de-registro/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Base de registro"
+                    }
+                  ]
+                },
+                {
+                  "url": "/banheiro/valvulas-de-descarga/deca?initialMap=c,c&initialQuery=banheiro/valvulas-de-descarga&map=category-1,category-2,brand",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Válvulas",
+                  "showTitle": true,
+                  "submenu": [
+                    {
+                      "url": "/banheiro/valvulas-de-descarga/deca?initialMap=c,c&initialQuery=banheiro/valvulas-de-descarga&map=category-1,category-2,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Valvula de descarga"
+                    },
+                    {
+                      "url": "/banheiro/valvulas-de-descarga/base/deca?initialMap=c,c,c&initialQuery=banheiro/valvulas-de-descarga/base&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Base"
+                    },
+                    {
+                      "url": "/banheiro/valvulas-de-descarga/valvulas-automaticas/deca?initialMap=c,c,c&initialQuery=banheiro/valvulas-de-descarga/valvulas-automaticas&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Válvula automaticas"
+                    },
+                    {
+                      "url": "/banheiro/valvulas-de-descarga/acessorios-e-reparos/deca?initialMap=c,c,c&initialQuery=banheiro/valvulas-de-descarga/acessorios-e-reparos&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Acessórios e reparos"
+                    },
+                    {
+                      "url": "/banheiro/valvulas-de-descarga/acabamento-para-valvulas/deca?initialMap=c,c,c&initialQuery=banheiro/valvulas-de-descarga/acabamento-para-valvulas&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Acabamento para válvulas"
+                    }
+                  ]
+                },
+                {
+                  "url": "/banheiro/instalacao-e-acessorios/deca?initialMap=c,c&initialQuery=banheiro/instalacao-e-acessorios&map=category-1,category-2,brand",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Instalação e acessórios",
+                  "showTitle": true,
+                  "submenu": [
+                    {
+                      "url": "/banheiro/instalacao-e-acessorios/anel-de-vedacao/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/anel-de-vedacao&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Anel e vedação"
+                    },
+                    {
+                      "url": "/banheiro/instalacao-e-acessorios/ligacao-flexivel/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/ligacao-flexivel&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Ligação Flexivel"
+                    },
+                    {
+                      "url": "/banheiro/instalacao-e-acessorios/tubo-de-ligacao/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/tubo-de-ligacao&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Tubo de Ligação"
+                    },
+                    {
+                      "url": "/banheiro/deca/parafuso?_q=parafuso&fuzzy=0&initialMap=ft&initialQuery=parafuso&map=category-1,brand,ft&operator=and",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Parafuso"
+                    },
+                    {
+                      "url": "/banheiro/instalacao-e-acessorios/boia/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/boia&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Boia"
+                    },
+                    {
+                      "url": "/banheiro/instalacao-e-acessorios/sifao/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/sifao&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Sifão"
+                    },
+                    {
+                      "url": "/banheiro/instalacao-e-acessorios/kits-para-instalacao/deca?initialMap=c,c,c&initialQuery=banheiro/instalacao-e-acessorios/kits-para-instalacao&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Kit para instalação"
+                    }
+                  ]
+                },
+                {
+                  "url": "/banheiro/vasos-sanitarios-e-bides/deca?initialMap=c,c&initialQuery=banheiro/vasos-sanitarios-e-bides&map=category-1,category-2,brand",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Vasos sanitarios e bides",
+                  "showTitle": true,
+                  "submenu": [
+                    {
+                      "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca?initialMap=c,c,c&initialQuery=banheiro/vasos-sanitarios-e-bides/bacias-sanitarias&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Bacia sanitária"
+                    },
+                    {
+                      "url": "/banheiro/vasos-sanitarios-e-bides/bides/deca?initialMap=c,c,c&initialQuery=banheiro/vasos-sanitarios-e-bides/bides&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Bidê"
+                    },
+                    {
+                      "url": "/banheiro/vasos-sanitarios-e-bides/assentos-sanitarios/deca?initialMap=c,c,c&initialQuery=banheiro/vasos-sanitarios-e-bides/assentos-sanitarios&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Assentos Sanitários"
+                    },
+                    {
+                      "url": "/banheiro/vasos-sanitarios-e-bides/kit-bacias-sanitarias-completas/deca?initialMap=c,c,c&initialQuery=banheiro/vasos-sanitarios-e-bides/kit-bacias-sanitarias-completas&map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Kit bacia sanitária completa"
+                    }
+                  ]
+                }
+              ],
+              "icon": {
+                "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/092bc649-f12d-491f-8551-5a67c92634ad___3fb1729c214bd4de4cbded6e006be7e7.png"
+              }
+            },
+            {
+              "icon": {
+                "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f030ad4c-76b3-4c5f-be91-fbcbe353e804___5fe4ef7a35eb78b761c5637a3471325f.png"
+              },
+              "url": "/deca/cozinha%20e%20lavanderia?_q=cozinha%20e%20lavanderia&fuzzy=auto&initialMap=ft&initialQuery=cozinha%20e%20lavanderia&map=brand,ft&operator=or",
+              "emphasis": false,
+              "isBrands": false,
+              "__editorItemTitle": "Cozinha e lavanderia",
+              "column": [
+                {
+                  "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/deca?initialMap=c,c&initialQuery=cozinha-e-lavanderia/torneiras-e-misturadores&map=category-1,category-2,brand",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Torneiras e misturadores",
+                  "submenu": [
+                    {
+                      "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/torneira-para-cozinha/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Torneira para cozinha"
+                    },
+                    {
+                      "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/misturador-para-cozinha/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Misturador para cozinha"
+                    },
+                    {
+                      "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/torneira-para-lavanderia/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Torneira para Lavanderia"
+                    },
+                    {
+                      "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/torneira-eletrica/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Torneira Elétrica"
+                    },
+                    {
+                      "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/monocomando-para-cozinha/deca?map=category-1,category-2,category-3,brand",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Monocomando para cozinha"
+                    },
+                    {
+                      "url": "/deca/gourmet?_q=gourmet&fuzzy=0&initialMap=ft&initialQuery=gourmet&map=brand,ft&operator=and",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Gourmet"
+                    }
+                  ],
+                  "showTitle": true
+                },
+                {
+                  "url": "/cozinha-e-lavanderia/pias-e-cubas-para-cozinha/deca?_q=deca&fuzzy=0&initialMap=ft&initialQuery=deca&map=category-1,category-2,ft&operator=and",
+                  "hasChildren": false,
+                  "showTitle": true,
+                  "__editorItemTitle": "Pias e Cubas para Cozinha"
+                },
+                {
+                  "url": "/cozinha-e-lavanderia/pias-e-cubas-para-cozinha/cuba/deca?initialMap=c&initialQuery=cozinha-e-lavanderia&map=category-1,category-2,category-3,brand",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Tanques para Lavanderia",
+                  "showTitle": true
+                },
+                {
+                  "url": "/acessorios-para-cozinha/deca/acessórios%20para%20lavanderia?fuzzy=auto&initialMap=ft&initialQuery=ACESSÓRIOS%20PARA%20LAVANDERIA&map=category-2,brand,ft&operator=or",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Acessórios  para lavanderias  e Cozinhas",
+                  "showTitle": true,
+                  "submenu": [
+                    {
+                      "url": "/deca/varais?_q=varais&fuzzy=0&initialMap=ft&initialQuery=varais&map=brand,ft&operator=and",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Varais"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "icon": {
+                "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f57b3077-20d9-4800-b2a8-7937b1f57cc0___35f9b801bf727c579949d8a77fff24b4.png"
+              },
+              "url": "#",
+              "emphasis": false,
+              "isBrands": false,
+              "__editorItemTitle": "Linhas",
+              "column": [
+                {
+                  "url": "/linhas-deca-metais",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Linha Metais",
+                  "showTitle": true
+                },
+                {
+                  "url": "/linhas-deca-loucas",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Linha Deca  de Louças",
+                  "showTitle": true
+                }
+              ]
+            },
+            {
+              "icon": {
+                "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4721b528-45e0-4c17-9d24-3e5a8f4762ce___4ceff8fc20d5c8eaf2e774146e74fde4.png"
+              },
+              "url": "/marca-deca",
+              "emphasis": false,
+              "isBrands": false,
+              "__editorItemTitle": "Novidades"
+            },
+            {
+              "url": "#/",
+              "emphasis": false,
+              "icon": {
+                "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/8d335471-aceb-466d-a92c-d8765e436c08___427d17cc3a1e55d1012b6507f439d1b7.png"
+              },
+              "isBrands": false,
+              "__editorItemTitle": "Cores",
+              "column": [
+                {
+                  "url": "/Deca/Black%20Matte?map=b,specificationFilter_1434",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Cores Metais",
+                  "showTitle": true,
+                  "submenu": [
+                    {
+                      "url": "/Deca/Black%20Matte?map=b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Back Matte"
+                    },
+                    {
+                      "url": "/Deca/Black%20Noir?map=b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Black Noir"
+                    },
+                    {
+                      "url": "/Deca/Cromado?map=b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Cromado"
+                    },
+                    {
+                      "url": "/Deca/Gold?map=b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Gold"
+                    },
+                    {
+                      "url": "/Deca/Gold%20Matte?map=b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Gold Matte"
+                    },
+                    {
+                      "url": "/Deca/Red%20Gold?map=b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Red Gold"
+                    }
+                  ]
+                },
+                {
+                  "url": "##",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Cores Cubas",
+                  "showTitle": true,
+                  "submenu": [
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/deca/Branco?PS=12&map=c,c,b,specificationFilter_1289",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Branco"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/deca/Caramelo?PS=12&map=c,c,b,specificationFilter_1289",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Caramelo"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/deca/Cinza?PS=12&map=c,c,b,specificationFilter_1289",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Cinza"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/deca/Creme?PS=12&map=c,c,b,specificationFilter_1289",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Creme"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/deca/%C3%89bano?PS=12&map=c,c,b,specificationFilter_1289",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Ébano"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/deca/%C3%89bano%20Fosco?PS=12&map=c,c,b,specificationFilter_1289",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Ébano fosco"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/deca/Marrom%20Fosco?PS=12&map=c,c,b,specificationFilter_1289",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Marrom fosco"
+                    },
+                    {
+                      "url": "/banheiro/cubas-e-lavatorios/deca/Verde?PS=12&map=c,c,b,specificationFilter_1289",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Verde"
+                    }
+                  ]
+                },
+                {
+                  "url": "####",
+                  "hasChildren": false,
+                  "__editorItemTitle": "Cores Bacias",
+                  "showTitle": true,
+                  "submenu": [
+                    {
+                      "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Branco?PS=16&map=c,c,c,b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Branco"
+                    },
+                    {
+                      "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Cinza?PS=16&map=c,c,c,b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Cinza"
+                    },
+                    {
+                      "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Creme?PS=16&map=c,c,c,b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Creme"
+                    },
+                    {
+                      "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/%C3%89bano?PS=16&map=c,c,c,b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Ébano"
+                    },
+                    {
+                      "url": "/banheiro/vasos-sanitarios-e-bides/bacias-sanitarias/deca/Marrom%20Fosco?PS=16&map=c,c,c,b,specificationFilter_1434",
+                      "hasChildren": false,
+                      "__editorItemTitle": "Marrom fosco"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+      }
+    },
+    "drawer#menu-deca": {
+      "props": {
+          "blockClass": ["menu", "deca"]
+      },
+      "blocks": [
+          "drawer-header#drawer-header-menu"
+      ],
+      "children": [
+        "custom-menu#header-mobile-deca-0.1v",
+          "exclusive-stores"
+      ]
+    },
+    //docol
+    "custom-menu#header-desktop-decol-0.1v": {
+      "title": "Menu Principal docol",
+      "props": 
+      {
+        "blockClass": "menu-docol",
+        "template": "cortina",
+        "full": true,
+        "breakpoint": 1024,
+        "isAccordion": false,
+        "iconPlus": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconPlus___ecd000860211c5fa153812287f524177.svg",
+        "iconMinus": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconMinus___6162ee448e0998c7257db5ca2e106c5f.svg",
+        "iconBack": "https://padovani.vtexassets.com/assets/vtex/assets-builder/padovani.basic/0.0.6/icons/iconBack___dd8d7414710ddd3c6a427be61f533cd0.svg",
+        "menu": 
+        [
+          {
+            "__editorItemTitle": "",
+            "url": "/marca-docol",
+            "emphasis": false,
+            "banners": [],
+            "isBrands": false,
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/eb96d6ff-56ef-4f74-99ff-999aae8e223f___40e3eadc60dd03204be5a2b425132248.png"
+            },
+            "emphasisColor": "#ffffff",
+            "emphasisBackground": "#396eb9"
+          },
+          {
+            "__editorItemTitle": "Banheiro",
+            "url": "/banheiro",
+            "emphasis": false,
+            "banners": [],
+            "isBrands": false,
+            "column": [
+              {
+                "url": "/banheiro/torneiras-e-misturadores/misturador-para-banheiro/docol?=docol&initialMap=c,c&initialQuery=banheiro/torneiras-e-misturadores&map=category-1,category-2,category-3,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Torneiras e misturadores",
+                "submenu": [
+                  {
+                    "url": "/banheiro/torneiras-e-misturadores/misturador-para-banheiro/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Misturador para banheiro",
+                    "isCategory": false
+                  },
+                  {
+                    "url": "/banheiro/torneiras-e-misturadores/torneira-para-banheiro/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Torneira para banheiro",
+                    "submenu": [],
+                    "isCategory": false
+                  },
+                  {
+                    "url": "/banheiro/torneiras-e-misturadores/torneira-automatica/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Torneira automatica"
+                  },
+                  {
+                    "url": "/banheiro/torneiras-e-misturadores/monocomando-para-banheiro/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Monocomando para banheiro"
+                  }
+                ],
+                "showTitle": true
+              },
+              {
+                "url": "/banheiro/docol/acessorios-para-banheiro/docol?initialMap=c,c,category-1&initialQuery=banheiro/acessorios-para-banheiro/docol&map=category-1,category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Acessorios para banheiro",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/barra-de-apoio/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Barra de apoio"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/cabide-de-banheiro/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Cabide de Banheiro"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/kits-para-banheiro/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Kits para Baheiro"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/papeleiras/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Papeleiras"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/porta-toalha/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Porta Toalha"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/prateleiras/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Prateleiras"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/saboneteira-e-porta-sabonetes/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Saboneteira e porta sabonetes"
+                  },
+                  {
+                    "url": "/banheiro/acessorios-para-banheiro/bicas/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Bicas"
+                  }
+                ]
+              },
+              {
+                "url": "/banheiro/docol/acabamentos-e-registros/docol?initialMap=c,c,category-1&initialQuery=banheiro/acabamentos-e-registros/docol&map=category-1,category-1,category-2,brand",
+                "hasChildren": false,
+                "showTitle": true,
+                "__editorItemTitle": "Acabamentos e registros",
+                "submenu": [
+                  {
+                    "url": "/banheiro/acabamentos-e-registros/acabamentos-de-registros/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Acabamentos para registros"
+                  },
+                  {
+                    "url": "/banheiro/acabamentos-e-registros/base-de-registro/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Base de registro"
+                  }
+                ]
+              },
+              {
+                "url": "/banheiro/docol/chuveiros-e-duchas/docol?initialMap=c,c,category-1&initialQuery=banheiro/chuveiros-e-duchas/docol&map=category-1,category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Chuveiros e duchas",
+                "showTitle": true,
+                "submenu": [
+                  {
+                    "url": "/banheiro/chuveiros-e-duchas/ducha-higienica/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Ducha higienica"
+                  },
+                  {
+                    "url": "/banheiro/chuveiros-e-duchas/ducha-e-chuveiro-frio/docol?initialMap=c,c,c&initialQuery=banheiro/chuveiros-e-duchas/ducha-e-chuveiro-frio&map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Ducha e chuveiro frio"
+                  }
+                ]
+              }
+            ],
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/092bc649-f12d-491f-8551-5a67c92634ad___3fb1729c214bd4de4cbded6e006be7e7.png"
+            }
+          },
+          {
+            "url": "/cozinha-e-lavanderia/docol/torneiras-e-misturadores/docol?initialMap=c,c,category-1&initialQuery=cozinha-e-lavanderia/torneiras-e-misturadores/docol&map=category-1,category-1,category-2,brand",
+            "emphasis": false,
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f030ad4c-76b3-4c5f-be91-fbcbe353e804___5fe4ef7a35eb78b761c5637a3471325f.png"
+            },
+            "isBrands": false,
+            "__editorItemTitle": "Cozinha e lavanderia",
+            "column": [
+              {
+                "url": "/cozinha-e-lavanderia/docol/torneiras-e-misturadores/docol?initialMap=c,c,category-1&initialQuery=cozinha-e-lavanderia/torneiras-e-misturadores/docol&map=category-1,category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Torneiras e misturadores",
+                "submenu": [
+                  {
+                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/misturador-para-cozinha/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Misturador para cozinha"
+                  },
+                  {
+                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/torneira-para-cozinha/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Torneira para cozinha"
+                  },
+                  {
+                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/torneira-para-lavanderia/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Torneira para Lavanderia"
+                  },
+                  {
+                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/torneira-eletrica/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Torneira Elétrica"
+                  },
+                  {
+                    "url": "/cozinha-e-lavanderia/torneiras-e-misturadores/monocomando-para-cozinha/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Monocomando para cozinha"
+                  }
+                ],
+                "showTitle": true
+              }
+            ]
+          },
+          {
+            "url": "/banheiro/docol/instalacao-e-acessorios/docol?initialMap=c,c,category-1&initialQuery=banheiro/instalacao-e-acessorios/docol&map=category-1,category-1,category-2,brand",
+            "emphasis": false,
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/18761ae1-671f-42b4-8c7d-95a50e8c93fb___bad7c2f93dc9d7d3d0de1cd25e438d82.png"
+            },
+            "isBrands": false,
+            "__editorItemTitle": "Hidráulicos",
+            "column": [
+              {
+                "url": "/banheiro/docol/instalacao-e-acessorios/docol?initialMap=c,c,category-1&initialQuery=banheiro/instalacao-e-acessorios/docol&map=category-1,category-1,category-2,brand",
+                "hasChildren": false,
+                "__editorItemTitle": "Instalação e acessórios",
+                "submenu": [
+                  {
+                    "url": "/banheiro/instalacao-e-acessorios/tubo-de-ligacao/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Tubo de ligação",
+                    "isCategory": false
+                  },
+                  {
+                    "url": "/instalacao-e-acessorios/docol/parafuso%20de%20fixaçao?_q=parafuso%20de%20fixaçao&fuzzy=0&initialMap=ft&initialQuery=parafuso%20de%20fixaçao&map=category-2,brand,ft&operator=and",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Parafuso"
+                  },
+                  {
+                    "url": "/banheiro/instalacao-e-acessorios/sifao/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Sifão"
+                  },
+                  {
+                    "url": "/banheiro/instalacao-e-acessorios/valvulas-succao-e-retencao/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Valvulas sucção e retenção"
+                  }
+                ],
+                "showTitle": true
+              },
+              {
+                "url": "/valvulas-de-descarga/docol/valvulas%20e%20descargas?_q=valvulas%20e%20descargas&fuzzy=0&initialMap=ft&initialQuery=valvulas%20e%20descargas&map=category-2,brand,ft&operator=and",
+                "hasChildren": false,
+                "showTitle": true,
+                "__editorItemTitle": "Válvulas de descarga",
+                "submenu": [
+                  {
+                    "url": "/banheiro/valvulas-de-descarga/base/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Base"
+                  },
+                  {
+                    "url": "/banheiro/valvulas-de-descarga/acessorios-e-reparos/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Acessórios e reparos"
+                  },
+                  {
+                    "url": "/banheiro/valvulas-de-descarga/acabamento-para-valvulas/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "AQcabamento para válvulas"
+                  },
+                  {
+                    "url": "/banheiro/valvulas-de-descarga/valvulas-de-descarga/docol?map=category-1,category-2,category-3,brand",
+                    "hasChildren": false,
+                    "__editorItemTitle": "válvulas de descarga"
+                  },
+                  {
+                    "url": "/valvulas-automaticas/docol/valvulas?_q=valvulas&fuzzy=0&initialMap=ft&initialQuery=valvulas&map=category-3,brand,ft&operator=and",
+                    "hasChildren": false,
+                    "__editorItemTitle": "Válvulas automáticas"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "url": "/linhas-docol",
+            "emphasis": false,
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f57b3077-20d9-4800-b2a8-7937b1f57cc0___35f9b801bf727c579949d8a77fff24b4.png"
+            },
+            "isBrands": false,
+            "__editorItemTitle": "Linhas"
+          },
+          {
+            "url": "/marca-docol",
+            "emphasis": false,
+            "icon": {
+              "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4721b528-45e0-4c17-9d24-3e5a8f4762ce___4ceff8fc20d5c8eaf2e774146e74fde4.png"
+            },
+            "isBrands": false,
+            "__editorItemTitle": "Novidades"
+          }
+        ]
+      }
+    },
+    "drawer#menu-docol": {
+      "props": {
+          "blockClass": ["menu", "docol"]
+      },
+      "blocks": [
+          "drawer-header#drawer-header-menu"
+      ],
+      "children": [
+        "custom-menu#header-desktop-decol-0.1v",
+        "exclusive-stores"
+      ]
+    },
+    "exclusive-stores": {
+        "props": {
+            "store": [
+                {
+                    "image": {
+                        "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/98df69ce-75f7-4eba-9394-4bcfe4ab0d50___0f2bb24539f089fa0af6957203c3da73.svg"
+                    },
+                    "__editorItemTitle": "Deca",
+                    "url": "/marca-deca"
+                },
+                {
+                    "image": {
+                        "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/bcee05a6-b513-407d-b92e-7599d93bf274___433463e8ffbb0f64ef584a5eef2afc10.png"
+                    },
+                    "__editorItemTitle": "Docol",
+                    "url": "/docol?map=category-1,category-2,category-3,brand-marca"
+                },
+                {
+                    "image": {
+                        "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4f247fba-55e5-44fc-b6ae-be8922705410___ac80c405787b36eb1db33084ea6a19ca.png"
+                    },
+                    "__editorItemTitle": "Jacuzzi",
+                    "url": "/jacuzzi-marca"
+                },
+                {
+                    "image": {
+                        "imageUrl": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/3acff2f0-c5b3-434d-a2dc-6f3c6e6fbf18___34217749a6c82fd1aee93c2281800cd9.png"
+                    },
+                    "__editorItemTitle": "Portobello",
+                    "url": "/portobello-marca"
+                }
+            ]
+        }
+    },
+    "drawer-header#drawer-header-menu": {
+        "props": {
+            "blockClass": "menu-drawer"
+        },
+        "children": [
+            "flex-layout.row#header-drawer-1",
+            "flex-layout.row#header-drawer-2"
+        ]
+    },
+    "flex-layout.row#header-drawer-1": {
+        "props": {
+            "blockClass": "header-drawer-topline",
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "drawer-close-button#menu",
+            "rich-text#hello"
+        ]
+    },
+    "drawer-close-button#menu": {
+        "props": {
+            "blockClass": "closeicon-menu"
+        }
+    },
+    "rich-text#hello": {
+        "props": {
+            "text": "**Olá**, BEM-VINDO",
+            "blockClass": "hello-header-drawer"
+        }
+    },
+    "flex-layout.row#header-drawer-2": {
+        "props": {
+            "blockClass": "header-drawer-botline"
+            // "preventHorizontalStretch": true
+        },
+        "children": [
+            "link#my-account",
+            "link#pedidos"
+        ]
+    },
+    "link#my-account": {
+        "props": {
+            "blockClass": "link-header-drawer",
+            "href": "/account#/"
+        },
+        "children": [
+            "rich-text#link-my-account"
+        ]
+    },
+    "rich-text#link-my-account": {
+        "props": {
+            "blockClass": "link-my-account",
+            "text": "![engine](/arquivos/engine.svg) MINHA CONTA"
+        }
+    },
+    "link#pedidos": {
+        "props": {
+            "blockClass": "link-header-drawer",
+            "href": "/account#/orders"
+        },
+        "children": [
+            "rich-text#link-orders"
+        ]
+    },
+    "rich-text#link-orders": {
+        "props": {
+            "blockClass": "link-my-orders",
+            "text": "![truck](/arquivos/truck.svg) MEUS PEDIDOS"
+        }
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "flex-layout.row#pdp.line-4": {
+        "props": {
+            "fullWidth": true,
+            "horizontalAlign": "left",
+            "blockClass": "pdp-line-4"
+        },
+        "children": [
+            "flex-layout.col#pdp.line-4-col-1"
+        ]
+    },
+
+    "flex-layout.col#pdp.line-4-col-1": {
+        "props": {
+            "fullWidth": true,
+            "horizontalAlign": "left",
+            "blockClass": "pdp-line-4-col-1"
+        },
+
+        "children": [
+            "vtex.product-highlights@2.x:product-highlights#flags-pdp",
+            "flag-lightbox-custom",
+            "mini-description",
+            "scroll-to-description"
+        ]
+    },
+    "vtex.product-highlights@2.x:product-highlights#flags-pdp": {
+        "props": {
+            "filter": {
+                "type": "hide",
+                "highlightNames": [
+                    "Mais Vendidos - Home Page"
+                ]
+            }
+        },
+        "children": [
+            "product-highlight-wrapper#flags-pdp"
+        ]
+    },
+    "product-highlight-wrapper#flags-pdp": {
+        "props": {
+            "blockClass": "wrapper-flags-pdp"
+        },
+        "children": [
+            "product-highlight-text#flags-pdp"
+        ]
+    },
+    "product-highlight-text#flags-pdp": {
+        "props": {
+            "message": "{highlightName}",
+            "blockClass": "flags-pdp"
+        }
+    }
+}

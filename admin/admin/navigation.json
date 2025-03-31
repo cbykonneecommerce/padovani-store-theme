@@ -1,0 +1,18 @@
+{
+  "section": "transactions",
+  "titleId": "admin/list.navigation.group",
+  "subSection": "Example",
+  "searchKeyWordsHelpers": "admin/list.navigation.group",
+  "subSectionItems": [
+    {
+      "labelId": "admin/list.navigation.list",
+      "path": "/admin/codigo-vendedor",
+      "searchKeyWordsHelpers": "admin/list.navigation.list"
+    },
+    {
+      "labelId": "admin/list.navigation.results",
+      "path": "/admin/example/*id",
+      "searchKeyWordsHelpers": "admin/list.navigation.results"
+    }
+  ]
+}

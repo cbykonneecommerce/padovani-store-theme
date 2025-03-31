@@ -1,0 +1,98 @@
+{
+    "custom-menu#footer": {
+        "props": {
+            "blockClass":"footer-menu",
+            "isAccordion":true,
+            "breakpoint": 1024,
+            "menu":[
+                {
+                    "__editorItemTitle":"Atendimento ao cliente",
+                    "type":"Link Padrão",
+                    "url":"#2",
+                    "hasChildren":false,
+                    "column": [
+                        {
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                {
+                                    "url":"https://padovani.zendesk.com/hc/pt-br/requests/new",
+                                    "__editorItemTitle":"Abrir um chamado"
+                                },
+                                {
+                                    "url":"https://padovani.zendesk.com/hc/pt-br",
+                                    "__editorItemTitle":"Central de ajuda"
+                                },
+                                {
+                                    "url":"/login?returnUrl=%2Faccount%23%2Forders",
+                                    "__editorItemTitle":"Meus pedidos"
+                                },
+                                {
+                                    "url":"/institucional/politica-de-entrega",
+                                    "__editorItemTitle":"Políticas de entrega"
+                                },
+                                {
+                                    "url":"/institucional/politica-privacidade",
+                                    "__editorItemTitle":"Políticas de privacidade"
+                                },
+                                {
+                                    "url":"/institucional/trocas-devolucoes",
+                                    "__editorItemTitle":"Trocas e devoluções"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "url":"#1",
+                    "emphasis":false,
+                    "icon":{
+                        
+                    },
+                    "__editorItemTitle":"Institucional",
+                    "column":[
+                        {
+
+                            "__editorItemTitle":"column",
+                            "showTitle": false,
+                            "submenu": [
+                                    {
+                                        "url":"/institucional/quem-somos",
+                                        "hasChildren":false,
+                                        "__editorItemTitle":"Quem somos",
+                                        "showTitle":false
+                                    },
+                                    {
+                                        "url":"/institucional/nossas-lojas",
+                                        "hasChildren":false,
+                                        "__editorItemTitle":"Encontre uma loja",
+                                        "showTitle":false
+                                    },
+                                    {
+                                        "url":"/institucional/fale-conosco",
+                                        "hasChildren":false,
+                                        "__editorItemTitle":"Fale conosco"
+                                    },
+                                    {
+                                        "url":"https://play.google.com/store/apps/details?id=br.com.padovani.app&pcampaignid=web_share",
+                                        "hasChildren":false,
+                                        "__editorItemTitle":"BAIXE O APP (Android)"
+                                    },
+                                    {
+                                        "url":"https://apps.apple.com/br/app/padovani-app/id6736700828?l=en-GB",
+                                        "hasChildren":false,
+                                        "__editorItemTitle":"BAIXE O APP (IOS)"
+                                    }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "template":"cortina",
+            "full":false,
+            "iconPlus":"assets/icons/iconPlus.svg",
+            "iconMinus":"assets/icons/iconMinus.svg",
+            "iconBack":"assets/icons/iconBack.svg"
+        }
+    }
+}

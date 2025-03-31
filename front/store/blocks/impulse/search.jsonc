@@ -1,0 +1,7 @@
+{
+    "store.custom#impulse-search": {
+        "children": [
+            "impulse-search"
+        ]
+    }
+}

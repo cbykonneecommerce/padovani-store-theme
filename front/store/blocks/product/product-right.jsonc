@@ -1,0 +1,120 @@
+{
+  "flex-layout.col#right-col": {
+    "title": "Lado direito da area principal",
+    "props": {
+      "blockClass": "pdp-col-right",
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "marginLeft": 1,
+      "width": "40%"
+    },
+    "children": [
+      "flex-layout.row#pdp.line-2",
+      "flex-layout.row#pdp.line-3",
+      "product-rating-summary.ratrustvox",
+      "condition-layout.product#price-custom",
+      "condition-layout.product#docol-price",
+      "flex-layout.row#pdp.line-4",
+      "product-color-selector",
+      "sku-selector",
+      "condition-layout.product#add-to-cart",
+      // "condition-layout.product#shipping",
+      "flex-layout.row#description"
+    ]
+  },
+  "condition-layout.product#price-custom": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable",
+          "toBe": false
+        }
+      ],
+      "Then": "flex-layout.row#product-price-custom"
+    }
+  },
+  "condition-layout.product#docol-price": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": "567"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row",
+      "Else": "flex-layout.row#pdp.line-5"
+    }
+  },
+  "condition-layout.product#add-to-cart": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": "567"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#docol-whatssap-btn",
+      "Else": "condition-layout.product#pdp"
+    }
+  },
+  "flex-layout.row#product-price-custom": {
+    "children": [
+      "price-custom"
+    ]
+  },
+  "flex-layout.row#docol-whatssap-btn": {
+    "props": {
+      "blockClass": [
+        "docol-brn"
+      ]
+    },
+    "children": [
+      "buy-button-jacuzzi-validator#docol"
+    ]
+  },
+  "buy-button-jacuzzi-validator#docol": {
+    "props": {
+      "colorBg": "#59c00b",
+      "colorkLetter": "#fff",
+      "titleBtn": "Comprar pelo whatssap"
+    }
+  },
+  "condition-layout.product#shipping": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "productClusters",
+          "arguments": {
+            "id": "567"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row",
+      "Else": "flex-layout.row#pdp.line-6"
+    }
+  },
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 3,
+      "displayMode": "select",
+      "showValueNameForImageVariation": true,
+      "initialSelection": "complete"
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": [
+      "add-to-cart-button"
+    ]
+  }
+}

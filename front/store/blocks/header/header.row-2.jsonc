@@ -1,0 +1,195 @@
+{
+    "flex-layout.row#header.row-2.desktop": {
+        "props": {
+            "blockClass": "header-row-2",
+            "verticalAlign": "middle"
+        },
+        "children": [
+            "flex-layout.col#header.row-2.col-1",
+            // "flex-layout.col#header.row-2.col-2",
+            "flex-layout.col#header.row-2.col-3",
+            "flex-layout.col#header.row-2.col-4"
+        ]
+    },
+    "flex-layout.col#header.row-2.col-1": {
+        "props": {
+            "blockClass": "header-row-2-col-1",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center",
+            "width": "25%"
+        },
+        "children": [
+            "flex-layout.col#header.logo.desktop"
+        ]
+    },
+    "flex-layout.col#header.row-2.col-2": {
+        "props": {
+            "blockClass": "header-row-2-col-2",
+            "verticalAlign": "middle",
+            "width": "grow"
+        },
+        "children": [
+            "custom-menu#header-mobile2"
+        ]
+    },
+    "flex-layout.col#header.row-2.col-3": {
+        "props": {
+            "blockClass": "header-row-2-col-3",
+            "verticalAlign": "middle",
+            "width": "grow"
+        },
+        "children": [
+            "impulse-search-bar",
+            "most-searched"
+        ]
+    },
+    "linx-autocomplete#default": {
+        "children": [
+            "search-bar"
+        ]
+    },
+    "most-searched": {
+        "props": {
+            "mainText": "MAIS BUSCADOS:",
+            "linksArray": [
+                {
+                    "__editorItemTitle": "DECA",
+                    "url": "/marca-deca"
+                },
+                {
+                    "__editorItemTitle": "DOCOL",
+                    "url": "/marca-docol"
+                },
+                {
+                    "__editorItemTitle": "PADO",
+                    "url": "/marca-pado"
+                },
+                {
+                    "__editorItemTitle": "JACUZZI",
+                    "url": "/marca-jacuzzi"
+                },
+                {
+                    "__editorItemTitle": "BRASIL ESQUADRIAS",
+                    "url": "/marca-jacuzzi"
+                },
+                {
+                    "__editorItemTitle": "PORTOBELLO",
+                    "url": "/marca-portobello"
+                },
+                {
+                    "__editorItemTitle": "EMBRAMACO",
+                    "url": "/marca-embramaco"
+                }
+            ]
+        }
+    },
+    "search-bar#header": {
+        "props": {
+            "placeholder": "Digite o que procura...",
+            "displayMode": "search-button"
+        }
+    },
+    "flex-layout.col#header.row-2.col-4": {
+        "props": {
+            "blockClass": "header-row-2-col-4",
+            "verticalAlign": "middle",
+            "width": "grow"
+        },
+        "children": [
+            "flex-layout.row#header.icons"
+        ]
+    },
+    // MOBILE
+    "flex-layout.row#header.row-2.mobile": {
+        "props": {
+            "blockClass": "header-row-2",
+            "verticalAlign": "middle",
+            "horizontalAlign": "left",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.col#row-2.col-1.mobile",
+            "flex-layout.col#row-2.col-2.mobile",
+            "flex-layout.row#header.icons.mobile"
+        ]
+    },
+    "flex-layout.col#row-2.col-1.mobile": {
+        "props": {
+            "blockClass": "row-2-col-1-mobile",
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "drawer#menu"
+            // "header-search-bar#mobile"
+        ]
+    },
+    "flex-layout.col#row-2.col-2.mobile": {
+        "props": {
+            "width": "grow",
+            "blockClass": "logo-mobile"
+        },
+        "children": [
+            "logo#mobile"
+        ]
+    },
+    "header-search-bar#mobile": {
+        "children": [
+            "impulse-search-bar"
+        ],
+        "props": {
+            "blockClass": "custom-search",
+            "isOpen": false
+        }
+    },
+    //deca
+    "flex-layout.row#header.row-2.mobile-deca": {
+        "props": {
+            "blockClass": "header-row-2",
+            "verticalAlign": "middle",
+            "horizontalAlign": "left",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.col#row-2.col-1.mobile-deca",
+            "flex-layout.col#row-2.col-2.mobile",
+            "flex-layout.row#header.icons.mobile"
+        ]
+    },
+    "flex-layout.col#row-2.col-1.mobile-deca": {
+        "props": {
+            "blockClass": "row-2-col-1-mobile",
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "drawer#menu-deca"
+            // "header-search-bar#mobile"
+        ]
+    },
+    //docol
+    "flex-layout.row#header.row-2.mobile-docol": {
+        "props": {
+            "blockClass": "header-row-2",
+            "verticalAlign": "middle",
+            "horizontalAlign": "left",
+            "preserveLayoutOnMobile": true,
+            "preventHorizontalStretch": true
+        },
+        "children": [
+            "flex-layout.col#row-2.col-1.mobile-docol",
+            "flex-layout.col#row-2.col-2.mobile",
+            "flex-layout.row#header.icons.mobile"
+        ]
+    },
+    "flex-layout.col#row-2.col-1.mobile-docol": {
+        "props": {
+            "blockClass": "row-2-col-1-mobile",
+            "preserveLayoutOnMobile": true
+        },
+        "children": [
+            "drawer#menu-docol"
+            // "header-search-bar#mobile"
+        ]
+    }
+}

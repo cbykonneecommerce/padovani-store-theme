@@ -1,0 +1,94 @@
+{
+    "flex-layout.row#home.lojas": {
+        "title": "Home - Lojas",
+        "props": {
+            "blockClass": "home-banners-1"
+        },
+        "children": [
+            "flex-layout.col#home.lojas"
+        ]
+    },
+    "flex-layout.col#home.lojas": {
+        "props": {
+            "blockClass": "home-banners-1"
+        },
+        "children": [
+            "rich-text#home.lojas",
+            "template-dynamic-content#home.lojas"
+        ]
+    },
+    "rich-text#home.lojas": {
+        "title": "Lojas Oficiais",
+        "props": {
+            "text": "Lojas Oficiais e Exclusivas:",
+            "blockClass": [
+                "home-title-shelf"
+            ]
+        }
+    },
+    "template-dynamic-content#home.lojas": {
+        "title": "Lojas",
+        "props": {
+            "blockClass": "home-banners-1",
+            "hiddenTitleItems": false,
+            "data": [
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/background.png",
+                            "imageMobile": "assets/images/background.png"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/background.png",
+                            "imageMobile": "assets/images/background.png"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/background.png",
+                            "imageMobile": "assets/images/background.png"
+                        }
+                    ]
+                },
+                {
+                    "listImages": [
+                        {
+                            "imageDesktop": "assets/images/background.png",
+                            "imageMobile": "assets/images/background.png"
+                        }
+                    ]
+                }
+            ],
+            "sliderLayoutConfig": {
+                "itemsPerPage": {
+                    "desktop": 4,
+                    "tablet": 2,
+                    "phone": 1
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "always",
+                "usePagination": true
+            },
+            "sliderLayoutConfigMobile": {
+                "itemsPerPage": {
+                    "desktop": 4,
+                    "tablet": 2,
+                    "phone": 1
+                },
+                "infinite": true,
+                "showNavigationArrows": "never",
+                "showPaginationDots": "mobileOnly",
+                "usePagination": true,
+                "centerMode": "to-the-left",
+                "centerModeSlidesGap": 5
+            }
+        }
+    }
+}

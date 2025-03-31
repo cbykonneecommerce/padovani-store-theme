@@ -1,0 +1,90 @@
+@import "../../../styles/scss/variables";
+
+.wrapCalculateShipping {
+  display: block;
+
+  .calculateForm {
+    display: flex;
+
+    .wrapCalculateForm {
+      display: block;
+      position: relative;
+      max-width: 392px;
+
+      > input {
+        border: 1px solid #d8d9dc;
+        border-radius: 10px;
+        height: 40px;
+        outline: 0;
+        background-color: #fff;
+        width: 213px;
+
+        @media screen and (max-width: 768px) {
+          width: unset;
+        }
+      }
+
+      > a {
+        display: block;
+        text-align: left !important;
+        color: #000;
+        padding: 10px 0 5px;
+        width: max-content;
+      }
+    }
+
+    .calculateShippingBtn {
+      font-family: $fontSecondary;
+      border: 1px solid #d8d9dc;
+      border-radius: 10px;
+      height: 40px;
+      width: 135px;
+      margin-left: 10px;
+      padding: 8px 0;
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 24px;
+      letter-spacing: 0.02em;
+      text-align: center;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      @media (max-width: $tablet) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .wrapResultShipping {
+    .wrapInfoResultShipping {
+      .infoResultNameShipping {
+        font-family: $fontSecondary;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: #434242;
+        margin: 6px 0 3px;
+      }
+
+      .infoResultShipping {
+        display: flex;
+        font-family: $fontSecondary;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: #434242;
+        margin: 0;
+
+        > strong {
+          display: inline-block;
+          color: #3c5ca7;
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,425 @@
+@import url("https://use.typekit.net/xlq5muo.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.wrapperVideo {
+  max-width: 1440px;
+  width: 90vw;
+  margin: auto;
+}
+.wrapperVideo iframe {
+  border: 0;
+}
+
+.wrapperInstallments {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(135, 135, 135, 0.15);
+  margin-top: 32px;
+}
+.wrapperInstallments .select {
+  appearance: none;
+  border: 0;
+  text-align: right;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #878787;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_489_3694' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='14' height='14'%3E%3Crect width='14' height='14' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_489_3694)'%3E%3Cpath d='M7.14014 9.22531L3.64014 5.72531L4.32544 5.04001L7.14014 7.85436L9.95484 5.04001L10.6401 5.74001L7.14014 9.22531Z' fill='%23878787'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 25px;
+  cursor: pointer;
+}
+.wrapperInstallments .select:focus {
+  outline: none;
+}
+.wrapperInstallments .installment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #878787;
+  padding: 10px;
+  border-bottom: 1px solid rgba(135, 135, 135, 0.15);
+}
+@media (max-width: 1024px) {
+  .wrapperInstallments .installment:first-child {
+    display: flex !important;
+  }
+  .wrapperInstallments .installment:first-child svg {
+    width: 50%;
+  }
+  .wrapperInstallments .installment:first-child select {
+    width: 50%;
+  }
+}
+.wrapperInstallments .installment .price {
+  font-weight: 600;
+  margin-right: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  color: #878787;
+}
+.wrapperInstallments .installment span {
+  white-space: nowrap;
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .wrapperInstallments .installment span {
+    align-items: center;
+  }
+}
+.wrapperInstallments .installment:last-child {
+  border-bottom: 0;
+}
+
+.stock {
+  text-align: right;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #7f7f7f;
+  margin-bottom: 15px;
+}
+@media (max-width: 1024px) {
+  .stock {
+    text-align: rigth;
+    margin-bottom: 0;
+  }
+}
+.stock span {
+  display: block;
+}
+.stock strong {
+  color: #012169;
+}
+.stock i {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.descriptions {
+  display: flex;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.6em;
+  letter-spacing: 0.025em;
+  color: #878787;
+  flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .descriptions {
+    flex-direction: column;
+    margin: auto !important;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .descriptions h2 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .descriptions h2 {
+    position: relative;
+    margin: 0 0 20px;
+    background: #012169;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0 10px 40px;
+    text-transform: uppercase;
+    z-index: 2;
+    color: #ffffff;
+    border-right: 5.3rem solid #3e64ba;
+    border-radius: 0px 45px 45px 0px;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+  .descriptions h2 {
+    font-size: 16px;
+    line-height: normal;
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .descriptions h2::after {
+    content: "";
+    display: block;
+    width: 1.7rem;
+    height: 100%;
+    background: #012169;
+    border-radius: 0px 45px 45px 0px;
+    position: absolute;
+    right: -1.7rem;
+    top: 0;
+    z-index: 1;
+  }
+}
+.descriptions .descriptionContent {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media (max-width: 1024px) {
+  .descriptions .descriptionContent {
+    padding: 0;
+    gap: 0;
+    flex-direction: column-reverse;
+  }
+}
+.descriptions .descriptionContent .imageDescriptions {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  min-width: 40%;
+  width: 50%;
+}
+@media (max-width: 1024px) {
+  .descriptions .descriptionContent .imageDescriptions {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+.descriptions .descriptionContent p,
+.descriptions .descriptionContent span,
+.descriptions .descriptionContent div,
+.descriptions .descriptionContent h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.75;
+  color: #404750 !important;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .descriptions .descriptionContent p,
+  .descriptions .descriptionContent span,
+  .descriptions .descriptionContent div,
+  .descriptions .descriptionContent h1 {
+    text-align: left;
+  }
+}
+.descriptions .descriptionContent h1 {
+  font-size: 16px;
+  font-weight: 700;
+}
+@media (max-width: 1024px) {
+  .descriptions .descriptionContent h1 {
+    font-weight: 900;
+  }
+}
+.descriptions .descriptionContent ul {
+  padding: 0 0 0 12px;
+}
+@media (max-width: 1024px) {
+  .descriptions .descriptionContent ul {
+    padding-left: 0;
+    list-style: none;
+  }
+}
+.descriptions .descriptionContent .links {
+  margin-top: 32px;
+}
+.descriptions .descriptionContent .links a {
+  border: 1px solid #000;
+  padding: 10px 25px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.descriptions .descriptionContent table {
+  width: 100%;
+  height: fit-content;
+}
+.descriptions .descriptionContent table tbody tr:nth-child(2n) {
+  margin-top: -2px;
+  background-color: #f7f2f2;
+}
+.descriptions .descriptionContent table tbody th,
+.descriptions .descriptionContent table tbody td {
+  width: 50%;
+  padding: 0.25rem 1rem;
+  height: 100%;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  text-align: left;
+}
+@media (max-width: 300px) {
+  .descriptions .descriptionContent table tbody th,
+  .descriptions .descriptionContent table tbody td {
+    font-size: 13px;
+    width: 30%;
+    padding: 0.25rem;
+  }
+}
+.descriptions .descriptionContent table tbody th {
+  border-right: 1px solid #d3d3d3;
+}
+
+.sale_price-container .sale_price-wrapper {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: normal;
+  color: #444242;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 10px 0 0;
+}
+@media (max-width: 1024px) {
+  .sale_price-container .sale_price-wrapper {
+    justify-content: center;
+  }
+}
+.sale_price-container .sale_price-wrapper .sale_price-info {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.BuyButtonJacuzziValidator {
+  display: flex;
+  margin-top: 1rem;
+  height: auto;
+  margin-top: 1rem;
+}
+.BuyButtonJacuzziValidator a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebc072;
+  width: 100%;
+  transition: all 0.3s ease;
+  border-radius: 7.5px;
+}
+.BuyButtonJacuzziValidator a:hover {
+  filter: brightness(80%);
+}
+.BuyButtonJacuzziValidator a svg {
+  margin-right: 5px;
+}
+.BuyButtonJacuzziValidator a span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: none;
+}
+.BuyButtonJacuzziValidator .BuyAreaWrapper {
+  width: 100%;
+}
+
+.NewBuyButton {
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background: #dee7fc;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  text-transform: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .floatingButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 70%;
+  }
+}
+.NameFlagHighlight {
+  position: relative;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  background: transparent;
+  max-width: unset;
+  border: 2px solid #4ab807 !important;
+  padding: 4px 8px 4px 8px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  color: #4ab807;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.NameFlagHighlight .tooltiptext {
+  text-transform: none;
+  visibility: hidden;
+  width: 383px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-weight: 500;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -192px;
+  margin-top: 10px;
+  z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+  .NameFlagHighlight .tooltiptext {
+    left: unset;
+    width: auto !important;
+  }
+}
+
+.NameFlagHighlight .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+@media screen and (max-width: 1024px) {
+  .NameFlagHighlight .tooltiptext::after {
+    left: 10%;
+  }
+}
+
+.NameFlagHighlight:hover .tooltiptext {
+  visibility: visible;
+}

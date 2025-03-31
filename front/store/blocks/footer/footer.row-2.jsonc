@@ -1,0 +1,206 @@
+{
+  "flex-layout.row#footer.row-2": {
+    "children": [
+      "flex-layout.col#footer.row-2.col-1",
+      "flex-layout.col#footer.row-2.col-2"
+    ],
+    "props": {
+      "blockClass": "footer-row-2"
+    }
+  },
+  "flex-layout.col#footer.row-2.col-1": {
+    "props": {
+      "blockClass": "footer-row-2-col-1",
+      "width": "15%"
+    },
+    "children": [
+      "rich-text#payments-title",
+      "flex-layout.col#payments-container"
+    ]
+  },
+  "rich-text#payments-title": {
+    "props": {
+      "blockClass": "payments-title",
+      "text": "## Formas de pagamento"
+    }
+  },
+  "flex-layout.col#footer.row-2.col-2": {
+    "props": {
+      "blockClass": "footer-row-2-col-2"
+    },
+    "children": [
+      "rich-text#segurity-title",
+      "flex-layout.row#logos-seguranca"
+    ]
+  },
+  "rich-text#segurity-title": {
+    "props": {
+      "blockClass": "payments-title",
+      "text": "## Certificados e Segurança"
+    }
+  },
+  "flex-layout.row#logos-seguranca": {
+    "props": {
+      "title": "Certificados e Segurança",
+      "blockClass": "footer-seals"
+    },
+    "children": [
+      "template-icons#footer.seals",
+      "certificate-ratrustvox"
+    ]
+  },
+  "flex-layout.col#footer.row-2.col-3": {
+    "props": {
+      "blockClass": "footer-row-2-col-3"
+    },
+    "children": [
+      "flex-layout.col#payments-container"
+    ]
+  },
+  "flex-layout.col#payments-container": {
+    "props": {
+      "blockClass": "payments-container"
+    },
+    "children": [
+      "template-icons#footer.payments-credit"
+      // "template-icons#footer.payments-banks",
+      // "template-icons#footer.payments-boleto",
+    ]
+  },
+  "template-icons#footer.payments-credit": {
+    "title": "Pagamentos",
+    "props": {
+      "blockClass": "footer-payments",
+      "data": [
+        {
+          "__editorItemTitle": "Visa",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/fbcb7946-d353-4b33-925a-05b975724af4___5bdb1d12e309a99f5c6c5f6a44b7c683.svg"
+        },
+        {
+          "__editorItemTitle": "MasterCard",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/46c7b129-243a-450f-a87a-1f963c5d1207___6f647b083a02098b0a0746eaaaebf039.svg"
+        },
+        {
+          "__editorItemTitle": "amex",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e29dd4d9-3ccf-4de5-ad02-ac0330cb9c65___25d8676fead9088511d7e393d4d0e299.svg"
+        },
+        {
+          "__editorItemTitle": "Diners",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/1336e211-b6c3-4719-bc44-daf945275ecf___aad1d2e033337b5e3278f0218ee495e0.svg"
+        },
+        {
+          "__editorItemTitle": "Pix",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/b9f0d502-3067-4a50-991f-cba9c8db078b___da69b5c487ebe7d6544331da75b1f7bd.svg"
+        }
+      ]
+    }
+  },
+  "template-icons#footer.payments-banks": {
+    "title": "Pagamentos",
+    "props": {
+      "title": "Transferências Bancárias",
+      "blockClass": "footer-payments",
+      "data": [
+        {
+          "__editorItemTitle": "Santander",
+          "icon": "assets/images/payments/trans-santander.png"
+        },
+        {
+          "__editorItemTitle": "Itau",
+          "icon": "assets/images/payments/trans-itau.png"
+        },
+        {
+          "__editorItemTitle": "Banco do Brasil",
+          "icon": "assets/images/payments/trans-bancodb.png"
+        }
+      ]
+    }
+  },
+  "template-icons#footer.payments-boleto": {
+    "title": "Pagamentos",
+    "props": {
+      "blockClass": "footer-payments",
+      "data": [
+        {
+          "__editorItemTitle": "Boleto",
+          "icon": "assets/images/payments/payment-methods-boleto.png"
+        }
+      ]
+    }
+  },
+  "template-icons#footer.payments-pix": {
+    "title": "Pagamentos",
+    "props": {
+      "blockClass": "footer-payments",
+      "data": [
+        {
+          "__editorItemTitle": "Pix",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/b9f0d502-3067-4a50-991f-cba9c8db078b___da69b5c487ebe7d6544331da75b1f7bd.svg"
+        }
+      ]
+    }
+  },
+  "template-icons#footer.seals": {
+    "title": "Certificados e Segurança",
+    "props": {
+      "blockClass": "footer-seals",
+      "data": [
+        // {
+        //   "__editorItemTitle": "Loja Confiável",
+        //   "icon": "assets/images/selos/yourviews.png",
+        //   "url": "https://transparencyreport.google.com/safe-browsing/search?url=http:%2F%2Fwww.padovani.com.br",
+        //   "target": true
+        // },
+        // {
+        //   "__editorItemTitle": "VTEX PCI Certificado",
+        //   "icon": "assets/images/selos/vtex-pci-100.png",
+        //   "url": "https://secure.vtex.com/?an=padovani",
+        //   "target": true
+        // },
+        // {
+        //   "__editorItemTitle": "Google Transparency Report",
+        //   "icon": "assets/images/selos/selo-google.png",
+        //   "url": "https://transparencyreport.google.com/safe-browsing/search?url=http:%2F%2Fwww.padovani.com.br",
+        //   "target": true
+        // },
+        {
+          "__editorItemTitle": "Anamaco - 2ª lugar - Interior e Litoral de São Paulo",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f99c63f1-74a5-4f9c-84d8-c1e6fd8d19ff___796735370c562cff1f402bd7c55f394f.svg"
+        }
+      ]
+    }
+  },
+  "template-icons#footer.social": {
+    "title": "Redes Sociais",
+    "props": {
+      "title": "Siga nossas redes",
+      "blockClass": "footer-social",
+      "data": [
+        {
+          "__editorItemTitle": "Facebook",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/67722835-6db4-458e-b825-456744ab2f1c___d041cedcd2be1e5d10cc6bb90cba8fbc.svg",
+          "target": true,
+          "url": "https://www.facebook.com/wedigibrasil/?locale=pt_BR"
+        },
+        {
+          "__editorItemTitle": "Instagram",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f39efb98-25d0-4f54-b074-cdad9f9e9df8___77cc9b71e2aee62acb0d89164e14d1ce.svg",
+          "target": true,
+          "url": "https://www.instagram.com/wedigibrasil/"
+        },
+        {
+          "__editorItemTitle": "Youtube",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/939b1708-edf3-44f2-8c6d-71ff3b6292a1___92d1d1f45793b279ea140964df23590c.svg",
+          "target": true,
+          "url": "https://www.youtube.com/channel/UCSCyBpuR88shRvlbsARBUEA"
+        },
+        {
+          "__editorItemTitle": "LinkedIn",
+          "icon": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/dd6ad545-7d57-4849-8724-eb1a1ba4102c___5d42bade6562d4835496a385df114221.svg",
+          "target": true,
+          "url": "https://www.linkedin.com/company/we-digi-brasil/"
+        }
+      ]
+    }
+  }
+}
