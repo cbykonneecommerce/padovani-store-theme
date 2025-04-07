@@ -826,7 +826,7 @@
   flex-direction: column;
   min-height: 68px;
 
-  @media  (max-width: 768px) {
+  @media (max-width: 768px) {
     min-height: 0;
   }
 }
@@ -842,7 +842,7 @@
 
 .flexColChild--summary-price {
   min-height: 25px;
-  
+
   @media (max-width: $tablet) {
     min-height: 25px;
   }
@@ -943,7 +943,7 @@
     margin-right: 15px;
 
     :last-child {
-      width: 13rem; 
+      width: 13rem;
       margin-right: 0;
     }
   }
@@ -1330,4 +1330,9 @@
 .flexRow--footer-poweredby :global(.vtex-store-components-3-x-sizeMobile),
 .flexRow--footer-poweredby :global(.vtex-store-components-3-x-logoImage) {
   min-width: unset !important;
+}
+
+.flexRowContent--footer-seals {
+  flex-direction: column;
+  gap: 16px;
 }

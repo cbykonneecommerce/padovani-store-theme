@@ -1167,3 +1167,8 @@
 .flexRow--footer-poweredby :global(.vtex-store-components-3-x-logoImage) {
   min-width: unset !important;
 }
+
+.flexRowContent--footer-seals {
+  flex-direction: column;
+  gap: 16px;
+}

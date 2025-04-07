@@ -1,36 +1,35 @@
 {
-    "footer-layout.desktop": {
-        "title": "Footer Desktop",
-        "children": [
-          // "template-newsletter",
-          // "footer-banner-info",
-          "flex-layout.row#all-categories",
-          "flex-layout.row#footer.row-1"
-        ]
-    },
-
-    "template-newsletter": {
-      "props": {
-          "blockClass": "home-newsletter",
-          "title": "Conecte-se com a gente!",
-          "subtitle": "Cadastre-se e receba nossas ofertas e descontos exclusivos direto no seu e-mail!",
-          "image": "",
-          "buttonText": "Conectar!",
-          "titleDefault": "Promoções no e-mail",
-          "subtitleDefault": " Cadastre-se e receba as melhores ofertas e promoções",
-          "imageDefault": "",
-          "buttonTextDefault": "Ok"
-      }
-    },
-    "footer-layout.desktop#decaa": {
-      "title": "Footer Desktop Deca",
-      "children": [
-        "template-newsletter",
-        "footer-banner-info",
-        "flex-layout.row#all-categories--deca",
-        "flex-layout.row#footer.row-1",
-        "flex-layout.row#footer.row-2",
-        "flex-layout.row#footer.row-3"
-      ]
+  "footer-layout.desktop": {
+    "title": "Footer Desktop",
+    "children": [
+      // "template-newsletter",
+      // "footer-banner-info",
+      "flex-layout.row#all-categories",
+      "flex-layout.row#footer.row-1"
+    ]
+  },
+  "template-newsletter": {
+    "props": {
+      "blockClass": "home-newsletter",
+      "title": "Conecte-se com a gente!",
+      "subtitle": "Cadastre-se e receba nossas ofertas e descontos exclusivos direto no seu e-mail!",
+      "image": "",
+      "buttonText": "Conectar!",
+      "titleDefault": "Promoções no e-mail",
+      "subtitleDefault": " Cadastre-se e receba as melhores ofertas e promoções",
+      "imageDefault": "",
+      "buttonTextDefault": "Ok"
     }
+  },
+  "footer-layout.desktop#decaa": {
+    "title": "Footer Desktop Deca",
+    "children": [
+      "template-newsletter",
+      "footer-banner-info",
+      "flex-layout.row#all-categories--deca",
+      "flex-layout.row#footer.row-1"
+      // "flex-layout.row#footer.row-2",
+      // "flex-layout.row#footer.row-3"
+    ]
+  }
 }

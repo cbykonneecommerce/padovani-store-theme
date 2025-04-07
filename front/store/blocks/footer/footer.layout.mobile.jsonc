@@ -13,12 +13,12 @@
     "footer-layout.mobile#deca": {
         "title": "Footer Mobile Deca",
         "children": [
-          "template-newsletter",
-          "footer-banner-info",
-          "flex-layout.row#all-categories--deca",
-          "flex-layout.row#footer.row-1",
-          "flex-layout.row#footer.row-2",
-          "flex-layout.row#footer.row-3"
+            "template-newsletter",
+            "footer-banner-info",
+            "flex-layout.row#all-categories--deca",
+            "flex-layout.row#footer.row-1"
+            //   "flex-layout.row#footer.row-2",
+            //   "flex-layout.row#footer.row-3"
         ]
     }
 }
