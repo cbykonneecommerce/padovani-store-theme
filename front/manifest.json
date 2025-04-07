@@ -1,7 +1,11 @@
 {
   "vendor": "padovani",
   "name": "basic",
+<<<<<<< HEAD
   "version": "1.0.10",
+=======
+  "version": "1.0.9",
+>>>>>>> 47498fc845cdfde3866616459ffd5f5989e22109
   "builders": {
     "store": "0.x",
     "react": "3.x",
