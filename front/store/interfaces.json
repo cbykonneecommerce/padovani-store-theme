@@ -205,5 +205,8 @@
   "linx-autocomplete": {
     "component": "SearchLinxAutoComplete",
     "composition": "children"
+  },
+  "custom-product-attachments": {
+    "component": "Attachments"
   }
 }

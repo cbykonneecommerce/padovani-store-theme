@@ -352,6 +352,28 @@
   cursor: pointer;
 }
 
+.attachmentButtonsContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.attachmentSelectButton {
+  background-color: #fff;
+  padding: 8px 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #737277;
+  cursor: pointer;
+}
+.attachmentSelectButton--is-active {
+  background-color: #737277;
+  color: #fff;
+}
+
 @media screen and (max-width: 1024px) {
   .floatingButton {
     position: fixed;
