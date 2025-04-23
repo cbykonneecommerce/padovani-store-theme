@@ -12,7 +12,6 @@ const SelectorQuantityStepper = () => {
 
   const [quantity, setQuantity] = useState(1)
   const prodContext = useProduct()
-  console.log('🚀 ~ SelectorQuantityStepper ~ prodContext:', prodContext)
   const { addItems } = useOrderItems()
   const { push } = usePixel()
   const multiplier = prodContext?.product?.items[0]?.unitMultiplier
@@ -57,7 +56,6 @@ const SelectorQuantityStepper = () => {
         />
       </div>
       <a
-        href="/checkout/#/cart"
         className={styles.ContentModalBuyButton}
         onClick={(event) => {
           event.stopPropagation()
