@@ -17,6 +17,7 @@
       "flex-layout.row#pdp.line-4",
       "product-color-selector",
       "sku-selector",
+      "custom-product-attachments",
       "condition-layout.product#add-to-cart",
       // "condition-layout.product#shipping",
       "flex-layout.row#description"

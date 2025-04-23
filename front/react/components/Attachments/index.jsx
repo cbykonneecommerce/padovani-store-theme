@@ -13,6 +13,7 @@ export default function Attachments() {
   const [selected, setSelected] = useState({
     id: '',
     value: '',
+    label: '',
   })
   const dispatch = useProductDispatch()
   const normalized = formatAssemblyOptionsFromItemMetadata(product.itemMetadata)
@@ -23,10 +24,10 @@ export default function Attachments() {
 
   useEffect(() => {
     const groupInputValues = {
-      [selected.id]: toUpperCase(selected.value),
+      [selected.label]: selected.value.toUpperCase(),
     }
 
-    if (!groupInputValues[selected.id]) {
+    if (!groupInputValues[selected.label]) {
       return
     }
 
@@ -57,6 +58,7 @@ export default function Attachments() {
                   setSelected({
                     id: option.id,
                     value: option.value,
+                    label: option.label,
                   })
                 }
                 className={applyModifiers(
@@ -64,7 +66,7 @@ export default function Attachments() {
                   selected.value === option.value ? 'is-active' : ''
                 )}
               >
-                {option.label}
+                {option.value}
               </button>
             ))}
           </div>

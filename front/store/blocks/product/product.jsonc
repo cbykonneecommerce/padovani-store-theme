@@ -8,8 +8,6 @@
       "product-banner#pdp",
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "custom-product-attachments",
-      "product-assembly-options",
       "flex-layout.row#description-both",
       "product-reviews.ratrustvox",
       "buy-together#1",

@@ -8,8 +8,8 @@ export function formatAssemblyOptionsFromItemMetadata(metadata) {
       return (option.inputValues || []).map((input) => ({
         name: option.name.toLowerCase(),
         options: input.domain.map((value) => ({
-          value: value.toLowerCase(),
-          label: value.toLowerCase(),
+          value: value,
+          label: input.label,
           id: option.name,
         })),
       }))
