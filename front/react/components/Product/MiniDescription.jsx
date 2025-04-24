@@ -4,7 +4,6 @@ import styles from '../../styles/css/product.mini-description.css'
 
 const MiniDescription = () => {
   const { product } = useProduct() ?? {}
-  console.log('🚀 ~ MiniDescription ~ product:', product)
   const [specifications, setSpecifications] = useState([])
   const multiplier = product?.items[0]?.unitMultiplier
 

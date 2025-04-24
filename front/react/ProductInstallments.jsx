@@ -10,7 +10,6 @@ function getFirstInstallmentOfTen(array) {
 export default function ProductInstallments({ children }) {
   const { selectedItem, product } = useProduct()
   const multiplier = product?.items[0]?.unitMultiplier
-  console.log('🚀 ~ ProductInstallments ~ multiplier:', multiplier)
   const basePrice = selectedItem?.sellers[0]?.commertialOffer?.Price
 
   const formatarParaBRL = (valor) => {

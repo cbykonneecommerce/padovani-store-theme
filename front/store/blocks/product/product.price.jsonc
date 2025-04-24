@@ -94,7 +94,7 @@
                 }
             ],
             "Then": "rich-text#a-vista",
-            "Else": "flex-layout.col#tags-pix"
+            "Else": "condition-layout.product#pix-pdp"
         }
     },
     "condition-layout.product#preco-jacuzzi": {
@@ -119,6 +119,21 @@
             ]
         }
     },
+    "condition-layout.product#pix-pdp": {
+        "props": {
+            "conditions": [
+                {
+                    "subject": "specificationProperties",
+                    "arguments": {
+                        "name": "Peças por Caixa"
+                    }
+                }
+            ],
+            "matchType": "any",
+            "Then": "flex-layout.col#tags-pix-porcelanato",
+            "Else": "flex-layout.col#tags-pix"
+        }
+    },
     "flex-layout.col#tags-pix": {
         "props": {
             "blockClass": "tags-pix"
@@ -128,9 +143,26 @@
             "rich-text#pix-24x-vezes"
         ]
     },
+    "flex-layout.col#tags-pix-porcelanato": {
+        "props": {
+            "blockClass": "tags-pix"
+        },
+        "children": [
+            "rich-text#a-vista-todos-produtos-porcelanato"
+        ]
+    },
     "rich-text#a-vista-todos-produtos": {
         "props": {
             "text": "**(5% de desconto em 1x no PIX)**",
+            "blockClass": [
+                "a-vista",
+                "todos-productos"
+            ]
+        }
+    },
+    "rich-text#a-vista-todos-produtos-porcelanato": {
+        "props": {
+            "text": "**(5% de desconto no PIX)**",
             "blockClass": [
                 "a-vista",
                 "todos-productos"
