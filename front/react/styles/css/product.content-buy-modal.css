@@ -1,8 +1,13 @@
-@charset "UTF-8";
 @import url("https://use.typekit.net/xlq5muo.css");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .ContentWrapModal {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+  margin-top: 16px;
 }
 
 .ContentModalWarnning {
@@ -37,107 +42,59 @@
 }
 
 .ContentModalQty {
-  display: block;
+  display: flex;
   margin-bottom: 16px;
+  margin-bottom: 0 !important;
+  position: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid #dee7fc;
+  height: 60px;
 }
-.ContentModalQty :global(.vtex-numeric-stepper-wrapper) {
-  position: relative;
-  width: max-content;
-  margin-bottom: 16px;
+@media (min-width: 1024px) {
+  .ContentModalQty {
+    max-width: 127px;
+  }
 }
 .ContentModalQty :global(.vtex-numeric-stepper-container) {
-  position: relative;
+  display: flex;
+  justify-content: space-evenly;
 }
-.ContentModalQty :global(.vtex-numeric-stepper-container)::after {
-  content: "m²";
-  display: block;
-  color: #000;
-  font-family: "Roboto", sans-serif;
+@media (max-width: 1024px) {
+  .ContentModalQty :global(.vtex-numeric-stepper-container) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+.ContentModalQty :global(.vtex-numeric-stepper__plus-button__text),
+.ContentModalQty :global(.vtex-numeric-minus-button__text) {
+  color: #3c5ca7;
   font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  position: absolute;
-  right: 45px;
-  z-index: 2;
-  top: 11px;
-  bottom: 0;
-  margin: auto;
+  font-weight: 600;
+}
+.ContentModalQty :global(.vtex-numeric-stepper__input),
+.ContentModalQty :global(.vtex-numeric-stepper__plus-button),
+.ContentModalQty :global(.vtex-numeric-stepper__minus-button) {
+  background-color: transparent;
+  border: 0;
+  width: 32px !important;
+}
+@media (max-width: 1024px) {
+  .ContentModalQty :global(.vtex-numeric-stepper__input),
+  .ContentModalQty :global(.vtex-numeric-stepper__plus-button),
+  .ContentModalQty :global(.vtex-numeric-stepper__minus-button) {
+    width: 100% !important;
+  }
 }
 .ContentModalQty :global(.vtex-numeric-stepper__input) {
-  order: 0 !important;
-  width: 208px;
-  height: 54px;
-  padding: 12px 48px 12px 16px;
-  font-family: "Roboto", sans-serif;
+  width: 70px !important;
+  max-width: unset !important;
   font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  text-align: left;
-  border: 1px solid #d1d1d1;
-  background-color: white;
-  border-radius: 5px;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__input):focus {
-  border: 1px solid #d1d1d1;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__plus-button-container),
-.ContentModalQty :global(.vtex-numeric-stepper__minus-button-container) {
-  display: block;
-  order: 1 !important;
-  position: absolute;
-  right: 0;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__plus-button),
-.ContentModalQty :global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__minus-button),
-.ContentModalQty :global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__plus-button),
-.ContentModalQty :global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__minus-button) {
-  width: 40px !important;
-  height: 27.5px !important;
-  padding: 9px 6px 9px 6px !important;
-  border: 1px solid #ffffff !important;
-  background: #969595;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__plus-button):hover,
-.ContentModalQty :global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__minus-button):hover,
-.ContentModalQty :global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__plus-button):hover,
-.ContentModalQty :global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__minus-button):hover {
-  background: #3c5ca7;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__plus-button__text),
-.ContentModalQty :global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__minus-button__text),
-.ContentModalQty :global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__plus-button__text),
-.ContentModalQty :global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__minus-button__text) {
-  display: block !important;
-  font-size: 0;
-  margin: auto !important;
-  width: 12px !important;
-  height: 9px !important;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__plus-button-container) {
-  top: 0;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__plus-button) {
-  border-top-right-radius: 5px !important;
-  border-bottom-right-radius: 0px !important;
-  border-top-left-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__plus-button-container) :global(.vtex-numeric-stepper__plus-button) :global(.vtex-numeric-stepper__plus-button__text) {
-  background: url("/arquivos/qty-arrw-up.png") no-repeat;
-  background-size: contain;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__minus-button-container) {
-  bottom: 0;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__minus-button) {
-  border-top-right-radius: 0px !important;
-  border-bottom-right-radius: 5px !important;
-  border-top-left-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
-}
-.ContentModalQty :global(.vtex-numeric-stepper__minus-button-container) :global(.vtex-numeric-stepper__minus-button) :global(.vtex-numeric-stepper__minus-button__text) {
-  background: url("/arquivos/qty-arrw-down.png") no-repeat;
-  background-size: contain;
+  color: #3c5ca7;
+  max-width: 35px;
+  font-weight: 500;
 }
 .ContentModalQty .ContentModalWrapCheckBox {
   display: flex;
@@ -224,15 +181,19 @@
 .ContentModalBuyButton {
   display: flex;
   justify-content: center;
-  column-gap: 16px;
-  padding: 12px 32px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
+  align-items: center;
   background: #4ab807;
   color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 30px;
+  height: 60px;
+  border-radius: 10px;
   text-align: center;
+  width: 100%;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.ContentModalBuyButton svg {
+  display: none;
 }

@@ -205,5 +205,8 @@
   "linx-autocomplete": {
     "component": "SearchLinxAutoComplete",
     "composition": "children"
+  },
+  "selector-Quantity-Stepper": {
+    "component": "SelectorQuantityStepper"
   }
 }

@@ -1,49 +1,25 @@
 import React, { useEffect, useState } from 'react'
-import { FormattedPrice } from 'vtex.formatted-price'
 import { useOrderItems } from 'vtex.order-items/OrderItems'
 import { usePixel } from 'vtex.pixel-manager'
-import { useProduct, useProductDispatch } from 'vtex.product-context'
-import { Checkbox, NumericStepper } from 'vtex.styleguide'
+import { useProduct } from 'vtex.product-context'
+import { NumericStepper } from 'vtex.styleguide'
 import styles from '../../../styles/css/product.content-buy-modal.css'
-import PackagingPrice from './PackagingPrice'
 
-const ContentBuyModal = () => {
+const SelectorQuantityStepper = () => {
   useEffect(() => {
     window.dataLayer?.push({ event: 'CalculadoraPiso' })
   }, [])
 
   const [quantity, setQuantity] = useState(1)
-  const [isChecked, setIsChecked] = useState(false)
   const prodContext = useProduct()
-  console.log('🚀 ~ ContentBuyModal ~ prodContext:', prodContext.selectedItem)
   const { addItems } = useOrderItems()
-  const dispatch = useProductDispatch()
   const { push } = usePixel()
-  const quantitySel = prodContext?.selectedQuantity
   const multiplier = prodContext?.product?.items[0]?.unitMultiplier
   const isAvaible =
     prodContext?.selectedItem?.sellers[0]?.commertialOffer?.AvailableQuantity >
     0
   const avaibleQty =
     prodContext?.selectedItem?.sellers[0]?.commertialOffer?.AvailableQuantity
-  const basePrice =
-    prodContext?.selectedItem?.sellers[0]?.commertialOffer?.Price
-
-  const handleCheckBoxClick = (checkboxIsChecked) => {
-    if (checkboxIsChecked) {
-      dispatch({
-        type: 'SET_QUANTITY',
-        args: { quantity: quantitySel + 1 },
-      })
-      setQuantity(quantity + 1)
-    } else {
-      dispatch({
-        type: 'SET_QUANTITY',
-        args: { quantity: quantitySel - 1 },
-      })
-      setQuantity(quantity - 1)
-    }
-  }
 
   function addToCart(sku, quantity, seller) {
     if (!isAvaible) return
@@ -64,51 +40,6 @@ const ContentBuyModal = () => {
 
   return (
     <div className={styles.ContentWrapModal}>
-      <div className={styles.ContentModalWarnning}>
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M10.29 3.86001L1.82002 18C1.64539 18.3024 1.55299 18.6453 1.55201 18.9945C1.55103 19.3437 1.64151 19.6871 1.81445 19.9905C1.98738 20.2939 2.23675 20.5468 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53002 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5468 22.0127 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.4471 18.6453 22.3547 18.3024 22.18 18L13.71 3.86001C13.5318 3.56611 13.2807 3.32313 12.9812 3.15449C12.6817 2.98585 12.3438 2.89726 12 2.89726C11.6563 2.89726 11.3184 2.98585 11.0188 3.15449C10.7193 3.32313 10.4683 3.56611 10.29 3.86001Z"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M12 9V13"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M12 17H12.01"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-
-        <p>
-          <strong>Atenção: </strong> Produto vendido por caixa, cada uma possui
-          <strong style={{ marginLeft: '2.5px' }}>
-            {' '}
-            {multiplier} m²{' '}
-          </strong>{' '}
-          onde o <strong> m² </strong> sai por
-          <strong style={{ marginLeft: '2.5px' }}>
-            {' '}
-            <FormattedPrice value={basePrice} />{' '}
-          </strong>
-        </p>
-      </div>
-
       <div className={styles.ContentModalQty}>
         <NumericStepper
           minValue={1}
@@ -123,37 +54,8 @@ const ContentBuyModal = () => {
             }
           }}
         />
-
-        <div className={styles.ContentModalWrapCheckBox}>
-          <Checkbox
-            checked={isChecked}
-            partial={true}
-            id="checkbox-diagonal"
-            name="checkbox-diagonal"
-            value={isChecked}
-            onChange={() => {
-              handleCheckBoxClick(!isChecked)
-              setIsChecked(!isChecked)
-            }}
-          />
-          <label for="checkbox-diagonal">
-            <b>+10%</b> Adicional para recortes e rodapés
-          </label>
-        </div>
       </div>
-      <div className={styles.ContentModalTotal}>
-        <strong>Total da Compra</strong>
-
-        <PackagingPrice qty={quantity} isFixed={false} />
-
-        <span className={styles.ContentModalInfoQty}>
-          {`${quantity} caixa(s)`} de
-          <strong style={{ marginLeft: '2.5px' }}>{multiplier} m²</strong>
-        </span>
-      </div>
-
       <a
-        href="/checkout/#/cart"
         className={styles.ContentModalBuyButton}
         onClick={(event) => {
           event.stopPropagation()
@@ -202,4 +104,4 @@ const ContentBuyModal = () => {
   )
 }
 
-export default ContentBuyModal
+export default SelectorQuantityStepper
