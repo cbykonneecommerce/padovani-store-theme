@@ -208,5 +208,8 @@
   },
   "custom-product-attachments": {
     "component": "Attachments"
+  },
+  "selector-Quantity-Stepper": {
+    "component": "SelectorQuantityStepper"
   }
 }

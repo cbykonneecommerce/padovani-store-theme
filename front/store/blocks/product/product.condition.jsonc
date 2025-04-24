@@ -7,7 +7,7 @@
           "toBe": false
         }
       ],
-      "Then": "flex-layout.col#product.subscriber", 
+      "Then": "flex-layout.col#product.subscriber",
       "Else": "flex-layout.row#product-buyarea"
     }
   },
@@ -74,7 +74,7 @@
       "blockClass": "wrapper-buy-porcelanato"
     },
     "children": [
-      "modal-trigger#metro-quadrado"
+      "selector-Quantity-Stepper"
     ]
   },
   "flex-layout.col#prod-normal": {
