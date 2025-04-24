@@ -71,21 +71,7 @@ function scripts() {
 
     return new Promise((resolve) =>
         webpack(webpackConfig, (err, stats) => {
-            if (err) console.log("Webpack", err);
-
-            console.log(
-                stats.toString({
-                    all: false,
-                    modules: false,
-                    maxModules: 0,
-                    errors: true,
-                    warnings: true,
-                    moduleTrace: true,
-                    errorDetails: true,
-                    colors: true,
-                    chunks: true,
-                })
-            );
+            if (err) console.error("Webpack", err);
 
             resolve();
             connect.reload();

@@ -1,4 +1,4 @@
-import type { OrderDataProps, CustomApp } from '../typings/custom';
+import type { CustomApp, OrderDataProps } from "../typings/custom";
 
 type FieldsType = {
   codigoVendedor?: string;
@@ -12,23 +12,20 @@ export async function allStates(
     clients: { orderService, masterdata },
   } = ctx;
 
-  console.log(ctx.body);
-
   const { orderId, currentState } = ctx.body;
 
-  console.log('orderId', orderId);
-  console.log('currentState', currentState);
-
   try {
-
-    if (currentState == 'invoiced') {
-      const orderInfo: OrderDataProps | undefined = await orderService.getOrder(orderId);
+    if (currentState == "invoiced") {
+      const orderInfo: OrderDataProps | undefined = await orderService.getOrder(
+        orderId
+      );
       if (orderInfo) {
-
         const customApps: CustomApp[] = orderInfo.customData.customApps ?? [];
-        const customApp = customApps.find((customApp) => customApp.id === "codigovendedor");
-        
-        if(customApp) {
+        const customApp = customApps.find(
+          (customApp) => customApp.id === "codigovendedor"
+        );
+
+        if (customApp) {
           try {
             const hasCustomData: FieldsType = customApp.fields;
             const createRegister = await masterdata.createDocument({
@@ -36,21 +33,18 @@ export async function allStates(
               fields: {
                 id: `${orderInfo.orderId}`,
                 order: orderInfo,
-                sellerCode: hasCustomData.codigoVendedor
-              }
+                sellerCode: hasCustomData.codigoVendedor,
+              },
             });
-            console.log("🚀 ~ createRegister:", createRegister)
-  
           } catch (error) {
-            console.error('Erro ao criar documento:', error);
+            console.error("Erro ao criar documento:", error);
           }
         }
-        
       }
     }
     await next();
   } catch (error) {
-    console.error('Erro durante o envio de e-mail:', error);
+    console.error("Erro durante o envio de e-mail:", error);
     await next();
   }
 }

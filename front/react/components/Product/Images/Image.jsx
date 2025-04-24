@@ -1,66 +1,96 @@
-import React, { useEffect, useState, useRef } from "react"
-import styles from "../../../styles/css/product.images.css"
+import React, { useRef, useState } from 'react'
+import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch'
 import { useRuntime } from 'vtex.render-runtime'
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import styles from '../../../styles/css/product.images.css'
 
-const Image = ({image, buttonZoom, isZoom}) => {
+const Image = ({ image, buttonZoom, isZoom }) => {
+  const { runtime, hints } = useRuntime()
 
-    const { runtime, hints } = useRuntime()
+  const [currentZoom, setCurrentZoom] = useState(null)
+  const [isPanningDisabled, setIsPanningDisabled] = useState(true)
 
-    const [currentZoom, setCurrentZoom] =  useState(null)
-    const [isPanningDisabled, setIsPanningDisabled] = useState(true);
-    
-    const imageZoom = useRef(null);
+  const imageZoom = useRef(null)
 
-    const zoom = (id, zoomIn) => {
-        zoomIn()
-        setCurrentZoom(id)
+  const zoom = (id, zoomIn) => {
+    zoomIn()
+    setCurrentZoom(id)
+  }
+
+  const close = (resetTransform) => {
+    resetTransform()
+    setCurrentZoom(null)
+  }
+
+  function handlePanning(e) {
+    if (e.scale === 1 && e.positionX === 0 && e.positionY === 0) {
+      setIsPanningDisabled(true)
+    } else {
+      setIsPanningDisabled(false)
     }
+  }
 
-    const close = (resetTransform) => {
-        resetTransform()
-        setCurrentZoom(null)
-    }
-
-    function handlePanning(e) {
-        if (e.scale === 1 && e.positionX === 0 && e.positionY === 0) {
-          setIsPanningDisabled(true);
-        } else {
-          setIsPanningDisabled(false);
-        }
-    }
-
-    return(
-            <>
-                { 
-                    buttonZoom ?
-                        currentZoom == image.imageId ?
-                            <button className={styles.reset} onClick={() => close(resetTransform)}>x</button>
-                        :
-                            <button className={styles.zoom} onClick={() => zoom(image.imageId, zoomIn)}>+</button>
-                    : null
-                }
-                {
-                    hints.mobile ?
-                        <TransformWrapper centerZoomedOut centerOnInit disablePadding maxScale={3} onZoomStart={function noRefCheck(){ console.log("zoom", imageZoom.current); imageZoom.current.setAttribute("src", `/arquivos/ids/${image.imageId}-1400-2000`) }}>
-                            <TransformComponent >
-                                {
-                                    <picture>
-                                        <img ref={imageZoom} className={styles.productImage} src={`/arquivos/ids/${image.imageId}-600-870/`} alt={image?.imageText} />
-                                    </picture>
-                                }
-                            </TransformComponent>
-                        </TransformWrapper>
-                    :
-                        isZoom ?
-                            <img className={styles.productImage} src={`/arquivos/ids/${image.imageId}`} alt={image?.imageText} />
-                        :
-                            <picture>
-                                <img className={styles.productImage} src={ isZoom ? `/arquivos/ids/${image.imageId}` : image.imageUrl} alt={image?.imageText} />
-                            </picture>
-                }
-            </>
-    )
+  return (
+    <>
+      {buttonZoom ? (
+        currentZoom == image.imageId ? (
+          <button
+            className={styles.reset}
+            onClick={() => close(resetTransform)}
+          >
+            x
+          </button>
+        ) : (
+          <button
+            className={styles.zoom}
+            onClick={() => zoom(image.imageId, zoomIn)}
+          >
+            +
+          </button>
+        )
+      ) : null}
+      {hints.mobile ? (
+        <TransformWrapper
+          centerZoomedOut
+          centerOnInit
+          disablePadding
+          maxScale={3}
+          onZoomStart={function noRefCheck() {
+            imageZoom.current.setAttribute(
+              'src',
+              `/arquivos/ids/${image.imageId}-1400-2000`
+            )
+          }}
+        >
+          <TransformComponent>
+            {
+              <picture>
+                <img
+                  ref={imageZoom}
+                  className={styles.productImage}
+                  src={`/arquivos/ids/${image.imageId}-600-870/`}
+                  alt={image?.imageText}
+                />
+              </picture>
+            }
+          </TransformComponent>
+        </TransformWrapper>
+      ) : isZoom ? (
+        <img
+          className={styles.productImage}
+          src={`/arquivos/ids/${image.imageId}`}
+          alt={image?.imageText}
+        />
+      ) : (
+        <picture>
+          <img
+            className={styles.productImage}
+            src={isZoom ? `/arquivos/ids/${image.imageId}` : image.imageUrl}
+            alt={image?.imageText}
+          />
+        </picture>
+      )}
+    </>
+  )
 }
 
 export default Image
