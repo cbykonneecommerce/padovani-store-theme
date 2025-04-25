@@ -358,6 +358,23 @@
   gap: 8px;
 }
 
+.attachmentTitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #404750;
+  margin-top: 0;
+  margin-right: 16px;
+}
+
+.attachmentMessageError {
+  color: #e60000;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+}
+
 .attachmentSelectButton {
   background-color: #fff;
   padding: 8px 12px;

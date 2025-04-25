@@ -4,10 +4,20 @@ import { useProduct } from 'vtex.product-context'
 import { useProductDispatch } from 'vtex.product-context/ProductDispatchContext'
 import { formatAssemblyOptionsFromItemMetadata } from './utils'
 
-const CSS_HANDLES = ['attachmentSelectButton', 'attachmentButtonsContainer']
+const CSS_HANDLES = [
+  'attachmentSelectButton',
+  'attachmentButtonsContainer',
+  'attachmentTitle',
+  'attachmentMessageError',
+]
 
 export default function Attachments() {
-  const { product } = useProduct()
+  const {
+    product,
+    buyButton = {
+      clicked: false,
+    },
+  } = useProduct()
   const { handles } = useCssHandles(CSS_HANDLES)
 
   const [selected, setSelected] = useState({
@@ -15,12 +25,15 @@ export default function Attachments() {
     value: '',
     label: '',
   })
-  const dispatch = useProductDispatch()
-  const normalized = formatAssemblyOptionsFromItemMetadata(product.itemMetadata)
+  const [isSelected, setIsSelected] = useState(false)
 
-  if (!product.itemMetadata) {
+  const dispatch = useProductDispatch()
+
+  if (!product?.itemMetadata) {
     return null
   }
+
+  const normalized = formatAssemblyOptionsFromItemMetadata(product.itemMetadata)
 
   useEffect(() => {
     const groupInputValues = {
@@ -30,6 +43,8 @@ export default function Attachments() {
     if (!groupInputValues[selected.label]) {
       return
     }
+
+    setIsSelected(true)
 
     dispatch({
       type: 'SET_ASSEMBLY_OPTIONS',
@@ -42,14 +57,27 @@ export default function Attachments() {
     })
   }, [selected])
 
+  useEffect(() => {
+    dispatch({
+      type: 'SKU_SELECTOR_SET_VARIATIONS_SELECTED',
+      args: {
+        allSelected: !!selected?.id,
+      },
+    })
+  }, [dispatch, selected])
+
   return (
-    <div className="mt-4">
+    <div>
       {normalized.map((item) => (
         <>
-          <p className="font-semibold text-sm mb-2 uppercase text-gray-700">
-            {item.name}
-          </p>
-
+          <div className="flex align-center">
+            <h3 className={handles.attachmentTitle}>{item.name}</h3>
+            {!isSelected && buyButton.clicked && (
+              <span className={handles.attachmentMessageError}>
+                Selecione uma opção
+              </span>
+            )}
+          </div>
           <div className={handles.attachmentButtonsContainer}>
             {item.options.map((option) => (
               <button
