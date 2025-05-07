@@ -6,6 +6,7 @@ const MiniDescription = () => {
   const { product } = useProduct() ?? {}
   const [specifications, setSpecifications] = useState([])
   const multiplier = product?.items[0]?.unitMultiplier
+  const measurementUnit = product?.items[0]?.measurementUnit
 
   const shuffleAndSlice = (array, count) => {
     return [...array].sort(() => 0.5 - Math.random()).slice(0, count)
@@ -32,7 +33,7 @@ const MiniDescription = () => {
 
       filteredSpecs.push({
         name: 'Caixa com',
-        values: [`${String(multiplier).replace('.', ',')}m²`],
+        values: [`${String(multiplier).replace('.', ',')} ${measurementUnit}`],
       })
 
       setSpecifications(
