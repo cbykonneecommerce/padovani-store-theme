@@ -45,7 +45,7 @@
       ],
       "matchType": "any",
       "Then": "flex-layout.row",
-      "Else": "flex-layout.row#pdp.line-5"
+      "Else": "flex-layout.row#pdp.line-5" // price
     }
   },
   "condition-layout.product#add-to-cart": {
@@ -54,7 +54,7 @@
         {
           "subject": "productClusters",
           "arguments": {
-            "id": "567"
+            "id": "486"
           }
         }
       ],

@@ -113,9 +113,10 @@
     },
     "rich-text#a-vista": {
         "props": {
-            "text": "à vista **(2,5% de desconto)**",
+            "text": " ",
             "blockClass": [
-                "a-vista"
+                "a-vista",
+                "jacuzzi-a-vista"
             ]
         }
     },
@@ -139,8 +140,8 @@
             "blockClass": "tags-pix"
         },
         "children": [
-            "rich-text#a-vista-todos-produtos",
-            "rich-text#pix-24x-vezes"
+            "rich-text#a-vista-todos-produtos"
+            // "rich-text#pix-24x-vezes"
         ]
     },
     "flex-layout.col#tags-pix-porcelanato": {

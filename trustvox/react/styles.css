@@ -1,16 +1,15 @@
 .trustvoxContainer {
   width: 100%;
-  margin: 0 auto;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0 6rem;
+  max-width: 1440px;
+  margin: auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 @media screen and (max-width: 767px) {
   .trustvoxContainer {
     padding: 0 0.5rem;
-  }  
+  }
 }
 
 .subtitleTrustvoxReview,
