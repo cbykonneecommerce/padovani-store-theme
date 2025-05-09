@@ -22,6 +22,11 @@
       "footer": "footer#product"
     }
   },
+  "product-assembly-options": {
+    "children": [
+      "assembly-option-input-values"
+    ]
+  },
   "buy-together#1": {},
   "product-banner#pdp": {
     "props": {
