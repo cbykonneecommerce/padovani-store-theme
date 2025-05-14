@@ -46,7 +46,6 @@ export async function saveOrders(ctx: Context, next: () => Promise<any>) {
                 sellerCode: hasCustomData.codigoVendedor,
               },
             });
-            console.log("🚀 ~ createRegister:", createRegister);
           }
 
           // Aguardar um tempo entre as chamadas para evitar atingir o limite de taxa

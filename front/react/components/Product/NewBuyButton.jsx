@@ -1,4 +1,3 @@
-import React from 'react'
 import { useOrderItems } from 'vtex.order-items/OrderItems'
 import { usePixel } from 'vtex.pixel-manager'
 import { useProduct } from 'vtex.product-context'
@@ -6,7 +5,6 @@ import styles from '../../styles/css/product.css'
 
 const NewBuyButton = (props) => {
   const prodContext = useProduct()
-  console.log('🚀 ~ NewBuyButton ~ prodContext:', prodContext)
   const { addItems } = useOrderItems()
   const { push } = usePixel()
   const isAvaible =
@@ -14,7 +12,6 @@ const NewBuyButton = (props) => {
     0
 
   function addToCart(sku, quantity, seller, assemblyOptions, itemMetadata) {
-    console.log('🚀 ~ addToCart ~ itemMetadata:', itemMetadata)
     if (!isAvaible) return
 
     const assemblyId = Object.keys(assemblyOptions.areGroupsValid)[0]

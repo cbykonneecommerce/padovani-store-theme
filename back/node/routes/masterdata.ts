@@ -1,16 +1,11 @@
-import { ForbiddenError} from '@vtex/api'
+import { ForbiddenError } from '@vtex/api';
 
-import { ParseFields } from "../utils/parse-helper";
-import { ParseRangeHeader } from "../utils/parse-helper";
-import { ParseWhere } from "../utils/parse-helper";
+import { ParseFields, ParseRangeHeader, ParseWhere } from "../utils/parse-helper";
 
 export async function masterdata(ctx: Context, next: () => Promise<any>) {
   const {
     clients: { masterdata },
   } = ctx
-  console.log(ctx.query)
-  console.log(ctx.querystring)
-
   let parsedFields: string[] = []
 
   if (ctx.query["_fields"])
@@ -30,14 +25,7 @@ export async function masterdata(ctx: Context, next: () => Promise<any>) {
   else
     rangeHeader = ctx.state.paginationRange
 
-  console.log('Parsed Fields: ', parsedFields)
-  console.log('Parsed Where', parsedWhere)
-  console.log('Bag Entity', dataEntity)
-  console.log('Bag Range', rangeHeader)
-
   const paRangeHeader = ParseRangeHeader(rangeHeader)
-
-  console.log('Pagination: ', paRangeHeader)
 
   if (dataEntity != 'OE')
   {

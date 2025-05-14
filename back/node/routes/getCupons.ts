@@ -12,8 +12,6 @@ export async function getCupons(ctx: Context, next: () => Promise<any>) {
     ctx.status = 200;
     ctx.body = { cupons };
   } catch (error) {
-    console.log(error);
-
     ctx.status = 500;
     ctx.body = { message: error.message };
   }
