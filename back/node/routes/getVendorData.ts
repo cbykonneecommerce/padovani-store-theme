@@ -13,8 +13,6 @@ export async function getVendorData(ctx: Context, next: () => Promise<any>) {
 
     catch (error) {
         // eslint-disable-next-line no-console
-        console.log(error)
-
         ctx.status = 500
         ctx.body = { message: error.message }
     }

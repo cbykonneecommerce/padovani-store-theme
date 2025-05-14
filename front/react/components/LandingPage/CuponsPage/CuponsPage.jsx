@@ -7,8 +7,6 @@ const CuponsPage = (props) => {
   const { isMobile } = useDevice()
   const [openCupons, setOpenCupons] = useState([])
 
-  console.log(cupons)
-
   function toggleRules(index) {
     setOpenCupons((prevOpenCupons) => {
       if (prevOpenCupons.includes(index)) {

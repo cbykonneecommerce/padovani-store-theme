@@ -1,7 +1,7 @@
 {
   "name": "trustvox",
   "vendor": "padovani",
-  "version": "0.10.14",
+  "version": "0.10.15",
   "title": "RA Trustvox",
   "description": "Integrates with RA Trustvox",
   "builders": {

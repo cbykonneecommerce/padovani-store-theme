@@ -1,41 +1,41 @@
-import { useState, useEffect } from "react"
-import { useProduct } from "vtex.product-context"
+import { useEffect, useState } from 'react'
+import { useProduct } from 'vtex.product-context'
 
-import styles from "../../styles/css/product.css"
+import styles from '../../styles/css/product.css'
 
 const Video = () => {
+  const context = useProduct()
+  const [video, setVideo] = useState(null)
 
-    const context = useProduct()
-    const [ video, setVideo ] = useState(null)
-    
-    console.log("🚀 ~ file: Video.jsx:9 ~ Video ~ context:", context)
-    if(context == null) return null
+  if (context == null) return null
 
-    useEffect(() => {
+  useEffect(() => {
+    const getVideo = context.product.properties.filter((find) => {
+      if (find.name == 'Vídeo') {
+        return find
+      }
+    })
 
-        const getVideo = context.product.properties.filter(find => {
-            if(find.name == "Vídeo") {
-                return find
-            }
-        })
+    if (getVideo.length > 0) setVideo(getVideo[0]?.values[0])
+  }, [context])
 
-        if(getVideo.length > 0)
-            setVideo(getVideo[0]?.values[0])
+  if (video == null || video == undefined) return null
 
-    }, [context])
-
-    console.log("🚀 ~ file: Video.jsx:29 ~ Video ~ video:", video, video?.split("https://youtu.be/")[1])
-
-    if(video == null || video == undefined) return null
-
-
-    return(
-        <div className={styles.wrapperVideo}>
-            {
-                video.indexOf("https://youtu.be/") != -1 ?
-                    <iframe width="100%" height="450" src={`https://www.youtube.com/embed/${video?.split("https://youtu.be/")[1]}`} />
-                :
-                    <div className={styles.video} dangerouslySetInnerHTML={{ __html: `
+  return (
+    <div className={styles.wrapperVideo}>
+      {video.indexOf('https://youtu.be/') != -1 ? (
+        <iframe
+          width="100%"
+          height="450"
+          src={`https://www.youtube.com/embed/${
+            video?.split('https://youtu.be/')[1]
+          }`}
+        />
+      ) : (
+        <div
+          className={styles.video}
+          dangerouslySetInnerHTML={{
+            __html: `
                             <video
                                 width="100%"
                                 loop
@@ -44,11 +44,12 @@ const Video = () => {
                                 playsinline
                                 src="${video}"
                             />
-                    `}}></div>
-            }
-        </div>
-
-    )
+                    `,
+          }}
+        ></div>
+      )}
+    </div>
+  )
 }
 
 export default Video

@@ -15,7 +15,6 @@ const ContentBuyModal = () => {
   const [quantity, setQuantity] = useState(1)
   const [isChecked, setIsChecked] = useState(false)
   const prodContext = useProduct()
-  console.log('🚀 ~ ContentBuyModal ~ prodContext:', prodContext.selectedItem)
   const { addItems } = useOrderItems()
   const dispatch = useProductDispatch()
   const { push } = usePixel()

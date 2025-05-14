@@ -4,9 +4,6 @@ export async function catalogSkuAndContext(ctx: Context, next: () => Promise<any
   const {
     clients: { catalog },
   } = ctx
-  console.log(ctx.query)
-  console.log(ctx.querystring)
-
   const {skuid} = ctx.vtex.route.params
 
   if (!skuid)
