@@ -2,25 +2,21 @@
   "store.product": {
     "title": "Product",
     "children": [
-      "condition-layout.product#headercommon",
-      "condition-layout.product#header-deca",
-      "condition-layout.product#header-docol",
+      // "condition-layout.product#headercommon",
+      // "condition-layout.product#header-deca",
+      // "condition-layout.product#header-docol",
       "product-banner#pdp",
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
+      "buy-together#1",
       "flex-layout.row#description-both",
       "product-reviews.ratrustvox",
-      "buy-together#1",
       "flex-layout.row#product.shelf-1",
       "shelf-linx#3",
       "product-types#product",
       "condition-layout.product#footercommon",
       "condition-layout.product#footer-deca"
-    ],
-    "parent": {
-      "header": "header#product",
-      "footer": "footer#product"
-    }
+    ]
   },
   "product-assembly-options": {
     "children": [

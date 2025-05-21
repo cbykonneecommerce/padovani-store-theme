@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { SliderLayout } from 'vtex.slider-layout'
 
 import { ambiencesliderLayoutConfig } from './config/sliderLayout'
 import BuyTogetherProvider from './context/BuyTogetherProvider'
 import { BuyTogetherService } from './service/BuyTogetherService'
 
-import AddToCart from './components/AddToCart'
 import Ambience from './components/Ambience'
 
 import styles from '../../../styles/css/landing.page-buy-together.css'
@@ -76,7 +75,7 @@ const BuyTogether = (props) => {
           {ambiencesWithProducts.map((ambience, index) => (
             <BuyTogetherProvider products={ambience.products}>
               <Ambience ambience={ambience} index={index} />
-              <AddToCart />
+              {/* <AddToCart /> */}
             </BuyTogetherProvider>
           ))}
         </SliderLayout>
