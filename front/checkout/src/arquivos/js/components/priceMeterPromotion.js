@@ -87,6 +87,9 @@ export default class priceMeterPromotion {
                         productContainer.attr("data-discount-applied") ===
                         "true"
                     ) {
+                        console.log(
+                            `Desconto já aplicado ao item "${item.name}". Ignorando.`
+                        );
                         return;
                     }
 

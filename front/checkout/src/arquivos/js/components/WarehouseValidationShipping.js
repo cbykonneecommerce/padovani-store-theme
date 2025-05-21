@@ -50,6 +50,9 @@ export default class WarehouseValidation {
             }
 
             const dockId = logisticInfo.slas[0]?.deliveryIds?.[0]?.dockId;
+            console.log(
+                `SKU: ${skuId}, dockId: ${dockId}, Produto: ${item.name}`
+            );
 
             const productContainer = $(`.product-item[data-sku='${skuId}']`);
 
@@ -71,6 +74,10 @@ export default class WarehouseValidation {
                     });
 
                     shippingContainer.append(messageElement);
+
+                    console.log(
+                        `Mensagem "${messageText}" adicionada ao produto ${item.name} (SKU: ${skuId})`
+                    );
                 } else {
                     console.warn(
                         `Elemento "shipping-date" não encontrado para o SKU ${skuId}.`

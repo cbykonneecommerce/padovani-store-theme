@@ -91,6 +91,8 @@ export default class Exemple {
                 )
                     .then((response) => response.json())
                     .then((dataResponse) => {
+                        console.log(dataResponse, "dataResponse");
+
                         if (
                             dataResponse.logisticsInfo &&
                             dataResponse.logisticsInfo.length > 0
@@ -113,6 +115,10 @@ export default class Exemple {
 
                             if (shippingEstimates.length > 0) {
                                 let shippingEstimate = shippingEstimates[0];
+                                console.log(
+                                    shippingEstimate,
+                                    "shippingEstimate"
+                                );
 
                                 shippingEstimate =
                                     shippingEstimate.match(/\d+/)[0];
@@ -180,6 +186,10 @@ export default class Exemple {
                 });
             }
         });
+    }
+
+    exempleEvent(event) {
+        console.log("event", event);
     }
 
     exempleMethod() {

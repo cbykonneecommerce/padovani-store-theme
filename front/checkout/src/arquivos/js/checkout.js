@@ -29,6 +29,7 @@ new Checkout();
     document.head.appendChild(script);
 })();
 
+console.log("custom checkout 1.0.3 paymee");
 !(function (t, e, i) {
     var r = t.createElement("script"),
         s = t.getElementsByTagName("body")[0];

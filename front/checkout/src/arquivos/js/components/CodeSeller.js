@@ -85,15 +85,23 @@ export default class CodeSeller {
             value: `${vendorData.codigovendedor}`,
         });
 
-        vtexjs.checkout.getOrderForm().then(function (orderForm) {
-            const marketingData = orderForm.marketingData;
-            marketingData.utmiCampaign = `${vendorData.codigovendedor}`;
+        vtexjs.checkout
+            .getOrderForm()
+            .then(function (orderForm) {
+                const marketingData = orderForm.marketingData;
+                marketingData.utmiCampaign = `${vendorData.codigovendedor}`;
 
-            return vtexjs.checkout.sendAttachment(
-                "marketingData",
-                marketingData
-            );
-        });
+                return vtexjs.checkout.sendAttachment(
+                    "marketingData",
+                    marketingData
+                );
+            })
+            .done(function (orderForm) {
+                console.log(
+                    orderForm.marketingData,
+                    "marketingData atualizado"
+                );
+            });
 
         this.removeCoupon();
     }
@@ -249,15 +257,23 @@ export default class CodeSeller {
             value: `${content.codigovendedor}`,
         });
 
-        vtexjs.checkout.getOrderForm().then(function (orderForm) {
-            const marketingData = orderForm.marketingData;
-            marketingData.utmiCampaign = `${content.codigovendedor}`;
+        vtexjs.checkout
+            .getOrderForm()
+            .then(function (orderForm) {
+                const marketingData = orderForm.marketingData;
+                marketingData.utmiCampaign = `${content.codigovendedor}`;
 
-            return vtexjs.checkout.sendAttachment(
-                "marketingData",
-                marketingData
-            );
-        });
+                return vtexjs.checkout.sendAttachment(
+                    "marketingData",
+                    marketingData
+                );
+            })
+            .done(function (orderForm) {
+                console.log(
+                    orderForm.marketingData,
+                    "marketingData atualizado"
+                );
+            });
 
         _this.removeCoupon();
     }
@@ -285,19 +301,30 @@ export default class CodeSeller {
                 options
             )
                 .then((response) => response.json())
+                .then((response) => {
+                    console.log(response);
+                })
                 .catch((error) => {
                     console.error("Erro ao remover customData:", error);
                 });
 
-            vtexjs.checkout.getOrderForm().then(function (orderForm) {
-                const marketingData = orderForm.marketingData;
-                marketingData.utmiCampaign = null;
+            vtexjs.checkout
+                .getOrderForm()
+                .then(function (orderForm) {
+                    const marketingData = orderForm.marketingData;
+                    marketingData.utmiCampaign = null;
 
-                return vtexjs.checkout.sendAttachment(
-                    "marketingData",
-                    marketingData
-                );
-            });
+                    return vtexjs.checkout.sendAttachment(
+                        "marketingData",
+                        marketingData
+                    );
+                })
+                .done(function (orderForm) {
+                    console.log(
+                        orderForm.marketingData,
+                        "Código de vendedor removido"
+                    );
+                });
 
             this.addInput();
         });
