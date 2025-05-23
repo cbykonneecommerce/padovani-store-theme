@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { applyModifiers, useCssHandles } from 'vtex.css-handles'
+import { useEffect, useState } from 'react'
+import { useCssHandles } from 'vtex.css-handles'
 import { useProduct } from 'vtex.product-context'
 import { useProductDispatch } from 'vtex.product-context/ProductDispatchContext'
+import AttachmentsButton from './AttachmentButton'
+import AttachmentsDropdown from './AttachmentDropDown'
 import { formatAssemblyOptionsFromItemMetadata } from './utils'
 
-const CSS_HANDLES = [
-  'attachmentSelectButton',
-  'attachmentButtonsContainer',
-  'attachmentTitle',
-  'attachmentMessageError',
-]
+const CSS_HANDLES = ['attachmentTitle', 'attachmentMessageError']
 
 export default function Attachments() {
   const {
@@ -78,26 +75,12 @@ export default function Attachments() {
               </span>
             )}
           </div>
-          <div className={handles.attachmentButtonsContainer}>
-            {item.options.map((option) => (
-              <button
-                key={option.value}
-                onClick={() =>
-                  setSelected({
-                    id: option.id,
-                    value: option.value,
-                    label: option.label,
-                  })
-                }
-                className={applyModifiers(
-                  handles.attachmentSelectButton,
-                  selected.value === option.value ? 'is-active' : ''
-                )}
-              >
-                {option.value}
-              </button>
-            ))}
-          </div>
+          <AttachmentsButton
+            setSelected={setSelected}
+            selected={selected}
+            item={item}
+          />
+          <AttachmentsDropdown setSelected={setSelected} item={item} />
         </>
       ))}
     </div>

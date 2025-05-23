@@ -1,178 +1,191 @@
-@import "./variables";
+@import './variables';
 
 .profile {
-    width: 110px;
-    font-weight: $normal;
-    color: $primary;
+  width: 110px;
+  font-weight: $normal;
+  color: $primary;
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: $tablet) {
+    text-align: center;
+
+    .buttonLink {
+      display: none;
+    }
+  }
+
+  :global(.vtex-button__label) {
+    padding: 0;
+  }
+
+  .label {
+    font-size: $textDefault;
+    color: $dark;
+    text-transform: none;
+    font-weight: $normal;
+  }
+
+  :global(.vtex-button) {
+    margin: 0 1rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    @media(max-width: $tablet) {
-        text-align: center;
-
-        .buttonLink {
-            display: none;
-        }
-    }
 
     :global(.vtex-button__label) {
-        padding: 0;
+      display: none;
     }
 
-    .label {
-        font-size: $textDefault;
-        color: $dark;
-        text-transform: none;
-        font-weight: $normal;
+    &::after {
+      content: 'Cadastre-se ou faça Login';
+      font-family: 'Roboto';
+      width: 55%;
+      display: flex;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      font-style: italic;
+      text-transform: none;
     }
 
-    :global(.vtex-button) {
-        margin: 0 1rem;
-        display: flex;
-        align-items: center;
-
-        :global(.vtex-button__label) {
-            display: none;
-        }
-
-        &::after {
-            content: "Cadastre-se ou faça Login";
-            font-family: "Roboto";
-            width: 55%;
-            display: flex;
-            color: #FFF;
-            font-size: 13px;
-            font-weight: 600;
-            font-style: italic;
-            text-transform: none;
-        }
-
-        &::before {
-            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='36' width='32' viewBox='0 0 448 512'%3E%3Cpath fill='%23ffffff' d='M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z'/%3E%3C/svg%3E");
-        }
+    &::before {
+      content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='36' width='32' viewBox='0 0 448 512'%3E%3Cpath fill='%23ffffff' d='M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z'/%3E%3C/svg%3E");
     }
+  }
 }
 
 .arrowUp {
-    width: 15px !important;
-    right: 15px;
+  width: 15px !important;
+  right: 15px;
 }
 
 .contentForm {
-    .formTitle {
+  .formTitle {
+    font-family: $fontPrimary;
+    font-weight: $normal;
+    font-size: $textDefault;
+    line-height: 1.6em;
+    text-align: center;
+    color: $dark;
+    margin-bottom: 10px;
+  }
+
+  .optionsList {
+    :global(.vtex-button) {
+      padding-top: 0.25em;
+      padding-bottom: 0.32em;
+      background: $primary;
+      border-radius: 5px;
+      color: $primary-i;
+      max-height: 45px;
+      height: 45px;
+
+      :global(.vtex-button__label) {
         font-family: $fontPrimary;
-        font-weight: $normal;
-        font-size: $textDefault;
-        line-height: 1.6em;
-        text-align: center;
-        color: $dark;
-        margin-bottom: 10px;
+        font-style: normal;
+        font-weight: $weight-custom-3;
+        font-size: $size-2-custom;
+        line-height: 20px;
+        color: $primary-i;
+      }
     }
+  }
 
-    .optionsList {
-        :global(.vtex-button) {
-            padding-top: 0.25em;
-            padding-bottom: 0.32em;
-            background: $primary;
-            border-radius: 5px;
-            color: $primary-i;
-            max-height: 45px;
-            height: 45px;
+  .emailVerification {
+    .inputContainer {
+      :global(.vtex-input-prefix__group) {
+        border: 1px solid $gray-1;
+        border-radius: $radius;
 
-            :global(.vtex-button__label) {
-                font-family: $fontPrimary;
-                font-style: normal;
-                font-weight: $weight-custom-3;
-                font-size: $size-2-custom;
-                line-height: 20px;
-                color: $primary-i;
-            }
-        }
-    }
-
-    .emailVerification {
-        .inputContainer {
-            :global(.vtex-input-prefix__group) {
-                border: 1px solid $gray-1;
-                border-radius: $radius;
-
-                :global(.vtex-styleguide-9-x-input) {
-                    &::placeholder {
-                        font-family: $fontPrimary;
-                        font-style: normal;
-                        font-weight: $weight-custom-2;
-                        font-size: $size-2;
-                        line-height: 25px;
-                        color: $gray-5;
-                    }
-                }
-            }
-        }
-    }
-
-    .formLinkContainer {
-        .forgotPasswordLink {
-            font-family: $fontPrimary;
-            font-style: normal;
-            font-weight: $weight-3;
-            font-size: $size-2;
-            line-height: 1.6em;
-            text-align: right;
-            color: $gray-5;
-        }
-    }
-
-    .formFooter {
-        border-top: none;
-
-        :global(.vtex-button) {
-            background-color: $primary;
-            border: 1px solid $primary;
-            border-radius: 5px;
-            color: $primary-i
-        }
-    }
-
-    .formLinkContainer {
-        .dontHaveAccount {
+        :global(.vtex-styleguide-9-x-input) {
+          &::placeholder {
             font-family: $fontPrimary;
             font-style: normal;
             font-weight: $weight-custom-2;
             font-size: $size-2;
             line-height: 25px;
             color: $gray-5;
+          }
         }
+      }
     }
+  }
 
-    .inputContainerAccessCode {
-        :global(.vtex-input-prefix__group) {
-            border: 1px solid $gray-1;
-            border-radius: $radius;
+  .formLinkContainer {
+    .forgotPasswordLink {
+      font-family: $fontPrimary;
+      font-style: normal;
+      font-weight: $weight-3;
+      font-size: $size-2;
+      line-height: 1.6em;
+      text-align: right;
+      color: $gray-5;
+    }
+  }
 
-            :global(.vtex-styleguide-9-x-input) {
-                &::placeholder {
-                    font-family: $fontPrimary;
-                    font-style: normal;
-                    font-weight: $weight-custom-2;
-                    font-size: $size-2;
-                    line-height: 25px;
-                    color: $gray-5;
-                }
-            }
+  .formFooter {
+    border-top: none;
+
+    :global(.vtex-button) {
+      background-color: $primary;
+      border: 1px solid $primary;
+      border-radius: 5px;
+      color: $primary-i;
+    }
+  }
+
+  .formLinkContainer {
+    .dontHaveAccount {
+      font-family: $fontPrimary;
+      font-style: normal;
+      font-weight: $weight-custom-2;
+      font-size: $size-2;
+      line-height: 25px;
+      color: $gray-5;
+    }
+  }
+
+  .inputContainerAccessCode {
+    :global(.vtex-input-prefix__group) {
+      border: 1px solid $gray-1;
+      border-radius: $radius;
+
+      :global(.vtex-styleguide-9-x-input) {
+        &::placeholder {
+          font-family: $fontPrimary;
+          font-style: normal;
+          font-weight: $weight-custom-2;
+          font-size: $size-2;
+          line-height: 25px;
+          color: $gray-5;
         }
+      }
     }
+  }
 }
 
 // mudando todos
 
 :global(.vtex-store__template) {
-    background-color: white !important;
+  background-color: white !important;
 }
 
 :global(#zendesk-fake-btn) {
-    display: none !important;
+  display: none !important;
+}
+
+:global(.padovani-basic-1-x-attachmentDropdownContainer) option {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: 600;
+  color: #737277;
+  cursor: pointer;
+
+  &:disabled {
+    display: none;
+  }
 }
