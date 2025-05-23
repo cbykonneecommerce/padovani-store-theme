@@ -1,687 +1,682 @@
 {
-    "store.custom#docol-search-custom":{
-        "children": [
-          "page-manager#docol-search-customm",
-          "buy-together-ambience#docol-0.2v"
-        ],
-        "parent": {
-          "header": "header#docol"
+  "store.custom#docol-search-custom": {
+    "children": [
+      "page-manager#docol-search-customm",
+      "buy-together-ambience#docol-0.2v"
+    ]
+  },
+  "page-manager#docol-search-customm": {
+    "props": {
+      "ListContext": "list-context.product-list#home.shelf-page-manager",
+      "SearchCustomQuery": "search-result-layout.customQuery#lp-campaign",
+      "sections": [
+        {
+          "disabled": false,
+          "padding": false,
+          "__editorItemTitle": "titulo metais",
+          "classe": "title-block",
+          "componentType": "rich-text",
+          "richText": "## Metais \nUma seleção de metais para banheiro, cozinhas e área de serviço",
+          "textAlign": "center"
+        },
+        {
+          "disabled": false,
+          "padding": true,
+          "__editorItemTitle": "subtitulo metais cores",
+          "classe": "title-shelf",
+          "componentType": "rich-text",
+          "richText": "### Principais Cores",
+          "textAlign": "center"
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "__editorItemTitle": "Shelf Metais Cores",
+          "classe": "shelf-colors",
+          "componentType": "slider",
+          "sliderType": "image",
+          "images": [
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/afd6eac0-7822-4bfe-a3a4-a852b0cce64b___640bdd3e511bc387e1403bc4e7871c55.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/afd6eac0-7822-4bfe-a3a4-a852b0cce64b___640bdd3e511bc387e1403bc4e7871c55.png",
+              "altImage": "Imagem de uma maçaneta na cor black matte",
+              "label": "Black Matte",
+              "url": "/Deca/Black%20Matte?map=b,specificationFilter_1434",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/217be854-d040-49ee-b60d-91f85f31e16c___cd21c13ffca616ce23d448d5a4d2c5ba.png",
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/217be854-d040-49ee-b60d-91f85f31e16c___cd21c13ffca616ce23d448d5a4d2c5ba.png",
+              "altImage": "Imagem e uma mçaneta na cor black noir",
+              "label": "Black Noir",
+              "url": "/Deca/Black%20Noir?map=b,specificationFilter_1434",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/87be74a8-9cbb-4cb8-a59e-76c3da85ecdd___9834a39da21811526f662770a6910fac.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/87be74a8-9cbb-4cb8-a59e-76c3da85ecdd___9834a39da21811526f662770a6910fac.png",
+              "altImage": "Imagem de uma maçaneta na cor cromado",
+              "label": "Cromado",
+              "url": "/Deca/Cromado?map=b,specificationFilter_1434",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/9484b23b-9555-4932-a172-397c46124a45___89e53de3f1e36a0cc614fae7984ac6a8.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/9484b23b-9555-4932-a172-397c46124a45___89e53de3f1e36a0cc614fae7984ac6a8.png",
+              "altImage": "Imagem de uma maçaneta na cor Gold",
+              "label": "Gold",
+              "url": "/Deca/Gold?map=b,specificationFilter_1434",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/b3548508-70eb-4ffe-9348-cf6ebfcda6b9___73aa09868ffd49731bb56a066532c032.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/b3548508-70eb-4ffe-9348-cf6ebfcda6b9___73aa09868ffd49731bb56a066532c032.png",
+              "altImage": "Imagem de uma maçaneta na cor Gold Matte",
+              "url": "/Deca/Gold%20Matte?map=b,specificationFilter_1434",
+              "label": "Gold Matte",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "altImage": "Imagem de uma maçaneta na cor Gold Matte",
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/70ab8d25-f823-4261-8d94-8efd6df578a7___c125d93cb10d7f827ef563147cdcc1d2.png",
+              "label": "Red Gold",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/7c121e9d-5d7f-4145-9351-ce8007d02efd___c125d93cb10d7f827ef563147cdcc1d2.png",
+              "url": "/Deca/Red%20Gold?map=b,specificationFilter_1434",
+              "hoverEffect": "opacity"
+            }
+          ],
+          "itemsPerPageDesk": 6,
+          "itemsPerPageTablet": 3,
+          "itemsPerPagePhone": 2,
+          "showNavigationArrows": "always"
+        },
+        {
+          "disabled": false,
+          "padding": true,
+          "__editorItemTitle": "subtitulo Metais Linhas",
+          "classe": "title-shelf",
+          "componentType": "rich-text",
+          "richText": "### Principais Linhas",
+          "textAlign": "center"
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "__editorItemTitle": "Shelf Metais Linhas",
+          "classe": "shelf-linhas",
+          "componentType": "slider",
+          "sliderType": "image",
+          "showNavigationArrows": "always",
+          "itemsPerPageDesk": 6,
+          "itemsPerPageTablet": 3,
+          "itemsPerPagePhone": 4,
+          "images": [
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/75778810-8ea5-43be-90fc-4d800680f256___109da2c572a15b9321655ffca387b4d4.webp",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/098412e9-a0a2-41cf-9151-80a23727d124___81d1dd5ea65ef25a243ba235b4730f3c.webp",
+              "label": "Polo",
+              "hoverEffect": "opacity",
+              "altImage": "Imagem de um acabamento de registro da linha Polo",
+              "url": "/Deca/Polo?map=b,specificationFilter_1433"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/7bd18260-74a1-4ce3-849e-d2e25d1a7426___15a3be55bfedad98438420b83ebf7465.webp",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/7bd18260-74a1-4ce3-849e-d2e25d1a7426___15a3be55bfedad98438420b83ebf7465.webp",
+              "altImage": "Imagem de um acabamento de registro da linha Soul",
+              "label": "Soul",
+              "url": "/Deca/Soul?map=b,specificationFilter_1433",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "altImage": "Imagem de um acabamento de registro da linha Unic",
+              "label": "Unic",
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/fb6e8714-e45b-4796-aa24-284eb733f12b___0e19e35273125e6feafdb382d314e55a.webp",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/fb6e8714-e45b-4796-aa24-284eb733f12b___0e19e35273125e6feafdb382d314e55a.webp",
+              "url": "/Deca/Unic?map=b,specificationFilter_1433",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/75778810-8ea5-43be-90fc-4d800680f256___109da2c572a15b9321655ffca387b4d4.webp",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/75778810-8ea5-43be-90fc-4d800680f256___109da2c572a15b9321655ffca387b4d4.webp",
+              "altImage": "Imagem de um acabamento de registro da linha Cubo",
+              "label": "Cubo",
+              "url": "/Deca/Cubo?map=b,specificationFilter_1433",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "url": "/Deca/Level?map=b,specificationFilter_1433",
+              "label": "Level",
+              "altImage": "Imagem de um acabamento de registro da linha Level",
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/05716cb4-e7b8-4d0e-a64a-8224d2ec14eb___01583c6a482294eb7a8335bbb614efb3.webp",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/05716cb4-e7b8-4d0e-a64a-8224d2ec14eb___01583c6a482294eb7a8335bbb614efb3.webp",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": true,
+              "altImage": "Imagem de uma torneira de banheiro da linha Tube",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/db821f83-5eec-4a84-a7f1-578521222ac2___5e7f85e91032170faf2b41f2ca826ef6.webp",
+              "label": "Tube",
+              "url": "/Deca/Tube?map=b,specificationFilter_1433",
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/db821f83-5eec-4a84-a7f1-578521222ac2___5e7f85e91032170faf2b41f2ca826ef6.webp",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/a10fea7c-ad28-4c6f-8e43-4e4009947622___b51a4512470fb88d175a0bf2c3dd93bb.jpeg",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/a10fea7c-ad28-4c6f-8e43-4e4009947622___b51a4512470fb88d175a0bf2c3dd93bb.jpeg",
+              "label": "Twin",
+              "hoverEffect": "opacity"
+            }
+          ],
+          "backgroundColor": "background-white",
+          "showPaginationDots": "never"
+        },
+        {
+          "disabled": false,
+          "padding": true,
+          "__editorItemTitle": "titulo cubas",
+          "classe": "title-block",
+          "componentType": "rich-text",
+          "richText": "## Cubas \nAs melhores cubas do mercado",
+          "textAlign": "center",
+          "backgroundColor": "background-white"
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "__editorItemTitle": "subtitulo cubas tipos",
+          "classe": "title-shelf",
+          "componentType": "rich-text",
+          "richText": "### Tipos",
+          "textAlign": "center"
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "__editorItemTitle": "Shelf Cuba tipos",
+          "componentType": "slider",
+          "sliderType": "image",
+          "images": [
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/8a0838d2-2360-4717-a08d-c3735f332177___bbfbf71fc2ef012eb70482000278d3dd.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4350e173-b23b-41de-8b21-425e36fd2468___bbfbf71fc2ef012eb70482000278d3dd.png",
+              "altImage": "Imagem de uma cuba e apoio na cor branca",
+              "label": "Apoio",
+              "url": "/banheiro/cubas-e-lavatorios/cubas-de-apoio/deca",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/c1cc408f-ccdb-40b9-bdea-1fea30327e43___cc93373b00a76626dd19164d5faa05a8.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4350e173-b23b-41de-8b21-425e36fd2468___bbfbf71fc2ef012eb70482000278d3dd.png",
+              "altImage": "Imagem de uma cuba do tipo sobrepor",
+              "label": "Sobrepor",
+              "url": "/banheiro/cubas-e-lavatorios/cubas-de-sobrepor/deca",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e778e608-a83a-42f6-8a53-902db1efc29c___3bd06201f8bb0c0399b8bae851338db9.webp",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e778e608-a83a-42f6-8a53-902db1efc29c___3bd06201f8bb0c0399b8bae851338db9.webp",
+              "altImage": "Imagem de uma cuba do tipo semi-encaixe",
+              "label": "Semi-encaixe",
+              "url": "/banheiro/cubas-e-lavatorios/cubas-de-semi-encaixe/deca",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "hoverEffect": "opacity",
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/0eb97d03-5ea1-4b41-8a86-fd9b894b8ee1___2da7ee7a40bb8c61b2c5db1041fe3a2f.webp",
+              "label": "Piso",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/0eb97d03-5ea1-4b41-8a86-fd9b894b8ee1___2da7ee7a40bb8c61b2c5db1041fe3a2f.webp",
+              "altImage": "Imagem de uma cuba do tipo piso",
+              "url": "/banheiro/cubas-e-lavatorios/cubas-de-piso/deca"
+            }
+          ],
+          "showNavigationArrows": "always",
+          "showPaginationDots": "never",
+          "itemsPerPageDesk": 4,
+          "itemsPerPageTablet": 3,
+          "itemsPerPagePhone": 2,
+          "classe": "shelf-types"
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "classe": "title-shelf",
+          "__editorItemTitle": "subtitulo cubas cores",
+          "componentType": "rich-text",
+          "richText": "###  Principais cores",
+          "textAlign": "center"
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "classe": "shelf-colors",
+          "__editorItemTitle": "Shelf Metais Cores",
+          "componentType": "slider",
+          "sliderType": "image",
+          "images": [
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4e24e9a9-8759-431b-bdd1-1a4c162efdf1___ed526b8b1f817116db2ceb85a1d71a45.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4e24e9a9-8759-431b-bdd1-1a4c162efdf1___ed526b8b1f817116db2ceb85a1d71a45.png",
+              "label": "Branco",
+              "altImage": "Imagem de uma cuba na cor branca",
+              "url": "/banheiro/cubas-e-lavatorios/deca/Branco?PS=12&map=c,c,b,specificationFilter_1289",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/08c548c0-2d3e-450a-8d0e-00dfe5ab1d89___f5964cf5736dcfc89c90d4c2f05ed103.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/08c548c0-2d3e-450a-8d0e-00dfe5ab1d89___f5964cf5736dcfc89c90d4c2f05ed103.png",
+              "altImage": "Imagem de uma cuba na cor Ébano fosco",
+              "label": "Ébano Fosco",
+              "hoverEffect": "opacity",
+              "url": "/banheiro/cubas-e-lavatorios/deca/Ébano%20Fosco?PS=12&map=c,c,b,specificationFilter_1289"
+            },
+            {
+              "target": false,
+              "altImage": "Imagem de uma cuba na cor marrom fosco",
+              "label": "Marrom Fosco",
+              "url": "/banheiro/cubas-e-lavatorios/deca/Marrom%20Fosco?PS=12&map=c,c,b,specificationFilter_1289",
+              "hoverEffect": "opacity",
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f81f7628-3c77-417b-97ea-1f155cd1e1d8___b8d3e7f687f955e10a4ef00edf92cf68.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f81f7628-3c77-417b-97ea-1f155cd1e1d8___b8d3e7f687f955e10a4ef00edf92cf68.png"
+            },
+            {
+              "target": false,
+              "url": "/banheiro/cubas-e-lavatorios/deca/Ébano?PS=12&map=c,c,b,specificationFilter_1289",
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/668bc9cb-5acf-45fa-abe4-dc5f2a9814a1___f1af275bff8311b75db9e5a240d1f44f.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/668bc9cb-5acf-45fa-abe4-dc5f2a9814a1___f1af275bff8311b75db9e5a240d1f44f.png",
+              "altImage": "Imagem de uma cuba na cor Ébano",
+              "label": "Ébano",
+              "hoverEffect": "opacity"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/7219a226-d53f-4a60-9e04-96083e58c764___ae70b6d1a928bd3c3438b7b34585d414.png",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/7219a226-d53f-4a60-9e04-96083e58c764___ae70b6d1a928bd3c3438b7b34585d414.png",
+              "label": "Creme",
+              "url": "/banheiro/cubas-e-lavatorios/deca/Creme?PS=12&map=c,c,b,specificationFilter_1289",
+              "altImage": "Imagem de uma cuba na cor creme",
+              "hoverEffect": "opacity"
+            }
+          ],
+          "itemsPerPageDesk": 6,
+          "itemsPerPageTablet": 3,
+          "itemsPerPagePhone": 1,
+          "showNavigationArrows": "always",
+          "showPaginationDots": "never"
+        },
+        {
+          "disabled": false,
+          "padding": true,
+          "__editorItemTitle": "titulo shelf novidades",
+          "classe": "title-block",
+          "componentType": "rich-text",
+          "richText": "## Novidades\nModelos com a sofisticação e o design da coleção de 2017",
+          "textAlign": "center"
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "__editorItemTitle": "shelf deca",
+          "componentType": "slider",
+          "sliderType": "product"
+        },
+        {
+          "disabled": false,
+          "padding": true,
+          "__editorItemTitle": "titulo shelf grandes sucessos Deca",
+          "classe": "title-block",
+          "componentType": "rich-text",
+          "richText": "## Grandes sucessos Deca\nOs produtos mais desejados da marca",
+          "textAlign": "center"
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "componentType": "slider",
+          "sliderType": "product",
+          "__editorItemTitle": "shelf sucessos Deca"
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "componentType": "banner",
+          "image": {
+            "imageDesk": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/732b9a65-d7da-4f9a-9cb7-309e0c461316___b6bba198eb29d4e5dbc9c234e9507a14.webp",
+            "imageMob": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/732b9a65-d7da-4f9a-9cb7-309e0c461316___b6bba198eb29d4e5dbc9c234e9507a14.webp",
+            "fullWidth": true
+          },
+          "activeText": true,
+          "richText": "## A Deca\nA marca Deca além de ser uma das lideres em vendas de metais do mercado\n        brasileiro, ainda é a maior fabricante de todo o hemisfério sul e atua\n        no setor de louças e metais sanitários desde 1947.\n\nCom uma grande variedade de produtos a Deca trás o que há de mais\n            moderno em conceitos de formas e cores, deixando assim suas linhas\n            inovadoras e com preços altamente competitivos.\n\nPensando nisso a Padovani firmou uma parceria que já perdura muitos\n            anos, oferecendo os produtos com os melhores preços do mercado,\n            competindo até mesmo com as maiores distribuidoras do Brasil.",
+          "colorWhite": false,
+          "textAlign": "left",
+          "horizontalAlignBlock": "flex-end",
+          "verticalAlignBlock": "center",
+          "__editorItemTitle": "Banner SEO",
+          "classe": "banner-seo"
+        },
+        {
+          "disabled": false,
+          "padding": true,
+          "componentType": "rich-text",
+          "classe": "text-seo",
+          "__editorItemTitle": "Texto SEO",
+          "backgroundColor": "background-white",
+          "richText": "## PRODUTOS\n\nA Deca na Padovani conta com um grande portfólio de mais de 2 mil itens, entre eles estão torneiras e misturadores para banheiro e para cozinha, acessórios para banheiro, cubas e lavatórios, chuveiros e duchas, acabamentos e registros, vasos sanitários e válvulas de descarga.\n\nOs metais estão disponíveis nas cores: Black Matte, Black Noir, Cromado, Gold, Gold Matte e Red Gold.\n\nJá as louças estão disponíveis nas cores: Branco, Caramelo, Cinza, Creme, Ébano, Ébano Fosco, Marrom Fosco e Verde",
+          "textAlign": "center",
+          "hasSeeMoreButon": false
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "__editorItemTitle": "banners galeria",
+          "componentType": "slider",
+          "sliderType": "image",
+          "images": [
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/5a641073-db5d-4b31-850d-9969a3fe4e0c___9a69f4f5001945148f501e53b5174e11.webp",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/5a641073-db5d-4b31-850d-9969a3fe4e0c___9a69f4f5001945148f501e53b5174e11.webp"
+            },
+            {
+              "target": false,
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/5d2b10fe-a2d9-46cc-958f-e90b91bc9189___a022416ebae503288677d5a23595d8d2.webp",
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/5d2b10fe-a2d9-46cc-958f-e90b91bc9189___a022416ebae503288677d5a23595d8d2.webp"
+            },
+            {
+              "target": false,
+              "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/90d39939-46c6-4beb-9955-794ccd5a626a___14cf76e2bea6390e38d93b472ee4d5c7.webp",
+              "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/90d39939-46c6-4beb-9955-794ccd5a626a___14cf76e2bea6390e38d93b472ee4d5c7.webp"
+            }
+          ],
+          "showNavigationArrows": "always",
+          "showPaginationDots": "never",
+          "itemsPerPageDesk": 3,
+          "itemsPerPageTablet": 2,
+          "itemsPerPagePhone": 1,
+          "timeout": 3
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "__editorItemTitle": "Texto SEO Chuveiro/Torneira",
+          "classe": "text-seo",
+          "componentType": "rich-text",
+          "richText": "## TORNEIRAS DECA\n\nAs torneiras e misturadores Deca além do design, possuem qualidade e são itens fundamentais para o funcionamento de cozinhas e banheiros. Através deles é possível dirigir a água do encanamento para a cuba, possibilitando a lavagem de louça, higiene pessoal, entre outras atividades. As torneiras e misturadoresDeca são fabricados em diversos materiais, cores e formatos.As mais comuns são as metálicas, que combinam com qualquer tipo de decoração que você queira fazer no ambiente. Antes de comprar o modelo a ser aplicado, é preciso saber qual a cuba que você deseja instalar.\n\nCubas de embutir possibilitam que você utilize os modelos de mesa, que ficam apoiados sobre a pia para fazer a ligação com o sistema de fornecimento de água da casa.\n\nAlguns modelos, como as cubas de sobrepor , necessitam que as torneiras sejam fixadas nas paredes, já que não possuem espaço para instalação delas sobre o tampo. Na hora de escolher o modelo de torneira que irá para a sua cozinha, é importante ter alguns pontos em mente.\nModelos pequenos podem atrapalhar a utilização, principalmente em cozinhas, onde as pias serão utilizadas para lavar objetos de louça que podem não caber entre a cuba e a queda d’água se a torneira for muito baixa.\n\nO ideal é que o centro de saída da água fique a uma altura entre 15 centímetros e 25 centímetros do fundo da cuba. Dessa forma, será mais fácil lavar objetos maiores como copos de liquidificador, panelas e tabuleiros.\n\nJá no caso dos banheiros, as torneiras não precisam ser tão altas, já que não existe a necessidade de lavar objetos tão grandes na pia do banheiro. Para esse cômodo, você pode optar por modelos de monocomando, que possibilitam a mistura de água quente e fria apenas com um registro, com temporizadores, que ajudam a economizar água durante a lavagem e são ótimos para quem tem crianças, e os modelos com misturador convencional, que possui um registro para a água fria e outro para a água quente.\n\n## CHUVEIROS DECA\n\nO chuveiro Deca pode refinar muito a qualidade do seu banho. As duchas não possuem sistema de aquecimento próprio, mas podem garantir um banho com muita pressão e conforto se usadas em casas com aquecedores a gás.\n\nAs duchas Deca possuem acabamento cromado e seus modelos variam de tamanho das cabeças e do local onde serão instaladas. Elas podem ser instaladas em paredes, e com isso contar com hastes que fazem a extensão da cabeça, ou serem instalados diretamente no teto do banheiro, produzindo um jato vertical.\n\nAlgumas duchas possuem cabeças com posição regulável, permitindo mudar o ângulo do jato para o que for mais agradável às suas necessidades e ao tamanho do box. Não deixe de conferir as ofertas de produtos Deca em nosso site.",
+          "hasSeeMoreButton": true
+        },
+        {
+          "disabled": false,
+          "padding": false,
+          "componentType": "slider",
+          "sliderType": "card",
+          "cards": [
+            {
+              "image": {},
+              "target": false,
+              "backgroundColorCard": "background-blue",
+              "text": "## DESIGN\nCom um design inovador, os itens Deca são feitos para serem os protagonistas. Com cores e detalhes de acabamento únicos, as peças passam a ter função decorativa além de claro contar com funções que prezam a usabilidade do usuário.\n\nEm seu portfólio possuí diversos produtos premiados em feiras Nacionais e Internacionais.",
+              "backgroundColor": "background-blue",
+              "textAlign": "center",
+              "__editorItemTitle": "Card Design"
+            },
+            {
+              "image": {},
+              "target": false,
+              "__editorItemTitle": "Linhas",
+              "altImage": "",
+              "backgroundColor": "background-white",
+              "textAlign": "center",
+              "text": "## LINHAS\nCada uma das linhas foi pensada para atender as necessidades específicas de cada cliente. Com detalhes que as tornam únicas, a Padovani destaca as linhas: Polo, Soul, Unic, Cubo, Level, Tube, Twin, Slim, Gourmet como as principais e mais buscadas pelos consumidores."
+            },
+            {
+              "image": {},
+              "target": false,
+              "__editorItemTitle": "Cores",
+              "text": "## CORES\n\nAs cores da Deca são separadas de duas formas: as cores de metais e as das louças. As cores escolhidas para os metais são um espetáculo a parte, com uma grande variedade, podemos encontrar peças nas cores: Black Matte (preto fosco), Black Noir (preto com brilho), Cromado, Gold (dourado brilhante), Gold Matte (dourado fosco) e Red Gold (tom avermelhado).",
+              "textAlign": "center",
+              "backgroundColor": "background-white"
+            },
+            {
+              "image": {},
+              "target": false,
+              "__editorItemTitle": "Deca na Padovani",
+              "text": "## Deca na Padovani\n\nA Padovani tem orgulho de fazer parte do seleto grupo de lojistas que mais vendem Deca no Brasil. O resultado dessa parceria sólida que dura mais de 40 anos, são preços e promoções atraentes que respeitam o consumidor e leva para todos os brasileiros grandes oportunidades.\n\n",
+              "textAlign": "center",
+              "backgroundColor": "background-blue"
+            }
+          ],
+          "__editorItemTitle": "Cards SEO",
+          "classe": "text-seo",
+          "itemsPerPageDesk": 2,
+          "itemsPerPageTablet": 2,
+          "itemsPerPagePhone": 1,
+          "timeout": 4,
+          "stopOnHover": true,
+          "infinite": true,
+          "showNavigationArrows": "always",
+          "showPaginationDots": "never"
         }
-    },
-    "page-manager#docol-search-customm":{
-        "props":{
-            "ListContext": "list-context.product-list#home.shelf-page-manager",
-            "SearchCustomQuery": "search-result-layout.customQuery#lp-campaign",
-            "sections": 
-            [
-              {
-                "disabled": false,
-                "padding": false,
-                "__editorItemTitle": "titulo metais",
-                "classe": "title-block",
-                "componentType": "rich-text",
-                "richText": "## Metais \nUma seleção de metais para banheiro, cozinhas e área de serviço",
-                "textAlign": "center"
-              },
-              {
-                "disabled": false,
-                "padding": true,
-                "__editorItemTitle": "subtitulo metais cores",
-                "classe": "title-shelf",
-                "componentType": "rich-text",
-                "richText": "### Principais Cores",
-                "textAlign": "center"
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "__editorItemTitle": "Shelf Metais Cores",
-                "classe": "shelf-colors",
-                "componentType": "slider",
-                "sliderType": "image",
-                "images": [
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/afd6eac0-7822-4bfe-a3a4-a852b0cce64b___640bdd3e511bc387e1403bc4e7871c55.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/afd6eac0-7822-4bfe-a3a4-a852b0cce64b___640bdd3e511bc387e1403bc4e7871c55.png",
-                    "altImage": "Imagem de uma maçaneta na cor black matte",
-                    "label": "Black Matte",
-                    "url": "/Deca/Black%20Matte?map=b,specificationFilter_1434",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/217be854-d040-49ee-b60d-91f85f31e16c___cd21c13ffca616ce23d448d5a4d2c5ba.png",
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/217be854-d040-49ee-b60d-91f85f31e16c___cd21c13ffca616ce23d448d5a4d2c5ba.png",
-                    "altImage": "Imagem e uma mçaneta na cor black noir",
-                    "label": "Black Noir",
-                    "url": "/Deca/Black%20Noir?map=b,specificationFilter_1434",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/87be74a8-9cbb-4cb8-a59e-76c3da85ecdd___9834a39da21811526f662770a6910fac.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/87be74a8-9cbb-4cb8-a59e-76c3da85ecdd___9834a39da21811526f662770a6910fac.png",
-                    "altImage": "Imagem de uma maçaneta na cor cromado",
-                    "label": "Cromado",
-                    "url": "/Deca/Cromado?map=b,specificationFilter_1434",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/9484b23b-9555-4932-a172-397c46124a45___89e53de3f1e36a0cc614fae7984ac6a8.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/9484b23b-9555-4932-a172-397c46124a45___89e53de3f1e36a0cc614fae7984ac6a8.png",
-                    "altImage": "Imagem de uma maçaneta na cor Gold",
-                    "label": "Gold",
-                    "url": "/Deca/Gold?map=b,specificationFilter_1434",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/b3548508-70eb-4ffe-9348-cf6ebfcda6b9___73aa09868ffd49731bb56a066532c032.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/b3548508-70eb-4ffe-9348-cf6ebfcda6b9___73aa09868ffd49731bb56a066532c032.png",
-                    "altImage": "Imagem de uma maçaneta na cor Gold Matte",
-                    "url": "/Deca/Gold%20Matte?map=b,specificationFilter_1434",
-                    "label": "Gold Matte",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "altImage": "Imagem de uma maçaneta na cor Gold Matte",
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/70ab8d25-f823-4261-8d94-8efd6df578a7___c125d93cb10d7f827ef563147cdcc1d2.png",
-                    "label": "Red Gold",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/7c121e9d-5d7f-4145-9351-ce8007d02efd___c125d93cb10d7f827ef563147cdcc1d2.png",
-                    "url": "/Deca/Red%20Gold?map=b,specificationFilter_1434",
-                    "hoverEffect": "opacity"
-                  }
-                ],
-                "itemsPerPageDesk": 6,
-                "itemsPerPageTablet": 3,
-                "itemsPerPagePhone": 2,
-                "showNavigationArrows": "always"
-              },
-              {
-                "disabled": false,
-                "padding": true,
-                "__editorItemTitle": "subtitulo Metais Linhas",
-                "classe": "title-shelf",
-                "componentType": "rich-text",
-                "richText": "### Principais Linhas",
-                "textAlign": "center"
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "__editorItemTitle": "Shelf Metais Linhas",
-                "classe": "shelf-linhas",
-                "componentType": "slider",
-                "sliderType": "image",
-                "showNavigationArrows": "always",
-                "itemsPerPageDesk": 6,
-                "itemsPerPageTablet": 3,
-                "itemsPerPagePhone": 4,
-                "images": [
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/75778810-8ea5-43be-90fc-4d800680f256___109da2c572a15b9321655ffca387b4d4.webp",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/098412e9-a0a2-41cf-9151-80a23727d124___81d1dd5ea65ef25a243ba235b4730f3c.webp",
-                    "label": "Polo",
-                    "hoverEffect": "opacity",
-                    "altImage": "Imagem de um acabamento de registro da linha Polo",
-                    "url": "/Deca/Polo?map=b,specificationFilter_1433"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/7bd18260-74a1-4ce3-849e-d2e25d1a7426___15a3be55bfedad98438420b83ebf7465.webp",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/7bd18260-74a1-4ce3-849e-d2e25d1a7426___15a3be55bfedad98438420b83ebf7465.webp",
-                    "altImage": "Imagem de um acabamento de registro da linha Soul",
-                    "label": "Soul",
-                    "url": "/Deca/Soul?map=b,specificationFilter_1433",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "altImage": "Imagem de um acabamento de registro da linha Unic",
-                    "label": "Unic",
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/fb6e8714-e45b-4796-aa24-284eb733f12b___0e19e35273125e6feafdb382d314e55a.webp",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/fb6e8714-e45b-4796-aa24-284eb733f12b___0e19e35273125e6feafdb382d314e55a.webp",
-                    "url": "/Deca/Unic?map=b,specificationFilter_1433",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/75778810-8ea5-43be-90fc-4d800680f256___109da2c572a15b9321655ffca387b4d4.webp",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/75778810-8ea5-43be-90fc-4d800680f256___109da2c572a15b9321655ffca387b4d4.webp",
-                    "altImage": "Imagem de um acabamento de registro da linha Cubo",
-                    "label": "Cubo",
-                    "url": "/Deca/Cubo?map=b,specificationFilter_1433",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "url": "/Deca/Level?map=b,specificationFilter_1433",
-                    "label": "Level",
-                    "altImage": "Imagem de um acabamento de registro da linha Level",
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/05716cb4-e7b8-4d0e-a64a-8224d2ec14eb___01583c6a482294eb7a8335bbb614efb3.webp",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/05716cb4-e7b8-4d0e-a64a-8224d2ec14eb___01583c6a482294eb7a8335bbb614efb3.webp",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": true,
-                    "altImage": "Imagem de uma torneira de banheiro da linha Tube",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/db821f83-5eec-4a84-a7f1-578521222ac2___5e7f85e91032170faf2b41f2ca826ef6.webp",
-                    "label": "Tube",
-                    "url": "/Deca/Tube?map=b,specificationFilter_1433",
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/db821f83-5eec-4a84-a7f1-578521222ac2___5e7f85e91032170faf2b41f2ca826ef6.webp",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/a10fea7c-ad28-4c6f-8e43-4e4009947622___b51a4512470fb88d175a0bf2c3dd93bb.jpeg",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/a10fea7c-ad28-4c6f-8e43-4e4009947622___b51a4512470fb88d175a0bf2c3dd93bb.jpeg",
-                    "label": "Twin",
-                    "hoverEffect": "opacity"
-                  }
-                ],
-                "backgroundColor": "background-white",
-                "showPaginationDots": "never"
-              },
-              {
-                "disabled": false,
-                "padding": true,
-                "__editorItemTitle": "titulo cubas",
-                "classe": "title-block",
-                "componentType": "rich-text",
-                "richText": "## Cubas \nAs melhores cubas do mercado",
-                "textAlign": "center",
-                "backgroundColor": "background-white"
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "__editorItemTitle": "subtitulo cubas tipos",
-                "classe": "title-shelf",
-                "componentType": "rich-text",
-                "richText": "### Tipos",
-                "textAlign": "center"
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "__editorItemTitle": "Shelf Cuba tipos",
-                "componentType": "slider",
-                "sliderType": "image",
-                "images": [
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/8a0838d2-2360-4717-a08d-c3735f332177___bbfbf71fc2ef012eb70482000278d3dd.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4350e173-b23b-41de-8b21-425e36fd2468___bbfbf71fc2ef012eb70482000278d3dd.png",
-                    "altImage": "Imagem de uma cuba e apoio na cor branca",
-                    "label": "Apoio",
-                    "url": "/banheiro/cubas-e-lavatorios/cubas-de-apoio/deca",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/c1cc408f-ccdb-40b9-bdea-1fea30327e43___cc93373b00a76626dd19164d5faa05a8.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4350e173-b23b-41de-8b21-425e36fd2468___bbfbf71fc2ef012eb70482000278d3dd.png",
-                    "altImage": "Imagem de uma cuba do tipo sobrepor",
-                    "label": "Sobrepor",
-                    "url": "/banheiro/cubas-e-lavatorios/cubas-de-sobrepor/deca",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e778e608-a83a-42f6-8a53-902db1efc29c___3bd06201f8bb0c0399b8bae851338db9.webp",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/e778e608-a83a-42f6-8a53-902db1efc29c___3bd06201f8bb0c0399b8bae851338db9.webp",
-                    "altImage": "Imagem de uma cuba do tipo semi-encaixe",
-                    "label": "Semi-encaixe",
-                    "url": "/banheiro/cubas-e-lavatorios/cubas-de-semi-encaixe/deca",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "hoverEffect": "opacity",
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/0eb97d03-5ea1-4b41-8a86-fd9b894b8ee1___2da7ee7a40bb8c61b2c5db1041fe3a2f.webp",
-                    "label": "Piso",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/0eb97d03-5ea1-4b41-8a86-fd9b894b8ee1___2da7ee7a40bb8c61b2c5db1041fe3a2f.webp",
-                    "altImage": "Imagem de uma cuba do tipo piso",
-                    "url": "/banheiro/cubas-e-lavatorios/cubas-de-piso/deca"
-                  }
-                ],
-                "showNavigationArrows": "always",
-                "showPaginationDots": "never",
-                "itemsPerPageDesk": 4,
-                "itemsPerPageTablet": 3,
-                "itemsPerPagePhone": 2,
-                "classe": "shelf-types"
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "classe": "title-shelf",
-                "__editorItemTitle": "subtitulo cubas cores",
-                "componentType": "rich-text",
-                "richText": "###  Principais cores",
-                "textAlign": "center"
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "classe": "shelf-colors",
-                "__editorItemTitle": "Shelf Metais Cores",
-                "componentType": "slider",
-                "sliderType": "image",
-                "images": [
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4e24e9a9-8759-431b-bdd1-1a4c162efdf1___ed526b8b1f817116db2ceb85a1d71a45.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/4e24e9a9-8759-431b-bdd1-1a4c162efdf1___ed526b8b1f817116db2ceb85a1d71a45.png",
-                    "label": "Branco",
-                    "altImage": "Imagem de uma cuba na cor branca",
-                    "url": "/banheiro/cubas-e-lavatorios/deca/Branco?PS=12&map=c,c,b,specificationFilter_1289",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/08c548c0-2d3e-450a-8d0e-00dfe5ab1d89___f5964cf5736dcfc89c90d4c2f05ed103.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/08c548c0-2d3e-450a-8d0e-00dfe5ab1d89___f5964cf5736dcfc89c90d4c2f05ed103.png",
-                    "altImage": "Imagem de uma cuba na cor Ébano fosco",
-                    "label": "Ébano Fosco",
-                    "hoverEffect": "opacity",
-                    "url": "/banheiro/cubas-e-lavatorios/deca/Ébano%20Fosco?PS=12&map=c,c,b,specificationFilter_1289"
-                  },
-                  {
-                    "target": false,
-                    "altImage": "Imagem de uma cuba na cor marrom fosco",
-                    "label": "Marrom Fosco",
-                    "url": "/banheiro/cubas-e-lavatorios/deca/Marrom%20Fosco?PS=12&map=c,c,b,specificationFilter_1289",
-                    "hoverEffect": "opacity",
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f81f7628-3c77-417b-97ea-1f155cd1e1d8___b8d3e7f687f955e10a4ef00edf92cf68.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/f81f7628-3c77-417b-97ea-1f155cd1e1d8___b8d3e7f687f955e10a4ef00edf92cf68.png"
-                  },
-                  {
-                    "target": false,
-                    "url": "/banheiro/cubas-e-lavatorios/deca/Ébano?PS=12&map=c,c,b,specificationFilter_1289",
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/668bc9cb-5acf-45fa-abe4-dc5f2a9814a1___f1af275bff8311b75db9e5a240d1f44f.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/668bc9cb-5acf-45fa-abe4-dc5f2a9814a1___f1af275bff8311b75db9e5a240d1f44f.png",
-                    "altImage": "Imagem de uma cuba na cor Ébano",
-                    "label": "Ébano",
-                    "hoverEffect": "opacity"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/7219a226-d53f-4a60-9e04-96083e58c764___ae70b6d1a928bd3c3438b7b34585d414.png",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/7219a226-d53f-4a60-9e04-96083e58c764___ae70b6d1a928bd3c3438b7b34585d414.png",
-                    "label": "Creme",
-                    "url": "/banheiro/cubas-e-lavatorios/deca/Creme?PS=12&map=c,c,b,specificationFilter_1289",
-                    "altImage": "Imagem de uma cuba na cor creme",
-                    "hoverEffect": "opacity"
-                  }
-                ],
-                "itemsPerPageDesk": 6,
-                "itemsPerPageTablet": 3,
-                "itemsPerPagePhone": 1,
-                "showNavigationArrows": "always",
-                "showPaginationDots": "never"
-              },
-              {
-                "disabled": false,
-                "padding": true,
-                "__editorItemTitle": "titulo shelf novidades",
-                "classe": "title-block",
-                "componentType": "rich-text",
-                "richText": "## Novidades\nModelos com a sofisticação e o design da coleção de 2017",
-                "textAlign": "center"
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "__editorItemTitle": "shelf deca",
-                "componentType": "slider",
-                "sliderType": "product"
-              },
-              {
-                "disabled": false,
-                "padding": true,
-                "__editorItemTitle": "titulo shelf grandes sucessos Deca",
-                "classe": "title-block",
-                "componentType": "rich-text",
-                "richText": "## Grandes sucessos Deca\nOs produtos mais desejados da marca",
-                "textAlign": "center"
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "componentType": "slider",
-                "sliderType": "product",
-                "__editorItemTitle": "shelf sucessos Deca"
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "componentType": "banner",
-                "image": {
-                  "imageDesk": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/732b9a65-d7da-4f9a-9cb7-309e0c461316___b6bba198eb29d4e5dbc9c234e9507a14.webp",
-                  "imageMob": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/732b9a65-d7da-4f9a-9cb7-309e0c461316___b6bba198eb29d4e5dbc9c234e9507a14.webp",
-                  "fullWidth": true
-                },
-                "activeText": true,
-                "richText": "## A Deca\nA marca Deca além de ser uma das lideres em vendas de metais do mercado\n        brasileiro, ainda é a maior fabricante de todo o hemisfério sul e atua\n        no setor de louças e metais sanitários desde 1947.\n\nCom uma grande variedade de produtos a Deca trás o que há de mais\n            moderno em conceitos de formas e cores, deixando assim suas linhas\n            inovadoras e com preços altamente competitivos.\n\nPensando nisso a Padovani firmou uma parceria que já perdura muitos\n            anos, oferecendo os produtos com os melhores preços do mercado,\n            competindo até mesmo com as maiores distribuidoras do Brasil.",
-                "colorWhite": false,
-                "textAlign": "left",
-                "horizontalAlignBlock": "flex-end",
-                "verticalAlignBlock": "center",
-                "__editorItemTitle": "Banner SEO",
-                "classe": "banner-seo"
-              },
-              {
-                "disabled": false,
-                "padding": true,
-                "componentType": "rich-text",
-                "classe": "text-seo",
-                "__editorItemTitle": "Texto SEO",
-                "backgroundColor": "background-white",
-                "richText": "## PRODUTOS\n\nA Deca na Padovani conta com um grande portfólio de mais de 2 mil itens, entre eles estão torneiras e misturadores para banheiro e para cozinha, acessórios para banheiro, cubas e lavatórios, chuveiros e duchas, acabamentos e registros, vasos sanitários e válvulas de descarga.\n\nOs metais estão disponíveis nas cores: Black Matte, Black Noir, Cromado, Gold, Gold Matte e Red Gold.\n\nJá as louças estão disponíveis nas cores: Branco, Caramelo, Cinza, Creme, Ébano, Ébano Fosco, Marrom Fosco e Verde",
-                "textAlign": "center",
-                "hasSeeMoreButon": false
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "__editorItemTitle": "banners galeria",
-                "componentType": "slider",
-                "sliderType": "image",
-                "images": [
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/5a641073-db5d-4b31-850d-9969a3fe4e0c___9a69f4f5001945148f501e53b5174e11.webp",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/5a641073-db5d-4b31-850d-9969a3fe4e0c___9a69f4f5001945148f501e53b5174e11.webp"
-                  },
-                  {
-                    "target": false,
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/5d2b10fe-a2d9-46cc-958f-e90b91bc9189___a022416ebae503288677d5a23595d8d2.webp",
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/5d2b10fe-a2d9-46cc-958f-e90b91bc9189___a022416ebae503288677d5a23595d8d2.webp"
-                  },
-                  {
-                    "target": false,
-                    "imageDesktop": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/90d39939-46c6-4beb-9955-794ccd5a626a___14cf76e2bea6390e38d93b472ee4d5c7.webp",
-                    "imageMobile": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/90d39939-46c6-4beb-9955-794ccd5a626a___14cf76e2bea6390e38d93b472ee4d5c7.webp"
-                  }
-                ],
-                "showNavigationArrows": "always",
-                "showPaginationDots": "never",
-                "itemsPerPageDesk": 3,
-                "itemsPerPageTablet": 2,
-                "itemsPerPagePhone": 1,
-                "timeout": 3
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "__editorItemTitle": "Texto SEO Chuveiro/Torneira",
-                "classe": "text-seo",
-                "componentType": "rich-text",
-                "richText": "## TORNEIRAS DECA\n\nAs torneiras e misturadores Deca além do design, possuem qualidade e são itens fundamentais para o funcionamento de cozinhas e banheiros. Através deles é possível dirigir a água do encanamento para a cuba, possibilitando a lavagem de louça, higiene pessoal, entre outras atividades. As torneiras e misturadoresDeca são fabricados em diversos materiais, cores e formatos.As mais comuns são as metálicas, que combinam com qualquer tipo de decoração que você queira fazer no ambiente. Antes de comprar o modelo a ser aplicado, é preciso saber qual a cuba que você deseja instalar.\n\nCubas de embutir possibilitam que você utilize os modelos de mesa, que ficam apoiados sobre a pia para fazer a ligação com o sistema de fornecimento de água da casa.\n\nAlguns modelos, como as cubas de sobrepor , necessitam que as torneiras sejam fixadas nas paredes, já que não possuem espaço para instalação delas sobre o tampo. Na hora de escolher o modelo de torneira que irá para a sua cozinha, é importante ter alguns pontos em mente.\nModelos pequenos podem atrapalhar a utilização, principalmente em cozinhas, onde as pias serão utilizadas para lavar objetos de louça que podem não caber entre a cuba e a queda d’água se a torneira for muito baixa.\n\nO ideal é que o centro de saída da água fique a uma altura entre 15 centímetros e 25 centímetros do fundo da cuba. Dessa forma, será mais fácil lavar objetos maiores como copos de liquidificador, panelas e tabuleiros.\n\nJá no caso dos banheiros, as torneiras não precisam ser tão altas, já que não existe a necessidade de lavar objetos tão grandes na pia do banheiro. Para esse cômodo, você pode optar por modelos de monocomando, que possibilitam a mistura de água quente e fria apenas com um registro, com temporizadores, que ajudam a economizar água durante a lavagem e são ótimos para quem tem crianças, e os modelos com misturador convencional, que possui um registro para a água fria e outro para a água quente.\n\n## CHUVEIROS DECA\n\nO chuveiro Deca pode refinar muito a qualidade do seu banho. As duchas não possuem sistema de aquecimento próprio, mas podem garantir um banho com muita pressão e conforto se usadas em casas com aquecedores a gás.\n\nAs duchas Deca possuem acabamento cromado e seus modelos variam de tamanho das cabeças e do local onde serão instaladas. Elas podem ser instaladas em paredes, e com isso contar com hastes que fazem a extensão da cabeça, ou serem instalados diretamente no teto do banheiro, produzindo um jato vertical.\n\nAlgumas duchas possuem cabeças com posição regulável, permitindo mudar o ângulo do jato para o que for mais agradável às suas necessidades e ao tamanho do box. Não deixe de conferir as ofertas de produtos Deca em nosso site.",
-                "hasSeeMoreButton": true
-              },
-              {
-                "disabled": false,
-                "padding": false,
-                "componentType": "slider",
-                "sliderType": "card",
-                "cards": [
-                  {
-                    "image": {},
-                    "target": false,
-                    "backgroundColorCard": "background-blue",
-                    "text": "## DESIGN\nCom um design inovador, os itens Deca são feitos para serem os protagonistas. Com cores e detalhes de acabamento únicos, as peças passam a ter função decorativa além de claro contar com funções que prezam a usabilidade do usuário.\n\nEm seu portfólio possuí diversos produtos premiados em feiras Nacionais e Internacionais.",
-                    "backgroundColor": "background-blue",
-                    "textAlign": "center",
-                    "__editorItemTitle": "Card Design"
-                  },
-                  {
-                    "image": {},
-                    "target": false,
-                    "__editorItemTitle": "Linhas",
-                    "altImage": "",
-                    "backgroundColor": "background-white",
-                    "textAlign": "center",
-                    "text": "## LINHAS\nCada uma das linhas foi pensada para atender as necessidades específicas de cada cliente. Com detalhes que as tornam únicas, a Padovani destaca as linhas: Polo, Soul, Unic, Cubo, Level, Tube, Twin, Slim, Gourmet como as principais e mais buscadas pelos consumidores."
-                  },
-                  {
-                    "image": {},
-                    "target": false,
-                    "__editorItemTitle": "Cores",
-                    "text": "## CORES\n\nAs cores da Deca são separadas de duas formas: as cores de metais e as das louças. As cores escolhidas para os metais são um espetáculo a parte, com uma grande variedade, podemos encontrar peças nas cores: Black Matte (preto fosco), Black Noir (preto com brilho), Cromado, Gold (dourado brilhante), Gold Matte (dourado fosco) e Red Gold (tom avermelhado).",
-                    "textAlign": "center",
-                    "backgroundColor": "background-white"
-                  },
-                  {
-                    "image": {},
-                    "target": false,
-                    "__editorItemTitle": "Deca na Padovani",
-                    "text": "## Deca na Padovani\n\nA Padovani tem orgulho de fazer parte do seleto grupo de lojistas que mais vendem Deca no Brasil. O resultado dessa parceria sólida que dura mais de 40 anos, são preços e promoções atraentes que respeitam o consumidor e leva para todos os brasileiros grandes oportunidades.\n\n",
-                    "textAlign": "center",
-                    "backgroundColor": "background-blue"
-                  }
-                ],
-                "__editorItemTitle": "Cards SEO",
-                "classe": "text-seo",
-                "itemsPerPageDesk": 2,
-                "itemsPerPageTablet": 2,
-                "itemsPerPagePhone": 1,
-                "timeout": 4,
-                "stopOnHover": true,
-                "infinite": true,
-                "showNavigationArrows": "always",
-                "showPaginationDots": "never"
-              }
-            ]
-        }
-    },
-    "buy-together-ambience#docol-0.2v":{
-      "props": {
-        "ambiences": 
-        [
-          {
-            "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/c99e6a15-536a-4975-a128-00586fb5950f___38fb45b15ead5596c07d0bb9fb85e08c.webp",
-            "imageAlt": "Imagem de um banheiro com vários produtos Docol",
-            "products": [
-              {
-                "sku": 34181,
-                "xPosition": 12,
-                "yPosition": 10
-              },
-              {
-                "sku": 20826,
-                "xPosition": 7,
-                "yPosition": 45
-              },
-              {
-                "xPosition": 94,
-                "yPosition": 17,
-                "sku": 34178
-              },
-              {
-                "sku": 34179,
-                "xPosition": 23,
-                "yPosition": 70
-              },
-              {
-                "sku": 34183,
-                "xPosition": 50,
-                "yPosition": 22
-              },
-              {
-                "sku": 5881,
-                "xPosition": 70,
-                "yPosition": 45
-              },
-              {
-                "sku": 5882,
-                "yPosition": 65,
-                "xPosition": 70
-              },
-              {
-                "sku": 29087,
-                "yPosition": 36,
-                "xPosition": 77
-              },
-              {
-                "sku": 34180,
-                "yPosition": 33,
-                "xPosition": 84
-              }
-            ]
-          },
-          {
-            "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/41858955-abf4-45da-a637-53d72c23290d___7e4edc7f7cec890201a4e9b4335eda4d.jpeg",
-            "imageAlt": "Imagem de um banheiro com vários produtos Docol",
-            "products": [
-              {
-                "sku": 31263,
-                "yPosition": 37,
-                "xPosition": 15
-              },
-              {
-                "sku": 31260,
-                "yPosition": 37,
-                "xPosition": 32
-              },
-              {
-                "sku": 31259,
-                "yPosition": 45,
-                "xPosition": 32
-              },
-              {
-                "sku": 6154,
-                "yPosition": 48,
-                "xPosition": 65
-              },
-              {
-                "sku": 31262,
-                "yPosition": 22,
-                "xPosition": 90
-              },
-              {
-                "sku": 20826,
-                "yPosition": 62,
-                "xPosition": 82
-              },
-              {
-                "sku": 31258,
-                "yPosition": 86,
-                "xPosition": 90
-              }
-            ]
-          },
-          {
-            "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/34639882-71cd-4db0-bca8-059fa809c8c8___d13d1c1158c2e6a9dd5136de57468b64.webp",
-            "imageAlt": "Imagem de uma pia de banheiro com vários produtos Docol",
-            "products": [
-              {
-                "sku": 21316,
-                "xPosition": 73,
-                "yPosition": 30
-              },
-              {
-                "sku": 29087,
-                "xPosition": 48,
-                "yPosition": 61
-              },
-              {
-                "sku": 5881,
-                "xPosition": 55,
-                "yPosition": 73
-              }
-            ]
-          },
-          {
-            "products": [
-              {
-                "sku": 21292,
-                "yPosition": 17,
-                "xPosition": 78
-              },
-              {
-                "sku": 29064,
-                "yPosition": 40,
-                "xPosition": 38
-              },
-              {
-                "sku": 5881,
-                "yPosition": 55,
-                "xPosition": 48
-              }
-            ],
-            "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/6b776f2b-0ab4-49e3-a6f6-7743eeafadc6___c8e66240ce52ee8662875e8578dea6de.webp",
-            "imageAlt": "Imagem de uma pia de banheiro com vários produtos Docol"
-          },
-          {
-            "imageAlt": "Imagem de um banheiro com chuveiro e no fundo uma pia com produtos Docol",
-            "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/0e00fe3e-b2bc-46de-b35f-d212494f08f8___61d45ff3f2b1c4388b0892a9f7ec4822.webp",
-            "products": [
-              {
-                "sku": 23905,
-                "yPosition": 71,
-                "xPosition": 66
-              },
-              {
-                "sku": 5881,
-                "yPosition": 77,
-                "xPosition": 66
-              },
-              {
-                "sku": 35154,
-                "yPosition": 83,
-                "xPosition": 66
-              }
-            ]
-          },
-          {
-            "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/6b2bcc86-930a-4712-92af-3f57d0c8922e___0b21df8e9e4090c19a5e084f118f98dd.webp",
-            "imageAlt": "Imagem de uma pia de banheiro com vários produtos Docol",
-            "products": [
-              {
-                "sku": 24862,
-                "yPosition": 8,
-                "xPosition": 50
-              },
-              {
-                "yPosition": 71,
-                "xPosition": 40,
-                "sku": 5881
-              }
-            ]
-          },
-          {
-            "imageAlt": "Imagem de uma pia de banheiro com vários produtos Docol",
-            "products": [
-              {
-                "sku": 5881,
-                "yPosition": 42,
-                "xPosition": 58
-              },
-              {
-                "sku": 15613,
-                "yPosition": 7,
-                "xPosition": 67
-              },
-              {
-                "sku": 30173,
-                "yPosition": 62,
-                "xPosition": 54
-              },
-              {
-                "yPosition": 59,
-                "xPosition": 13,
-                "sku": 6116
-              }
-            ],
-            "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/03219ea9-9173-44ad-9e98-20fb60377ac7___346fc87bfcedfd3569d6985ed1000a9f.webp"
-          }
-        ]
-      }
+      ]
     }
+  },
+  "buy-together-ambience#docol-0.2v": {
+    "props": {
+      "ambiences": [
+        {
+          "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/c99e6a15-536a-4975-a128-00586fb5950f___38fb45b15ead5596c07d0bb9fb85e08c.webp",
+          "imageAlt": "Imagem de um banheiro com vários produtos Docol",
+          "products": [
+            {
+              "sku": 34181,
+              "xPosition": 12,
+              "yPosition": 10
+            },
+            {
+              "sku": 20826,
+              "xPosition": 7,
+              "yPosition": 45
+            },
+            {
+              "xPosition": 94,
+              "yPosition": 17,
+              "sku": 34178
+            },
+            {
+              "sku": 34179,
+              "xPosition": 23,
+              "yPosition": 70
+            },
+            {
+              "sku": 34183,
+              "xPosition": 50,
+              "yPosition": 22
+            },
+            {
+              "sku": 5881,
+              "xPosition": 70,
+              "yPosition": 45
+            },
+            {
+              "sku": 5882,
+              "yPosition": 65,
+              "xPosition": 70
+            },
+            {
+              "sku": 29087,
+              "yPosition": 36,
+              "xPosition": 77
+            },
+            {
+              "sku": 34180,
+              "yPosition": 33,
+              "xPosition": 84
+            }
+          ]
+        },
+        {
+          "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/41858955-abf4-45da-a637-53d72c23290d___7e4edc7f7cec890201a4e9b4335eda4d.jpeg",
+          "imageAlt": "Imagem de um banheiro com vários produtos Docol",
+          "products": [
+            {
+              "sku": 31263,
+              "yPosition": 37,
+              "xPosition": 15
+            },
+            {
+              "sku": 31260,
+              "yPosition": 37,
+              "xPosition": 32
+            },
+            {
+              "sku": 31259,
+              "yPosition": 45,
+              "xPosition": 32
+            },
+            {
+              "sku": 6154,
+              "yPosition": 48,
+              "xPosition": 65
+            },
+            {
+              "sku": 31262,
+              "yPosition": 22,
+              "xPosition": 90
+            },
+            {
+              "sku": 20826,
+              "yPosition": 62,
+              "xPosition": 82
+            },
+            {
+              "sku": 31258,
+              "yPosition": 86,
+              "xPosition": 90
+            }
+          ]
+        },
+        {
+          "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/34639882-71cd-4db0-bca8-059fa809c8c8___d13d1c1158c2e6a9dd5136de57468b64.webp",
+          "imageAlt": "Imagem de uma pia de banheiro com vários produtos Docol",
+          "products": [
+            {
+              "sku": 21316,
+              "xPosition": 73,
+              "yPosition": 30
+            },
+            {
+              "sku": 29087,
+              "xPosition": 48,
+              "yPosition": 61
+            },
+            {
+              "sku": 5881,
+              "xPosition": 55,
+              "yPosition": 73
+            }
+          ]
+        },
+        {
+          "products": [
+            {
+              "sku": 21292,
+              "yPosition": 17,
+              "xPosition": 78
+            },
+            {
+              "sku": 29064,
+              "yPosition": 40,
+              "xPosition": 38
+            },
+            {
+              "sku": 5881,
+              "yPosition": 55,
+              "xPosition": 48
+            }
+          ],
+          "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/6b776f2b-0ab4-49e3-a6f6-7743eeafadc6___c8e66240ce52ee8662875e8578dea6de.webp",
+          "imageAlt": "Imagem de uma pia de banheiro com vários produtos Docol"
+        },
+        {
+          "imageAlt": "Imagem de um banheiro com chuveiro e no fundo uma pia com produtos Docol",
+          "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/0e00fe3e-b2bc-46de-b35f-d212494f08f8___61d45ff3f2b1c4388b0892a9f7ec4822.webp",
+          "products": [
+            {
+              "sku": 23905,
+              "yPosition": 71,
+              "xPosition": 66
+            },
+            {
+              "sku": 5881,
+              "yPosition": 77,
+              "xPosition": 66
+            },
+            {
+              "sku": 35154,
+              "yPosition": 83,
+              "xPosition": 66
+            }
+          ]
+        },
+        {
+          "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/6b2bcc86-930a-4712-92af-3f57d0c8922e___0b21df8e9e4090c19a5e084f118f98dd.webp",
+          "imageAlt": "Imagem de uma pia de banheiro com vários produtos Docol",
+          "products": [
+            {
+              "sku": 24862,
+              "yPosition": 8,
+              "xPosition": 50
+            },
+            {
+              "yPosition": 71,
+              "xPosition": 40,
+              "sku": 5881
+            }
+          ]
+        },
+        {
+          "imageAlt": "Imagem de uma pia de banheiro com vários produtos Docol",
+          "products": [
+            {
+              "sku": 5881,
+              "yPosition": 42,
+              "xPosition": 58
+            },
+            {
+              "sku": 15613,
+              "yPosition": 7,
+              "xPosition": 67
+            },
+            {
+              "sku": 30173,
+              "yPosition": 62,
+              "xPosition": 54
+            },
+            {
+              "yPosition": 59,
+              "xPosition": 13,
+              "sku": 6116
+            }
+          ],
+          "image": "https://padovani.vtexassets.com/assets/vtex.file-manager-graphql/images/03219ea9-9173-44ad-9e98-20fb60377ac7___346fc87bfcedfd3569d6985ed1000a9f.webp"
+        }
+      ]
+    }
+  }
 }
