@@ -98,20 +98,27 @@ export default class Exemple {
                             dataResponse.logisticsInfo.length > 0
                         ) {
                             const shippingEstimates = dataResponse.logisticsInfo
-                            .map((logistics) => {
-                                let sla = logistics.slas.find((sla) => sla.id === "SEDEX");
-        
-                                if (!sla) {
-                                    sla = logistics.slas.find((sla) => sla.id === "Normal");
-                                }
-        
-                                return sla ? sla.shippingEstimate : null;
-                            })
-                            .filter(Boolean);
+                                .map((logistics) => {
+                                    let sla = logistics.slas.find(
+                                        (sla) => sla.id === "SEDEX"
+                                    );
+
+                                    if (!sla) {
+                                        sla = logistics.slas.find(
+                                            (sla) => sla.id === "Normal"
+                                        );
+                                    }
+
+                                    return sla ? sla.shippingEstimate : null;
+                                })
+                                .filter(Boolean);
 
                             if (shippingEstimates.length > 0) {
                                 let shippingEstimate = shippingEstimates[0];
-                                console.log(shippingEstimate, "shippingEstimate");
+                                console.log(
+                                    shippingEstimate,
+                                    "shippingEstimate"
+                                );
 
                                 shippingEstimate =
                                     shippingEstimate.match(/\d+/)[0];
@@ -148,13 +155,15 @@ export default class Exemple {
 
                         waitForEl(slaElements).then(() => {
                             slaElements.each(function () {
-                                const slaText = $(this).text().trim(); 
-    
+                                const slaText = $(this).text().trim();
+
                                 if (slaText.includes("Pronto em até")) {
                                     $(".custom-message-info").hide();
-    
-                                    const shippingEstimateDateElement = $(".shipping-estimate-date")
-             
+
+                                    const shippingEstimateDateElement = $(
+                                        ".shipping-estimate-date"
+                                    );
+
                                     if (shippingEstimateDateElement.length) {
                                         shippingEstimateDateElement.addClass(
                                             "active"
@@ -163,7 +172,6 @@ export default class Exemple {
                                 }
                             });
                         });
-
                     })
                     .catch((error) => {
                         console.error(`Erro para o item ${item.id}:`, error);

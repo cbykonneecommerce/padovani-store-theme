@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { useQuery } from "react-apollo";
-import { useProduct } from "vtex.product-context";
-import styles from "../../styles/css/product.css";
-import GetCollection from "../../queries/collection.gql";
+import { useQuery } from 'react-apollo'
+import { useProduct } from 'vtex.product-context'
+import GetCollection from '../../queries/collection.gql'
+import styles from '../../styles/css/product.css'
 
 const FlagHighlight = ({ id, name }) => {
   const { data, loading, error } = useQuery(GetCollection, {
     variables: { id },
-  });
+    ssr: false,
+  })
 
   return (
     <div className={styles.FlagHighlight}>
@@ -20,26 +20,26 @@ const FlagHighlight = ({ id, name }) => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
 const FlagLightBox = (props) => {
-  const prodContext = useProduct();
+  const prodContext = useProduct()
 
-  const clusterHighlights = prodContext?.product?.clusterHighlights;
+  const clusterHighlights = prodContext?.product?.clusterHighlights
 
-  if (!clusterHighlights || clusterHighlights.length === 0) return null;
+  if (!clusterHighlights || clusterHighlights.length === 0) return null
 
   return (
     <div className={styles.FlagWrap}>
       {clusterHighlights.map(
         (item) =>
-          item.id !== "528" && (
+          item.id !== '528' && (
             <FlagHighlight key={item.id} id={item.id} name={item.name} />
           )
       )}
     </div>
-  );
-};
+  )
+}
 
-export default FlagLightBox;
+export default FlagLightBox

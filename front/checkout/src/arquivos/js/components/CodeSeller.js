@@ -7,7 +7,7 @@ export default class CodeSeller {
     }
 
     init() {
-        this.validationContentMarketingData()
+        this.validationContentMarketingData();
         this.loadSavedCoupon();
         this.handleCoupon();
         this.handleInputChange();
@@ -22,17 +22,21 @@ export default class CodeSeller {
     }
 
     validationContentMarketingData() {
-        fetch(`/api/checkout/pub/orderForm`).then(res => res.json()).then((orderForm) => {
-            if (orderForm.marketingData?.utmiCampaign) {
-                if (!this.hasVendorDisplayed) {
-                    this.resultVendorData(orderForm.marketingData.utmiCampaign);
+        fetch(`/api/checkout/pub/orderForm`)
+            .then((res) => res.json())
+            .then((orderForm) => {
+                if (orderForm.marketingData?.utmiCampaign) {
+                    if (!this.hasVendorDisplayed) {
+                        this.resultVendorData(
+                            orderForm.marketingData.utmiCampaign
+                        );
+                    }
+                } else {
+                    this.addInput();
                 }
-            } else {
-                this.addInput();
-            }
-        });
+            });
     }
-    
+
     resultVendorData(cod) {
         const _this = this;
 
@@ -68,25 +72,36 @@ export default class CodeSeller {
             </div>
         `;
 
-        this.waitForEl(".forms.coupon-column.summary-coupon-wrap")
-            .then(() => {
-                $(".forms.coupon-column.summary-coupon-wrap").prepend(html);
-                this.hasVendorDisplayed = true;
-                this.removeCoupon();
-                this.loadSavedCoupon();
-            });
-    
-
-        vtexjs.checkout.setCustomData({ app: 'codigovendedor', field: 'codigoVendedor', value: `${vendorData.codigovendedor}` });
-
-        vtexjs.checkout.getOrderForm().then(function (orderForm) {
-            const marketingData = orderForm.marketingData;
-            marketingData.utmiCampaign = `${vendorData.codigovendedor}`;
-
-            return vtexjs.checkout.sendAttachment("marketingData", marketingData);
-        }).done(function (orderForm) {
-            console.log(orderForm.marketingData, "marketingData atualizado");
+        this.waitForEl(".forms.coupon-column.summary-coupon-wrap").then(() => {
+            $(".forms.coupon-column.summary-coupon-wrap").prepend(html);
+            this.hasVendorDisplayed = true;
+            this.removeCoupon();
+            this.loadSavedCoupon();
         });
+
+        vtexjs.checkout.setCustomData({
+            app: "codigovendedor",
+            field: "codigoVendedor",
+            value: `${vendorData.codigovendedor}`,
+        });
+
+        vtexjs.checkout
+            .getOrderForm()
+            .then(function (orderForm) {
+                const marketingData = orderForm.marketingData;
+                marketingData.utmiCampaign = `${vendorData.codigovendedor}`;
+
+                return vtexjs.checkout.sendAttachment(
+                    "marketingData",
+                    marketingData
+                );
+            })
+            .done(function (orderForm) {
+                console.log(
+                    orderForm.marketingData,
+                    "marketingData atualizado"
+                );
+            });
 
         this.removeCoupon();
     }
@@ -106,12 +121,12 @@ export default class CodeSeller {
         </div>
       `;
 
-        _this
-            .waitForEl(".forms.coupon-column.summary-coupon-wrap")
-            .then(() => {
-                $(".forms.coupon-column.summary-coupon-wrap").prepend(html);
-                _this.loadSavedCoupon();
-            });
+            _this
+                .waitForEl(".forms.coupon-column.summary-coupon-wrap")
+                .then(() => {
+                    $(".forms.coupon-column.summary-coupon-wrap").prepend(html);
+                    _this.loadSavedCoupon();
+                });
         }
     }
 
@@ -167,7 +182,7 @@ export default class CodeSeller {
         `;
         $(".salesman-result").html(html);
     }
-    
+
     handleCoupon() {
         const _this = this;
 
@@ -224,7 +239,7 @@ export default class CodeSeller {
         }
 
         const _this = this;
-  
+
         const html = `
             <div class="show-salesmancode">
                 Vendedor: ${content.codigovendedor} - ${content.nome}
@@ -236,16 +251,29 @@ export default class CodeSeller {
 
         $(".salesman-result").html(html);
 
-        vtexjs?.checkout?.setCustomData({ app: 'codigovendedor', field: 'codigoVendedor', value: `${content.codigovendedor}` });
-
-        vtexjs.checkout.getOrderForm().then(function (orderForm) {
-            const marketingData = orderForm.marketingData;
-            marketingData.utmiCampaign = `${content.codigovendedor}`;
-
-            return vtexjs.checkout.sendAttachment("marketingData", marketingData);
-        }).done(function (orderForm) {
-            console.log(orderForm.marketingData, "marketingData atualizado");
+        vtexjs?.checkout?.setCustomData({
+            app: "codigovendedor",
+            field: "codigoVendedor",
+            value: `${content.codigovendedor}`,
         });
+
+        vtexjs.checkout
+            .getOrderForm()
+            .then(function (orderForm) {
+                const marketingData = orderForm.marketingData;
+                marketingData.utmiCampaign = `${content.codigovendedor}`;
+
+                return vtexjs.checkout.sendAttachment(
+                    "marketingData",
+                    marketingData
+                );
+            })
+            .done(function (orderForm) {
+                console.log(
+                    orderForm.marketingData,
+                    "marketingData atualizado"
+                );
+            });
 
         _this.removeCoupon();
     }
@@ -280,14 +308,23 @@ export default class CodeSeller {
                     console.error("Erro ao remover customData:", error);
                 });
 
-            vtexjs.checkout.getOrderForm().then(function (orderForm) {
-                const marketingData = orderForm.marketingData;
-                marketingData.utmiCampaign = null;
+            vtexjs.checkout
+                .getOrderForm()
+                .then(function (orderForm) {
+                    const marketingData = orderForm.marketingData;
+                    marketingData.utmiCampaign = null;
 
-                return vtexjs.checkout.sendAttachment("marketingData", marketingData);
-            }).done(function (orderForm) {
-                console.log(orderForm.marketingData, "Código de vendedor removido");
-            });
+                    return vtexjs.checkout.sendAttachment(
+                        "marketingData",
+                        marketingData
+                    );
+                })
+                .done(function (orderForm) {
+                    console.log(
+                        orderForm.marketingData,
+                        "Código de vendedor removido"
+                    );
+                });
 
             this.addInput();
         });
@@ -323,7 +360,6 @@ export default class CodeSeller {
 
             $(".salesman-result").html(html);
             $(".salesman-coupon-form").hide();
-
         }
     }
 

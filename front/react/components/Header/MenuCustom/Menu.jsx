@@ -1,15 +1,15 @@
-import React, { useLayoutEffect, useState,} from "react"
+import React, { useLayoutEffect, useState, } from "react"
 
-import Column from "./Menu/Column"
 import Banner from "./Menu/Banner"
+import Column from "./Menu/Column"
 import HeaderMenu from "./Menu/Header"
 
 import { useCssHandles } from 'vtex.css-handles'
 import "../../../styles/css/header.menu.css"
 
 import { useApolloClient } from 'react-apollo'
-import getCategories from "./queries/categories.gql"
 import getBrands from "./queries/brands.gql"
+import getCategories from "./queries/categories.gql"
 
 const Menu = ({ ...props }) => {
 
@@ -76,9 +76,6 @@ const Menu = ({ ...props }) => {
 	const  { handles }  =  useCssHandles ( CSS_HANDLES )
 
 	if(props.menu == undefined) return null
-
-	if(window && window?.location?.href?.indexOf("debugMenu") != -1)
-		console.log("MENU V3:", JSON.stringify(props), props)
 
 	const openMenu = (url, name) => {
 		setCurrent(current != url ? url : null); 
