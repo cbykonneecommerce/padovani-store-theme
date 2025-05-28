@@ -17,7 +17,7 @@ export default function AttachmentsButton({ setSelected, selected, item }) {
           onClick={() =>
             setSelected({
               id: option.id,
-              value: option.value,
+              value: option.value.toUpperCase(),
               label: option.label,
             })
           }

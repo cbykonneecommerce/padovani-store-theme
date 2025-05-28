@@ -34,7 +34,7 @@ export default function Attachments() {
 
   useEffect(() => {
     const groupInputValues = {
-      [selected.label]: selected.value.toUpperCase(),
+      [selected.label]: selected.value,
     }
 
     if (!groupInputValues[selected.label]) {
