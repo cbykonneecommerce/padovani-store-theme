@@ -16,7 +16,10 @@
       "product-types#product",
       "condition-layout.product#footercommon",
       "condition-layout.product#footer-deca"
-    ]
+    ],
+    "parent": {
+      "footer": "footer#product"
+    }
   },
   "product-assembly-options": {
     "children": [
