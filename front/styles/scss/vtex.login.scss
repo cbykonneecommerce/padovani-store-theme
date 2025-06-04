@@ -177,15 +177,29 @@
   display: none !important;
 }
 
-:global(.padovani-basic-1-x-attachmentDropdownContainer) option {
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-family: Roboto;
-  font-weight: 600;
-  color: #737277;
-  cursor: pointer;
+:global(.padovani-basic-1-x-attachmentDropdownContainer) {
+  select {
+    border-radius: 6px;
+  }
 
-  &:disabled {
-    display: none;
+  option {
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: Roboto;
+    font-weight: 600;
+    color: #737277;
+    cursor: pointer;
+    background-color: #f8f8f8 !important;
+    background: #f8f8f8 !important;
+    font-size: 18px;
+    border-radius: 6px;
+    margin: 0 8px;
+
+    &:disabled {
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: none;
+      color: ;
+    }
   }
 }

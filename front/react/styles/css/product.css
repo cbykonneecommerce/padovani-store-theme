@@ -364,7 +364,7 @@
   gap: 8px;
 }
 .attachmentDropdownContainer :global(.vtex-styleguide-9-x-dropdown) {
-  max-width: 110px;
+  max-width: 210px;
 }
 .attachmentDropdownContainer :global(.vtex-styleguide-9-x-dropdown) :global(.vtex-styleguide-9-x-container) {
   border-radius: 8px;
