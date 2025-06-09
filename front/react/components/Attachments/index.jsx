@@ -16,6 +16,7 @@ export default function Attachments() {
     },
   } = useProduct()
   const { handles } = useCssHandles(CSS_HANDLES)
+  console.log('🚀 ~ Attachments ~ useProduct():', useProduct())
 
   const [selected, setSelected] = useState({
     id: '',
@@ -30,7 +31,10 @@ export default function Attachments() {
     return null
   }
 
-  const normalized = formatAssemblyOptionsFromItemMetadata(product.itemMetadata)
+  const [normalized] = formatAssemblyOptionsFromItemMetadata(
+    product.itemMetadata
+  )
+  console.log('🚀 ~ Attachments ~ normalized:', normalized)
 
   useEffect(() => {
     const groupInputValues = {
@@ -65,24 +69,22 @@ export default function Attachments() {
 
   return (
     <div>
-      {normalized.map((item) => (
-        <>
-          <div className="flex align-center">
-            <h3 className={handles.attachmentTitle}>{item.name}</h3>
-            {!isSelected && buyButton.clicked && (
-              <span className={handles.attachmentMessageError}>
-                Selecione uma opção
-              </span>
-            )}
-          </div>
-          <AttachmentsButton
-            setSelected={setSelected}
-            selected={selected}
-            item={item}
-          />
-          <AttachmentsDropdown setSelected={setSelected} item={item} />
-        </>
-      ))}
+      <>
+        <div className="flex align-center">
+          <h3 className={handles.attachmentTitle}>{normalized.name}</h3>
+          {!isSelected && buyButton.clicked && (
+            <span className={handles.attachmentMessageError}>
+              Selecione uma opção
+            </span>
+          )}
+        </div>
+        <AttachmentsButton
+          setSelected={setSelected}
+          selected={selected}
+          item={normalized}
+        />
+        <AttachmentsDropdown setSelected={setSelected} item={normalized} />
+      </>
     </div>
   )
 }
