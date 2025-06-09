@@ -377,6 +377,30 @@
   gap: 8px;
 }
 
+.attachmentDropdownContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  :global(.vtex-styleguide-9-x-dropdown) {
+    max-width: 210px;
+
+    :global(.vtex-styleguide-9-x-container) {
+      border-radius: 8px;
+    }
+
+    :global(.vtex-dropdown__caption) {
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-family: Roboto;
+      font-weight: 600;
+      color: #737277;
+      cursor: pointer;
+      text-transform: none;
+    }
+  }
+}
+
 .attachmentTitle {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;

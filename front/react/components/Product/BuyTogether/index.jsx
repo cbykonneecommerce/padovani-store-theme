@@ -6,6 +6,7 @@ import { useProduct } from 'vtex.product-context'
 import BuyTogetherProvider from './context/BuyTogetherProvider'
 import { BuyTogetherService } from './service/BuyTogetherService'
 
+import AddToCart from './components/AddToCart'
 import BombSelect from './components/BombSelect'
 import ListColors from './components/ListColors'
 import ListProducts from './components/ListProducts'
@@ -233,11 +234,15 @@ const BuyTogether = (props) => {
             text={matchingCollection?.text}
           />
         )}
-        {/* <AddToCart mainProduct={mainProduct} />
+        <AddToCart mainProduct={mainProduct} />
 
-                {matchingCollection?.buyButtonFixed && (
-                    <AddToCart isFixed={matchingCollection?.buyButtonFixed} isVisible={isVisible} mainProduct={mainProduct} />
-                )} */}
+        {matchingCollection?.buyButtonFixed && (
+          <AddToCart
+            isFixed={matchingCollection?.buyButtonFixed}
+            isVisible={isVisible}
+            mainProduct={mainProduct}
+          />
+        )}
       </BuyTogetherProvider>
     </section>
   )
