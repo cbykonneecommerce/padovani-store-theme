@@ -16,7 +16,6 @@ export default function Attachments() {
     },
   } = useProduct()
   const { handles } = useCssHandles(CSS_HANDLES)
-  console.log('🚀 ~ Attachments ~ useProduct():', useProduct())
 
   const [selected, setSelected] = useState({
     id: '',
@@ -27,6 +26,10 @@ export default function Attachments() {
 
   const dispatch = useProductDispatch()
 
+  // if (!product?.itemMetadata || !product?.brand?.includes('Jacuzzi')) {
+  //   return null
+  // }
+
   if (!product?.itemMetadata) {
     return null
   }
@@ -34,7 +37,6 @@ export default function Attachments() {
   const [normalized] = formatAssemblyOptionsFromItemMetadata(
     product.itemMetadata
   )
-  console.log('🚀 ~ Attachments ~ normalized:', normalized)
 
   useEffect(() => {
     const groupInputValues = {
