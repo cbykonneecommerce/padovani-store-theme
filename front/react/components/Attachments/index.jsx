@@ -26,10 +26,6 @@ export default function Attachments() {
 
   const dispatch = useProductDispatch()
 
-  // if (!product?.itemMetadata || !product?.brand?.includes('Jacuzzi')) {
-  //   return null
-  // }
-
   if (!product?.itemMetadata) {
     return null
   }
