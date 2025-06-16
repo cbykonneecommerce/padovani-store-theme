@@ -42,7 +42,7 @@
   font-family: "Roboto";
   width: 55%;
   display: flex;
-  color: #FFF;
+  color: #fff;
   font-size: 13px;
   font-weight: 600;
   font-style: italic;
@@ -140,4 +140,26 @@
 
 :global(#zendesk-fake-btn) {
   display: none !important;
+}
+
+:global(.padovani-basic-1-x-attachmentDropdownContainer) select {
+  border-radius: 6px;
+}
+:global(.padovani-basic-1-x-attachmentDropdownContainer) option {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: 600;
+  color: #737277;
+  cursor: pointer;
+  background-color: #f8f8f8 !important;
+  background: #f8f8f8 !important;
+  font-size: 18px;
+  border-radius: 6px;
+  margin: 0 8px;
+}
+:global(.padovani-basic-1-x-attachmentDropdownContainer) option:disabled {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
 }

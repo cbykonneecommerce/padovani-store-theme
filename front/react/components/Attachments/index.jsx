@@ -1,15 +1,12 @@
-import React, { useEffect, useState } from 'react'
-import { applyModifiers, useCssHandles } from 'vtex.css-handles'
+import { useEffect, useState } from 'react'
+import { useCssHandles } from 'vtex.css-handles'
 import { useProduct } from 'vtex.product-context'
 import { useProductDispatch } from 'vtex.product-context/ProductDispatchContext'
+import AttachmentsButton from './AttachmentButton'
+import AttachmentsDropdown from './AttachmentDropDown'
 import { formatAssemblyOptionsFromItemMetadata } from './utils'
 
-const CSS_HANDLES = [
-  'attachmentSelectButton',
-  'attachmentButtonsContainer',
-  'attachmentTitle',
-  'attachmentMessageError',
-]
+const CSS_HANDLES = ['attachmentTitle', 'attachmentMessageError']
 
 export default function Attachments() {
   const {
@@ -33,11 +30,13 @@ export default function Attachments() {
     return null
   }
 
-  const normalized = formatAssemblyOptionsFromItemMetadata(product.itemMetadata)
+  const [normalized] = formatAssemblyOptionsFromItemMetadata(
+    product.itemMetadata
+  )
 
   useEffect(() => {
     const groupInputValues = {
-      [selected.label]: selected.value.toUpperCase(),
+      [selected.label]: selected.value,
     }
 
     if (!groupInputValues[selected.label]) {
@@ -68,38 +67,22 @@ export default function Attachments() {
 
   return (
     <div>
-      {normalized.map((item) => (
-        <>
-          <div className="flex align-center">
-            <h3 className={handles.attachmentTitle}>{item.name}</h3>
-            {!isSelected && buyButton.clicked && (
-              <span className={handles.attachmentMessageError}>
-                Selecione uma opção
-              </span>
-            )}
-          </div>
-          <div className={handles.attachmentButtonsContainer}>
-            {item.options.map((option) => (
-              <button
-                key={option.value}
-                onClick={() =>
-                  setSelected({
-                    id: option.id,
-                    value: option.value,
-                    label: option.label,
-                  })
-                }
-                className={applyModifiers(
-                  handles.attachmentSelectButton,
-                  selected.value === option.value ? 'is-active' : ''
-                )}
-              >
-                {option.value}
-              </button>
-            ))}
-          </div>
-        </>
-      ))}
+      <>
+        <div className="flex align-center">
+          <h3 className={handles.attachmentTitle}>{normalized.name}</h3>
+          {!isSelected && buyButton.clicked && (
+            <span className={handles.attachmentMessageError}>
+              Selecione uma opção
+            </span>
+          )}
+        </div>
+        <AttachmentsButton
+          setSelected={setSelected}
+          selected={selected}
+          item={normalized}
+        />
+        <AttachmentsDropdown setSelected={setSelected} item={normalized} />
+      </>
     </div>
   )
 }
